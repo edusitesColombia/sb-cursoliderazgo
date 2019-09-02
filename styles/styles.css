@@ -1,4 +1,8 @@
-body {
-  background: white;
+#snap-pm-header a {
+  color: #fadc5d !important;
+}
+
+#snap-pm-header a .h1 {
+  color: white !important;
 }
 /*# sourceMappingURL=styles.css.map */
