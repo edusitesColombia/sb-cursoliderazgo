@@ -31,12 +31,12 @@ section#snap-pm-courses .coursecard .coursecard-body {
   padding: 1em .5em 1em .5em;
 }
 
-section#snap-pm-courses .coursecard .coursecard-body .h3 {
+section#snap-pm-courses .coursecard .coursecard-body h3 {
   padding: 0.5rem 0.5rem 1rem 0.5rem;
   border-bottom: 1px solid lightgray;
 }
 
-section#snap-pm-courses .coursecard .coursecard-body .h3 a.coursecard-coursename {
+section#snap-pm-courses .coursecard .coursecard-body h3 a.coursecard-coursename {
   color: #2b2b2b;
 }
 
