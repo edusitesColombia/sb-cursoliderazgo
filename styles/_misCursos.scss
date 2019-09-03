@@ -14,7 +14,7 @@
 
     #snap-pm-header-quicklinks{
         a{
-            text-transform: capitalize;
+            text-transform: uppercase;
 
             &::after{
                 content:"";
@@ -25,7 +25,7 @@
 
 section#snap-pm-courses{
     padding:0 3rem;
-    .theme-snap .coursecard{
+    .coursecard{
         border-radius: 8% 0 0 0;
         .coursecard-body {
             padding: 1em .5em 1em .5em;
