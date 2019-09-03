@@ -1,11 +1,44 @@
 #snap-pm-header{
+    padding: 1rem 3rem;
+
     a{
         color: $amarillo!important;
 
         &.h1{
             color:$blanco!important;
+            font-size: 1.8rem;
         }
     }    
     .pull-right{
+    }
+
+    #snap-pm-header-quicklinks{
+        a{
+            text-transform: capitalize;
+
+            &::after{
+                content:"";
+            }
+        }
+    }
+}
+
+section#snap-pm-courses{
+    padding:0 3rem;
+    .theme-snap .coursecard{
+        border-radius: 8% 0 0 0;
+        .coursecard-body {
+            padding: 1em .5em 1em .5em;
+            .h3{
+            padding: 0.5rem 0.5rem 1rem 0.5rem;            
+            border-bottom: 1px solid lightgray;
+            a.coursecard-coursename{
+                color: $negro;
+            }
+            }
+            .coursecard-dynamicinfo {
+                padding-top: 0.5rem;
+            }
+        }          
     }
 }
