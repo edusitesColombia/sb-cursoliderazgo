@@ -1,19 +1,24 @@
+//identificador de snap de la pagina de login
 #page-login-index{
+    //ocultar navegación
     header.mr-nav{
         display:none;        
     }
 
+    //contenedor principal que lleva la imagen de fondo
     main#moodle-page{
         min-height:90vh;
         display:flex;
         background: blue;
 
+        //div vacio que lleva un header por defecto de moodle, se utiliza para dejar medio contenedor principal vacio para que se vea el background
         div#page-header{
             width:50%;
-        }
+        }        
         section#region-main{
             background:$blanco;
             width: 50%;
+            //contenedor directo de los elementos del login
             div[role="main"]{
                 display: flex;
                 flex-direction: column;
