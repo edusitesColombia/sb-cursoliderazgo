@@ -1,4 +1,4 @@
-#page-login-index header.mr-nav {
+#page-login-index header#mr-nav {
   display: none;
 }
 
@@ -17,6 +17,9 @@
 #page-login-index main#moodle-page section#region-main {
   background: white;
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #page-login-index main#moodle-page section#region-main div[role="main"] {
