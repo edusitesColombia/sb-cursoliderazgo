@@ -1,3 +1,41 @@
+#page-login-index header.mr-nav {
+  display: none;
+}
+
+#page-login-index main#moodle-page {
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: blue;
+}
+
+#page-login-index main#moodle-page div#page-header {
+  width: 50%;
+}
+
+#page-login-index main#moodle-page section#region-main {
+  background: white;
+  width: 50%;
+}
+
+#page-login-index main#moodle-page section#region-main div[role="main"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
 #snap-pm-header {
   padding: 1rem 3rem;
 }
