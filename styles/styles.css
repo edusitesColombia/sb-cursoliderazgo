@@ -92,7 +92,7 @@ section#region-main {
   margin: 0;
 }
 
-section#region-main #course-content {
+section#region-main .course-content {
   max-width: 100% !important;
 }
 
