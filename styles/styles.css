@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #page-login-index header#mr-nav {
   display: none;
 }
@@ -83,5 +84,58 @@ section#snap-pm-courses .coursecard .coursecard-body h3 a.coursecard-coursename 
 
 section#snap-pm-courses .coursecard .coursecard-body .coursecard-dynamicinfo {
   padding-top: 0.5rem;
+}
+
+section#region-main {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+section#region-main #course-content {
+  max-width: 100%;
+}
+
+li#section-1 h2.sectionname, li#section-2 h2.sectionname, li#section-3 h2.sectionname, li#section-4 h2.sectionname, li#section-5 h2.sectionname {
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 3em;
+  background-color: #fadc5d;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3em;
+  margin-left: -5em;
+}
+
+li#section-1 h2.sectionname::before, li#section-2 h2.sectionname::before, li#section-3 h2.sectionname::before, li#section-4 h2.sectionname::before, li#section-5 h2.sectionname::before {
+  content: "Módulo " counter(annotation-list);
+  color: #006d38;
+  float: left;
+  position: relative;
+  top: -1em;
+  left: 4.25em;
+}
+
+li#section-1 div.summary, li#section-2 div.summary, li#section-3 div.summary, li#section-4 div.summary, li#section-5 div.summary {
+  max-width: 43.5em;
+}
+
+li#section-1 ul.section.img-text, li#section-2 ul.section.img-text, li#section-3 ul.section.img-text, li#section-4 ul.section.img-text, li#section-5 ul.section.img-text {
+  max-width: 43.5em;
+}
+
+li#section-1 div.row, li#section-2 div.row, li#section-3 div.row, li#section-4 div.row, li#section-5 div.row {
+  max-width: 43.5em;
+  margin: 0 auto;
+}
+
+li#section-1 .section_footer, li#section-2 .section_footer, li#section-3 .section_footer, li#section-4 .section_footer, li#section-5 .section_footer {
+  max-width: 43.5em;
+  margin: 1rem auto;
 }
 /*# sourceMappingURL=styles.css.map */
