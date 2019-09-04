@@ -139,4 +139,8 @@ li#section-1 .section_footer, li#section-2 .section_footer, li#section-3 .sectio
   max-width: 43.5em;
   margin: 1rem auto;
 }
+
+body {
+  text-rendering: optimizelegibility;
+}
 /*# sourceMappingURL=styles.css.map */
