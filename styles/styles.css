@@ -87,17 +87,18 @@ section#snap-pm-courses .coursecard .coursecard-body .coursecard-dynamicinfo {
 }
 
 section#region-main {
-  max-width: 100%;
+  max-width: 100% !important;
   padding: 0;
   margin: 0;
 }
 
 section#region-main #course-content {
-  max-width: 100%;
+  max-width: 100% !important;
 }
 
 li#section-1 h2.sectionname, li#section-2 h2.sectionname, li#section-3 h2.sectionname, li#section-4 h2.sectionname, li#section-5 h2.sectionname {
   height: 40vh;
+  width: 120%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

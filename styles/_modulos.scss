@@ -2,11 +2,11 @@
 //max-width del contenedor es 60.5em
 //max-width del contenido es 43.5em
 section#region-main {
-    max-width: 100%;
+    max-width: 100%!important;
     padding: 0;
     margin: 0;
     #course-content{
-        max-width:100%;
+        max-width:100%!important;
     }
 }
 //TODO: revisar span notifications hijo de region-main
@@ -17,6 +17,7 @@ li#section-1, li#section-2, li#section-3, li#section-4, li#section-5 {
     //contenedor del nombre de sección
     h2.sectionname{
         height: 40vh;
+        width: 120%;
         display: flex;
         align-items: center;
         padding-left: 3em;
