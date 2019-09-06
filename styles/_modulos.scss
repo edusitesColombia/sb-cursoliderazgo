@@ -15,7 +15,7 @@ body#page-course-view-topics section#region-main {
 li.section.main{
     max-width: 43.5em;
     margin: 0 auto!important;
-    .state-visible {
+    &.state-visible {
         margin-top: 2rem!important;
         margin-bottom: 1rem!important;
     }

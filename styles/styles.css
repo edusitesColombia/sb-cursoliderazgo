@@ -121,7 +121,7 @@ body#page-course-view-topics section#region-main .course-content {
   margin: 0 auto !important;
 }
 
-.course-content ul.topics li.section.main .state-visible {
+.course-content ul.topics li.section.main.state-visible {
   margin-top: 2rem !important;
   margin-bottom: 1rem !important;
 }
