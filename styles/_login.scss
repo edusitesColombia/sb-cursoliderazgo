@@ -13,7 +13,7 @@
 
         //div vacio que lleva un header por defecto de moodle, se utiliza para dejar medio contenedor principal vacio para que se vea el background
         div#page-header{
-            width:50%;
+            display:none;
         }        
         section#region-main{
             background:$blanco;
