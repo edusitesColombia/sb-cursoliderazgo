@@ -12,11 +12,13 @@
 }
 
 #page-login-index main#moodle-page div#page-header {
-  width: 50%;
+  display: none;
 }
 
 #page-login-index main#moodle-page section#region-main {
-  background: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
