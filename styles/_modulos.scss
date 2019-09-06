@@ -14,7 +14,7 @@ section#region-main {
 //Fix ancho secciones generales
 li.section.main{
     max-width: 43.5em;
-    margin: 0 auto;
+    margin: 0 auto!important;
     .state-visible {
         margin-top: 2rem;
         margin-bottom: 1rem;
@@ -22,7 +22,7 @@ li.section.main{
 }
 //Secciones que contienen modulos de aprendizaje
 li#section-1, li#section-2, li#section-3, li#section-4, li#section-5 {
-    
+    max-width:100%!important;
     //contenedor del nombre de sección
     h2.sectionname{
         height: 40vh;

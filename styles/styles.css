@@ -118,12 +118,16 @@ section#region-main .course-content {
 
 .course-content ul.topics li.section.main {
   max-width: 43.5em;
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 
 .course-content ul.topics li.section.main .state-visible {
   margin-top: 2rem;
   margin-bottom: 1rem;
+}
+
+.course-content ul.topics li#section-1, .course-content ul.topics li#section-2, .course-content ul.topics li#section-3, .course-content ul.topics li#section-4, .course-content ul.topics li#section-5 {
+  max-width: 100% !important;
 }
 
 .course-content ul.topics li#section-1 h2.sectionname, .course-content ul.topics li#section-2 h2.sectionname, .course-content ul.topics li#section-3 h2.sectionname, .course-content ul.topics li#section-4 h2.sectionname, .course-content ul.topics li#section-5 h2.sectionname {
