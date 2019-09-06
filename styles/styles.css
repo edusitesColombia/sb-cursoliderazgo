@@ -122,8 +122,8 @@ section#region-main .course-content {
 }
 
 .course-content ul.topics li.section.main .state-visible {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .course-content ul.topics li#section-1, .course-content ul.topics li#section-2, .course-content ul.topics li#section-3, .course-content ul.topics li#section-4, .course-content ul.topics li#section-5 {
