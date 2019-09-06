@@ -69,6 +69,10 @@
   margin-top: 0.5rem;
 }
 
+#snap-pm-header .snap-pm-user {
+  width: 100%;
+}
+
 #snap-pm-header #snap-pm-header-quicklinks a {
   text-transform: uppercase;
 }
