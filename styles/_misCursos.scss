@@ -1,12 +1,19 @@
 #snap-pm-header{
     padding: 1rem 3rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 
     a{
         color: $amarillo!important;
+        padding:0;
 
         &.h1{
             color:$blanco!important;
             font-size: 1.8rem;
+            display:block;
+            margin: 0;
+            margin-top: 0.5rem;
         }
     }    
 

@@ -44,15 +44,29 @@
 
 #snap-pm-header {
   padding: 1rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #snap-pm-header a {
   color: #fadc5d !important;
+  padding: 0;
 }
 
 #snap-pm-header a.h1 {
   color: white !important;
   font-size: 1.8rem;
+  display: block;
+  margin: 0;
+  margin-top: 0.5rem;
 }
 
 #snap-pm-header #snap-pm-header-quicklinks a {
