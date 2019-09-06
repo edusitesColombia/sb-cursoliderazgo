@@ -116,17 +116,17 @@ section#region-main .course-content {
   max-width: 100% !important;
 }
 
-li.section {
+.course-content ul.topics li.section.main {
   max-width: 43.5em;
   margin: 0 auto;
 }
 
-li.section .state-visible {
+.course-content ul.topics li.section.main .state-visible {
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
-li#section-1 h2.sectionname, li#section-2 h2.sectionname, li#section-3 h2.sectionname, li#section-4 h2.sectionname, li#section-5 h2.sectionname {
+.course-content ul.topics li#section-1 h2.sectionname, .course-content ul.topics li#section-2 h2.sectionname, .course-content ul.topics li#section-3 h2.sectionname, .course-content ul.topics li#section-4 h2.sectionname, .course-content ul.topics li#section-5 h2.sectionname {
   height: 40vh;
   width: 120%;
   display: -webkit-box;
@@ -143,7 +143,7 @@ li#section-1 h2.sectionname, li#section-2 h2.sectionname, li#section-3 h2.sectio
   margin-left: -5em;
 }
 
-li#section-1 h2.sectionname::before, li#section-2 h2.sectionname::before, li#section-3 h2.sectionname::before, li#section-4 h2.sectionname::before, li#section-5 h2.sectionname::before {
+.course-content ul.topics li#section-1 h2.sectionname::before, .course-content ul.topics li#section-2 h2.sectionname::before, .course-content ul.topics li#section-3 h2.sectionname::before, .course-content ul.topics li#section-4 h2.sectionname::before, .course-content ul.topics li#section-5 h2.sectionname::before {
   content: "Módulo " counter(annotation-list);
   color: #006d38;
   float: left;
@@ -152,20 +152,20 @@ li#section-1 h2.sectionname::before, li#section-2 h2.sectionname::before, li#sec
   left: 4.25em;
 }
 
-li#section-1 div.summary, li#section-2 div.summary, li#section-3 div.summary, li#section-4 div.summary, li#section-5 div.summary {
+.course-content ul.topics li#section-1 div.summary, .course-content ul.topics li#section-2 div.summary, .course-content ul.topics li#section-3 div.summary, .course-content ul.topics li#section-4 div.summary, .course-content ul.topics li#section-5 div.summary {
   max-width: 43.5em;
 }
 
-li#section-1 ul.section.img-text, li#section-2 ul.section.img-text, li#section-3 ul.section.img-text, li#section-4 ul.section.img-text, li#section-5 ul.section.img-text {
+.course-content ul.topics li#section-1 ul.section.img-text, .course-content ul.topics li#section-2 ul.section.img-text, .course-content ul.topics li#section-3 ul.section.img-text, .course-content ul.topics li#section-4 ul.section.img-text, .course-content ul.topics li#section-5 ul.section.img-text {
   max-width: 43.5em;
 }
 
-li#section-1 div.row, li#section-2 div.row, li#section-3 div.row, li#section-4 div.row, li#section-5 div.row {
+.course-content ul.topics li#section-1 div.row, .course-content ul.topics li#section-2 div.row, .course-content ul.topics li#section-3 div.row, .course-content ul.topics li#section-4 div.row, .course-content ul.topics li#section-5 div.row {
   max-width: 43.5em;
   margin: 0 auto;
 }
 
-li#section-1 .section_footer, li#section-2 .section_footer, li#section-3 .section_footer, li#section-4 .section_footer, li#section-5 .section_footer {
+.course-content ul.topics li#section-1 .section_footer, .course-content ul.topics li#section-2 .section_footer, .course-content ul.topics li#section-3 .section_footer, .course-content ul.topics li#section-4 .section_footer, .course-content ul.topics li#section-5 .section_footer {
   max-width: 43.5em;
   margin: 1rem auto;
 }
