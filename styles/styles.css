@@ -116,6 +116,16 @@ section#region-main .course-content {
   max-width: 100% !important;
 }
 
+li.section {
+  max-width: 43.5em;
+  margin: 0 auto;
+}
+
+li.section .state-visible {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
 li#section-1 h2.sectionname, li#section-2 h2.sectionname, li#section-3 h2.sectionname, li#section-4 h2.sectionname, li#section-5 h2.sectionname {
   height: 40vh;
   width: 120%;
