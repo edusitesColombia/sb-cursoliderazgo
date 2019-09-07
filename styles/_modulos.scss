@@ -45,6 +45,20 @@ li#section-1, li#section-2, li#section-3, li#section-4, li#section-5 {
         }
     }
 
+    .video-container{
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; 
+        height: 0;
+        iframe{
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+      }
+
     //contenedor del parrafo de resumen de la sección
     div.summary{
         p{
