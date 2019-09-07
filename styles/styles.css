@@ -167,9 +167,11 @@ body#page-course-view-topics section#region-main .course-content {
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 100%;
+  margin: 5%;
+  margin-top: 3%;
+  max-width: 90%;
   width: 100%;
-  height: 100%;
+  height: 90%;
 }
 
 .course-content ul.topics li#section-1 div.summary p, .course-content ul.topics li#section-2 div.summary p, .course-content ul.topics li#section-3 div.summary p, .course-content ul.topics li#section-4 div.summary p, .course-content ul.topics li#section-5 div.summary p {
@@ -185,6 +187,40 @@ body#page-course-view-topics section#region-main .course-content {
   margin: 2rem auto;
   padding-bottom: 1rem;
   border-bottom: 3px solid #fadc5d;
+}
+
+.course-content ul.topics li#section-1 div.summary .theme-snap .blockquote, .course-content ul.topics li#section-2 div.summary .theme-snap .blockquote, .course-content ul.topics li#section-3 div.summary .theme-snap .blockquote, .course-content ul.topics li#section-4 div.summary .theme-snap .blockquote, .course-content ul.topics li#section-5 div.summary .theme-snap .blockquote {
+  border: 0;
+  height: 70vh;
+  background: blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0;
+}
+
+.course-content ul.topics li#section-1 div.summary .theme-snap .blockquote .blockquote p, .course-content ul.topics li#section-1 div.summary .theme-snap .blockquote .blockquote footer, .course-content ul.topics li#section-2 div.summary .theme-snap .blockquote .blockquote p, .course-content ul.topics li#section-2 div.summary .theme-snap .blockquote .blockquote footer, .course-content ul.topics li#section-3 div.summary .theme-snap .blockquote .blockquote p, .course-content ul.topics li#section-3 div.summary .theme-snap .blockquote .blockquote footer, .course-content ul.topics li#section-4 div.summary .theme-snap .blockquote .blockquote p, .course-content ul.topics li#section-4 div.summary .theme-snap .blockquote .blockquote footer, .course-content ul.topics li#section-5 div.summary .theme-snap .blockquote .blockquote p, .course-content ul.topics li#section-5 div.summary .theme-snap .blockquote .blockquote footer {
+  margin: 0 !important;
+  max-width: 100% !important;
+  background: green;
+  color: white;
+  padding: 2rem 5rem;
+}
+
+.course-content ul.topics li#section-1 div.summary .theme-snap .blockquote .blockquote footer, .course-content ul.topics li#section-2 div.summary .theme-snap .blockquote .blockquote footer, .course-content ul.topics li#section-3 div.summary .theme-snap .blockquote .blockquote footer, .course-content ul.topics li#section-4 div.summary .theme-snap .blockquote .blockquote footer, .course-content ul.topics li#section-5 div.summary .theme-snap .blockquote .blockquote footer {
+  padding: 0 5rem 2rem 5rem;
+  text-align: right;
+}
+
+.course-content ul.topics li#section-1 div.summary .theme-snap .blockquote .blockquote footer .usertour, .course-content ul.topics li#section-2 div.summary .theme-snap .blockquote .blockquote footer .usertour, .course-content ul.topics li#section-3 div.summary .theme-snap .blockquote .blockquote footer .usertour, .course-content ul.topics li#section-4 div.summary .theme-snap .blockquote .blockquote footer .usertour, .course-content ul.topics li#section-5 div.summary .theme-snap .blockquote .blockquote footer .usertour {
+  display: none;
 }
 
 .course-content ul.topics li#section-1 ul.section.img-text, .course-content ul.topics li#section-2 ul.section.img-text, .course-content ul.topics li#section-3 ul.section.img-text, .course-content ul.topics li#section-4 ul.section.img-text, .course-content ul.topics li#section-5 ul.section.img-text {
