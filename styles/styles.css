@@ -189,7 +189,7 @@ body#page-course-view-topics section#region-main .course-content {
   border-bottom: 3px solid #fadc5d;
 }
 
-.course-content ul.topics li#section-1 div.summary .theme-snap .blockquote, .course-content ul.topics li#section-2 div.summary .theme-snap .blockquote, .course-content ul.topics li#section-3 div.summary .theme-snap .blockquote, .course-content ul.topics li#section-4 div.summary .theme-snap .blockquote, .course-content ul.topics li#section-5 div.summary .theme-snap .blockquote {
+.course-content ul.topics li#section-1 div.summary .blockquote, .course-content ul.topics li#section-2 div.summary .blockquote, .course-content ul.topics li#section-3 div.summary .blockquote, .course-content ul.topics li#section-4 div.summary .blockquote, .course-content ul.topics li#section-5 div.summary .blockquote {
   border: 0;
   height: 70vh;
   background: blue;
@@ -206,7 +206,7 @@ body#page-course-view-topics section#region-main .course-content {
   padding: 0;
 }
 
-.course-content ul.topics li#section-1 div.summary .theme-snap .blockquote .blockquote p, .course-content ul.topics li#section-1 div.summary .theme-snap .blockquote .blockquote footer, .course-content ul.topics li#section-2 div.summary .theme-snap .blockquote .blockquote p, .course-content ul.topics li#section-2 div.summary .theme-snap .blockquote .blockquote footer, .course-content ul.topics li#section-3 div.summary .theme-snap .blockquote .blockquote p, .course-content ul.topics li#section-3 div.summary .theme-snap .blockquote .blockquote footer, .course-content ul.topics li#section-4 div.summary .theme-snap .blockquote .blockquote p, .course-content ul.topics li#section-4 div.summary .theme-snap .blockquote .blockquote footer, .course-content ul.topics li#section-5 div.summary .theme-snap .blockquote .blockquote p, .course-content ul.topics li#section-5 div.summary .theme-snap .blockquote .blockquote footer {
+.course-content ul.topics li#section-1 div.summary .blockquote p, .course-content ul.topics li#section-1 div.summary .blockquote footer, .course-content ul.topics li#section-2 div.summary .blockquote p, .course-content ul.topics li#section-2 div.summary .blockquote footer, .course-content ul.topics li#section-3 div.summary .blockquote p, .course-content ul.topics li#section-3 div.summary .blockquote footer, .course-content ul.topics li#section-4 div.summary .blockquote p, .course-content ul.topics li#section-4 div.summary .blockquote footer, .course-content ul.topics li#section-5 div.summary .blockquote p, .course-content ul.topics li#section-5 div.summary .blockquote footer {
   margin: 0 !important;
   max-width: 100% !important;
   background: green;
@@ -214,12 +214,12 @@ body#page-course-view-topics section#region-main .course-content {
   padding: 2rem 5rem;
 }
 
-.course-content ul.topics li#section-1 div.summary .theme-snap .blockquote .blockquote footer, .course-content ul.topics li#section-2 div.summary .theme-snap .blockquote .blockquote footer, .course-content ul.topics li#section-3 div.summary .theme-snap .blockquote .blockquote footer, .course-content ul.topics li#section-4 div.summary .theme-snap .blockquote .blockquote footer, .course-content ul.topics li#section-5 div.summary .theme-snap .blockquote .blockquote footer {
+.course-content ul.topics li#section-1 div.summary .blockquote footer, .course-content ul.topics li#section-2 div.summary .blockquote footer, .course-content ul.topics li#section-3 div.summary .blockquote footer, .course-content ul.topics li#section-4 div.summary .blockquote footer, .course-content ul.topics li#section-5 div.summary .blockquote footer {
   padding: 0 5rem 2rem 5rem;
   text-align: right;
 }
 
-.course-content ul.topics li#section-1 div.summary .theme-snap .blockquote .blockquote footer .usertour, .course-content ul.topics li#section-2 div.summary .theme-snap .blockquote .blockquote footer .usertour, .course-content ul.topics li#section-3 div.summary .theme-snap .blockquote .blockquote footer .usertour, .course-content ul.topics li#section-4 div.summary .theme-snap .blockquote .blockquote footer .usertour, .course-content ul.topics li#section-5 div.summary .theme-snap .blockquote .blockquote footer .usertour {
+.course-content ul.topics li#section-1 div.summary .blockquote footer .usertour, .course-content ul.topics li#section-2 div.summary .blockquote footer .usertour, .course-content ul.topics li#section-3 div.summary .blockquote footer .usertour, .course-content ul.topics li#section-4 div.summary .blockquote footer .usertour, .course-content ul.topics li#section-5 div.summary .blockquote footer .usertour {
   display: none;
 }
 
