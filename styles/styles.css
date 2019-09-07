@@ -189,7 +189,21 @@ body#page-course-view-topics section#region-main .course-content {
   border-bottom: 3px solid #fadc5d;
 }
 
-.course-content ul.topics li#section-1 div.summary .blockquote, .course-content ul.topics li#section-2 div.summary .blockquote, .course-content ul.topics li#section-3 div.summary .blockquote, .course-content ul.topics li#section-4 div.summary .blockquote, .course-content ul.topics li#section-5 div.summary .blockquote {
+.course-content ul.topics li#section-1 ul.section.img-text, .course-content ul.topics li#section-2 ul.section.img-text, .course-content ul.topics li#section-3 ul.section.img-text, .course-content ul.topics li#section-4 ul.section.img-text, .course-content ul.topics li#section-5 ul.section.img-text {
+  max-width: 43.5em;
+}
+
+.course-content ul.topics li#section-1 div.row, .course-content ul.topics li#section-2 div.row, .course-content ul.topics li#section-3 div.row, .course-content ul.topics li#section-4 div.row, .course-content ul.topics li#section-5 div.row {
+  max-width: 43.5em;
+  margin: 0 auto;
+}
+
+.course-content ul.topics li#section-1 .section_footer, .course-content ul.topics li#section-2 .section_footer, .course-content ul.topics li#section-3 .section_footer, .course-content ul.topics li#section-4 .section_footer, .course-content ul.topics li#section-5 .section_footer {
+  max-width: 43.5em;
+  margin: 1rem auto;
+}
+
+.course-content ul.topics blockquote.blockquote {
   border: 0;
   height: 70vh;
   background: blue;
@@ -206,7 +220,7 @@ body#page-course-view-topics section#region-main .course-content {
   padding: 0;
 }
 
-.course-content ul.topics li#section-1 div.summary .blockquote p, .course-content ul.topics li#section-1 div.summary .blockquote footer, .course-content ul.topics li#section-2 div.summary .blockquote p, .course-content ul.topics li#section-2 div.summary .blockquote footer, .course-content ul.topics li#section-3 div.summary .blockquote p, .course-content ul.topics li#section-3 div.summary .blockquote footer, .course-content ul.topics li#section-4 div.summary .blockquote p, .course-content ul.topics li#section-4 div.summary .blockquote footer, .course-content ul.topics li#section-5 div.summary .blockquote p, .course-content ul.topics li#section-5 div.summary .blockquote footer {
+.course-content ul.topics blockquote.blockquote p, .course-content ul.topics blockquote.blockquote footer {
   margin: 0 !important;
   max-width: 100% !important;
   background: green;
@@ -214,27 +228,13 @@ body#page-course-view-topics section#region-main .course-content {
   padding: 2rem 5rem;
 }
 
-.course-content ul.topics li#section-1 div.summary .blockquote footer, .course-content ul.topics li#section-2 div.summary .blockquote footer, .course-content ul.topics li#section-3 div.summary .blockquote footer, .course-content ul.topics li#section-4 div.summary .blockquote footer, .course-content ul.topics li#section-5 div.summary .blockquote footer {
+.course-content ul.topics blockquote.blockquote footer {
   padding: 0 5rem 2rem 5rem;
   text-align: right;
 }
 
-.course-content ul.topics li#section-1 div.summary .blockquote footer .usertour, .course-content ul.topics li#section-2 div.summary .blockquote footer .usertour, .course-content ul.topics li#section-3 div.summary .blockquote footer .usertour, .course-content ul.topics li#section-4 div.summary .blockquote footer .usertour, .course-content ul.topics li#section-5 div.summary .blockquote footer .usertour {
+.course-content ul.topics blockquote.blockquote footer .usertour {
   display: none;
-}
-
-.course-content ul.topics li#section-1 ul.section.img-text, .course-content ul.topics li#section-2 ul.section.img-text, .course-content ul.topics li#section-3 ul.section.img-text, .course-content ul.topics li#section-4 ul.section.img-text, .course-content ul.topics li#section-5 ul.section.img-text {
-  max-width: 43.5em;
-}
-
-.course-content ul.topics li#section-1 div.row, .course-content ul.topics li#section-2 div.row, .course-content ul.topics li#section-3 div.row, .course-content ul.topics li#section-4 div.row, .course-content ul.topics li#section-5 div.row {
-  max-width: 43.5em;
-  margin: 0 auto;
-}
-
-.course-content ul.topics li#section-1 .section_footer, .course-content ul.topics li#section-2 .section_footer, .course-content ul.topics li#section-3 .section_footer, .course-content ul.topics li#section-4 .section_footer, .course-content ul.topics li#section-5 .section_footer {
-  max-width: 43.5em;
-  margin: 1rem auto;
 }
 
 body {
