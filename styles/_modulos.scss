@@ -136,17 +136,34 @@ ul.section.img-text .lesson{
     min-height: 45vh;
     display: flex;
     &:nth-child(odd){
-        background-color:$gris-no1;
+        background-color:$gris-no2;
     }
     &:nth-child(even){
-        background-color:$gris-oscuro;
+        background-color:$gris-no1;
     }
     .asset-wrapper{
         display: flex;
         .activityinstance{
             background-color:none;
             .snap-assettype{
-                display:none;
+                display:transparent;
+            }
+            .snap-asset-content{
+                display: flex;
+                height: 100%;
+                justify-content: center;
+                flex-direction: column;
+                width: 50%;
+                text-align: right;
+                padding-left: 6%;
+                &:nth-child(even){
+                    margin-left: auto;
+                    text-align: left;
+                    padding-right: 6%;
+                }
+                .contentafterlink{
+                    margin-left:0px;
+                }
             }
             .snap-asset-content h3 img{
                 display: none;

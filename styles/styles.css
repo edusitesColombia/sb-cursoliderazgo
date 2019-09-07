@@ -254,11 +254,11 @@ body#page-course-view-topics section#region-main .course-content {
 }
 
 .course-content ul.topics ul.section.img-text .lesson:nth-child(odd) {
-  background-color: #eaeaea;
+  background-color: #f7f7f7;
 }
 
 .course-content ul.topics ul.section.img-text .lesson:nth-child(even) {
-  background-color: #686868;
+  background-color: #eaeaea;
 }
 
 .course-content ul.topics ul.section.img-text .lesson .asset-wrapper {
@@ -272,7 +272,34 @@ body#page-course-view-topics section#region-main .course-content {
 }
 
 .course-content ul.topics ul.section.img-text .lesson .asset-wrapper .activityinstance .snap-assettype {
-  display: none;
+  display: transparent;
+}
+
+.course-content ul.topics ul.section.img-text .lesson .asset-wrapper .activityinstance .snap-asset-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  text-align: right;
+  padding-left: 6%;
+}
+
+.course-content ul.topics ul.section.img-text .lesson .asset-wrapper .activityinstance .snap-asset-content:nth-child(even) {
+  margin-left: auto;
+  text-align: left;
+  padding-right: 6%;
+}
+
+.course-content ul.topics ul.section.img-text .lesson .asset-wrapper .activityinstance .snap-asset-content .contentafterlink {
+  margin-left: 0px;
 }
 
 .course-content ul.topics ul.section.img-text .lesson .asset-wrapper .activityinstance .snap-asset-content h3 img {
