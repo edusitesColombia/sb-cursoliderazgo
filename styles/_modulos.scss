@@ -82,7 +82,7 @@ li#section-1, li#section-2, li#section-3, li#section-4, li#section-5 {
 
     //contenedor de todas las actividades del módulo
     ul.section.img-text{
-        max-width:43.5em;
+        background:$amarillo;
     }
 
     //contenedor de los botones crear actividad de aprendizaje y arrastre archivos para anexarlos
@@ -98,6 +98,7 @@ li#section-1, li#section-2, li#section-3, li#section-4, li#section-5 {
     }
 }
 
+// estilos para blockquotes, falta cuadrar fondos
 blockquote.blockquote{
     border: 0;
     height: 70vh;
@@ -106,18 +107,49 @@ blockquote.blockquote{
     flex-direction: column;
     justify-content: flex-end;
     padding: 0;
-    p, footer {
-        margin: 0!important;
-        max-width: 100% !important;
-        background: green;
-        color: white;
-        padding: 2rem 5rem;
+        p, footer {
+            margin: 0!important;
+            max-width: 100% !important;
+            background: $verde;
+            color: white;
+            padding: 2rem 5rem;
+        }
+        p{
+            font-style:italic;
+        }
+        footer{
+            padding: 0 5rem 2rem 5rem;
+            text-align: right;
+            font-size: 1.3rem;
+            color: $amarillo;
+            font-weight: 600;
+            .usertour{
+                display:none;
+            }
+        }
     }
-    footer{
-        padding: 0 5rem 2rem 5rem;
-        text-align: right;
-        .usertour{
-            display:none;
+
+ul.section.img-text .lesson{
+    border:0;
+    margin:0;
+    min-height: 45vh;
+    display: flex;
+    &nth-child(odd){
+        background-color:$gris-no1;
+    }
+    &nth-child(even){
+        background-color:$gris-oscuro;
+    }
+    .asset-wrapper{
+        display: flex;
+        .activityinstance{
+            background-color:none;
+            .snap-assettype{
+                display:none;
+            }
+            .snap-asset-content h3 img{
+                display: none;
+            }
         }
     }
 }
