@@ -253,11 +253,11 @@ body#page-course-view-topics section#region-main .course-content {
   display: flex;
 }
 
-.course-content ul.topics ul.section.img-text .lessonnth-child(odd) {
+.course-content ul.topics ul.section.img-text .lesson:nth-child(odd) {
   background-color: #eaeaea;
 }
 
-.course-content ul.topics ul.section.img-text .lessonnth-child(even) {
+.course-content ul.topics ul.section.img-text .lesson:nth-child(even) {
   background-color: #686868;
 }
 
