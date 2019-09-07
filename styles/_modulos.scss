@@ -15,7 +15,7 @@ body#page-course-view-topics section#region-main {
 li.section.main{
     max-width: 43.5em;
     margin: 0 auto!important;
-    &.state-visible:not(#section-1, #section-2, #section-3, #section-4, #section-5) {
+    &.state-visible:not(#section-1), &.state-visible:not(#section-2), &.state-visible:not(#section-3), &.state-visible:not(#section-4), &.state-visible:not(#section-5) {
         margin-top: 2rem!important;
         margin-bottom: 1rem!important;
     }
@@ -54,6 +54,7 @@ li#section-1, li#section-2, li#section-3, li#section-4, li#section-5 {
             position: absolute;
             top:0;
             left: 0;
+            max-width: 100%;
             width: 100%;
             height: 100%;
         }
