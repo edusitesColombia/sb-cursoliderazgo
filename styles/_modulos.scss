@@ -165,6 +165,13 @@ ul.section.img-text li{
         &::before{
             counter-increment: actividadNo;
             content:"0" counter(actividadNo);
+            color:$gris-no1;
+            position: absolute;
+            bottom: -12rem;
+            font-size: 20rem;
+            right: 3%;
+            font-family: 'Roboto Condensed';
+            font-weight: 900;
         }
     }
     &:nth-child(even){
@@ -177,6 +184,13 @@ ul.section.img-text li{
         &::before{
             counter-increment: actividadNo;
             content:"0" counter(actividadNo);
+            color:$gris-no2;
+            position: absolute;
+            bottom: -12rem;
+            font-size: 20rem;
+            left: 3%;
+            font-family: 'Roboto Condensed';
+            font-weight: 900;
         }       
     }  
 }

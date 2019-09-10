@@ -300,6 +300,13 @@ body#page-course-view-topics section#region-main .course-content {
 .course-content ul.topics ul.section.img-text li:nth-child(odd)::before {
   counter-increment: actividadNo;
   content: "0" counter(actividadNo);
+  color: #eaeaea;
+  position: absolute;
+  bottom: -12rem;
+  font-size: 20rem;
+  right: 3%;
+  font-family: 'Roboto Condensed';
+  font-weight: 900;
 }
 
 .course-content ul.topics ul.section.img-text li:nth-child(even) {
@@ -315,6 +322,13 @@ body#page-course-view-topics section#region-main .course-content {
 .course-content ul.topics ul.section.img-text li:nth-child(even)::before {
   counter-increment: actividadNo;
   content: "0" counter(actividadNo);
+  color: #f7f7f7;
+  position: absolute;
+  bottom: -12rem;
+  font-size: 20rem;
+  left: 3%;
+  font-family: 'Roboto Condensed';
+  font-weight: 900;
 }
 
 body {
