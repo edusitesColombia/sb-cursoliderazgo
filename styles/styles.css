@@ -191,6 +191,7 @@ body#page-course-view-topics section#region-main .course-content {
 
 .course-content ul.topics li#section-1 ul.section.img-text, .course-content ul.topics li#section-2 ul.section.img-text, .course-content ul.topics li#section-3 ul.section.img-text, .course-content ul.topics li#section-4 ul.section.img-text, .course-content ul.topics li#section-5 ul.section.img-text {
   background: #fadc5d;
+  counter-reset: actividadNo;
 }
 
 .course-content ul.topics li#section-1 div.row, .course-content ul.topics li#section-2 div.row, .course-content ul.topics li#section-3 div.row, .course-content ul.topics li#section-4 div.row, .course-content ul.topics li#section-5 div.row {
@@ -244,7 +245,7 @@ body#page-course-view-topics section#region-main .course-content {
   display: none;
 }
 
-.course-content ul.topics ul.section.img-text .lesson {
+.course-content ul.topics ul.section.img-text li {
   border: 0;
   margin: 0;
   min-height: 45vh;
@@ -253,21 +254,21 @@ body#page-course-view-topics section#region-main .course-content {
   display: flex;
 }
 
-.course-content ul.topics ul.section.img-text .lesson .asset-wrapper {
+.course-content ul.topics ul.section.img-text li .asset-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.course-content ul.topics ul.section.img-text .lesson .asset-wrapper .activityinstance {
+.course-content ul.topics ul.section.img-text li .asset-wrapper .activityinstance {
   background-color: transparent;
 }
 
-.course-content ul.topics ul.section.img-text .lesson .asset-wrapper .activityinstance .snap-assettype {
+.course-content ul.topics ul.section.img-text li .asset-wrapper .activityinstance .snap-assettype {
   display: none;
 }
 
-.course-content ul.topics ul.section.img-text .lesson .asset-wrapper .activityinstance .snap-asset-content {
+.course-content ul.topics ul.section.img-text li .asset-wrapper .activityinstance .snap-asset-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -284,26 +285,36 @@ body#page-course-view-topics section#region-main .course-content {
   padding-left: 6%;
 }
 
-.course-content ul.topics ul.section.img-text .lesson .asset-wrapper .activityinstance .snap-asset-content .contentafterlink {
+.course-content ul.topics ul.section.img-text li .asset-wrapper .activityinstance .snap-asset-content .contentafterlink {
   margin-left: 0px;
 }
 
-.course-content ul.topics ul.section.img-text .lesson .asset-wrapper .activityinstance .snap-asset-content h3 img {
+.course-content ul.topics ul.section.img-text li .asset-wrapper .activityinstance .snap-asset-content h3 img {
   display: none;
 }
 
-.course-content ul.topics ul.section.img-text .lesson:nth-child(odd) {
+.course-content ul.topics ul.section.img-text li:nth-child(odd) {
   background-color: #f7f7f7;
 }
 
-.course-content ul.topics ul.section.img-text .lesson:nth-child(even) {
+.course-content ul.topics ul.section.img-text li:nth-child(odd)::before {
+  counter-increment: actividadNo;
+  content: "0" counter(actividadNo);
+}
+
+.course-content ul.topics ul.section.img-text li:nth-child(even) {
   background-color: #eaeaea;
 }
 
-.course-content ul.topics ul.section.img-text .lesson:nth-child(even) .activityinstance .snap-asset-content {
+.course-content ul.topics ul.section.img-text li:nth-child(even) .activityinstance .snap-asset-content {
   margin-left: auto;
   text-align: left;
   padding-right: 6%;
+}
+
+.course-content ul.topics ul.section.img-text li:nth-child(even)::before {
+  counter-increment: actividadNo;
+  content: "0" counter(actividadNo);
 }
 
 body {
