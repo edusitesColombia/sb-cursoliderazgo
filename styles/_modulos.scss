@@ -170,7 +170,7 @@ ul.section.img-text li{
             content:"0" counter(actividadNo);
             color:$gris-no1;
             position: absolute;
-            bottom: -2rem;
+            bottom: -4rem;
             font-size: 20rem;
             line-height: 19rem;
             right: 3%;
@@ -191,15 +191,17 @@ ul.section.img-text li{
             content:"0" counter(actividadNo);
             color:$gris-no2;
             position: absolute;
-            bottom: -12rem;
+            bottom: -4rem;
             font-size: 20rem;
+            line-height:19rem;
             left: 3%;
             font-family: 'Roboto Condensed';
             font-weight: 900;
+            z-index: 0;
         }       
     }
     &:last-of-type::before{
-        content:""!important;
+        content:"gato"!important;
     }  
 }
 }

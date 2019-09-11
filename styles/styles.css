@@ -307,7 +307,7 @@ body#page-course-view-topics section#region-main .course-content {
   content: "0" counter(actividadNo);
   color: #eaeaea;
   position: absolute;
-  bottom: -2rem;
+  bottom: -4rem;
   font-size: 20rem;
   line-height: 19rem;
   right: 3%;
@@ -331,15 +331,17 @@ body#page-course-view-topics section#region-main .course-content {
   content: "0" counter(actividadNo);
   color: #f7f7f7;
   position: absolute;
-  bottom: -12rem;
+  bottom: -4rem;
   font-size: 20rem;
+  line-height: 19rem;
   left: 3%;
   font-family: 'Roboto Condensed';
   font-weight: 900;
+  z-index: 0;
 }
 
 .course-content ul.topics ul.section.img-text li:last-of-type::before {
-  content: "" !important;
+  content: "gato" !important;
 }
 
 body {
