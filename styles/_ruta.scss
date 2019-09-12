@@ -12,6 +12,7 @@
         height: 55vh;
         justify-content: flex-end;
         width: 100%;
+        background-color: transparent;
     }
     #chapters {
         display: flex;
@@ -19,12 +20,15 @@
         list-style: none;
         li {
             flex-basis: 25%;
-            &>:first-child {
-                display: none;
-            }
-            &>:nth-child(2) {
-                display: none;
-            }
+        }
+        &>:first-child {
+            display: none;
+        }
+        &>:nth-child(2) {
+            display: none;
+        }
+        .chapter-title {
+            line-height: 1.2;
         }
     }
     h1 {
@@ -32,6 +36,8 @@
             content: 'Bienvenido al curso';
             display: block;
         }
+        color: $verde;
+        text-transform: uppercase;
     }
 }
 
