@@ -128,6 +128,7 @@ body#page-course-view-topics section#region-main .course-content {
 
 .course-content ul.topics li#section-1, .course-content ul.topics li#section-2, .course-content ul.topics li#section-3, .course-content ul.topics li#section-4, .course-content ul.topics li#section-5 {
   max-width: 100% !important;
+  overflow: hidden;
 }
 
 .course-content ul.topics li#section-1 h2.sectionname, .course-content ul.topics li#section-2 h2.sectionname, .course-content ul.topics li#section-3 h2.sectionname, .course-content ul.topics li#section-4 h2.sectionname, .course-content ul.topics li#section-5 h2.sectionname {
@@ -252,12 +253,16 @@ body#page-course-view-topics section#region-main .course-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .course-content ul.topics ul.section.img-text li .asset-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
 }
 
 .course-content ul.topics ul.section.img-text li .asset-wrapper .activityinstance {
@@ -280,7 +285,7 @@ body#page-course-view-topics section#region-main .course-content {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
+  width: 60%;
   text-align: right;
   padding-left: 6%;
 }
@@ -302,11 +307,13 @@ body#page-course-view-topics section#region-main .course-content {
   content: "0" counter(actividadNo);
   color: #eaeaea;
   position: absolute;
-  bottom: -12rem;
+  bottom: -4rem;
   font-size: 20rem;
+  line-height: 19rem;
   right: 3%;
   font-family: 'Roboto Condensed';
   font-weight: 900;
+  z-index: 0;
 }
 
 .course-content ul.topics ul.section.img-text li:nth-child(even) {
@@ -324,11 +331,17 @@ body#page-course-view-topics section#region-main .course-content {
   content: "0" counter(actividadNo);
   color: #f7f7f7;
   position: absolute;
-  bottom: -12rem;
+  bottom: -4rem;
   font-size: 20rem;
+  line-height: 19rem;
   left: 3%;
   font-family: 'Roboto Condensed';
   font-weight: 900;
+  z-index: 0;
+}
+
+.course-content ul.topics ul.section.img-text li:last-of-type::before {
+  content: "gato" !important;
 }
 
 body {
