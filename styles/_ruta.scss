@@ -1,50 +1,70 @@
-#page-header.home-ruta {
-    height: 100vh;
-    #toc-desktop-menu-heading {
-        display: none;
-    }
-    #toc-search {
-        display: none;
-    }
-    #course-toc {
-        display: flex;
-        flex-direction: column;
-        height: 55vh;
-        justify-content: flex-end;
-        width: 100%;
-        background-color: transparent;
-    }
-    #chapters {
-        display: flex;
-        min-width: 100%;
-        list-style: none;
-        li {
-            flex-basis: 25%;
-        }
-        &>:first-child {
+    #page-header.home-ruta {
+        .breadcrumb-nav {
             display: none;
         }
-        &>:nth-child(2) {
-            display: none;
+        #page-mast {
+            height: 100vh;
+            #toc-desktop-menu-heading {
+                display: none;
+            }
+            #toc-search {
+                display: none;
+            }
+            #course-toc {
+                display: flex;
+                flex-direction: column;
+                height: 55vh;
+                justify-content: flex-end;
+                width: 100%;
+                background-color: transparent;
+            }
+            #chapters {
+                display: flex;
+                min-width: 100%;
+                list-style: none;
+                counter-reset: modulo;
+                li {
+                    flex-basis: 25%;
+                    margin-left: .7em;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    counter-increment: modulo;
+                    span {
+                        .completionstatus {
+                            &::before {
+                                content: 'Modulo' counter(moudulo);
+                            }
+                        }
+                    }
+                }
+                &>:first-child {
+                    display: none;
+                }
+                &>:nth-child(2) {
+                    display: none;
+                }
+                &>:nth-child(n):not(:last-child) {
+                    background-color: $verde;
+                }
+                .chapter-title {
+                    line-height: 1.2;
+                }
+            }
+            &>h1 {
+                color: $verde;
+                text-transform: uppercase;
+                &::before {
+                    content: 'Bienvenido al curso';
+                    display: block;
+                    text-transform: initial;
+                }
+            }
         }
-        .chapter-title {
-            line-height: 1.2;
+        .course-content {
+            #section-0 {
+                .state-visible {
+                    display: none;
+                }
+            }
         }
     }
-    h1 {
-        &::before {
-            content: 'Bienvenido al curso';
-            display: block;
-        }
-        color: $verde;
-        text-transform: uppercase;
-    }
-}
-
-.course-content {
-    #section-0 {
-        .state-visible {
-            display: none;
-        }
-    }
-}

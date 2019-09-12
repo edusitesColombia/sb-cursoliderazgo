@@ -207,39 +207,50 @@ body#page-course-view-topics section#region-main {
   .course-content ul.topics ul.section.img-text li:last-of-type::before {
     content: "gato" !important; }
 
-#page-header.home-ruta {
+#page-header.home-ruta .breadcrumb-nav {
+  display: none; }
+#page-header.home-ruta #page-mast {
   height: 100vh; }
-  #page-header.home-ruta #toc-desktop-menu-heading {
+  #page-header.home-ruta #page-mast #toc-desktop-menu-heading {
     display: none; }
-  #page-header.home-ruta #toc-search {
+  #page-header.home-ruta #page-mast #toc-search {
     display: none; }
-  #page-header.home-ruta #course-toc {
+  #page-header.home-ruta #page-mast #course-toc {
     display: flex;
     flex-direction: column;
     height: 55vh;
     justify-content: flex-end;
     width: 100%;
     background-color: transparent; }
-  #page-header.home-ruta #chapters {
+  #page-header.home-ruta #page-mast #chapters {
     display: flex;
     min-width: 100%;
-    list-style: none; }
-    #page-header.home-ruta #chapters li {
-      flex-basis: 25%; }
-    #page-header.home-ruta #chapters > :first-child {
+    list-style: none;
+    counter-reset: modulo; }
+    #page-header.home-ruta #page-mast #chapters li {
+      flex-basis: 25%;
+      margin-left: .7em;
+      display: flex;
+      flex-direction: column-reverse;
+      counter-increment: modulo; }
+      #page-header.home-ruta #page-mast #chapters li span .completionstatus::before {
+        content: "Modulo" counter(moudulo); }
+    #page-header.home-ruta #page-mast #chapters > :first-child {
       display: none; }
-    #page-header.home-ruta #chapters > :nth-child(2) {
+    #page-header.home-ruta #page-mast #chapters > :nth-child(2) {
       display: none; }
-    #page-header.home-ruta #chapters .chapter-title {
+    #page-header.home-ruta #page-mast #chapters > :nth-child(n):not(:last-child) {
+      background-color: #006d38; }
+    #page-header.home-ruta #page-mast #chapters .chapter-title {
       line-height: 1.2; }
-  #page-header.home-ruta h1 {
+  #page-header.home-ruta #page-mast > h1 {
     color: #006d38;
     text-transform: uppercase; }
-    #page-header.home-ruta h1::before {
+    #page-header.home-ruta #page-mast > h1::before {
       content: 'Bienvenido al curso';
-      display: block; }
-
-.course-content #section-0 .state-visible {
+      display: block;
+      text-transform: initial; }
+#page-header.home-ruta .course-content #section-0 .state-visible {
   display: none; }
 
 body {
