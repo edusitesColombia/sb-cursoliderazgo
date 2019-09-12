@@ -344,6 +344,23 @@ body#page-course-view-topics section#region-main .course-content {
   content: "gato" !important;
 }
 
+#page-header {
+  height: 100vh;
+}
+
+#page-header #toc-desktop-menu-heading {
+  display: none;
+}
+
+#page-header #chapters > :first-child {
+  display: none;
+}
+
+#page-header h1::before {
+  content: 'Bienvenido al curso';
+  display: block;
+}
+
 body {
   text-rendering: optimizelegibility;
 }
