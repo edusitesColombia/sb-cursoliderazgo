@@ -344,21 +344,61 @@ body#page-course-view-topics section#region-main .course-content {
   content: "gato" !important;
 }
 
-#page-header {
+#page-header.home-ruta {
   height: 100vh;
 }
 
-#page-header #toc-desktop-menu-heading {
+#page-header.home-ruta #toc-desktop-menu-heading {
   display: none;
 }
 
-#page-header #chapters > :first-child {
+#page-header.home-ruta #toc-search {
   display: none;
 }
 
-#page-header h1::before {
+#page-header.home-ruta #course-toc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 55vh;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+#page-header.home-ruta #chapters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100%;
+  list-style: none;
+}
+
+#page-header.home-ruta #chapters li {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+#page-header.home-ruta #chapters li > :first-child {
+  display: none;
+}
+
+#page-header.home-ruta #chapters li > :nth-child(2) {
+  display: none;
+}
+
+#page-header.home-ruta h1::before {
   content: 'Bienvenido al curso';
   display: block;
+}
+
+.course-content #section-0 .state-visible {
+  display: none;
 }
 
 body {

@@ -1,18 +1,44 @@
-#page-header{
+#page-header.home-ruta {
     height: 100vh;
-    #toc-desktop-menu-heading{
-            display: none;
+    #toc-desktop-menu-heading {
+        display: none;
     }
-    #chapters{
-        &>:first-child{
-            display: none;
+    #toc-search {
+        display: none;
+    }
+    #course-toc {
+        display: flex;
+        flex-direction: column;
+        height: 55vh;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    #chapters {
+        display: flex;
+        min-width: 100%;
+        list-style: none;
+        li {
+            flex-basis: 25%;
+            &>:first-child {
+                display: none;
+            }
+            &>:nth-child(2) {
+                display: none;
+            }
         }
     }
-    h1{
-        &::before{
-            content:'Bienvenido al curso';
+    h1 {
+        &::before {
+            content: 'Bienvenido al curso';
             display: block;
         }
+    }
+}
 
+.course-content {
+    #section-0 {
+        .state-visible {
+            display: none;
+        }
     }
 }
