@@ -1,9 +1,14 @@
+    @mixin textos-ruta ($color, $transform) {
+        color: $color;
+        text-transform: $transform;
+    }
+    
     #page-header.home-ruta {
+        height: 100vh;
         .breadcrumb-nav {
             display: none;
         }
         #page-mast {
-            height: 100vh;
             #toc-desktop-menu-heading {
                 display: none;
             }
@@ -29,11 +34,10 @@
                     display: flex;
                     flex-direction: column-reverse;
                     counter-increment: modulo;
-                    span {
-                        .completionstatus {
-                            &::before {
-                                content: 'Modulo' counter(moudulo);
-                            }
+                    span.completionstatus {
+                        @include textos-ruta($blanco, uppercase);
+                        &::before {
+                            content: 'Modulo' counter(moudulo);
                         }
                     }
                 }
@@ -48,11 +52,11 @@
                 }
                 .chapter-title {
                     line-height: 1.2;
+                    color: $amarillo;
                 }
             }
             &>h1 {
-                color: $verde;
-                text-transform: uppercase;
+                @include textos-ruta($negro, lowercase);
                 &::before {
                     content: 'Bienvenido al curso';
                     display: block;
