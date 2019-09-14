@@ -382,7 +382,7 @@ body#page-course-view-topics section#region-main .course-content {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 55vh;
+  height: 70vh;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -422,6 +422,8 @@ body#page-course-view-topics section#region-main .course-content {
 
 #page-header.home-ruta #page-mast #chapters li .text::before {
   content: "Módulo " counter(modulo);
+  width: 50%;
+  display: inline-block;
 }
 
 #page-header.home-ruta #page-mast #chapters li .text::after {
@@ -434,6 +436,9 @@ body#page-course-view-topics section#region-main .course-content {
 
 #page-header.home-ruta #page-mast #chapters li .text small {
   font-size: 0.7rem !important;
+  text-align: right;
+  width: 50%;
+  display: inline-block;
 }
 
 #page-header.home-ruta #page-mast #chapters li .text .snap-section-complete {
@@ -441,15 +446,15 @@ body#page-course-view-topics section#region-main .course-content {
 }
 
 #page-header.home-ruta #page-mast #chapters li:first-child {
+  display: none;
+}
+
+#page-header.home-ruta #page-mast #chapters li:nth-child(2) {
   position: absolute;
   top: 0;
 }
 
-#page-header.home-ruta #page-mast #chapters li:nth-child(2) {
-  display: none;
-}
-
-#page-header.home-ruta #page-mast #chapters li:nth-child(n):not(:last-child) {
+#page-header.home-ruta #page-mast #chapters li:nth-child(n+2):not(:last-child) {
   background-color: #006d38;
 }
 

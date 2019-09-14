@@ -33,7 +33,7 @@
         #course-toc {
             display: flex;
             flex-direction: column;
-            height: 55vh;
+            height: 70vh;
             justify-content: flex-end;
             width: 100%;
             background-color: transparent;
@@ -54,6 +54,8 @@
                     @include textos-ruta($blanco, uppercase, 1rem);
                     &::before {
                         content: 'Módulo ' counter(modulo);
+                        width: 50%;
+                        display: inline-block;
                     }
                     &::after {
                         display: block;
@@ -64,19 +66,22 @@
                     }
                     small {
                         font-size: .7rem!important;
+                        text-align: right;
+                        width: 50%;
+                        display: inline-block;
                     }
                     .snap-section-complete {
                         display: none;
                     }
                 }
                 &:first-child {
+                    display: none;
+                }
+                &:nth-child(2) {
                     position: absolute;
                     top: 0;
                 }
-                &:nth-child(2) {
-                    display: none;
-                }
-                &:nth-child(n):not(:last-child) {
+                &:nth-child(n+2):not(:last-child) {
                     background-color: $verde;
                 }
                 &:last-child {
