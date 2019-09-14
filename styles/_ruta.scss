@@ -4,7 +4,7 @@
     font-size: $tamano;
 }
 
-@mixin posicion-otros-elementos ($position, $right, $top:0) {
+@mixin posicion-otros-elementos ($position, $top:0, $right:0) {
     position: $position;
     top: $top;
     right: $right;
@@ -27,7 +27,7 @@
     background-position: center;
     background-size: cover;
     .breadcrumb-nav {
-        display: none;
+        visibility: hidden;
     }
     #page-mast {
         #toc-desktop-menu-heading {
@@ -39,7 +39,7 @@
         #course-toc {
             display: flex;
             flex-direction: column;
-            height: 70vh;
+            height: 60vh;
             justify-content: flex-end;
             width: 100%;
             background-color: transparent;
@@ -90,7 +90,7 @@
                     background-color: $verde;
                 }
                 &:last-child {
-                    @include posicion-otros-elementos(absolute, , 0);
+                    @include posicion-otros-elementos(absolute, 0);
                 }
                 @extend %resaltado-modulos;
             }
@@ -104,8 +104,13 @@
             &::before {
                 content: 'Bienvenido al curso';
                 display: block;
-                text-transform: initial;
+                text-transform: capitalize;
+            }
+            &::before,
+            a,
+            a:hover {
                 @include textos-ruta($negro, lowercase, 1.3rem);
+                text-shadow: none;
             }
         }
     }
