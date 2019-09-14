@@ -405,7 +405,7 @@ body#page-course-view-topics section#region-main .course-content {
 }
 
 #page-header.home-ruta #page-mast #chapters li span.completionstatus::before {
-  content: "Modulo" counter(moudulo);
+  content: "Modulo " counter(moudulo);
 }
 
 #page-header.home-ruta #page-mast #chapters > :first-child {

@@ -1,74 +1,99 @@
-    @mixin textos-ruta ($color, $transform) {
-        color: $color;
-        text-transform: $transform;
+@mixin textos-ruta ($color, $transform, $tamano) {
+    color: $color;
+    text-transform: $transform;
+    font-size: $tamano;
+}
+
+#page-header.home-ruta {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    .breadcrumb-nav {
+        display: none;
     }
-    
-    #page-header.home-ruta {
-        height: 100vh;
-        .breadcrumb-nav {
+    #page-mast {
+        #toc-desktop-menu-heading {
             display: none;
         }
-        #page-mast {
-            #toc-desktop-menu-heading {
-                display: none;
-            }
-            #toc-search {
-                display: none;
-            }
-            #course-toc {
+        #toc-search {
+            display: none;
+        }
+        #course-toc {
+            display: flex;
+            flex-direction: column;
+            height: 55vh;
+            justify-content: flex-end;
+            width: 100%;
+            background-color: transparent;
+        }
+        #chapters {
+            display: flex;
+            min-width: 100%;
+            list-style: none;
+            counter-reset: modulo;
+            li {
+                flex-basis: 25%;
+                margin-left: .7em;
+                padding: 30px;
                 display: flex;
-                flex-direction: column;
-                height: 55vh;
-                justify-content: flex-end;
-                width: 100%;
-                background-color: transparent;
-            }
-            #chapters {
-                display: flex;
-                min-width: 100%;
-                list-style: none;
-                counter-reset: modulo;
-                li {
-                    flex-basis: 25%;
-                    margin-left: .7em;
-                    display: flex;
-                    flex-direction: column-reverse;
-                    counter-increment: modulo;
-                    span.completionstatus {
-                        @include textos-ruta($blanco, uppercase);
-                        &::before {
-                            content: 'Modulo' counter(moudulo);
-                        }
+                flex-direction: column-reverse;
+                counter-increment: modulo;
+                .text {
+                    @include textos-ruta($blanco, uppercase, 1rem);
+                    &::before {
+                        content: 'Módulo ' counter(modulo);
+                    }
+                    &::after {
+                        display: block;
+                        border-bottom: 1px solid $blanco;
+                        width: 100%;
+                        content: '';
+                        margin: 10px 0 10px 0;
+                    }
+                    small {
+                        font-size: .7rem!important;
                     }
                 }
-                &>:first-child {
-                    display: none;
-                }
-                &>:nth-child(2) {
-                    display: none;
-                }
-                &>:nth-child(n):not(:last-child) {
-                    background-color: $verde;
-                }
-                .chapter-title {
-                    line-height: 1.2;
-                    color: $amarillo;
-                }
             }
-            &>h1 {
-                @include textos-ruta($negro, lowercase);
-                &::before {
-                    content: 'Bienvenido al curso';
-                    display: block;
-                    text-transform: initial;
-                }
+            &>:first-child {
+                display: none;
+            }
+            &>:nth-child(2) {
+                display: none;
+            }
+            &>:nth-child(n):not(:last-child) {
+                background-color: $verde;
+            }
+            &>:last-child {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            .chapter-title {
+                line-height: 1.2;
+                color: $amarillo;
             }
         }
-        .course-content {
-            #section-0 {
-                .state-visible {
-                    display: none;
-                }
+        &>h1 {
+            @include textos-ruta($verde, uppercase, 1.6rem);
+            &::before {
+                content: 'Bienvenido al curso';
+                display: block;
+                text-transform: initial;
+                @include textos-ruta($negro, lowercase, 1.3rem);
             }
         }
     }
+    .course-content {
+        #section-0 {
+            .state-visible {
+                display: none;
+            }
+        }
+    }
+}
+
+
+}
+
+}
