@@ -345,7 +345,7 @@ body#page-course-view-topics section#region-main .course-content {
 }
 
 #page-header.home-ruta #page-mast #chapters li:hover {
-  background-color: #fadc5d;
+  background-color: #fadc5d !important;
 }
 
 #page-header.home-ruta #page-mast #chapters li:hover .chapter-title {
@@ -422,7 +422,7 @@ body#page-course-view-topics section#region-main .course-content {
 
 #page-header.home-ruta #page-mast #chapters li .text::before {
   content: "Módulo " counter(modulo);
-  width: 50%;
+  width: 48%;
   display: inline-block;
 }
 
@@ -454,7 +454,7 @@ body#page-course-view-topics section#region-main .course-content {
   top: 0;
 }
 
-#page-header.home-ruta #page-mast #chapters li:nth-child(n+2):not(:last-child) {
+#page-header.home-ruta #page-mast #chapters li:nth-child(n+3):not(:last-child) {
   background-color: #006d38;
 }
 

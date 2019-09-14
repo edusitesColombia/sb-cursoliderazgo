@@ -4,9 +4,15 @@
     font-size: $tamano;
 }
 
+@mixin posicion-otros-elementos ($position, $right, $top:0) {
+    position: $position;
+    top: $top;
+    right: $right;
+}
+
 %resaltado-modulos {
     &:hover {
-        background-color: $amarillo;
+        background-color: $amarillo!important;
         .chapter-title {
             color: $verde;
         }
@@ -54,7 +60,7 @@
                     @include textos-ruta($blanco, uppercase, 1rem);
                     &::before {
                         content: 'Módulo ' counter(modulo);
-                        width: 50%;
+                        width: 48%;
                         display: inline-block;
                     }
                     &::after {
@@ -78,16 +84,13 @@
                     display: none;
                 }
                 &:nth-child(2) {
-                    position: absolute;
-                    top: 0;
+                    @include posicion-otros-elementos(absolute);
                 }
-                &:nth-child(n+2):not(:last-child) {
+                &:nth-child(n+3):not(:last-child) {
                     background-color: $verde;
                 }
                 &:last-child {
-                    position: absolute;
-                    top: 0;
-                    right: 0;
+                    @include posicion-otros-elementos(absolute, , 0);
                 }
                 @extend %resaltado-modulos;
             }
