@@ -4,6 +4,18 @@
     font-size: $tamano;
 }
 
+%resaltado-modulos {
+    &:hover {
+        background-color: $amarillo;
+        .chapter-title {
+            color: $verde;
+        }
+        .text {
+            color: $negro;
+        }
+    }
+}
+
 #page-header.home-ruta {
     height: 100vh;
     background-position: center;
@@ -53,10 +65,15 @@
                     small {
                         font-size: .7rem!important;
                     }
+                    .snap-section-complete {
+                        display: none;
+                    }
                 }
+                @extend resaltado-modulos;
             }
             &>:first-child {
-                display: none;
+                position: absolute;
+                top: 0;
             }
             &>:nth-child(2) {
                 display: none;
