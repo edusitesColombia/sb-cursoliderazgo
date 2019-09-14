@@ -84,7 +84,7 @@
                     display: none;
                 }
                 &:nth-child(2) {
-                    @include posicion-otros-elementos(absolute);
+                    @include posicion-otros-elementos(absolute, 0, 0);
                 }
                 &:nth-child(n+3):not(:last-child) {
                     background-color: $verde;
@@ -101,16 +101,16 @@
         }
         &>h1 {
             @include textos-ruta($verde, uppercase, 1.6rem);
+            text-shadow: none;
             &::before {
                 content: 'Bienvenido al curso';
                 display: block;
                 text-transform: capitalize;
+                @include textos-ruta($negro, lowercase, 1.3rem);
             }
-            &::before,
             a,
             a:hover {
-                @include textos-ruta($negro, lowercase, 1.3rem);
-                text-shadow: none;
+                color: $verde;
             }
         }
     }
