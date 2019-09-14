@@ -69,22 +69,22 @@
                         display: none;
                     }
                 }
+                &:first-child {
+                    position: absolute;
+                    top: 0;
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(n):not(:last-child) {
+                    background-color: $verde;
+                }
+                &:last-child {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
                 @extend resaltado-modulos;
-            }
-            &>:first-child {
-                position: absolute;
-                top: 0;
-            }
-            &>:nth-child(2) {
-                display: none;
-            }
-            &>:nth-child(n):not(:last-child) {
-                background-color: $verde;
-            }
-            &>:last-child {
-                position: absolute;
-                top: 0;
-                right: 0;
             }
             .chapter-title {
                 line-height: 1.2;
