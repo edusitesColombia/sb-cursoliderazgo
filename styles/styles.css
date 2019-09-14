@@ -344,6 +344,18 @@ body#page-course-view-topics section#region-main .course-content {
   content: "gato" !important;
 }
 
+#page-header.home-ruta #page-mast #chapters li:hover {
+  background-color: #fadc5d;
+}
+
+#page-header.home-ruta #page-mast #chapters li:hover .chapter-title {
+  color: #006d38;
+}
+
+#page-header.home-ruta #page-mast #chapters li:hover .text {
+  color: #2b2b2b;
+}
+
 #page-header.home-ruta {
   height: 100vh;
   background-position: center;

@@ -84,7 +84,7 @@
                     top: 0;
                     right: 0;
                 }
-                @extend resaltado-modulos;
+                @extend %resaltado-modulos;
             }
             .chapter-title {
                 line-height: 1.2;
