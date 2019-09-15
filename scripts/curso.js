@@ -1,4 +1,5 @@
 document.addEventListener('hashchange', function() {
+    console.log("entra");
     if (document.getElementById('section-0').classList.contains('state-visible') == true) {
         document.getElementById('moodle-page').classList.add('home-ruta');
     }
