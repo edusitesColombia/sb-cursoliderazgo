@@ -22,6 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 document.addEventListener("load", function() {
     if (document.getElementById('page-header').classList.contains('home-ruta') == true) {
-        document.getElementById('section-0').remove('state-visible');
+        document.getElementById('section-0').classList.remove('state-visible');
     }
 });
