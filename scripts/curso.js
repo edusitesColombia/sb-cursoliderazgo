@@ -2,8 +2,7 @@ var section0 = document.getElementById('section-0');
 var identPrincipal = document.getElementById('moodle-page');
 
 function insertaClaseRuta() {
-
-    if (identPrincipal.classList.contains('por-defecto')) {
+    if (identPrincipal.classList.contains('por-defecto') === true) {
         identPrincipal.classList.remove('por-defecto');
     }
     identPrincipal.classList.add('home-ruta');
@@ -11,8 +10,7 @@ function insertaClaseRuta() {
 
 
 function insertaClasePorDefecto() {
-
-    if (identPrincipal.classList.contains('home-ruta')) {
+    if (identPrincipal.classList.contains('home-ruta') === true) {
         identPrincipal.classList.remove('home-ruta');
     }
     identPrincipal.classList.add('por-defecto');
