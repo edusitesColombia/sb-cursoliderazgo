@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log('Cargando js');
     let elementoComparar = document.getElementById('section-0');
     if (elementoComparar.classList.contains('state-visible') === true) {
-        let elementoBuscar = document.getElementsById('page-header');
+        let elementoBuscar = document.getElementById('page-header');
         agregarInformacion(elementoBuscar, elementoComparar, 'home-ruta');
     }
 
