@@ -7,10 +7,15 @@ function agregarInformacion(coleccion, comparar, insertar) {
         }
     }
 }
+
 document.addEventListener("DOMContentLoaded", function() {
-    let elementoComparar = document.getElementById(section - 0);
-    if (elementoComparar.classList.contains(state - visible) === true) {
+    let elementoComparar = document.getElementById('section-0');
+    if (elementoComparar.classList.contains('state-visible') === true) {
         let elementoBuscar = document.getElementsById(page - header);
         agregarInformacion(elementoBuscar, elementoComparar, 'home-ruta');
     }
+    if () {
+
+    }
+    let elementoBuscado = document.getElementById(elemento);
 })
