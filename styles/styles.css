@@ -396,7 +396,7 @@ body#page-course-view-topics section#region-main .course-content {
 }
 
 .por-defecto #chapters li.snap-visible-section {
-  display: initial;
+  display: block;
 }
 
 .por-defecto #chapters li .chapter-title {
@@ -425,7 +425,7 @@ body#page-course-view-topics section#region-main .course-content {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 60vh;
+  height: 45vh;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -523,8 +523,8 @@ body#page-course-view-topics section#region-main .course-content {
   content: 'Bienvenido al curso';
   display: block;
   color: #2b2b2b;
-  text-transform: 1.3rem;
-  font-size: initial;
+  text-transform: initial;
+  font-size: 1.3rem;
   font-weight: inherit;
 }
 
@@ -545,10 +545,6 @@ body#page-course-view-topics section#region-main .course-content {
 
 .home-ruta #region-main {
   display: none;
-}
-
-:root {
-  font-size: 20px;
 }
 
 body {

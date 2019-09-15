@@ -63,7 +63,7 @@
     #chapters {
         li {
             &.snap-visible-section {
-                display: initial;
+                display: block;
             }
             .chapter-title {
                 @include textos-ruta($blanco, 2rem)
@@ -85,7 +85,7 @@
             #course-toc {
                 display: flex;
                 flex-direction: column;
-                height: 60vh;
+                height: 45vh;
                 justify-content: flex-end;
                 width: 100%;
                 background-color: transparent;
@@ -148,7 +148,7 @@
                 &::before {
                     content: 'Bienvenido al curso';
                     display: block;
-                    @include textos-ruta($negro, initial, 1.3rem, inherit);
+                    @include textos-ruta($negro, 1.3rem, initial, inherit);
                 }
                 a,
                 a:hover {
