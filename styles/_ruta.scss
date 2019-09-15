@@ -60,18 +60,22 @@
 }
 
 .por-defecto {
-    #chapters {
-        li {
-            &.snap-visible-section {
-                display: block;
+    #page-header {
+        #page-mast {
+            #chapters {
+                li {
+                    &.snap-visible-section {
+                        display: block;
+                    }
+                    .chapter-title {
+                        @include textos-ruta($blanco, 2rem)
+                    }
+                }
+                .toc-footer {
+                    margin-top: 30px;
+                    margin-bottom: 15px;
+                }
             }
-            .chapter-title {
-                @include textos-ruta($blanco, 2rem)
-            }
-        }
-        .toc-footer {
-            margin-top: 30px;
-            margin-bottom: 15px;
         }
     }
 }
