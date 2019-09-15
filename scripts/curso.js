@@ -4,8 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (seccion0.classList.contains('state-visible') == true) {
         document.getElementById('moodle-page').classList.add('home-ruta');
-    } else {
-        document.getElementById('moodle-page').classList.add('por-defecto');
     }
 
     if (document.getElementById('moodle-page').classList.contains('home-ruta') == true) {
@@ -19,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     for (i = 0; i < modulos.length; i++) {
         modulos[i].addEventListener('click', function() {
             document.getElementById('moodle-page').classList.remove('home-ruta');
+            document.getElementById('moodle-page').classList.add('por-defecto');
         });
     }
 });
