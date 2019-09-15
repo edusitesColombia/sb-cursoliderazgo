@@ -32,10 +32,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-
-
-window.addEventListener('load', function() {
-    if (location.hash != null) {
-        insertaClasePorDefecto();
-    }
-});
