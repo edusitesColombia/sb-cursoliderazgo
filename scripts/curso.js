@@ -1,23 +1,21 @@
 function insertaClaseRuta() {
     if (document.getElementById('section-0').classList.contains('state-visible') === true) {
-        identPrincipal.classList.remove('por-defecto');
-        identPrincipal.classList.add('home-ruta');
+        document.getElementById('moodle-page').classList.remove('por-defecto');
+        document.getElementById('moodle-page').classList.add('home-ruta');
     }
 }
 
 function insertaClasePorDefecto() {
-    if (section0.classList.contains('state-visible') === false) {
-        identPrincipal.classList.remove('home-ruta');
-        identPrincipal.classList.add('por-defecto');
+    if (document.getElementById('section-0').classList.contains('state-visible') === false) {
+        document.getElementById('moodle-page').classList.remove('home-ruta');
+        document.getElementById('moodle-page').classList.add('por-defecto');
     }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    var section0 = document.getElementById('section-0');
-    var identPrincipal = document.getElementById('moodle-page');
     console.log("cuando carga");
     insertaClaseRuta();
-    if (identPrincipal.classList.contains('home-ruta') === true) {
+    if (document.getElementById('moodle-page').classList.contains('home-ruta') === true) {
         let textoBienvenida = document.createElement('p');
         textoBienvenida.classList.add('texto-bienvenida');
         let titulo = document.getElementById('page-mast').firstElementChild;
@@ -34,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 window.addEventListener('hashchange', function() {
-    if (identPrincipal.classList.contains('por-defecto') === true) {
+    if (document.getElementById('moodle-page').classList.contains('por-defecto') === true) {
         insertaClaseRuta();
     } else if (location.hash != null) {
         insertaClasePorDefecto();
