@@ -1,6 +1,3 @@
-var section0 = document.getElementById('section-0');
-var identPrincipal = document.getElementById('moodle-page');
-
 function insertaClaseRuta() {
     if (document.getElementById('section-0').classList.contains('state-visible') === true) {
         identPrincipal.classList.remove('por-defecto');
@@ -9,13 +6,15 @@ function insertaClaseRuta() {
 }
 
 function insertaClasePorDefecto() {
-    if (document.getElementById('section-0').classList.contains('state-visible') === false) {
+    if (section0.classList.contains('state-visible') === false) {
         identPrincipal.classList.remove('home-ruta');
         identPrincipal.classList.add('por-defecto');
     }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    var section0 = document.getElementById('section-0');
+    var identPrincipal = document.getElementById('moodle-page');
     console.log("cuando carga");
     insertaClaseRuta();
     if (identPrincipal.classList.contains('home-ruta') === true) {
