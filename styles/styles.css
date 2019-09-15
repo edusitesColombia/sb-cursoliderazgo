@@ -380,6 +380,13 @@ body#page-course-view-topics section#region-main .course-content {
 #page-header #page-mast #chapters li {
   display: none;
   counter-increment: modulo;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 
 #page-header #page-mast #chapters li .text::before {
@@ -393,6 +400,14 @@ body#page-course-view-topics section#region-main .course-content {
 
 #page-header #page-mast .texto-bienvenida {
   display: none;
+}
+
+.por-defecto #page-header #page-mast h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: normal;
+  text-shadow: none;
 }
 
 .por-defecto #page-header #page-mast #chapters li.snap-visible-section {
@@ -415,6 +430,34 @@ body#page-course-view-topics section#region-main .course-content {
   height: 100vh;
   background-position: center;
   background-size: cover;
+}
+
+.home-ruta #page-header #page-mast h1 {
+  color: #006d38;
+  text-transform: bold;
+  font-size: 1.6rem;
+  font-weight: normal;
+  text-shadow: none;
+}
+
+.home-ruta #page-header #page-mast h1::before {
+  content: 'Bienvenido al curso';
+  display: block;
+  color: #2b2b2b;
+  text-transform: initial;
+  font-size: 1.3rem;
+  font-weight: inherit;
+}
+
+.home-ruta #page-header #page-mast h1 a,
+.home-ruta #page-header #page-mast h1 a:hover {
+  color: #006d38;
+  text-shadow: none;
+}
+
+.home-ruta #page-header #page-mast .texto-bienvenida {
+  display: block;
+  max-width: 530px;
 }
 
 .home-ruta #page-header #page-mast #course-toc {
@@ -445,13 +488,6 @@ body#page-course-view-topics section#region-main .course-content {
       flex-basis: 25%;
   margin-left: .7em;
   padding: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
 }
 
 .home-ruta #page-header #page-mast #chapters li .text {
@@ -462,7 +498,6 @@ body#page-course-view-topics section#region-main .course-content {
 }
 
 .home-ruta #page-header #page-mast #chapters li .text::before {
-  content: "Módulo " counter(modulo);
   width: 48%;
   display: inline-block;
 }
@@ -509,34 +544,6 @@ body#page-course-view-topics section#region-main .course-content {
 .home-ruta #page-header #page-mast #chapters .chapter-title {
   line-height: 1.2;
   color: #fadc5d;
-}
-
-.home-ruta #page-header #page-mast > h1 {
-  color: #006d38;
-  text-transform: bold;
-  font-size: 1.6rem;
-  font-weight: normal;
-  text-shadow: none;
-}
-
-.home-ruta #page-header #page-mast > h1::before {
-  content: 'Bienvenido al curso';
-  display: block;
-  color: #2b2b2b;
-  text-transform: initial;
-  font-size: 1.3rem;
-  font-weight: inherit;
-}
-
-.home-ruta #page-header #page-mast > h1 a,
-.home-ruta #page-header #page-mast > h1 a:hover {
-  color: #006d38;
-  text-shadow: none;
-}
-
-.home-ruta #page-header #page-mast .texto-bienvenida {
-  display: block;
-  max-width: 530px;
 }
 
 .home-ruta #page-header .course-content #section-0 .state-visible {

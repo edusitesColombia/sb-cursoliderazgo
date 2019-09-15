@@ -42,7 +42,10 @@
             li {
                 display: none;
                 counter-increment: modulo;
+                display: flex;
+                flex-direction: column-reverse;
                 .text {
+                    @include textos-ruta($amarillo, .7rem);
                     &::before {
                         content: 'Módulo ' counter(modulo);
                     }
@@ -62,6 +65,10 @@
 .por-defecto {
     #page-header {
         #page-mast {
+            h1 {
+                @include textos-ruta($blanco, .7rem);
+                text-shadow: none;
+            }
             #chapters {
                 li {
                     &.snap-visible-section {
@@ -86,6 +93,24 @@
         background-position: center;
         background-size: cover;
         #page-mast {
+            h1 {
+                @include textos-ruta($verde, 1.6rem, bold);
+                text-shadow: none;
+                &::before {
+                    content: 'Bienvenido al curso';
+                    display: block;
+                    @include textos-ruta($negro, 1.3rem, initial, inherit);
+                }
+                a,
+                a:hover {
+                    color: $verde;
+                    text-shadow: none;
+                }
+            }
+            .texto-bienvenida {
+                display: block;
+                max-width: 530px;
+            }
             #course-toc {
                 display: flex;
                 flex-direction: column;
@@ -101,12 +126,9 @@
                     flex-basis: 25%;
                     margin-left: .7em;
                     padding: 30px;
-                    display: flex;
-                    flex-direction: column-reverse;
                     .text {
                         @include textos-ruta($blanco, 1rem);
                         &::before {
-                            content: 'Módulo ' counter(modulo);
                             width: 48%;
                             display: inline-block;
                         }
@@ -146,24 +168,6 @@
                     color: $amarillo;
                 }
             }
-            &>h1 {
-                @include textos-ruta($verde, 1.6rem, bold);
-                text-shadow: none;
-                &::before {
-                    content: 'Bienvenido al curso';
-                    display: block;
-                    @include textos-ruta($negro, 1.3rem, initial, inherit);
-                }
-                a,
-                a:hover {
-                    color: $verde;
-                    text-shadow: none;
-                }
-            }
-            .texto-bienvenida {
-                display: block;
-                max-width: 530px;
-            }
         }
         .course-content {
             #section-0 {
@@ -176,4 +180,10 @@
     #region-main {
         display: none;
     }
+}
+
+display: none;
+
+}
+
 }
