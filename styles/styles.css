@@ -395,18 +395,18 @@ body#page-course-view-topics section#region-main .course-content {
   display: none;
 }
 
-.por-defecto #chapters li.snap-visible-section {
+.por-defecto #page-header #page-mast #chapters li.snap-visible-section {
   display: block;
 }
 
-.por-defecto #chapters li .chapter-title {
+.por-defecto #page-header #page-mast #chapters li .chapter-title {
   color: white;
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: normal;
 }
 
-.por-defecto #chapters .toc-footer {
+.por-defecto #page-header #page-mast #chapters .toc-footer {
   margin-top: 30px;
   margin-bottom: 15px;
 }
