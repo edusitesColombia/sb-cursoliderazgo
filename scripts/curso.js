@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (seccion0.classList.contains('state-visible') == true) {
         document.getElementById('moodle-page').classList.add('home-ruta');
+    } else {
+        document.getElementById('moodle-page').classList.add('por-defecto');
     }
 
     if (document.getElementById('moodle-page').classList.contains('home-ruta') == true) {

@@ -42,14 +42,7 @@
             li {
                 display: none;
                 counter-increment: modulo;
-                &.snap-visible-section {
-                    display: initial;
-                }
-                a {
-                    @include textos-ruta($blanco, 2rem)
-                }
                 .text {
-                    @include textos-ruta($amarillo, 1rem);
                     &::before {
                         content: 'Módulo ' counter(modulo);
                     }
@@ -62,6 +55,23 @@
         }
         .texto-bienvenida {
             display: none;
+        }
+    }
+}
+
+.por-defecto {
+    #chapters {
+        li {
+            &.snap-visible-section {
+                display: initial;
+            }
+            .chapter-title {
+                @include textos-ruta($blanco, 2rem)
+            }
+        }
+        .toc-footer {
+            margin-top: 30px;
+            margin-bottom: 15px;
         }
     }
 }

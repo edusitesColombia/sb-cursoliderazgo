@@ -382,24 +382,6 @@ body#page-course-view-topics section#region-main .course-content {
   counter-increment: modulo;
 }
 
-#page-header #page-mast #chapters li.snap-visible-section {
-  display: initial;
-}
-
-#page-header #page-mast #chapters li a {
-  color: white;
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: normal;
-}
-
-#page-header #page-mast #chapters li .text {
-  color: #fadc5d;
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: normal;
-}
-
 #page-header #page-mast #chapters li .text::before {
   content: "Módulo " counter(modulo);
 }
@@ -411,6 +393,22 @@ body#page-course-view-topics section#region-main .course-content {
 
 #page-header #page-mast .texto-bienvenida {
   display: none;
+}
+
+.por-defecto #chapters li.snap-visible-section {
+  display: initial;
+}
+
+.por-defecto #chapters li .chapter-title {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.por-defecto #chapters .toc-footer {
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 .home-ruta #page-header {
