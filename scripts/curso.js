@@ -41,7 +41,7 @@ window.addEventListener('hashchange', function() {
     }
 });
 window.addEventListener('load', function() {
-    if (location.hash != null) {
+    if (location.hash != undefined) {
         console.log('carga' + location.hash);
         insertaClasePorDefecto();
     }
