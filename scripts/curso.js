@@ -1,5 +1,4 @@
-document.addEventListener('hashchange', function() {
-    console.log("entra");
+document.addEventListener('DOMContentLoaded', function() {
     if (document.getElementById('section-0').classList.contains('state-visible') == true) {
         document.getElementById('moodle-page').classList.add('home-ruta');
     }
@@ -18,4 +17,9 @@ document.addEventListener('hashchange', function() {
             document.getElementById('moodle-page').classList.add('por-defecto');
         });
     }
+
+    document.addEventListener('hashchange', function() {
+        document.getElementById('moodle-page').classList.remove('home-ruta');
+        document.getElementById('moodle-page').classList.remove('por-defecto');
+    });
 });
