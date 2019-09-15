@@ -38,16 +38,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
-window.addEventListener('hashchange', function() {
-    if (identPrincipal.classList.contains('por-defecto') === true) {
-        insertaClaseRuta();
-    } else if (location.hash != null) {
-        insertaClasePorDefecto();
-    }
-});
-
-window.addEventListener('load', function() {
-    if (location.hash != null) {
-        insertaClasePorDefecto();
-    }
-});
