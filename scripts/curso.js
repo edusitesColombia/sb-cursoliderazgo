@@ -42,7 +42,7 @@ window.addEventListener('hashchange', function() {
 });
 window.addEventListener('load', function() {
     if (location.hash != null) {
-        console.log('carga');
+        console.log('carga' + location.hash);
         insertaClasePorDefecto();
     }
 });
