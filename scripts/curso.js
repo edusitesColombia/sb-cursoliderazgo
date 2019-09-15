@@ -1,18 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
     console.log('Cargando js');
-    let elementoComparar = document.getElementById('section-0');
-    if (elementoComparar.classList.contains('state-visible') == true) {
-        document.getElementById('page-header').classList.add('home-ruta');
-    }
+    let seccion0 = document.getElementById('section-0');
+    let s0Visible = seccion0.classList.contains('state-visible');
 
-    if (elementoComparar.classList.contains('home-ruta') == true) {
+    if (s0Visible == true) {
+        document.getElementById('page-header').classList.toggle('home-ruta', true);
         let textoBienvenida = document.createElement('p');
         textoBienvenida.classList.add('texto-bienvenida');
         let titulo = document.getElementById('page-mast').firstElementChild;
         textoBienvenida.innerText = 'Esperamos que este espacio virtual, permita a todos los docentes acercarse a reflexiones y ejercicios que promuevan su capacidad de liderazgo en sus contextos escolares';
         titulo.insertAdjacentElement(afterend, textoBienvenida);
-
-
+    }
+    if (s0Visible == false) {
+        document.getElementById('page-header').classList.toggle('home-ruta', false);
     }
 
 });
