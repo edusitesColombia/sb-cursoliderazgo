@@ -1,14 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log("cuando carga");
-    document.getElementById('moodle-page').classList.remove('home-ruta');
-    document.getElementById('moodle-page').classList.remove('por-defecto');
-
-    if (document.getElementById('section-0').classList.contains('state-visible') == true) {
-        console.log(document.getElementById('section-0').classList.contains('state-visible'));
+    if (document.getElementById('section-0').classList.contains('state-visible') === true) {
+        console.log(document.getElementById('section-0').classList);
         document.getElementById('moodle-page').classList.add('home-ruta');
     }
 
-    if (document.getElementById('moodle-page').classList.contains('home-ruta') == true) {
+    if (document.getElementById('moodle-page').classList.contains('home-ruta') === true) {
         let textoBienvenida = document.createElement('p');
         textoBienvenida.classList.add('texto-bienvenida');
         let titulo = document.getElementById('page-mast').firstElementChild;
