@@ -360,10 +360,6 @@ body#page-course-view-topics section#region-main .course-content {
   color: #2b2b2b;
 }
 
-#page-header .breadcrumb-nav {
-  visibility: hidden;
-}
-
 #page-header #page-mast #toc-desktop-menu-heading {
   display: none;
 }
@@ -378,6 +374,7 @@ body#page-course-view-topics section#region-main .course-content {
 }
 
 #page-header #page-mast #chapters li {
+  border: none;
   counter-increment: modulo;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -406,6 +403,10 @@ body#page-course-view-topics section#region-main .course-content {
 
 #page-header #page-mast .texto-bienvenida {
   display: none;
+}
+
+.por-defecto #page-header .breadcrumb-nav {
+  visibility: hidden;
 }
 
 .por-defecto #page-header #page-mast > h1 {

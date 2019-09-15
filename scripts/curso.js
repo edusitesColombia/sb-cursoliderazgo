@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Cargando js');
-    let seccion0 = document.getElementById('section-0');
 
-    if (seccion0.classList.contains('state-visible') == true) {
+    if (document.getElementById('section-0').classList.contains('state-visible') == true) {
         document.getElementById('moodle-page').classList.add('home-ruta');
     }
 

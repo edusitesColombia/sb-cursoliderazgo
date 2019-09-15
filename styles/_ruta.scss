@@ -26,9 +26,6 @@
 }
 
 #page-header {
-    .breadcrumb-nav {
-        visibility: hidden;
-    }
     #page-mast {
         #toc-desktop-menu-heading {
             display: none;
@@ -40,6 +37,7 @@
             list-style: none;
             counter-reset: modulo -1;
             li {
+                border: none;
                 counter-increment: modulo;
                 display: flex;
                 flex-direction: column-reverse;
@@ -63,6 +61,9 @@
 
 .por-defecto {
     #page-header {
+        .breadcrumb-nav {
+            visibility: hidden;
+        }
         #page-mast {
             &>h1 {
                 @include textos-ruta($blanco, .7rem);
