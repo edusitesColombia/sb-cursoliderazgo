@@ -30,8 +30,11 @@ window.addEventListener('hashchange', function() {
     if (control.classList.contains('por-defecto') === true) {
         console.log("contiene por defecto");
         control.classList.remove('por-defecto');
-        window.addEventListener('load', function() {
-            insertaClaseRuta();
-        });
+        if (location.hash != null) {
+            window.addEventListener('load', function() {
+                insertaClaseRuta();
+            });
+        }
+
     }
 });
