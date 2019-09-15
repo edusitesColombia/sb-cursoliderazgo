@@ -1,5 +1,5 @@
-let section0 = document.getElementById('section-0');
-let identPrincipal = document.getElementById('moodle-page');
+var section0 = document.getElementById('section-0');
+var identPrincipal = document.getElementById('moodle-page');
 
 function insertaClaseRuta() {
     if (section0.classList.contains('state-visible') === true) {
