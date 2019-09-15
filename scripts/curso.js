@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 });
-document.addEventListener('hashchange', function() {
+window.addEventListener('hashchange', function() {
     console.log("cuando cambio");
     let control = document.getElementById('moodle-page');
     if (control.classList.contains('por-defecto') === true) {
