@@ -20,9 +20,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    document.addEventListener('hashchange', function() {
-        console.log("cuando cambia");
-        document.getElementById('moodle-page').classList.remove('home-ruta');
-        document.getElementById('moodle-page').classList.remove('por-defecto');
-    });
+
+});
+document.addEventListener('hashchange', function() {
+    console.log("cuando cambia");
+    document.getElementById('moodle-page').classList.remove('home-ruta');
+    document.getElementById('moodle-page').classList.remove('por-defecto');
 });
