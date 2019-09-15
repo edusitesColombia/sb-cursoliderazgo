@@ -28,7 +28,12 @@ window.addEventListener('hashchange', function() {
     console.log("cuando cambio");
     let control = document.getElementById('moodle-page');
     if (control.classList.contains('por-defecto') === true) {
+        console.log("contiene por defecto");
         control.classList.remove('por-defecto');
-        insertaClaseRuta();
+
     }
+});
+window.addEventListener('load', function() {
+    console.log("cuando cambio");
+
 });
