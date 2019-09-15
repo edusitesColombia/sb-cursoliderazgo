@@ -102,6 +102,9 @@
                 color: $amarillo;
             }
         }
+        .toc-footer {
+            margin-top: 30px;
+        }
         &>h1 {
             @include textos-ruta($verde, uppercase, 1.6rem, bold);
             text-shadow: none;
