@@ -14,10 +14,6 @@ function insertaClasePorDefecto() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    if (location.hash != null) {
-        console.log('clase por defecto');
-        insertaClasePorDefecto();
-    }
     if (section0.classList.contains('state-visible') === true) {
         insertaClaseRuta();
     }
@@ -40,7 +36,13 @@ document.addEventListener('DOMContentLoaded', function() {
 window.addEventListener('hashchange', function() {
 
     if (location.hash != null) {
-        console.log('no entra');
+        console.log('en cambio');
+        insertaClasePorDefecto();
+    }
+});
+window.addEventListener('load', function() {
+    if (location.hash != null) {
+        console.log('carga');
         insertaClasePorDefecto();
     }
 });
