@@ -1,13 +1,24 @@
+let section0 = document.getElementById('section-0');
+let identPrincipal = document.getElementById('moodle-page');
+
 function insertaClaseRuta() {
-    if (document.getElementById('section-0').classList.contains('state-visible') === true) {
-        document.getElementById('moodle-page').classList.add('home-ruta');
+    if (section0.classList.contains('state-visible') === true) {
+        identPrincipal.classList.remove('por-defecto');
+        identPrincipal.classList.add('home-ruta');
+    }
+}
+
+function insertaClasePorDefecto() {
+    if (section0.classList.contains('state-visible') === false) {
+        identPrincipal.classList.remove('home-ruta');
+        identPrincipal.classList.add('por-defecto');
     }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
     console.log("cuando carga");
     insertaClaseRuta();
-    if (document.getElementById('moodle-page').classList.contains('home-ruta') === true) {
+    if (identPrincipal.classList.contains('home-ruta') === true) {
         let textoBienvenida = document.createElement('p');
         textoBienvenida.classList.add('texto-bienvenida');
         let titulo = document.getElementById('page-mast').firstElementChild;
@@ -18,25 +29,20 @@ document.addEventListener('DOMContentLoaded', function() {
     let modulos = document.getElementsByClassName('chapter-title');
     for (i = 0; i < modulos.length; i++) {
         modulos[i].addEventListener('click', function() {
-            document.getElementById('moodle-page').classList.remove('home-ruta');
-            document.getElementById('moodle-page').classList.add('por-defecto');
+            insertaClasePorDefecto();
         });
     }
 
 });
 window.addEventListener('hashchange', function() {
-    console.log("cuando cambio");
-    let control = document.getElementById('moodle-page');
-    if (control.classList.contains('por-defecto') === true) {
-        console.log("contiene por defecto");
-        control.classList.remove('por-defecto');
+    if (identPrincipal.classList.contains('por-defecto') === true) {
         window.addEventListener('load', function() {
             insertaClaseRuta();
         });
     }
     if (location.hash != null) {
         window.addEventListener('load', function() {
-            document.getElementById('moodle-page').classList.add('por-defecto');
+            insertaClasePorDefecto();
         });
     }
 });
