@@ -5,6 +5,7 @@ function insertaClaseRuta() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    console.log("cuando cambio");
     insertaClaseRuta();
     if (document.getElementById('moodle-page').classList.contains('home-ruta') === true) {
         let textoBienvenida = document.createElement('p');
