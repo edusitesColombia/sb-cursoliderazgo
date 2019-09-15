@@ -1,10 +1,13 @@
-@mixin textos-ruta ($color, $transform, $tamano) {
+@mixin textos-ruta ($color, $transform, $tamano, $peso:normal) {
     color: $color;
     text-transform: $transform;
-    font-size: $tamano;
+    font: {
+        size: $tamano;
+        weight: $peso;
+    }
 }
 
-@mixin posicion-otros-elementos ($position, $top:0, $right:0) {
+@mixin posicion-otros-elementos ($position, $right, $top:0) {
     position: $position;
     top: $top;
     right: $right;
@@ -84,13 +87,13 @@
                     display: none;
                 }
                 &:nth-child(2) {
-                    @include posicion-otros-elementos(absolute, 0, 0);
+                    @include posicion-otros-elementos(absolute, 0);
                 }
                 &:nth-child(n+3):not(:last-child) {
                     background-color: $verde;
                 }
                 &:last-child {
-                    @include posicion-otros-elementos(absolute, 0);
+                    @include posicion-otros-elementos(absolute, 0, 0);
                 }
                 @extend %resaltado-modulos;
             }
@@ -100,16 +103,17 @@
             }
         }
         &>h1 {
-            @include textos-ruta($verde, uppercase, 1.6rem);
+            @include textos-ruta($verde, uppercase, 1.6rem, bold);
             text-shadow: none;
             &::before {
                 content: 'Bienvenido al curso';
                 display: block;
-                @include textos-ruta($negro, initial, 1.3rem);
+                @include textos-ruta($negro, initial, 1.3rem, inherit);
             }
             a,
             a:hover {
                 color: $verde;
+                text-shadow: none;
             }
         }
     }
