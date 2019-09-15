@@ -14,7 +14,10 @@ function insertaClasePorDefecto() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log("cuando carga");
+    if (location.hash != null) {
+        console.log('clase por defecto');
+        insertaClasePorDefecto();
+    }
     if (section0.classList.contains('state-visible') === true) {
         insertaClaseRuta();
     }
