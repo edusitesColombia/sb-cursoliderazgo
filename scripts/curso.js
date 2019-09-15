@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
     let seccion0 = document.getElementById('section-0');
 
     if (seccion0.classList.contains('state-visible') == true) {
-        document.getElementById('page-header').classList.add('home-ruta');
+        document.getElementById('moodle-page').classList.add('home-ruta');
     }
 
-    if (document.getElementById('page-header').classList.contains('home-ruta') == true) {
+    if (document.getElementById('moodle-page').classList.contains('home-ruta') == true) {
         let textoBienvenida = document.createElement('p');
         textoBienvenida.classList.add('texto-bienvenida');
         let titulo = document.getElementById('page-mast').firstElementChild;
@@ -16,12 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let modulos = document.getElementsByClassName('chapter-title');
     for (i = 0; i < modulos.length; i++) {
         modulos[i].addEventListener('click', function() {
-            document.getElementById('page-header').classList.remove('home-ruta');
+            document.getElementById('moodle-page').classList.remove('home-ruta');
         });
-    }
-});
-document.addEventListener("load", function() {
-    if (document.getElementById('page-header').classList.contains('home-ruta') == true) {
-        document.getElementById('section-0').classList.remove('state-visible');
     }
 });
