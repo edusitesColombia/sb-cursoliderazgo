@@ -378,7 +378,6 @@ body#page-course-view-topics section#region-main .course-content {
 }
 
 #page-header #page-mast #chapters li {
-  display: none;
   counter-increment: modulo;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -420,6 +419,10 @@ body#page-course-view-topics section#region-main .course-content {
 .por-defecto #page-header #page-mast > h1 a,
 .por-defecto #page-header #page-mast > h1 a:hover {
   text-shadow: none;
+}
+
+.por-defecto #page-header #page-mast #chapters li {
+  display: none;
 }
 
 .por-defecto #page-header #page-mast #chapters li.snap-visible-section {

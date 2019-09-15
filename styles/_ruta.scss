@@ -40,7 +40,6 @@
             list-style: none;
             counter-reset: modulo -1;
             li {
-                display: none;
                 counter-increment: modulo;
                 display: flex;
                 flex-direction: column-reverse;
@@ -75,6 +74,7 @@
             }
             #chapters {
                 li {
+                    display: none;
                     &.snap-visible-section {
                         display: block;
                     }
