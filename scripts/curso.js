@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log("cuando carga");
     if (document.getElementById('section-0').classList.contains('state-visible') == true) {
+        console.log(document.getElementById('section-0').classList.contains('state-visible'));
         document.getElementById('moodle-page').classList.add('home-ruta');
     }
 
