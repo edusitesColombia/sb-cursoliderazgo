@@ -9,10 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
         textoBienvenida.classList.add('texto-bienvenida');
         let titulo = document.getElementById('page-mast').firstElementChild;
         textoBienvenida.innerText = 'Esperamos que este espacio virtual, permita a todos los docentes acercarse a reflexiones y ejercicios que promuevan su capacidad de liderazgo en sus contextos escolares';
-        titulo.insertAdjacentElement(afterend, textoBienvenida);
+        titulo.insertAdjacentElement('afterend', textoBienvenida);
     }
-    if (s0Visible == false) {
-        document.getElementById('page-header').classList.toggle('home-ruta', false);
-    }
-
+    document.getElementsByClassName('chapter-title').onclick = document.getElementById('page-header').classList.toggle('home-ruta', false);
 });
