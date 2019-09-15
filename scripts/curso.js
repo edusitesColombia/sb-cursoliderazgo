@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     if (document.getElementById('page-header').classList.contains('home-ruta') == true) {
-        document.getElementById('section-0').classList.remove('state-visible');
         let textoBienvenida = document.createElement('p');
         textoBienvenida.classList.add('texto-bienvenida');
         let titulo = document.getElementById('page-mast').firstElementChild;
@@ -19,5 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
         modulos[i].addEventListener('click', function() {
             document.getElementById('page-header').classList.remove('home-ruta');
         });
+    }
+});
+document.addEventListener("load", function() {
+    if (document.getElementById('page-header').classList.contains('home-ruta') == true) {
+        document.getElementById('section-0').remove('state-visible');
     }
 });
