@@ -18,3 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+document.addEventListener('hashchange', function() {
+    document.getElementById('moodle-page').classList.remove('home-ruta');
+    document.getElementById('moodle-page').classList.remove('por-defecto');
+});
