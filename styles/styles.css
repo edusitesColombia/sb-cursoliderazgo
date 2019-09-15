@@ -348,6 +348,228 @@ body#page-course-view-topics section#region-main .course-content {
   content: "gato" !important;
 }
 
+.home-ruta #page-header #page-mast #chapters li:hover {
+  background-color: #fadc5d !important;
+}
+
+.home-ruta #page-header #page-mast #chapters li:hover .chapter-title {
+  color: #006d38;
+}
+
+.home-ruta #page-header #page-mast #chapters li:hover .text {
+  color: #2b2b2b;
+}
+
+#page-header #page-mast #toc-desktop-menu-heading {
+  display: none;
+}
+
+#page-header #page-mast #toc-search {
+  display: none;
+}
+
+#page-header #page-mast #chapters {
+  list-style: none;
+  counter-reset: modulo -1;
+}
+
+#page-header #page-mast #chapters li {
+  border: none;
+  counter-increment: modulo;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+#page-header #page-mast #chapters li .text {
+  color: #fadc5d;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: normal;
+}
+
+#page-header #page-mast #chapters li .text::before {
+  content: "Módulo " counter(modulo);
+}
+
+#page-header #page-mast #chapters .toc-footer {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+#page-header #page-mast .texto-bienvenida {
+  display: none;
+}
+
+.por-defecto #page-header .breadcrumb-nav {
+  visibility: hidden;
+}
+
+.por-defecto #page-header #page-mast > h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: normal;
+  text-shadow: none;
+}
+
+.por-defecto #page-header #page-mast > h1 a,
+.por-defecto #page-header #page-mast > h1 a:hover {
+  text-shadow: none;
+}
+
+.por-defecto #page-header #page-mast #chapters li {
+  display: none;
+}
+
+.por-defecto #page-header #page-mast #chapters li.snap-visible-section {
+  display: block;
+}
+
+.por-defecto #page-header #page-mast #chapters li .chapter-title {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.por-defecto #page-header #page-mast #chapters .toc-footer {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.home-ruta #page-header {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.home-ruta #page-header #page-mast > h1 {
+  color: #006d38;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+.home-ruta #page-header #page-mast > h1::before {
+  content: 'Bienvenido al curso';
+  display: block;
+  color: #2b2b2b;
+  text-transform: initial;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.home-ruta #page-header #page-mast > h1 a,
+.home-ruta #page-header #page-mast > h1 a:hover {
+  color: #006d38;
+  text-shadow: none;
+}
+
+.home-ruta #page-header #page-mast .texto-bienvenida {
+  display: block;
+  max-width: 530px;
+}
+
+.home-ruta #page-header #page-mast #course-toc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 45vh;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  background-color: transparent;
+}
+
+.home-ruta #page-header #page-mast #chapters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100%;
+}
+
+.home-ruta #page-header #page-mast #chapters li {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  margin-left: .7em;
+  padding: 30px;
+}
+
+.home-ruta #page-header #page-mast #chapters li .text {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.home-ruta #page-header #page-mast #chapters li .text::before {
+  width: 48%;
+  display: inline-block;
+}
+
+.home-ruta #page-header #page-mast #chapters li .text::after {
+  display: block;
+  border-bottom: 1px solid white;
+  width: 100%;
+  content: '';
+  margin: 10px 0 10px 0;
+}
+
+.home-ruta #page-header #page-mast #chapters li .text small {
+  font-size: 0.7rem !important;
+  text-align: right;
+  width: 50%;
+  display: inline-block;
+}
+
+.home-ruta #page-header #page-mast #chapters li .text .snap-section-complete {
+  display: none;
+}
+
+.home-ruta #page-header #page-mast #chapters li:first-child {
+  display: none;
+}
+
+.home-ruta #page-header #page-mast #chapters li:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: unset;
+}
+
+.home-ruta #page-header #page-mast #chapters li:nth-child(n+3):not(:last-child) {
+  background-color: #006d38;
+}
+
+.home-ruta #page-header #page-mast #chapters li:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.home-ruta #page-header #page-mast #chapters .chapter-title {
+  line-height: 1.2;
+  color: #fadc5d;
+}
+
+.home-ruta #page-header .course-content #section-0 .state-visible {
+  display: none;
+}
+
+.home-ruta #region-main {
+  display: none;
+}
+
 body {
   text-rendering: optimizelegibility;
 }
