@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log("cuando carga");
 
-    function domUpdateDelayExperiment() {
-        tellViewerLoading();
-        setTimeout(someActionThatTakesALongTime, 50);
-    }
+
+    tellViewerLoading();
+    setTimeout(someActionThatTakesALongTime, 50);
+
     if (document.getElementById('section-0').classList.contains('state-visible') === true) {
         console.log(document.getElementById('section-0').classList);
         document.getElementById('moodle-page').classList.add('home-ruta');
