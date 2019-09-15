@@ -35,10 +35,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 window.addEventListener('hashchange', function() {
-    if (identPrincipal.classList.contains('por-defecto') === true) {
-        insertaClaseRuta();
-    }
+
     if (location.hash != null) {
+        console.log('no entra');
         insertaClasePorDefecto();
     }
 });
