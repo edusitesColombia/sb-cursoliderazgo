@@ -65,7 +65,7 @@
 .por-defecto {
     #page-header {
         #page-mast {
-            h1 {
+            &>h1 {
                 @include textos-ruta($blanco, .7rem);
                 text-shadow: none;
             }
@@ -93,7 +93,7 @@
         background-position: center;
         background-size: cover;
         #page-mast {
-            h1 {
+            &>h1 {
                 @include textos-ruta($verde, 1.6rem, bold);
                 text-shadow: none;
                 &::before {
