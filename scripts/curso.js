@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('hashchange', function() {
     if (document.getElementById('section-0').classList.contains('state-visible') == true) {
         document.getElementById('moodle-page').classList.add('home-ruta');
     }
@@ -17,8 +17,4 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('moodle-page').classList.add('por-defecto');
         });
     }
-});
-document.addEventListener('hashchange', function() {
-    document.getElementById('moodle-page').classList.remove('home-ruta');
-    document.getElementById('moodle-page').classList.remove('por-defecto');
 });
