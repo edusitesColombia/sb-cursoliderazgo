@@ -389,6 +389,13 @@ body#page-course-view-topics section#region-main .course-content {
           flex-direction: column-reverse;
 }
 
+#page-header #page-mast #chapters li .text {
+  color: #fadc5d;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: normal;
+}
+
 #page-header #page-mast #chapters li .text::before {
   content: "Módulo " counter(modulo);
 }
