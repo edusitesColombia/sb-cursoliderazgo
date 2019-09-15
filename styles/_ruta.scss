@@ -105,8 +105,7 @@
             &::before {
                 content: 'Bienvenido al curso';
                 display: block;
-                text-transform: capitalize;
-                @include textos-ruta($negro, lowercase, 1.3rem);
+                @include textos-ruta($negro, initial, 1.3rem);
             }
             a,
             a:hover {

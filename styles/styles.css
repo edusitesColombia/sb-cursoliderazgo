@@ -480,9 +480,8 @@ body#page-course-view-topics section#region-main .course-content {
 #page-header.home-ruta #page-mast > h1::before {
   content: 'Bienvenido al curso';
   display: block;
-  text-transform: capitalize;
   color: #2b2b2b;
-  text-transform: lowercase;
+  text-transform: initial;
   font-size: 1.3rem;
 }
 
