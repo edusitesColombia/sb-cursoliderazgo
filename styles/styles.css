@@ -360,22 +360,63 @@ body#page-course-view-topics section#region-main .course-content {
   color: #2b2b2b;
 }
 
+#page-header .breadcrumb-nav {
+  visibility: hidden;
+}
+
+#page-header #page-mast #toc-desktop-menu-heading {
+  display: none;
+}
+
+#page-header #page-mast #toc-search {
+  display: none;
+}
+
+#page-header #page-mast #chapters {
+  list-style: none;
+  counter-reset: modulo -1;
+}
+
+#page-header #page-mast #chapters li {
+  display: none;
+  counter-increment: modulo;
+}
+
+#page-header #page-mast #chapters li.snap-visible-section {
+  display: initial;
+}
+
+#page-header #page-mast #chapters li a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+#page-header #page-mast #chapters li .text {
+  color: #fadc5d;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+#page-header #page-mast #chapters li .text::before {
+  content: "Módulo " counter(modulo);
+}
+
+#page-header #page-mast #chapters .toc-footer {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+#page-header #page-mast .texto-bienvenida {
+  display: none;
+}
+
 .home-ruta #page-header {
   height: 100vh;
   background-position: center;
   background-size: cover;
-}
-
-.home-ruta #page-header .breadcrumb-nav {
-  visibility: hidden;
-}
-
-.home-ruta #page-header #page-mast #toc-desktop-menu-heading {
-  display: none;
-}
-
-.home-ruta #page-header #page-mast #toc-search {
-  display: none;
 }
 
 .home-ruta #page-header #page-mast #course-toc {
@@ -399,8 +440,6 @@ body#page-course-view-topics section#region-main .course-content {
   display: -ms-flexbox;
   display: flex;
   min-width: 100%;
-  list-style: none;
-  counter-reset: modulo;
 }
 
 .home-ruta #page-header #page-mast #chapters li {
@@ -415,7 +454,6 @@ body#page-course-view-topics section#region-main .course-content {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-  counter-increment: modulo;
 }
 
 .home-ruta #page-header #page-mast #chapters li .text {
@@ -475,15 +513,11 @@ body#page-course-view-topics section#region-main .course-content {
   color: #fadc5d;
 }
 
-.home-ruta #page-header #page-mast .toc-footer {
-  margin-top: 30px;
-}
-
 .home-ruta #page-header #page-mast > h1 {
   color: #006d38;
-  text-transform: uppercase;
+  text-transform: bold;
   font-size: 1.6rem;
-  font-weight: bold;
+  font-weight: normal;
   text-shadow: none;
 }
 
@@ -491,8 +525,8 @@ body#page-course-view-topics section#region-main .course-content {
   content: 'Bienvenido al curso';
   display: block;
   color: #2b2b2b;
-  text-transform: initial;
-  font-size: 1.3rem;
+  text-transform: 1.3rem;
+  font-size: initial;
   font-weight: inherit;
 }
 
@@ -502,12 +536,24 @@ body#page-course-view-topics section#region-main .course-content {
   text-shadow: none;
 }
 
+.home-ruta #page-header #page-mast .texto-bienvenida {
+  display: block;
+  max-width: 530px;
+}
+
 .home-ruta #page-header .course-content #section-0 .state-visible {
   display: none;
 }
 
+.home-ruta #region-main {
+  display: none;
+}
+
+:root {
+  font-size: 20px;
+}
+
 body {
   text-rendering: optimizelegibility;
-  font-size: 20px;
 }
 /*# sourceMappingURL=styles.css.map */

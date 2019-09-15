@@ -1,4 +1,4 @@
-@mixin textos-ruta ($color, $transform, $tamano, $peso:normal) {
+@mixin textos-ruta ($color, $tamano, $transform:uppercase, $peso:normal) {
     color: $color;
     text-transform: $transform;
     font: {
@@ -25,10 +25,7 @@
     }
 }
 
-.home-ruta #page-header {
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
+#page-header {
     .breadcrumb-nav {
         visibility: hidden;
     }
@@ -39,92 +36,130 @@
         #toc-search {
             display: none;
         }
-        #course-toc {
-            display: flex;
-            flex-direction: column;
-            height: 60vh;
-            justify-content: flex-end;
-            width: 100%;
-            background-color: transparent;
-        }
         #chapters {
-            display: flex;
-            min-width: 100%;
             list-style: none;
-            counter-reset: modulo;
+            counter-reset: modulo -1;
             li {
-                flex-basis: 25%;
-                margin-left: .7em;
-                padding: 30px;
-                display: flex;
-                flex-direction: column-reverse;
+                display: none;
                 counter-increment: modulo;
+                &.snap-visible-section {
+                    display: initial;
+                }
+                a {
+                    @include textos-ruta($blanco, 2rem)
+                }
                 .text {
-                    @include textos-ruta($blanco, uppercase, 1rem);
+                    @include textos-ruta($amarillo, 1rem);
                     &::before {
                         content: 'Módulo ' counter(modulo);
-                        width: 48%;
-                        display: inline-block;
                     }
-                    &::after {
-                        display: block;
-                        border-bottom: 1px solid $blanco;
-                        width: 100%;
-                        content: '';
-                        margin: 10px 0 10px 0;
+                }
+            }
+            .toc-footer {
+                margin-top: 30px;
+                margin-bottom: 15px;
+            }
+        }
+        .texto-bienvenida {
+            display: none;
+        }
+    }
+}
+
+.home-ruta {
+    #page-header {
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        #page-mast {
+            #course-toc {
+                display: flex;
+                flex-direction: column;
+                height: 60vh;
+                justify-content: flex-end;
+                width: 100%;
+                background-color: transparent;
+            }
+            #chapters {
+                display: flex;
+                min-width: 100%;
+                li {
+                    flex-basis: 25%;
+                    margin-left: .7em;
+                    padding: 30px;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    .text {
+                        @include textos-ruta($blanco, 1rem);
+                        &::before {
+                            content: 'Módulo ' counter(modulo);
+                            width: 48%;
+                            display: inline-block;
+                        }
+                        &::after {
+                            display: block;
+                            border-bottom: 1px solid $blanco;
+                            width: 100%;
+                            content: '';
+                            margin: 10px 0 10px 0;
+                        }
+                        small {
+                            font-size: .7rem!important;
+                            text-align: right;
+                            width: 50%;
+                            display: inline-block;
+                        }
+                        .snap-section-complete {
+                            display: none;
+                        }
                     }
-                    small {
-                        font-size: .7rem!important;
-                        text-align: right;
-                        width: 50%;
-                        display: inline-block;
-                    }
-                    .snap-section-complete {
+                    &:first-child {
                         display: none;
                     }
+                    &:nth-child(2) {
+                        @include posicion-otros-elementos(absolute, 0);
+                    }
+                    &:nth-child(n+3):not(:last-child) {
+                        background-color: $verde;
+                    }
+                    &:last-child {
+                        @include posicion-otros-elementos(absolute, 0, 0);
+                    }
+                    @extend %resaltado-modulos;
                 }
-                &:first-child {
+                .chapter-title {
+                    line-height: 1.2;
+                    color: $amarillo;
+                }
+            }
+            &>h1 {
+                @include textos-ruta($verde, 1.6rem, bold);
+                text-shadow: none;
+                &::before {
+                    content: 'Bienvenido al curso';
+                    display: block;
+                    @include textos-ruta($negro, initial, 1.3rem, inherit);
+                }
+                a,
+                a:hover {
+                    color: $verde;
+                    text-shadow: none;
+                }
+            }
+            .texto-bienvenida {
+                display: block;
+                max-width: 530px;
+            }
+        }
+        .course-content {
+            #section-0 {
+                .state-visible {
                     display: none;
                 }
-                &:nth-child(2) {
-                    @include posicion-otros-elementos(absolute, 0);
-                }
-                &:nth-child(n+3):not(:last-child) {
-                    background-color: $verde;
-                }
-                &:last-child {
-                    @include posicion-otros-elementos(absolute, 0, 0);
-                }
-                @extend %resaltado-modulos;
-            }
-            .chapter-title {
-                line-height: 1.2;
-                color: $amarillo;
-            }
-        }
-        .toc-footer {
-            margin-top: 30px;
-        }
-        &>h1 {
-            @include textos-ruta($verde, uppercase, 1.6rem, bold);
-            text-shadow: none;
-            &::before {
-                content: 'Bienvenido al curso';
-                display: block;
-                @include textos-ruta($negro, initial, 1.3rem, inherit);
-            }
-            a,
-            a:hover {
-                color: $verde;
-                text-shadow: none;
             }
         }
     }
-    .course-content {
-        #section-0 {
-            .state-visible {
-                display: none;
-            }
-        }
+    #region-main {
+        display: none;
     }
 }
