@@ -7,7 +7,7 @@
     }
 }
 
-@mixin posicion-otros-elementos ($position, $right, $top:0) {
+@mixin posicion-otros-elementos ($position, $top, $right:unset) {
     position: $position;
     top: $top;
     right: $right;
@@ -87,7 +87,7 @@
                     display: none;
                 }
                 &:nth-child(2) {
-                    @include posicion-otros-elementos(absolute);
+                    @include posicion-otros-elementos(absolute, 0);
                 }
                 &:nth-child(n+3):not(:last-child) {
                     background-color: $verde;

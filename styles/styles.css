@@ -81,6 +81,10 @@
   content: "";
 }
 
+#snap-pm-header #snap-pm-header-quicklinks :nth-child(2) {
+  display: none;
+}
+
 section#snap-pm-courses {
   padding: 0 3rem;
 }
@@ -418,6 +422,7 @@ body#page-course-view-topics section#region-main .course-content {
   color: white;
   text-transform: uppercase;
   font-size: 1rem;
+  font-weight: normal;
 }
 
 #page-header.home-ruta #page-mast #chapters li .text::before {
@@ -452,7 +457,7 @@ body#page-course-view-topics section#region-main .course-content {
 #page-header.home-ruta #page-mast #chapters li:nth-child(2) {
   position: absolute;
   top: 0;
-  right: 0;
+  right: unset;
 }
 
 #page-header.home-ruta #page-mast #chapters li:nth-child(n+3):not(:last-child) {
@@ -470,10 +475,15 @@ body#page-course-view-topics section#region-main .course-content {
   color: #fadc5d;
 }
 
+#page-header.home-ruta #page-mast .toc-footer {
+  margin-top: 30px;
+}
+
 #page-header.home-ruta #page-mast > h1 {
   color: #006d38;
   text-transform: uppercase;
   font-size: 1.6rem;
+  font-weight: bold;
   text-shadow: none;
 }
 
@@ -483,11 +493,13 @@ body#page-course-view-topics section#region-main .course-content {
   color: #2b2b2b;
   text-transform: initial;
   font-size: 1.3rem;
+  font-weight: inherit;
 }
 
 #page-header.home-ruta #page-mast > h1 a,
 #page-header.home-ruta #page-mast > h1 a:hover {
   color: #006d38;
+  text-shadow: none;
 }
 
 #page-header.home-ruta .course-content #section-0 .state-visible {
@@ -496,5 +508,6 @@ body#page-course-view-topics section#region-main .course-content {
 
 body {
   text-rendering: optimizelegibility;
+  font-size: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
