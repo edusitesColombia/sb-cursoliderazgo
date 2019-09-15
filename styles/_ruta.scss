@@ -87,7 +87,7 @@
                     display: none;
                 }
                 &:nth-child(2) {
-                    @include posicion-otros-elementos(absolute, 0);
+                    @include posicion-otros-elementos(absolute);
                 }
                 &:nth-child(n+3):not(:last-child) {
                     background-color: $verde;
