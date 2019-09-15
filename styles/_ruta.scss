@@ -68,6 +68,10 @@
             &>h1 {
                 @include textos-ruta($blanco, .7rem);
                 text-shadow: none;
+                a,
+                a:hover {
+                    text-shadow: none;
+                }
             }
             #chapters {
                 li {
@@ -94,12 +98,12 @@
         background-size: cover;
         #page-mast {
             &>h1 {
-                @include textos-ruta($verde, 1.6rem, bold);
+                @include textos-ruta($verde, 1.6rem, $peso: bold);
                 text-shadow: none;
                 &::before {
                     content: 'Bienvenido al curso';
                     display: block;
-                    @include textos-ruta($negro, 1.3rem, initial, inherit);
+                    @include textos-ruta($negro, 1.3rem, initial, bold);
                 }
                 a,
                 a:hover {
