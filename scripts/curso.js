@@ -16,7 +16,7 @@ function insertaClasePorDefecto() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    if (document.getElementsByClassName('path-course-view') != null && !location.hash) {
+    if (claseControl != null && !location.hash) {
 
         console.log(location.hash);
         insertaClaseRuta();
@@ -34,8 +34,10 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
         }
-    } else if (document.getElementsByClassName('path-course-view') != null && location.hash != '') {
+    } else if (claseControl != null && location.hash != '') {
         insertaClasePorDefecto();
+    } else {
+        identPrincipal.classList.remove('home-ruta');
     }
 });
 window.addEventListener('hashchange', function() {
