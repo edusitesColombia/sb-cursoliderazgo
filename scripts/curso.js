@@ -42,5 +42,7 @@ window.addEventListener('hashchange', function() {
         console.log('en cambio');
         insertaClasePorDefecto();
 
+    } else if (document.getElementsByClassName('path-course-view') != null && !this.location.hash) {
+        insertaClaseRuta();
     }
 });
