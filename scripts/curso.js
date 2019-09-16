@@ -33,16 +33,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
         }
     } else {
-
+        identPrincipal.classList.remove('home-ruta');
     }
 });
 window.addEventListener('hashchange', function() {
-    if (document.getElementsByClassName('path-course-view') != null && this.location.hash != '') {
+    window.addEventListener('load', function() {
+            if (document.getElementsByClassName('path-course-view') != null && this.location.hash != '') {
 
-        console.log('en cambio');
-        insertaClasePorDefecto();
+                console.log('en cambio');
+                insertaClasePorDefecto();
 
-    } else if (document.getElementsByClassName('path-course-view') != null && !this.location.hash) {
-        insertaClaseRuta();
-    }
+            } else if (document.getElementsByClassName('path-course-view') != null && !this.location.hash) {
+                insertaClaseRuta();
+            }
+        }
+    });
 });
