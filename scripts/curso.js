@@ -1,5 +1,7 @@
 var section0 = document.getElementById('section-0');
 var identPrincipal = document.getElementById('moodle-page');
+var claseControl = document.getElementsByClassName('path-course-view');
+
 
 function insertaClaseRuta() {
     identPrincipal.classList.remove('por-defecto');
@@ -32,19 +34,19 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
         }
-    } else {
-        identPrincipal.classList.remove('home-ruta');
+    } else if (document.getElementsByClassName('path-course-view') != null && location.hash != '') {
+        insertaClasePorDefecto();
     }
 });
 window.addEventListener('hashchange', function() {
-    window.addEventListener('load', function() {
-        if (document.getElementsByClassName('path-course-view') != null && this.location.hash != '') {
 
-            console.log('en cambio');
-            insertaClasePorDefecto();
+    if (claseControl != null && identPrincipal.classList.contains('por-defecto') == true) {
+        console.log('por defecto');
+        insertaClaseRuta();
+    } else if (claseControl != null && identPrincipal.classList.contains('home-ruta') == true) {
+        console.log('en cambio');
+        insertaClasePorDefecto();
 
-        } else if (document.getElementsByClassName('path-course-view') != null && !this.location.hash) {
-            insertaClaseRuta();
-        }
-    });
+    }
+
 });
