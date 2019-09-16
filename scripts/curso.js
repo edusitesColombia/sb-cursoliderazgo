@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 window.addEventListener('hashchange', function() {
-    if (document.getElementsByClassName('path-course-view') != null && location.hash) {
+    if (document.getElementsByClassName('path-course-view') != null && this.location.hash != '') {
 
         console.log('en cambio');
         insertaClasePorDefecto();
