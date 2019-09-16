@@ -16,6 +16,7 @@ function insertaClasePorDefecto() {
 document.addEventListener('DOMContentLoaded', function() {
     if (document.getElementsByClassName('path-course-view') != null && !location.hash) {
 
+        console.log(location.hash);
         insertaClaseRuta();
         let textoBienvenida = document.createElement('p');
         textoBienvenida.classList.add('texto-bienvenida');
@@ -31,6 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
         }
+    } else {
+
     }
 });
 window.addEventListener('hashchange', function() {
