@@ -33,13 +33,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     } else if (claseControl == true && section0.classList.contains('state-visible') == false) {
         insertaClasePorDefecto();
-    } else {
-        identPrincipal.classList.remove('home-ruta');
-        identPrincipal.classList.remove('por-defecto');
     }
 });
 window.addEventListener('hashchange', function() {
-    if (claseControl == true && identPrincipal.classList.contains('por-defecto') == true && section0.classList.contains('state-visible') == true && !location.hash) {
+    if (claseControl == true && identPrincipal.classList.contains('por-defecto') == true && !location.hash) {
         insertaClaseRuta();
         let modulos = document.getElementsByClassName('chapter-title');
         for (i = 0; i < modulos.length; i++) {
