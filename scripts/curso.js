@@ -29,9 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 insertaClasePorDefecto();
             });
         }
-
-        1
-    } else if (claseControl == true && section0.classList.contains('state-visible') == false && location.hash != '') {
+    } else if (claseControl == true && section0.classList.contains('state-visible') == false) {
         insertaClasePorDefecto();
     }
 });
