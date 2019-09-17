@@ -32,16 +32,21 @@ li#section-1, li#section-2, li#section-3, li#section-4, li#section-5 {
         align-items: center;
         padding-left: 3em;
         background-color: $amarillo;
+        background-image: linear-gradient(rgba(250, 220, 93, 0.2), rgba(250, 220, 93, 0.2)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
+        background-size:cover;
+        background-position:center;
         text-transform: uppercase;
         font-weight: 900;
         font-size: 3em;
         margin-left:-5em;
+        color:$blanco;
         &::before{
             content: "Módulo " counter(annotation-list);
-            color: $verde;
+            color: $amarillo;
             float: left;
             position: relative;
-            top: -1em;
+            top: -1.3em;
+            font-size:2rem;
             left: 4.25em;
         }
     }
@@ -104,7 +109,8 @@ li#section-1, li#section-2, li#section-3, li#section-4, li#section-5 {
 blockquote.blockquote{
     border: 0;
     height: 70vh;
-    background: blue;
+    background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-quote.jpg);
+    background-size:cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;

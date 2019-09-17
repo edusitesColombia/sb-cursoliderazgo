@@ -186,18 +186,24 @@ body#page-course-view-topics section#region-main .course-content {
           align-items: center;
   padding-left: 3em;
   background-color: #fadc5d;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(250, 220, 93, 0.2)), to(rgba(250, 220, 93, 0.2))), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
+  background-image: linear-gradient(rgba(250, 220, 93, 0.2), rgba(250, 220, 93, 0.2)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
+  background-size: cover;
+  background-position: center;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 3em;
   margin-left: -5em;
+  color: white;
 }
 
 .course-content ul.topics li#section-1 h2.sectionname::before, .course-content ul.topics li#section-2 h2.sectionname::before, .course-content ul.topics li#section-3 h2.sectionname::before, .course-content ul.topics li#section-4 h2.sectionname::before, .course-content ul.topics li#section-5 h2.sectionname::before {
   content: "Módulo " counter(annotation-list);
-  color: #006d38;
+  color: #fadc5d;
   float: left;
   position: relative;
-  top: -1em;
+  top: -1.3em;
+  font-size: 2rem;
   left: 4.25em;
 }
 
@@ -252,7 +258,8 @@ body#page-course-view-topics section#region-main .course-content {
 .course-content ul.topics blockquote.blockquote {
   border: 0;
   height: 70vh;
-  background: blue;
+  background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-quote.jpg);
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
