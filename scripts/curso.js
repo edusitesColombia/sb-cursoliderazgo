@@ -15,44 +15,40 @@ function insertaClasePorDefecto() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    if (document.getElementsByClassName('snap-section-editing') == null) {
-        if (claseControl == true && !location.hash) {
+    if (claseControl == true && !location.hash) {
 
-            console.log(location.hash);
-            insertaClaseRuta();
-            let textoBienvenida = document.createElement('p');
-            textoBienvenida.classList.add('texto-bienvenida');
-            let titulo = document.getElementById('page-mast').firstElementChild;
-            textoBienvenida.innerText = 'Esperamos que este espacio virtual, permita a todos los docentes acercarse a reflexiones y ejercicios que promuevan su capacidad de liderazgo en sus contextos escolares';
-            titulo.insertAdjacentElement('afterend', textoBienvenida);
+        console.log(location.hash);
+        insertaClaseRuta();
+        let textoBienvenida = document.createElement('p');
+        textoBienvenida.classList.add('texto-bienvenida');
+        let titulo = document.getElementById('page-mast').firstElementChild;
+        textoBienvenida.innerText = 'Esperamos que este espacio virtual, permita a todos los docentes acercarse a reflexiones y ejercicios que promuevan su capacidad de liderazgo en sus contextos escolares';
+        titulo.insertAdjacentElement('afterend', textoBienvenida);
 
-            let modulos = document.getElementsByClassName('chapter-title');
-            for (i = 0; i < modulos.length; i++) {
-                modulos[i].addEventListener('click', function() {
-                    insertaClasePorDefecto();
-                });
-            }
-
-
-        } else if (claseControl == true && location.hash != '') {
-            insertaClasePorDefecto();
+        let modulos = document.getElementsByClassName('chapter-title');
+        for (i = 0; i < modulos.length; i++) {
+            modulos[i].addEventListener('click', function() {
+                insertaClasePorDefecto();
+            });
         }
+
+
+    } else if (claseControl == true && location.hash != '') {
+        insertaClasePorDefecto();
     }
 });
 window.addEventListener('hashchange', function() {
-    if (document.getElementsByClassName('snap-section-editing') == null) {
-        console.log('al menos entro');
-        if (claseControl == true && identPrincipal.classList.contains('por-defecto') == true && !location.hash) {
-            console.log('por defecto');
-            insertaClaseRuta();
-        } else if (claseControl == true && identPrincipal.classList.contains('home-ruta') == true) {
-            let modulos = document.getElementsByClassName('chapter-title');
-            for (i = 0; i < modulos.length; i++) {
-                modulos[i].addEventListener('click', function() {
-                    insertaClasePorDefecto();
-                });
-            }
 
+    console.log('al menos entro');
+    if (claseControl == true && identPrincipal.classList.contains('por-defecto') == true && !location.hash) {
+        console.log('por defecto');
+        insertaClaseRuta();
+    } else if (claseControl == true && identPrincipal.classList.contains('home-ruta') == true) {
+        let modulos = document.getElementsByClassName('chapter-title');
+        for (i = 0; i < modulos.length; i++) {
+            modulos[i].addEventListener('click', function() {
+                insertaClasePorDefecto();
+            });
         }
     }
 });
