@@ -13,8 +13,16 @@ function insertaClasePorDefecto() {
     identPrincipal.classList.remove('home-ruta');
     identPrincipal.classList.add('por-defecto');
 }
+window.addEventListener('beforeunload', function() {
 
-
+    if (claseControl == true && identPrincipal.classList.contains('por-defecto') == true) {
+        console.log('quita por defecto');
+        identPrincipal.classList.add('por-defecto');
+    } else if (claseControl != null && identPrincipal.classList.contains('home-ruta') == true) {
+        console.log('quita ruta');
+        identPrincipal.classList.add('por-defecto');
+    }
+});
 document.addEventListener('DOMContentLoaded', function() {
     if (claseControl == true && !location.hash) {
 
@@ -43,22 +51,10 @@ window.addEventListener('hashchange', function() {
     if (claseControl == true && identPrincipal.classList.contains('por-defecto') == true) {
         console.log('por defecto');
         insertaClaseRuta();
-    } else if (claseControl == null && identPrincipal.classList.contains('home-ruta') == true) {
+    } else if (claseControl == true && identPrincipal.classList.contains('home-ruta') == true) {
         console.log('en cambio');
         insertaClasePorDefecto();
 
     }
 
-});
-
-
-window.addEventListener('beforeunload', function() {
-
-    if (claseControl == true && identPrincipal.classList.contains('por-defecto') == true) {
-        console.log('quita por defecto');
-        identPrincipal.classList.add('por-defecto');
-    } else if (claseControl != null && identPrincipal.classList.contains('home-ruta') == true) {
-        console.log('quita ruta');
-        identPrincipal.classList.add('por-defecto');
-    }
 });
