@@ -15,7 +15,6 @@ function insertaClasePorDefecto() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('cargo');
     if (claseControl == true && section0.classList.contains('state-visible') == true && location.hash == '') {
         insertaClaseRuta();
         let textoBienvenida = document.createElement('p');
@@ -31,12 +30,11 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     } else if (claseControl == true && location.hash != '') {
-        console.log('inserto calse por defecto');
         insertaClasePorDefecto();
     }
 });
 window.addEventListener('hashchange', function() {
-    if (claseControl == true && identPrincipal.classList.contains('por-defecto') == true) {
+    if (claseControl == true && section0.classList.contains('state-visible') == true) {
         insertaClaseRuta();
         let modulos = document.getElementsByClassName('chapter-title');
         for (i = 0; i < modulos.length; i++) {
