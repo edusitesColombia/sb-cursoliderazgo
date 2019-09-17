@@ -33,6 +33,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     } else if (claseControl == true && section0.classList.contains('state-visible') == false) {
         insertaClasePorDefecto();
+    } else {
+        identPrincipal.classList.remove('home-ruta');
+        identPrincipal.classList.remove('por-defecto');
     }
 });
 window.addEventListener('hashchange', function() {
