@@ -42,9 +42,13 @@ window.addEventListener('hashchange', function() {
     if (claseControl == true && identPrincipal.classList.contains('por-defecto') == true && !location.hash) {
         console.log('por defecto');
         insertaClaseRuta();
-    } else if (claseControl == true && identPrincipal.classList.contains('home-ruta') == true && location.hash != '') {
-        console.log('en cambio');
-        insertaClasePorDefecto();
+    } else if (claseControl == true && identPrincipal.classList.contains('home-ruta') == true) {
+        let modulos = document.getElementsByClassName('chapter-title');
+        for (i = 0; i < modulos.length; i++) {
+            modulos[i].addEventListener('click', function() {
+                insertaClasePorDefecto();
+            });
+        }
 
     }
 
