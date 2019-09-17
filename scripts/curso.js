@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     } else if (claseControl == true && section0.classList.contains('state-visible') == false) {
+        console.log('inserto calse por defecto');
         insertaClasePorDefecto();
     }
 });
