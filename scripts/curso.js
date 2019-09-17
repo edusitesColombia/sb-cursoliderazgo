@@ -15,8 +15,7 @@ function insertaClasePorDefecto() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    if (claseControl == true && !location.hash) {
-
+    if (claseControl == true && section0.classList.contains('state-visible') == true) {
         console.log(location.hash);
         insertaClaseRuta();
         let textoBienvenida = document.createElement('p');
@@ -33,15 +32,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
 
-    } else if (claseControl == true && location.hash != '') {
+    } else if (claseControl == true && section0.classList.contains('state-visible') == false) {
         insertaClasePorDefecto();
     }
 });
 window.addEventListener('hashchange', function() {
-
-    console.log('al menos entro');
     if (claseControl == true && identPrincipal.classList.contains('por-defecto') == true && !location.hash) {
-        console.log('por defecto');
         insertaClaseRuta();
         let modulos = document.getElementsByClassName('chapter-title');
         for (i = 0; i < modulos.length; i++) {
