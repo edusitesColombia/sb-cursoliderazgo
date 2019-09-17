@@ -23,6 +23,7 @@
             backdrop-filter: blur(10px);  
             width: 50%;
             display:flex;
+            margin:0!important;
             //contenedor directo de los elementos del login
             div[role="main"]{
                 display: flex;
