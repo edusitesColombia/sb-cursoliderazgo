@@ -8,6 +8,11 @@ body#page-course-view-topics section#region-main {
     .course-content{
         max-width:100%!important;
     }
+    //letra de los titulos
+    span.instancename {
+        font-size: 2rem;
+        line-height: 1.5rem;
+    }
 }
 //TODO: revisar span notifications hijo de region-main
 .course-content ul.topics{
@@ -20,6 +25,8 @@ li.section.main{
         margin-bottom: 1rem!important;
     }
 }
+
+
 //Secciones que contienen modulos de aprendizaje
 li#section-1, li#section-2, li#section-3, li#section-4, li#section-5 {
     max-width:100%!important;
@@ -30,19 +37,25 @@ li#section-1, li#section-2, li#section-3, li#section-4, li#section-5 {
         width: 140%;
         display: flex;
         align-items: center;
-        padding-left: 3em;
+        padding-left: 25%;
         background-color: $amarillo;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
+        background-size:cover;
+        background-position:center;
         text-transform: uppercase;
         font-weight: 900;
         font-size: 3em;
         margin-left:-5em;
+        color:$blanco;
         &::before{
             content: "Módulo " counter(annotation-list);
-            color: $verde;
+            color: $amarillo;
             float: left;
             position: relative;
-            top: -1em;
+            top: -1.3em;
+            font-size:2rem;
             left: 4.25em;
+            white-space: nowrap;
         }
     }
 
@@ -100,11 +113,12 @@ li#section-1, li#section-2, li#section-3, li#section-4, li#section-5 {
     }
 }
 
-// estilos para blockquotes, falta cuadrar fondos
+// estilos para blockquotes
 blockquote.blockquote{
     border: 0;
     height: 70vh;
-    background: blue;
+    background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-quote.jpg);
+    background-size:cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -132,17 +146,21 @@ blockquote.blockquote{
     }
 
 //estilos y color intercalado lecciones
-ul.section.img-text li{
+ul.section.img-text li.snap-activity{
     border:0;
     margin:0;
     min-height: 45vh;
     display: flex;
     align-items: center;
+    overflow: hidden;
     .asset-wrapper{
         display: flex;
         position:absolute;
+        width:100%;
         .activityinstance{
             background-color:transparent;
+            width: 100%;
+            text-align: center;
             .snap-assettype{
                 display:none;
             }
@@ -167,13 +185,14 @@ ul.section.img-text li{
         background-color:$gris-no2;
         &::before{
             counter-increment: actividadNo;
-            content:"0" counter(actividadNo);
-            color:$gris-no1;
+            content: "0" counter(actividadNo);
+            color: $gris-no1;
             position: absolute;
-            bottom: -4rem;
-            font-size: 20rem;
+            bottom: -60px;
+            font-size: 500px;
             line-height: 19rem;
-            right: 3%;
+            letter-spacing: -40px;
+            right: 4%;
             font-family: 'Roboto Condensed';
             font-weight: 900;
             z-index: 0;
@@ -188,12 +207,13 @@ ul.section.img-text li{
         }
         &::before{
             counter-increment: actividadNo;
-            content:"0" counter(actividadNo);
-            color:$gris-no2;
+            content: "0" counter(actividadNo);
+            color: $gris-no2;
             position: absolute;
-            bottom: -4rem;
-            font-size: 20rem;
-            line-height:19rem;
+            top: -60px;
+            font-size: 500px;
+            letter-spacing: -40px;
+            line-height: 19rem;
             left: 3%;
             font-family: 'Roboto Condensed';
             font-weight: 900;
@@ -204,4 +224,31 @@ ul.section.img-text li{
         content:"gato"!important;
     }  
 }
+}
+
+//estilos para actividad: pagina
+ul.section.img-text .page .asset-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 4rem;
+    text-align: center;
+    span.instancename {
+        color: black;
+        font-weight: 900;
+    }
+    a.btn.btn-secondary.pagemod-readmore {
+        background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_resumen.svg);
+        overflow: visible;
+        background-size: contain;
+        background-position: center;
+        padding: 3rem;
+        background-repeat: no-repeat;
+        border: 0;
+        &:hover:not(:disabled){
+            background-color: none;
+            border-color: none;
+            color: $verde   ;
+            outline: 0px auto gray;
+        }
+    }
 }

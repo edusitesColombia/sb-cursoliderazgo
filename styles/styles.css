@@ -8,7 +8,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: blue;
+  background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/bg1.jpg);
+  background-size: cover;
+  background-position-x: center;
 }
 
 #page-login-index main#moodle-page div#page-header {
@@ -23,6 +25,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 !important;
 }
 
 #page-login-index main#moodle-page section#region-main div[role="main"] {
@@ -40,6 +43,57 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 100%;
+}
+
+#page-login-index .snap-login, #page-login-signup .snap-login {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+#page-login-index section#region-main div[role="main"] .snap-login {
+  padding: 2em 9%;
+}
+
+#page-login-index section#region-main div[role="main"] .snap-login h4 {
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 200;
+  color: #828282;
+}
+
+#page-login-index section#region-main div[role="main"] .snap-login h2 {
+  font-weight: 900;
+  font: size 2.5rem;
+  color: #006d38;
+  line-height: 2.2rem;
+}
+
+#page-login-index section#region-main div[role="main"] .snap-login p {
+  padding: 0.7rem 0 1.3rem 0;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 1.5rem;
+  line-height: 1.4rem;
+  color: #6b6b6b;
+}
+
+#page-login-index section#region-main div[role="main"] .snap-login button#loginbtn {
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 24px;
+}
+
+header#mr-nav a#snap-home {
+  display: none;
+}
+
+header#mr-nav::before {
+  content: "";
+  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/logo_segurosbolivar_blanco.png);
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-width: 216px;
+  min-height: 45px;
 }
 
 #snap-pm-header {
@@ -120,6 +174,11 @@ body#page-course-view-topics section#region-main .course-content {
   max-width: 100% !important;
 }
 
+body#page-course-view-topics section#region-main span.instancename {
+  font-size: 2rem;
+  line-height: 1.5rem;
+}
+
 .course-content ul.topics li.section.main {
   max-width: 43.5em;
   margin: 0 auto !important;
@@ -144,21 +203,28 @@ body#page-course-view-topics section#region-main .course-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 3em;
+  padding-left: 25%;
   background-color: #fadc5d;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
+  background-size: cover;
+  background-position: center;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 3em;
   margin-left: -5em;
+  color: white;
 }
 
 .course-content ul.topics li#section-1 h2.sectionname::before, .course-content ul.topics li#section-2 h2.sectionname::before, .course-content ul.topics li#section-3 h2.sectionname::before, .course-content ul.topics li#section-4 h2.sectionname::before, .course-content ul.topics li#section-5 h2.sectionname::before {
   content: "Módulo " counter(annotation-list);
-  color: #006d38;
+  color: #fadc5d;
   float: left;
   position: relative;
-  top: -1em;
+  top: -1.3em;
+  font-size: 2rem;
   left: 4.25em;
+  white-space: nowrap;
 }
 
 .course-content ul.topics li#section-1 .video-container, .course-content ul.topics li#section-2 .video-container, .course-content ul.topics li#section-3 .video-container, .course-content ul.topics li#section-4 .video-container, .course-content ul.topics li#section-5 .video-container {
@@ -212,7 +278,8 @@ body#page-course-view-topics section#region-main .course-content {
 .course-content ul.topics blockquote.blockquote {
   border: 0;
   height: 70vh;
-  background: blue;
+  background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-quote.jpg);
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,7 +317,7 @@ body#page-course-view-topics section#region-main .course-content {
   display: none;
 }
 
-.course-content ul.topics ul.section.img-text li {
+.course-content ul.topics ul.section.img-text li.snap-activity {
   border: 0;
   margin: 0;
   min-height: 45vh;
@@ -260,24 +327,28 @@ body#page-course-view-topics section#region-main .course-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
-.course-content ul.topics ul.section.img-text li .asset-wrapper {
+.course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: absolute;
+  width: 100%;
 }
 
-.course-content ul.topics ul.section.img-text li .asset-wrapper .activityinstance {
+.course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance {
   background-color: transparent;
+  width: 100%;
+  text-align: center;
 }
 
-.course-content ul.topics ul.section.img-text li .asset-wrapper .activityinstance .snap-assettype {
+.course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-assettype {
   display: none;
 }
 
-.course-content ul.topics ul.section.img-text li .asset-wrapper .activityinstance .snap-asset-content {
+.course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,49 +365,51 @@ body#page-course-view-topics section#region-main .course-content {
   padding-left: 6%;
 }
 
-.course-content ul.topics ul.section.img-text li .asset-wrapper .activityinstance .snap-asset-content .contentafterlink {
+.course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content .contentafterlink {
   margin-left: 0px;
 }
 
-.course-content ul.topics ul.section.img-text li .asset-wrapper .activityinstance .snap-asset-content h3 img {
+.course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content h3 img {
   display: none;
 }
 
-.course-content ul.topics ul.section.img-text li:nth-child(odd) {
+.course-content ul.topics ul.section.img-text li.snap-activity:nth-child(odd) {
   background-color: #f7f7f7;
 }
 
-.course-content ul.topics ul.section.img-text li:nth-child(odd)::before {
+.course-content ul.topics ul.section.img-text li.snap-activity:nth-child(odd)::before {
   counter-increment: actividadNo;
   content: "0" counter(actividadNo);
   color: #eaeaea;
   position: absolute;
-  bottom: -4rem;
-  font-size: 20rem;
+  bottom: -60px;
+  font-size: 500px;
   line-height: 19rem;
-  right: 3%;
+  letter-spacing: -40px;
+  right: 4%;
   font-family: 'Roboto Condensed';
   font-weight: 900;
   z-index: 0;
 }
 
-.course-content ul.topics ul.section.img-text li:nth-child(even) {
+.course-content ul.topics ul.section.img-text li.snap-activity:nth-child(even) {
   background-color: #eaeaea;
 }
 
-.course-content ul.topics ul.section.img-text li:nth-child(even) .activityinstance .snap-asset-content {
+.course-content ul.topics ul.section.img-text li.snap-activity:nth-child(even) .activityinstance .snap-asset-content {
   margin-left: auto;
   text-align: left;
   padding-right: 6%;
 }
 
-.course-content ul.topics ul.section.img-text li:nth-child(even)::before {
+.course-content ul.topics ul.section.img-text li.snap-activity:nth-child(even)::before {
   counter-increment: actividadNo;
   content: "0" counter(actividadNo);
   color: #f7f7f7;
   position: absolute;
-  bottom: -4rem;
-  font-size: 20rem;
+  top: -60px;
+  font-size: 500px;
+  letter-spacing: -40px;
   line-height: 19rem;
   left: 3%;
   font-family: 'Roboto Condensed';
@@ -344,8 +417,41 @@ body#page-course-view-topics section#region-main .course-content {
   z-index: 0;
 }
 
-.course-content ul.topics ul.section.img-text li:last-of-type::before {
+.course-content ul.topics ul.section.img-text li.snap-activity:last-of-type::before {
   content: "gato" !important;
+}
+
+ul.section.img-text .page .asset-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5rem 4rem;
+  text-align: center;
+}
+
+ul.section.img-text .page .asset-wrapper span.instancename {
+  color: black;
+  font-weight: 900;
+}
+
+ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore {
+  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_resumen.svg);
+  overflow: visible;
+  background-size: contain;
+  background-position: center;
+  padding: 3rem;
+  background-repeat: no-repeat;
+  border: 0;
+}
+
+ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:hover:not(:disabled) {
+  background-color: none;
+  border-color: none;
+  color: #006d38;
+  outline: 0px auto gray;
 }
 
 .home-ruta #page-header #page-mast #chapters li:hover {
@@ -572,5 +678,13 @@ body#page-course-view-topics section#region-main .course-content {
 
 body {
   text-rendering: optimizelegibility;
+  font-family: "Roboto Condensed", "Roboto", "Helvetica", sans-serif !important;
+}
+
+@media screen and (min-width: 1600px) {
+  div#page {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
