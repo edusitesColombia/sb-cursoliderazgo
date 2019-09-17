@@ -13,9 +13,9 @@ function insertaClasePorDefecto() {
     identPrincipal.classList.remove('home-ruta');
     identPrincipal.classList.add('por-defecto');
 }
-
+//el hash lo uso como forma de controlar la navegacion con los botones del navegador porque las clases estan cargando lento y tocaria hacer esto cuando este todo cargado.
 document.addEventListener('DOMContentLoaded', function() {
-    if (claseControl == true && section0.classList.contains('state-visible') == true && location.hash == '') {
+    if ((claseControl == true && section0.classList.contains('state-visible') == true && location.hash == '') || location.hash == '#section-0') {
         insertaClaseRuta();
         let textoBienvenida = document.createElement('p');
         textoBienvenida.classList.add('texto-bienvenida');
@@ -29,12 +29,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 insertaClasePorDefecto();
             });
         }
-    } else if (claseControl == true && location.hash != '') {
+    } else if (claseControl == true && location.hash != '' && location.hash != 'section-0') {
         insertaClasePorDefecto();
     }
 });
 window.addEventListener('hashchange', function() {
-    if (claseControl == true && (identPrincipal.classList.contains('por-defecto') == true || location.hash == '#section-0')) {
+    if ((claseControl == true && identPrincipal.classList.contains('por-defecto') == true) || location.hash == '#section-0') {
         insertaClaseRuta();
         let modulos = document.getElementsByClassName('chapter-title');
         for (i = 0; i < modulos.length; i++) {
