@@ -37,6 +37,11 @@
 
 }
 
+//bg transparente
+#page-login-index .snap-login, #page-login-signup .snap-login {
+    background-color: rgba(255,255,255,0)!important;
+}
+
 //Estilos del contenido
 #page-login-index section#region-main div[role="main"] .snap-login{
     padding:2em 9%;

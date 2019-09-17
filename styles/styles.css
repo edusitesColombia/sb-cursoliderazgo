@@ -45,6 +45,10 @@
   width: 100%;
 }
 
+#page-login-index .snap-login, #page-login-signup .snap-login {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
 #page-login-index section#region-main div[role="main"] .snap-login {
   padding: 2em 9%;
 }
@@ -286,7 +290,7 @@ body#page-course-view-topics section#region-main .course-content {
   display: none;
 }
 
-.course-content ul.topics ul.section.img-text li {
+.course-content ul.topics ul.section.img-text li.snap-activity {
   border: 0;
   margin: 0;
   min-height: 45vh;
@@ -296,24 +300,25 @@ body#page-course-view-topics section#region-main .course-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
-.course-content ul.topics ul.section.img-text li .asset-wrapper {
+.course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: absolute;
 }
 
-.course-content ul.topics ul.section.img-text li .asset-wrapper .activityinstance {
+.course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance {
   background-color: transparent;
 }
 
-.course-content ul.topics ul.section.img-text li .asset-wrapper .activityinstance .snap-assettype {
+.course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-assettype {
   display: none;
 }
 
-.course-content ul.topics ul.section.img-text li .asset-wrapper .activityinstance .snap-asset-content {
+.course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -330,49 +335,51 @@ body#page-course-view-topics section#region-main .course-content {
   padding-left: 6%;
 }
 
-.course-content ul.topics ul.section.img-text li .asset-wrapper .activityinstance .snap-asset-content .contentafterlink {
+.course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content .contentafterlink {
   margin-left: 0px;
 }
 
-.course-content ul.topics ul.section.img-text li .asset-wrapper .activityinstance .snap-asset-content h3 img {
+.course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content h3 img {
   display: none;
 }
 
-.course-content ul.topics ul.section.img-text li:nth-child(odd) {
+.course-content ul.topics ul.section.img-text li.snap-activity:nth-child(odd) {
   background-color: #f7f7f7;
 }
 
-.course-content ul.topics ul.section.img-text li:nth-child(odd)::before {
+.course-content ul.topics ul.section.img-text li.snap-activity:nth-child(odd)::before {
   counter-increment: actividadNo;
   content: "0" counter(actividadNo);
   color: #eaeaea;
   position: absolute;
-  bottom: -4rem;
-  font-size: 20rem;
+  bottom: -60px;
+  font-size: 500px;
   line-height: 19rem;
-  right: 3%;
+  letter-spacing: -40px;
+  right: 4%;
   font-family: 'Roboto Condensed';
   font-weight: 900;
   z-index: 0;
 }
 
-.course-content ul.topics ul.section.img-text li:nth-child(even) {
+.course-content ul.topics ul.section.img-text li.snap-activity:nth-child(even) {
   background-color: #eaeaea;
 }
 
-.course-content ul.topics ul.section.img-text li:nth-child(even) .activityinstance .snap-asset-content {
+.course-content ul.topics ul.section.img-text li.snap-activity:nth-child(even) .activityinstance .snap-asset-content {
   margin-left: auto;
   text-align: left;
   padding-right: 6%;
 }
 
-.course-content ul.topics ul.section.img-text li:nth-child(even)::before {
+.course-content ul.topics ul.section.img-text li.snap-activity:nth-child(even)::before {
   counter-increment: actividadNo;
   content: "0" counter(actividadNo);
   color: #f7f7f7;
   position: absolute;
-  bottom: -4rem;
-  font-size: 20rem;
+  top: -60px;
+  font-size: 500px;
+  letter-spacing: -40px;
   line-height: 19rem;
   left: 3%;
   font-family: 'Roboto Condensed';
@@ -380,7 +387,7 @@ body#page-course-view-topics section#region-main .course-content {
   z-index: 0;
 }
 
-.course-content ul.topics ul.section.img-text li:last-of-type::before {
+.course-content ul.topics ul.section.img-text li.snap-activity:last-of-type::before {
   content: "gato" !important;
 }
 
