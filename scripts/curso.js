@@ -39,10 +39,10 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 window.addEventListener('hashchange', function() {
     console.log('al menos entro');
-    if (claseControl == true && identPrincipal.classList.contains('por-defecto') == true && location.hash != '') {
+    if (claseControl == true && identPrincipal.classList.contains('por-defecto') == true && !location.hash) {
         console.log('por defecto');
         insertaClaseRuta();
-    } else if (claseControl == true && identPrincipal.classList.contains('home-ruta') == true && !location.hash) {
+    } else if (claseControl == true && identPrincipal.classList.contains('home-ruta') == true && location.hash != '') {
         console.log('en cambio');
         insertaClasePorDefecto();
 
