@@ -184,10 +184,10 @@ body#page-course-view-topics section#region-main .course-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 3em;
+  padding-left: 25%;
   background-color: #fadc5d;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(250, 220, 93, 0.2)), to(rgba(250, 220, 93, 0.2))), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
-  background-image: linear-gradient(rgba(250, 220, 93, 0.2), rgba(250, 220, 93, 0.2)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
   background-size: cover;
   background-position: center;
   text-transform: uppercase;
@@ -205,6 +205,7 @@ body#page-course-view-topics section#region-main .course-content {
   top: -1.3em;
   font-size: 2rem;
   left: 4.25em;
+  white-space: nowrap;
 }
 
 .course-content ul.topics li#section-1 .video-container, .course-content ul.topics li#section-2 .video-container, .course-content ul.topics li#section-3 .video-container, .course-content ul.topics li#section-4 .video-container, .course-content ul.topics li#section-5 .video-container {
@@ -623,5 +624,12 @@ body#page-course-view-topics section#region-main .course-content {
 body {
   text-rendering: optimizelegibility;
   font-family: "Roboto Condensed", "Roboto", "Helvetica", sans-serif !important;
+}
+
+@media screen and (min-width: 1600px) {
+  div#page {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

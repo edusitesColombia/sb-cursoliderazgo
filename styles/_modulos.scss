@@ -30,9 +30,9 @@ li#section-1, li#section-2, li#section-3, li#section-4, li#section-5 {
         width: 140%;
         display: flex;
         align-items: center;
-        padding-left: 3em;
+        padding-left: 25%;
         background-color: $amarillo;
-        background-image: linear-gradient(rgba(250, 220, 93, 0.2), rgba(250, 220, 93, 0.2)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
         background-size:cover;
         background-position:center;
         text-transform: uppercase;
@@ -48,6 +48,7 @@ li#section-1, li#section-2, li#section-3, li#section-4, li#section-5 {
             top: -1.3em;
             font-size:2rem;
             left: 4.25em;
+            white-space: nowrap;
         }
     }
 

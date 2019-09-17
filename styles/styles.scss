@@ -7,3 +7,10 @@ body {
     text-rendering: optimizelegibility;
     font-family: 'Roboto Condensed', 'Roboto', 'Helvetica', sans-serif!important;
 }
+
+@media screen and (min-width: 1600px){
+    div#page{
+        max-width: 80%;
+        margin:0 auto;
+    }
+}
