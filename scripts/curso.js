@@ -16,8 +16,6 @@ function insertaClasePorDefecto() {
 
 document.addEventListener('DOMContentLoaded', function() {
     console.log('cargo');
-    console.log(section0.classList.contains('state-visible'));
-    console.log(document.getElementById('section-0').classList.contains('state-visible'));
     if (claseControl == true && section0.classList.contains('state-visible') == true && location.hash == '') {
         insertaClaseRuta();
         let textoBienvenida = document.createElement('p');
@@ -32,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 insertaClasePorDefecto();
             });
         }
-    } else if (claseControl == true && section0.classList.contains('state-visible') == false && location.hash != '') {
+    } else if (claseControl == true && location.hash != '') {
         console.log('inserto calse por defecto');
         insertaClasePorDefecto();
     }
