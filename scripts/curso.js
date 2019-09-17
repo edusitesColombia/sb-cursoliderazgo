@@ -1,28 +1,54 @@
-document.addEventListener('DOMContentLoaded', function() {
-    console.log("cuando carga");
-    if (document.getElementById('section-0').classList.contains('state-visible') == true) {
-        console.log(document.getElementById('section-0').classList.contains('state-visible'));
-        document.getElementById('moodle-page').classList.add('home-ruta');
-    }
+var section0 = document.getElementById('section-0');
+var identPrincipal = document.getElementById('moodle-page');
+var claseControl = document.getElementsByClassName('path-course-view');
 
-    if (document.getElementById('moodle-page').classList.contains('home-ruta') == true) {
+
+function insertaClaseRuta() {
+    identPrincipal.classList.remove('por-defecto');
+    identPrincipal.classList.add('home-ruta');
+}
+
+
+function insertaClasePorDefecto() {
+    identPrincipal.classList.remove('home-ruta');
+    identPrincipal.classList.add('por-defecto');
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    if (claseControl != null && !location.hash) {
+
+        console.log(location.hash);
+        insertaClaseRuta();
         let textoBienvenida = document.createElement('p');
         textoBienvenida.classList.add('texto-bienvenida');
         let titulo = document.getElementById('page-mast').firstElementChild;
         textoBienvenida.innerText = 'Esperamos que este espacio virtual, permita a todos los docentes acercarse a reflexiones y ejercicios que promuevan su capacidad de liderazgo en sus contextos escolares';
         titulo.insertAdjacentElement('afterend', textoBienvenida);
+
+
+        let modulos = document.getElementsByClassName('chapter-title');
+        for (i = 0; i < modulos.length; i++) {
+            modulos[i].addEventListener('click', function() {
+                insertaClasePorDefecto();
+            });
+
+        }
+    } else if (claseControl != null && location.hash != '') {
+        insertaClasePorDefecto();
+    } else {
+        identPrincipal.classList.remove('home-ruta');
     }
-    let modulos = document.getElementsByClassName('chapter-title');
-    for (i = 0; i < modulos.length; i++) {
-        modulos[i].addEventListener('click', function() {
-            document.getElementById('moodle-page').classList.remove('home-ruta');
-            document.getElementById('moodle-page').classList.add('por-defecto');
-        });
+});
+window.addEventListener('hashchange', function() {
+
+    if (claseControl != null && identPrincipal.classList.contains('por-defecto') == true) {
+        console.log('por defecto');
+        insertaClaseRuta();
+    } else if (claseControl != null && identPrincipal.classList.contains('home-ruta') == true) {
+        console.log('en cambio');
+        insertaClasePorDefecto();
+
     }
 
-    document.addEventListener('hashchange', function() {
-        console.log("cuando cambia");
-        document.getElementById('moodle-page').classList.remove('home-ruta');
-        document.getElementById('moodle-page').classList.remove('por-defecto');
-    });
 });
