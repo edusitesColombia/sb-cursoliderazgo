@@ -25,21 +25,27 @@ document.addEventListener('DOMContentLoaded', function() {
         textoBienvenida.innerText = 'Esperamos que este espacio virtual, permita a todos los docentes acercarse a reflexiones y ejercicios que promuevan su capacidad de liderazgo en sus contextos escolares';
         titulo.insertAdjacentElement('afterend', textoBienvenida);
 
-        window.addEventListener('hashchange', function() {
-            console.log('al menos entro');
-            if (claseControl == true && identPrincipal.classList.contains('por-defecto') == true && location.hash != '') {
-                console.log('por defecto');
-                insertaClaseRuta();
-            } else if (claseControl == true && identPrincipal.classList.contains('home-ruta') == true && !location.hash) {
-                console.log('en cambio');
+        let modulos = document.getElementsByClassName('chapter-title');
+        for (i = 0; i < modulos.length; i++) {
+            modulos[i].addEventListener('click', function() {
                 insertaClasePorDefecto();
-
-            }
-
-        });
+            });
+        }
 
 
     } else if (claseControl == true && location.hash != '') {
         insertaClasePorDefecto();
     }
+});
+window.addEventListener('hashchange', function() {
+    console.log('al menos entro');
+    if (claseControl == true && identPrincipal.classList.contains('por-defecto') == true && location.hash != '') {
+        console.log('por defecto');
+        insertaClaseRuta();
+    } else if (claseControl == true && identPrincipal.classList.contains('home-ruta') == true && !location.hash) {
+        console.log('en cambio');
+        insertaClasePorDefecto();
+
+    }
+
 });
