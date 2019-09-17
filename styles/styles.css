@@ -82,6 +82,20 @@
   border-radius: 24px;
 }
 
+header#mr-nav a#snap-home {
+  display: none;
+}
+
+header#mr-nav::before {
+  content: "";
+  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/logo_segurosbolivar_blanco.png);
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-width: 216px;
+  min-height: 45px;
+}
+
 #snap-pm-header {
   padding: 1rem 3rem;
   display: -webkit-box;
