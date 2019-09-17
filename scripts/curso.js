@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 window.addEventListener('hashchange', function() {
-    if (claseControl == true && identPrincipal.classList.contains('por-defecto') == true && !location.hash) {
+    if (claseControl == true && identPrincipal.classList.contains('por-defecto') == true && section0.classList.contains('state-visible') == true) {
         insertaClaseRuta();
         let modulos = document.getElementsByClassName('chapter-title');
         for (i = 0; i < modulos.length; i++) {
