@@ -17,6 +17,7 @@ function insertaClasePorDefecto() {
 document.addEventListener('DOMContentLoaded', function() {
     console.log('cargo');
     console.log(section0.classList.contains('state-visible'));
+    console.log(document.getElementById('section-0').classList.contains('state-visible'));
     if (claseControl == true && section0.classList.contains('state-visible') == true && location.hash == '') {
         insertaClaseRuta();
         let textoBienvenida = document.createElement('p');
