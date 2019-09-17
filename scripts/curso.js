@@ -1,6 +1,6 @@
 var section0 = document.getElementById('section-0');
 var identPrincipal = document.getElementById('moodle-page');
-var claseControl = body.classList.contains('path-course-view');
+var claseControl = document.body.classList.contains('path-course-view');
 
 
 function insertaClaseRuta() {
