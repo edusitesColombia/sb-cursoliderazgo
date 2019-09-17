@@ -326,6 +326,7 @@ body#page-course-view-topics section#region-main span.instancename {
 
 .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance {
   background-color: transparent;
+  width: 100%;
 }
 
 .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-assettype {
