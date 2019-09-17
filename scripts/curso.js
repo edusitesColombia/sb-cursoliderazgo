@@ -25,6 +25,12 @@ document.addEventListener('DOMContentLoaded', function() {
         textoBienvenida.innerText = 'Esperamos que este espacio virtual, permita a todos los docentes acercarse a reflexiones y ejercicios que promuevan su capacidad de liderazgo en sus contextos escolares';
         titulo.insertAdjacentElement('afterend', textoBienvenida);
 
+        let modulos = document.getElementsByClassName('chapter-title');
+        for (i = 0; i < modulos.length; i++) {
+            modulos[i].addEventListener('click', function() {
+                insertaClasePorDefecto();
+            });
+        }
 
 
     } else if (claseControl == true && location.hash != '') {
