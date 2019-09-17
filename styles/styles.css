@@ -321,6 +321,7 @@ body#page-course-view-topics section#region-main span.instancename {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
+  width: 100%;
 }
 
 .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance {
