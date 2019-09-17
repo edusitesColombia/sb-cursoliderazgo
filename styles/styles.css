@@ -160,6 +160,11 @@ body#page-course-view-topics section#region-main .course-content {
   max-width: 100% !important;
 }
 
+body#page-course-view-topics section#region-main span.instancename {
+  font-size: 2rem;
+  line-height: 1.5rem;
+}
+
 .course-content ul.topics li.section.main {
   max-width: 43.5em;
   margin: 0 auto !important;
@@ -397,6 +402,39 @@ body#page-course-view-topics section#region-main .course-content {
 
 .course-content ul.topics ul.section.img-text li.snap-activity:last-of-type::before {
   content: "gato" !important;
+}
+
+ul.section.img-text .page .asset-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5rem 4rem;
+  text-align: center;
+}
+
+ul.section.img-text .page .asset-wrapper span.instancename {
+  color: black;
+  font-weight: 900;
+}
+
+ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore {
+  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_resumen.svg);
+  overflow: visible;
+  background-size: contain;
+  background-position: center;
+  padding: 3rem;
+  background-repeat: no-repeat;
+  border: 0;
+}
+
+ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:hover:not(:disabled) {
+  background-color: none;
+  border-color: none;
+  color: #006d38;
+  outline: 0px auto gray;
 }
 
 .home-ruta #page-header #page-mast #chapters li:hover {
