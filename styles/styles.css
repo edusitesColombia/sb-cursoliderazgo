@@ -268,7 +268,7 @@ body#page-course-view-topics section#region-main span.instancename {
 }
 
 .course-content ul.topics li#section-1 ul.section.img-text, .course-content ul.topics li#section-2 ul.section.img-text, .course-content ul.topics li#section-3 ul.section.img-text, .course-content ul.topics li#section-4 ul.section.img-text, .course-content ul.topics li#section-5 ul.section.img-text {
-  background: #fadc5d;
+  background: white;
   counter-reset: actividadNo;
 }
 
