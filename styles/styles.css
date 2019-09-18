@@ -272,6 +272,10 @@ body#page-course-view-topics section#region-main span.instancename {
   counter-reset: actividadNo;
 }
 
+.course-content ul.topics li#section-1 ul.section.img-text li .asset-wrapper, .course-content ul.topics li#section-2 ul.section.img-text li .asset-wrapper, .course-content ul.topics li#section-3 ul.section.img-text li .asset-wrapper, .course-content ul.topics li#section-4 ul.section.img-text li .asset-wrapper, .course-content ul.topics li#section-5 ul.section.img-text li .asset-wrapper {
+  overflow: hidden;
+}
+
 .course-content ul.topics li#section-1 div.row, .course-content ul.topics li#section-2 div.row, .course-content ul.topics li#section-3 div.row, .course-content ul.topics li#section-4 div.row, .course-content ul.topics li#section-5 div.row {
   max-width: 43.5em;
   margin: 0 auto;
@@ -282,15 +286,15 @@ body#page-course-view-topics section#region-main span.instancename {
   margin: 1rem auto;
 }
 
-.course-content ul.topics li#section-1.label, .course-content ul.topics li#section-2.label, .course-content ul.topics li#section-3.label, .course-content ul.topics li#section-4.label, .course-content ul.topics li#section-5.label {
+.course-content ul.topics li#section-1 .label, .course-content ul.topics li#section-2 .label, .course-content ul.topics li#section-3 .label, .course-content ul.topics li#section-4 .label, .course-content ul.topics li#section-5 .label {
   margin: 0;
 }
 
-.course-content ul.topics li#section-1.label .asset-wrapper, .course-content ul.topics li#section-2.label .asset-wrapper, .course-content ul.topics li#section-3.label .asset-wrapper, .course-content ul.topics li#section-4.label .asset-wrapper, .course-content ul.topics li#section-5.label .asset-wrapper {
+.course-content ul.topics li#section-1 .label .asset-wrapper, .course-content ul.topics li#section-2 .label .asset-wrapper, .course-content ul.topics li#section-3 .label .asset-wrapper, .course-content ul.topics li#section-4 .label .asset-wrapper, .course-content ul.topics li#section-5 .label .asset-wrapper {
   overflow: hidden;
 }
 
-.course-content ul.topics li#section-1.label .separador-amarillo, .course-content ul.topics li#section-2.label .separador-amarillo, .course-content ul.topics li#section-3.label .separador-amarillo, .course-content ul.topics li#section-4.label .separador-amarillo, .course-content ul.topics li#section-5.label .separador-amarillo {
+.course-content ul.topics li#section-1 .label .separador-amarillo, .course-content ul.topics li#section-2 .label .separador-amarillo, .course-content ul.topics li#section-3 .label .separador-amarillo, .course-content ul.topics li#section-4 .label .separador-amarillo, .course-content ul.topics li#section-5 .label .separador-amarillo {
   min-height: 27vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(250, 220, 93, 0.5)), to(rgba(250, 220, 93, 0.5))), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-separador.jpg);
   background-image: linear-gradient(rgba(250, 220, 93, 0.5), rgba(250, 220, 93, 0.5)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-separador.jpg);
@@ -522,7 +526,6 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  float: left;
   margin-left: -90px;
 }
 
