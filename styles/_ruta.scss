@@ -1,3 +1,5 @@
+$caja-verde: "%3Csvg height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M231.9743097756687,144.4894306236695 L34.23931043837641,144.6099759266518 C21.08000638301136,145.22777060443585 9.808613846952934,137.09096265313266 9.135694889576314,126.46790782782017 L0.032596771731464205,20.127397996914983 C-0.7524753452079281,7.876981581341759 12.761980382105904,-1.796778982985419 27.753119376996203,0.28262749345875804 L254.3301729151808,14.310176296329782 C267.3960160042436,16.118355841063835 276.1065780636188,26.198956802956186 273.6579007464983,36.71653448815924 L253.9376368567112,128.9089502132111 C251.9375721778418,137.54300753931622 242.87185844651788,143.9771130859949 231.9743097756687,144.4894306236695Z'%3E%3C/path%3E%3C/svg%3E";
+$caja-amarilla: "%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='yellow' d='M231.9743097756687,144.4894306236695 L34.23931043837641,144.6099759266518 C21.08000638301136,145.22777060443585 9.808613846952934,137.09096265313266 9.135694889576314,126.46790782782017 L0.032596771731464205,20.127397996914983 C-0.7524753452079281,7.876981581341759 12.761980382105904,-1.796778982985419 27.753119376996203,0.28262749345875804 L254.3301729151808,14.310176296329782 C267.3960160042436,16.118355841063835 276.1065780636188,26.198956802956186 273.6579007464983,36.71653448815924 L253.9376368567112,128.9089502132111 C251.9375721778418,137.54300753931622 242.87185844651788,143.9771130859949 231.9743097756687,144.4894306236695Z'%3E%3C/path%3E%3C/svg%3E";
 @mixin textos-ruta ($color, $tamano, $transform:uppercase, $peso:normal) {
     color: $color;
     text-transform: $transform;
@@ -24,13 +26,15 @@
 
 %resaltado-modulos {
     &:hover {
-        background-color: $amarillo!important;
+        /*    background-color: $amarillo!important;
         .chapter-title {
             color: $verde;
         }
         .text {
             color: $negro;
-        }
+        } */
+        background-image: url('data:image/svg+xml, #{$caja-amarilla}');
+        background-size: cover;
     }
 }
 
@@ -62,7 +66,8 @@
                 flex-direction: column-reverse;
                 justify-content: flex-end;
                 .text {
-                    @include textos-ruta($amarillo, .7rem);
+                    @include textos-ruta($amarillo,
+                    .7rem);
                     &::before {
                         content: 'Módulo ' counter(modulo);
                     }
@@ -86,7 +91,8 @@
         }
         #page-mast {
             &>h1 {
-                @include textos-ruta($blanco, .7rem);
+                @include textos-ruta($blanco,
+                .7rem);
             }
             #course-toc {
                 #chapters {
@@ -96,7 +102,8 @@
                             display: flex;
                         }
                         .chapter-title {
-                            @include textos-ruta($blanco, 2rem)
+                            @include textos-ruta($blanco,
+                            2rem)
                         }
                     }
                     .toc-footer {
@@ -115,17 +122,25 @@
             visibility: hidden;
         }
         height: 100vh;
-        @include imagen-background('fondo_avance0', 'svg', 'center', 'cover');
+        @include imagen-background('fondo_avance0',
+        'svg',
+        'center',
+        'cover');
         #page-mast {
             height: 80vh;
             display: flex;
             flex-direction: column;
             &>h1 {
-                @include textos-ruta($verde, 1.6rem, $peso: bold);
+                @include textos-ruta($verde,
+                1.6rem,
+                $peso: bold);
                 &::before {
                     content: 'Bienvenido al curso';
                     display: block;
-                    @include textos-ruta($negro, 1.3rem, initial, bold);
+                    @include textos-ruta($negro,
+                    1.3rem,
+                    initial,
+                    bold);
                 }
                 a {
                     text-decoration: none;
@@ -154,7 +169,8 @@
                         margin-left: .7em;
                         padding: 30px;
                         .text {
-                            @include textos-ruta($blanco, 1rem);
+                            @include textos-ruta($blanco,
+                            1rem);
                             &::before {
                                 width: 48%;
                                 display: inline-block;
@@ -180,13 +196,17 @@
                             display: none;
                         }
                         &:nth-child(2) {
-                            @include posicion-otros-elementos(absolute, 0);
+                            @include posicion-otros-elementos(absolute,
+                            0);
                         }
                         &:nth-child(n+3):not(:last-child) {
-                            background-color: $verde;
+                            background-image: url("data:image/svg+xml, #{$caja-verde}");
+                            background-size: cover;
                         }
                         &:last-child {
-                            @include posicion-otros-elementos(absolute, 0, 0);
+                            @include posicion-otros-elementos(absolute,
+                            0,
+                            0);
                         }
                         &:hover,
                         &.modulo-completado {
