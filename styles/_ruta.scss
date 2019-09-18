@@ -29,13 +29,19 @@
             color: $verde;
         }
         .text {
-            color: $negro;
+            color: $amarillo;
         }
     }
 }
 
 #page-header {
     #page-mast {
+        h1 {
+            a,
+            a:hover {
+                text-shadow: none;
+            }
+        }
         #toc-desktop-menu-heading {
             display: none;
         }
@@ -77,25 +83,23 @@
         #page-mast {
             &>h1 {
                 @include textos-ruta($blanco, .7rem);
-                text-shadow: none;
-                a,
-                a:hover {
-                    text-shadow: none;
-                }
             }
-            #chapters {
-                li {
-                    display: none;
-                    &.snap-visible-section {
-                        display: block;
+            #course-toc {
+                background-color: transparent;
+                #chapters {
+                    li {
+                        display: none;
+                        &.snap-visible-section {
+                            display: flex;
+                        }
+                        .chapter-title {
+                            @include textos-ruta($blanco, 2rem)
+                        }
                     }
-                    .chapter-title {
-                        @include textos-ruta($blanco, 2rem)
+                    .toc-footer {
+                        margin-top: 30px;
+                        margin-bottom: 15px;
                     }
-                }
-                .toc-footer {
-                    margin-top: 30px;
-                    margin-bottom: 15px;
                 }
             }
         }
@@ -115,7 +119,6 @@
             flex-direction: column;
             &>h1 {
                 @include textos-ruta($verde, 1.6rem, $peso: bold);
-                text-shadow: none;
                 &::before {
                     content: 'Bienvenido al curso';
                     display: block;
@@ -127,7 +130,6 @@
                 a,
                 a:hover {
                     color: $verde;
-                    text-shadow: none;
                 }
             }
             .texto-bienvenida {
@@ -140,60 +142,59 @@
                 height: 56vh;
                 justify-content: flex-end;
                 width: 100%;
-                background-color: transparent;
                 margin-top: auto;
-            }
-            #chapters {
-                display: flex;
-                min-width: 100%;
-                li {
-                    flex-basis: 25%;
-                    margin-left: .7em;
-                    padding: 30px;
-                    .text {
-                        @include textos-ruta($blanco, 1rem);
-                        &::before {
-                            width: 48%;
-                            display: inline-block;
+                #chapters {
+                    display: flex;
+                    min-width: 100%;
+                    li {
+                        flex-basis: 25%;
+                        margin-left: .7em;
+                        padding: 30px;
+                        .text {
+                            @include textos-ruta($blanco, 1rem);
+                            &::before {
+                                width: 48%;
+                                display: inline-block;
+                            }
+                            &::after {
+                                display: block;
+                                border-bottom: 1px solid $blanco;
+                                width: 100%;
+                                content: '';
+                                margin: 10px 0 10px 0;
+                            }
+                            small {
+                                font-size: .7rem!important;
+                                text-align: right;
+                                width: 50%;
+                                display: inline-block;
+                            }
+                            .snap-section-complete {
+                                display: none;
+                            }
                         }
-                        &::after {
-                            display: block;
-                            border-bottom: 1px solid $blanco;
-                            width: 100%;
-                            content: '';
-                            margin: 10px 0 10px 0;
-                        }
-                        small {
-                            font-size: .7rem!important;
-                            text-align: right;
-                            width: 50%;
-                            display: inline-block;
-                        }
-                        .snap-section-complete {
+                        &:first-child {
                             display: none;
                         }
+                        &:nth-child(2) {
+                            @include posicion-otros-elementos(absolute, 0);
+                        }
+                        &:nth-child(n+3):not(:last-child) {
+                            background-color: $verde;
+                        }
+                        &:last-child {
+                            @include posicion-otros-elementos(absolute, 0, 0);
+                        }
+                        &:hover,
+                        &.modulo-completado {
+                            @extend %resaltado-modulos;
+                        }
                     }
-                    &:first-child {
-                        display: none;
+                    .chapter-title {
+                        line-height: 1.2;
+                        color: $amarillo;
+                        text-decoration: none;
                     }
-                    &:nth-child(2) {
-                        @include posicion-otros-elementos(absolute, 0);
-                    }
-                    &:nth-child(n+3):not(:last-child) {
-                        background-color: $verde;
-                    }
-                    &:last-child {
-                        @include posicion-otros-elementos(absolute, 0, 0);
-                    }
-                    &:hover,
-                    &.modulo-completado {
-                        @extend %resaltado-modulos;
-                    }
-                }
-                .chapter-title {
-                    line-height: 1.2;
-                    color: $amarillo;
-                    text-decoration: none;
                 }
             }
         }
