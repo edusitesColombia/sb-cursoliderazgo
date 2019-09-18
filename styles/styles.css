@@ -478,7 +478,7 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
 }
 
 .separador-opciones {
-  min-height: 15vh;
+  min-height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -487,6 +487,8 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
           align-items: center;
   background-color: #006d38;
   color: white;
+  padding: 4rem 11%;
+  font-size: 80%;
 }
 
 .separador-opciones .opcion {
@@ -498,6 +500,8 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 1rem;
+  padding-left: 100px;
 }
 
 .separador-opciones .opcion h3 {
@@ -506,6 +510,30 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
 
 .separador-opciones .opcion p {
   text-align: left;
+}
+
+.separador-opciones .opcion::before {
+  content: "";
+  display: inline-block;
+  height: 110px;
+  width: 90px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  float: left;
+  margin-left: -90px;
+}
+
+.separador-opciones .opcion.glosario::before {
+  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/icono_glosario.png);
+}
+
+.separador-opciones .opcion.cartilla::before {
+  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/icono_cartilla.png);
+}
+
+.separador-opciones .opcion.bibliografia::before {
+  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/icono_bibliografia.png);
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:hover {
