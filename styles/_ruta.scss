@@ -13,6 +13,14 @@
     right: $right;
 }
 
+@mixin imagen-background ($file, $format, $position, $size) {
+    background: {
+        image: url(/pluginfile.php/62/block_html/content/#{$file}.#{$format});
+        position: center;
+        size: cover;
+    }
+}
+
 %resaltado-modulos {
     &:hover {
         background-color: $amarillo!important;
@@ -21,6 +29,18 @@
         }
         .text {
             color: $negro;
+        }
+    }
+}
+
+%completado-modulos {
+    &.modulo-completado {
+        background-color: $amarillo!important;
+        .chapter-title {
+            color: $negro;
+        }
+        .text {
+            color: $verde;
         }
     }
 }
@@ -95,8 +115,7 @@
 .home-ruta {
     #page-header {
         height: 100vh;
-        background-position: center;
-        background-size: cover;
+        @include imagen-background('fondo_avance0', 'svg', 'center', 'cover');
         #page-mast {
             &>h1 {
                 @include textos-ruta($verde, 1.6rem, $peso: bold);
@@ -106,7 +125,10 @@
                     display: block;
                     @include textos-ruta($negro, 1.3rem, initial, bold);
                 }
-                a,
+                a {
+                    color: $verde;
+                    text-decoration: none;
+                }
                 a:hover {
                     color: $verde;
                     text-shadow: none;
@@ -167,10 +189,12 @@
                         @include posicion-otros-elementos(absolute, 0, 0);
                     }
                     @extend %resaltado-modulos;
+                    @extend %completado-modulos;
                 }
                 .chapter-title {
                     line-height: 1.2;
                     color: $amarillo;
+                    text-decoration: none;
                 }
             }
         }
