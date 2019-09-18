@@ -463,11 +463,11 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:hover .chapter-title {
-  color: #2b2b2b;
+  color: #006d38;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:hover .text {
-  color: #006d38;
+  color: #2b2b2b;
 }
 
 #page-header #page-mast h1::before,
