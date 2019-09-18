@@ -15,7 +15,7 @@
 
 @mixin imagen-background ($file, $format, $position, $size) {
     background: {
-        image: url(/pluginfile.php/62/block_html/content/#{$file}.#{$format});
+        image: url(http://jkvela.website/pluginfile.php/62/block_html/content/#{$file}.#{$format});
         position: center;
         size: cover;
     }
