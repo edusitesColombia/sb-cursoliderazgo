@@ -776,7 +776,7 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
   background-size: cover;
 }
 
-.home-ruta #page-header #page-mast #course-toc #chapters:last-child {
+.home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
   position: absolute;
   top: 0;
   right: 0;
