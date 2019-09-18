@@ -31,6 +31,9 @@ li.section.main{
 li#section-1, li#section-2, li#section-3, li#section-4, li#section-5 {
     max-width:100%!important;
     overflow:hidden;
+    &.snap-native{
+        margin:0;
+    }
     //contenedor del nombre de sección
     h2.sectionname{
         height: 40vh;
@@ -48,7 +51,7 @@ li#section-1, li#section-2, li#section-3, li#section-4, li#section-5 {
         margin-left:-5em;
         color:$blanco;
         &::before{
-            content: "Módulo " counter(annotation-list)-1;
+            content: "Módulo " counter(annotation-list);
             color: $amarillo;
             float: left;
             position: relative;
@@ -110,6 +113,18 @@ li#section-1, li#section-2, li#section-3, li#section-4, li#section-5 {
     .section_footer{
         max-width:43.5em;
         margin:1rem auto;
+    }
+    &.label{
+        margin:0;
+        .asset-wrapper{
+            overflow:hidden;
+        }
+        .separador-amarillo {
+            min-height: 27vh;
+            background-image: linear-gradient(rgba(250, 220, 93, 0.5), rgba(250, 220, 93, 0.5)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-separador.jpg);
+            background-size: cover;
+            background-position: center;
+        }
     }
 }
 
@@ -245,10 +260,29 @@ ul.section.img-text .page .asset-wrapper {
         background-repeat: no-repeat;
         border: 0;
         &:hover:not(:disabled){
-            background-color: none;
-            border-color: none;
-            color: $verde   ;
+            background-color: transparent!important;
+            border-color: transparent!important;
+            color: $verde;
             outline: 0px auto gray;
+        }
+    }
+}
+
+.separador-opciones{
+    min-height:15vh;
+    display:flex;
+    align-items:center;
+    background-color:$verde;
+    color:$blanco;
+    .opcion{
+        width:33%;
+        display:flex;
+        flex-direction:column;
+        h3{
+            text-align:left;
+        }
+        p{
+            text-align:left;
         }
     }
 }

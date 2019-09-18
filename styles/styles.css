@@ -197,6 +197,10 @@ body#page-course-view-topics section#region-main span.instancename {
   overflow: hidden;
 }
 
+.course-content ul.topics li#section-1.snap-native, .course-content ul.topics li#section-2.snap-native, .course-content ul.topics li#section-3.snap-native, .course-content ul.topics li#section-4.snap-native, .course-content ul.topics li#section-5.snap-native {
+  margin: 0;
+}
+
 .course-content ul.topics li#section-1 h2.sectionname, .course-content ul.topics li#section-2 h2.sectionname, .course-content ul.topics li#section-3 h2.sectionname, .course-content ul.topics li#section-4 h2.sectionname, .course-content ul.topics li#section-5 h2.sectionname {
   height: 40vh;
   width: 140%;
@@ -220,7 +224,7 @@ body#page-course-view-topics section#region-main span.instancename {
 }
 
 .course-content ul.topics li#section-1 h2.sectionname::before, .course-content ul.topics li#section-2 h2.sectionname::before, .course-content ul.topics li#section-3 h2.sectionname::before, .course-content ul.topics li#section-4 h2.sectionname::before, .course-content ul.topics li#section-5 h2.sectionname::before {
-  content: "Módulo " counter(annotation-list)-1;
+  content: "Módulo " counter(annotation-list);
   color: #fadc5d;
   float: left;
   position: relative;
@@ -276,6 +280,22 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-1 .section_footer, .course-content ul.topics li#section-2 .section_footer, .course-content ul.topics li#section-3 .section_footer, .course-content ul.topics li#section-4 .section_footer, .course-content ul.topics li#section-5 .section_footer {
   max-width: 43.5em;
   margin: 1rem auto;
+}
+
+.course-content ul.topics li#section-1.label, .course-content ul.topics li#section-2.label, .course-content ul.topics li#section-3.label, .course-content ul.topics li#section-4.label, .course-content ul.topics li#section-5.label {
+  margin: 0;
+}
+
+.course-content ul.topics li#section-1.label .asset-wrapper, .course-content ul.topics li#section-2.label .asset-wrapper, .course-content ul.topics li#section-3.label .asset-wrapper, .course-content ul.topics li#section-4.label .asset-wrapper, .course-content ul.topics li#section-5.label .asset-wrapper {
+  overflow: hidden;
+}
+
+.course-content ul.topics li#section-1.label .separador-amarillo, .course-content ul.topics li#section-2.label .separador-amarillo, .course-content ul.topics li#section-3.label .separador-amarillo, .course-content ul.topics li#section-4.label .separador-amarillo, .course-content ul.topics li#section-5.label .separador-amarillo {
+  min-height: 27vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(250, 220, 93, 0.5)), to(rgba(250, 220, 93, 0.5))), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-separador.jpg);
+  background-image: linear-gradient(rgba(250, 220, 93, 0.5), rgba(250, 220, 93, 0.5)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-separador.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .course-content ul.topics blockquote.blockquote {
@@ -451,10 +471,41 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore {
 }
 
 ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:hover:not(:disabled) {
-  background-color: none;
-  border-color: none;
+  background-color: transparent !important;
+  border-color: transparent !important;
   color: #006d38;
   outline: 0px auto gray;
+}
+
+.separador-opciones {
+  min-height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #006d38;
+  color: white;
+}
+
+.separador-opciones .opcion {
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.separador-opciones .opcion h3 {
+  text-align: left;
+}
+
+.separador-opciones .opcion p {
+  text-align: left;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:hover {
