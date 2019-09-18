@@ -217,7 +217,7 @@ body#page-course-view-topics section#region-main span.instancename {
 }
 
 .course-content ul.topics li#section-1 h2.sectionname::before, .course-content ul.topics li#section-2 h2.sectionname::before, .course-content ul.topics li#section-3 h2.sectionname::before, .course-content ul.topics li#section-4 h2.sectionname::before, .course-content ul.topics li#section-5 h2.sectionname::before {
-  content: "Módulo " counter(annotation-list);
+  content: "Módulo " counter(annotation-list)-1;
   color: #fadc5d;
   float: left;
   position: relative;
