@@ -200,15 +200,15 @@ $caja-amarilla: "%3Csvg width='100%' height='auto'  xmlns='http://www.w3.org/200
                             background-image: url('data:image/svg+xml, #{$caja-verde}');
                             background-size: cover;
                         }
-                        &:last-child {
-                            @include posicion-otros-elementos(absolute,
-                            0,
-                            0);
-                        }
-                        &:hover,
-                        &.modulo-completado {
+                        &:nth-child(n+3):not(:last-child):hover,
+                        &:nth-child(n+3):not(:last-child).modulo-completado {
                             @extend %resaltado-modulos;
                         }
+                    }
+                    &:last-child {
+                        @include posicion-otros-elementos(absolute,
+                        0,
+                        0);
                     }
                     .chapter-title {
                         line-height: 1.2;
