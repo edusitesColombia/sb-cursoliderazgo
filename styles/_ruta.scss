@@ -26,10 +26,10 @@
     &:hover {
         background-color: $amarillo!important;
         .chapter-title {
-            color: $verde;
+            color: $negro;
         }
         .text {
-            color: $amarillo;
+            color: $verde;
         }
     }
 }
@@ -37,10 +37,14 @@
 #page-header {
     #page-mast {
         h1 {
+            &::before,
             a,
             a:hover {
                 text-shadow: none;
             }
+        }
+        #course-toc {
+            background-color: transparent;
         }
         #toc-desktop-menu-heading {
             display: none;
@@ -85,7 +89,6 @@
                 @include textos-ruta($blanco, .7rem);
             }
             #course-toc {
-                background-color: transparent;
                 #chapters {
                     li {
                         display: none;
