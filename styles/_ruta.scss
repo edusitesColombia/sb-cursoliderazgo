@@ -18,7 +18,7 @@ $caja-amarilla: "%3Csvg width='100%' height='100%'  xmlns='http://www.w3.org/200
 @mixin imagen-background ($file, $format, $position, $size) {
     background: {
         image: url(http://jkvela.website/pluginfile.php/62/block_html/content/#{$file}.#{$format});
-        position: center;
+        position: center bottom;
         size: cover;
         repeat: no-repeat;
     }
