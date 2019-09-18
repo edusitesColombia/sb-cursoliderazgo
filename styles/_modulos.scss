@@ -101,6 +101,9 @@ li#section-1, li#section-2, li#section-3, li#section-4, li#section-5 {
     ul.section.img-text{
         background:$amarillo;
         counter-reset: actividadNo;
+        li .asset-wrapper{
+            overflow:hidden;
+        }
     }
 
     //contenedor de los botones crear actividad de aprendizaje y arrastre archivos para anexarlos
@@ -114,7 +117,7 @@ li#section-1, li#section-2, li#section-3, li#section-4, li#section-5 {
         max-width:43.5em;
         margin:1rem auto;
     }
-    &.label{
+    .label{
         margin:0;
         .asset-wrapper{
             overflow:hidden;
@@ -299,7 +302,6 @@ ul.section.img-text .page .asset-wrapper {
             background-size: cover;
             background-repeat: no-repeat;
             position: absolute;
-            float: left;
             margin-left: -90px;
         }
         &.glosario::before{
