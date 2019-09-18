@@ -676,9 +676,9 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
   display: none;
 }
 
-:root font {
-  family: "Roboto Condensed", "Roboto", "Helvetica", sans-serif !important;
-  size: 18px;
+:root {
+  font-family: "Roboto Condensed", "Roboto", "Helvetica", sans-serif !important;
+  font-size: 18px;
 }
 
 ::-moz-selection {
