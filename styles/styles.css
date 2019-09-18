@@ -63,7 +63,7 @@
 #page-login-index section#region-main div[role="main"] .snap-login h2 {
   font-weight: 900;
   font: size 2.5rem;
-  color: "rgb(0, 109, 56)";
+  color: #006d38;
   line-height: 2.2rem;
 }
 
@@ -110,7 +110,7 @@ header#mr-nav::before {
 }
 
 #snap-pm-header a {
-  color: "rgb(250, 220, 93)" !important;
+  color: #fadc5d !important;
   padding: 0;
 }
 
@@ -211,7 +211,7 @@ body#page-course-view-topics section#region-main span.instancename {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 25%;
-  background-color: "rgb(250, 220, 93)";
+  background-color: #fadc5d;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
   background-size: cover;
@@ -225,7 +225,7 @@ body#page-course-view-topics section#region-main span.instancename {
 
 .course-content ul.topics li#section-1 h2.sectionname::before, .course-content ul.topics li#section-2 h2.sectionname::before, .course-content ul.topics li#section-3 h2.sectionname::before, .course-content ul.topics li#section-4 h2.sectionname::before, .course-content ul.topics li#section-5 h2.sectionname::before {
   content: "Módulo " counter(annotation-list);
-  color: "rgb(250, 220, 93)";
+  color: #fadc5d;
   float: left;
   position: relative;
   top: -1.3em;
@@ -264,7 +264,7 @@ body#page-course-view-topics section#region-main span.instancename {
   width: 30%;
   margin: 2rem auto;
   padding-bottom: 1rem;
-  border-bottom: 3px solid "rgb(250, 220, 93)";
+  border-bottom: 3px solid #fadc5d;
 }
 
 .course-content ul.topics li#section-1 ul.section.img-text, .course-content ul.topics li#section-2 ul.section.img-text, .course-content ul.topics li#section-3 ul.section.img-text, .course-content ul.topics li#section-4 ul.section.img-text, .course-content ul.topics li#section-5 ul.section.img-text {
@@ -323,7 +323,7 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics blockquote.blockquote p, .course-content ul.topics blockquote.blockquote footer {
   margin: 0 !important;
   max-width: 100% !important;
-  background: "rgb(0, 109, 56)";
+  background: #006d38;
   color: white;
   padding: 2rem 5rem;
 }
@@ -336,7 +336,7 @@ body#page-course-view-topics section#region-main span.instancename {
   padding: 0 5rem 2rem 5rem;
   text-align: right;
   font-size: 1.3rem;
-  color: "rgb(250, 220, 93)";
+  color: #fadc5d;
   font-weight: 600;
 }
 
@@ -477,7 +477,7 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore {
 ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:hover:not(:disabled) {
   background-color: transparent !important;
   border-color: transparent !important;
-  color: "rgb(0, 109, 56)";
+  color: #006d38;
   outline: 0px auto gray;
 }
 
@@ -489,7 +489,7 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: "rgb(0, 109, 56)";
+  background-color: #006d38;
   color: white;
   padding: 4rem 11%;
   font-size: 80%;
@@ -549,7 +549,7 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:hover .chapter-title, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado .chapter-title {
-  color: "rgb(0, 109, 56)";
+  color: #006d38;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:hover .text, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado .text {
@@ -595,7 +595,7 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
 }
 
 #page-header #page-mast #chapters li .text {
-  color: "rgb(250, 220, 93)";
+  color: #fadc5d;
   text-transform: uppercase;
   font-size: 0.7rem;
   font-weight: normal;
@@ -671,7 +671,7 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
 }
 
 .home-ruta #page-header #page-mast > h1 {
-  color: "rgb(0, 109, 56)";
+  color: #006d38;
   text-transform: uppercase;
   font-size: 1.6rem;
   font-weight: bold;
@@ -692,7 +692,7 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
 
 .home-ruta #page-header #page-mast > h1 a,
 .home-ruta #page-header #page-mast > h1 a:hover {
-  color: "rgb(0, 109, 56)";
+  color: #006d38;
 }
 
 .home-ruta #page-header #page-mast .texto-bienvenida {
@@ -784,7 +784,7 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
 
 .home-ruta #page-header #page-mast #course-toc #chapters .chapter-title {
   line-height: 1.2;
-  color: "rgb(250, 220, 93)";
+  color: #fadc5d;
   text-decoration: none;
 }
 
@@ -802,12 +802,12 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
 }
 
 ::-moz-selection {
-  background: "rgb(250, 220, 93)";
+  background: #fadc5d;
   color: #fff;
 }
 
 ::selection {
-  background: "rgb(250, 220, 93)";
+  background: #fadc5d;
   color: #fff;
 }
 
