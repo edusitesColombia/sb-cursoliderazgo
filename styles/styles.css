@@ -554,7 +554,6 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:hover .text, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado .text {
   color: #2b2b2b;
-  background-color: green;
 }
 
 #page-header #page-mast h1::before,
