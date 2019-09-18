@@ -31,7 +31,7 @@ function marcarPadreClase(elemento, nombreClaseAgregar) {
     var i;
     for (i = 0; i < elemento.length; i++) {
         elementoEncontrado = recorrerPadres(elemento[i]);
-        elementoEncontrato.classList.add(nombreClaseAgregar);
+        elementoEncontrado.classList.add(nombreClaseAgregar);
     }
 }
 
