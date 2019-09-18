@@ -18,7 +18,7 @@ $caja-amarilla: "%3Csvg width='100%' height='100%'  xmlns='http://www.w3.org/200
 @mixin imagen-background ($file, $format, $position, $size) {
     background: {
         image: url(http://jkvela.website/pluginfile.php/62/block_html/content/#{$file}.#{$format});
-        position: center -20px;
+        position: center -50px;
         size: cover;
         repeat: no-repeat;
     }
@@ -118,13 +118,13 @@ $caja-amarilla: "%3Csvg width='100%' height='100%'  xmlns='http://www.w3.org/200
         .breadcrumb-nav {
             visibility: hidden;
         }
-        height: 100vh;
+        height: 105vh;
         @include imagen-background('fondo_avance0',
         'svg',
         'center',
         'cover');
         #page-mast {
-            height: 80vh;
+            height: 85vh;
             display: flex;
             flex-direction: column;
             &>h1 {

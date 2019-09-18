@@ -43,11 +43,9 @@ body#page-course-view-topics section#region-main {
         }
         //contenedor del nombre de sección
         h2.sectionname {
-            //porque ya no se necesita, pero estos estilos pueden servir para la cabecera
-            display: none;
             height: 40vh;
             width: 140%;
-            display: flex;
+            display: none;
             align-items: center;
             padding-left: 25%;
             background-color: $amarillo;
