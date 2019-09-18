@@ -63,7 +63,7 @@
 #page-login-index section#region-main div[role="main"] .snap-login h2 {
   font-weight: 900;
   font: size 2.5rem;
-  color: #006d38;
+  color: "rgb(0, 109, 56)";
   line-height: 2.2rem;
 }
 
@@ -110,7 +110,7 @@ header#mr-nav::before {
 }
 
 #snap-pm-header a {
-  color: #fadc5d !important;
+  color: "rgb(250, 220, 93)" !important;
   padding: 0;
 }
 
@@ -211,7 +211,7 @@ body#page-course-view-topics section#region-main span.instancename {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 25%;
-  background-color: #fadc5d;
+  background-color: "rgb(250, 220, 93)";
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
   background-size: cover;
@@ -225,7 +225,7 @@ body#page-course-view-topics section#region-main span.instancename {
 
 .course-content ul.topics li#section-1 h2.sectionname::before, .course-content ul.topics li#section-2 h2.sectionname::before, .course-content ul.topics li#section-3 h2.sectionname::before, .course-content ul.topics li#section-4 h2.sectionname::before, .course-content ul.topics li#section-5 h2.sectionname::before {
   content: "Módulo " counter(annotation-list);
-  color: #fadc5d;
+  color: "rgb(250, 220, 93)";
   float: left;
   position: relative;
   top: -1.3em;
@@ -264,7 +264,7 @@ body#page-course-view-topics section#region-main span.instancename {
   width: 30%;
   margin: 2rem auto;
   padding-bottom: 1rem;
-  border-bottom: 3px solid #fadc5d;
+  border-bottom: 3px solid "rgb(250, 220, 93)";
 }
 
 .course-content ul.topics li#section-1 ul.section.img-text, .course-content ul.topics li#section-2 ul.section.img-text, .course-content ul.topics li#section-3 ul.section.img-text, .course-content ul.topics li#section-4 ul.section.img-text, .course-content ul.topics li#section-5 ul.section.img-text {
@@ -323,7 +323,7 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics blockquote.blockquote p, .course-content ul.topics blockquote.blockquote footer {
   margin: 0 !important;
   max-width: 100% !important;
-  background: #006d38;
+  background: "rgb(0, 109, 56)";
   color: white;
   padding: 2rem 5rem;
 }
@@ -336,7 +336,7 @@ body#page-course-view-topics section#region-main span.instancename {
   padding: 0 5rem 2rem 5rem;
   text-align: right;
   font-size: 1.3rem;
-  color: #fadc5d;
+  color: "rgb(250, 220, 93)";
   font-weight: 600;
 }
 
@@ -477,7 +477,7 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore {
 ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:hover:not(:disabled) {
   background-color: transparent !important;
   border-color: transparent !important;
-  color: #006d38;
+  color: "rgb(0, 109, 56)";
   outline: 0px auto gray;
 }
 
@@ -489,7 +489,7 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #006d38;
+  background-color: "rgb(0, 109, 56)";
   color: white;
   padding: 4rem 11%;
   font-size: 80%;
@@ -544,12 +544,12 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:hover, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado {
-  background-image: url("data:image/svg+xml, %3Csvg width='100%' height='auto'  xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='#fadc5d' d='M231.9743097756687,144.4894306236695 L34.23931043837641,144.6099759266518 C21.08000638301136,145.22777060443585 9.808613846952934,137.09096265313266 9.135694889576314,126.46790782782017 L0.032596771731464205,20.127397996914983 C-0.7524753452079281,7.876981581341759 12.761980382105904,-1.796778982985419 27.753119376996203,0.28262749345875804 L254.3301729151808,14.310176296329782 C267.3960160042436,16.118355841063835 276.1065780636188,26.198956802956186 273.6579007464983,36.71653448815924 L253.9376368567112,128.9089502132111 C251.9375721778418,137.54300753931622 242.87185844651788,143.9771130859949 231.9743097756687,144.4894306236695Z'%3E%3C/path%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml, %3Csvg width='100%' height='auto'  xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='rgb(250, 220, 93)' d='M231.9743097756687,144.4894306236695 L34.23931043837641,144.6099759266518 C21.08000638301136,145.22777060443585 9.808613846952934,137.09096265313266 9.135694889576314,126.46790782782017 L0.032596771731464205,20.127397996914983 C-0.7524753452079281,7.876981581341759 12.761980382105904,-1.796778982985419 27.753119376996203,0.28262749345875804 L254.3301729151808,14.310176296329782 C267.3960160042436,16.118355841063835 276.1065780636188,26.198956802956186 273.6579007464983,36.71653448815924 L253.9376368567112,128.9089502132111 C251.9375721778418,137.54300753931622 242.87185844651788,143.9771130859949 231.9743097756687,144.4894306236695Z'%3E%3C/path%3E%3C/svg%3E");
   background-size: cover;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:hover .chapter-title, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado .chapter-title {
-  color: #006d38;
+  color: "rgb(0, 109, 56)";
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:hover .text, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado .text {
@@ -595,7 +595,7 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
 }
 
 #page-header #page-mast #chapters li .text {
-  color: #fadc5d;
+  color: "rgb(250, 220, 93)";
   text-transform: uppercase;
   font-size: 0.7rem;
   font-weight: normal;
@@ -671,7 +671,7 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
 }
 
 .home-ruta #page-header #page-mast > h1 {
-  color: #006d38;
+  color: "rgb(0, 109, 56)";
   text-transform: uppercase;
   font-size: 1.6rem;
   font-weight: bold;
@@ -692,7 +692,7 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
 
 .home-ruta #page-header #page-mast > h1 a,
 .home-ruta #page-header #page-mast > h1 a:hover {
-  color: #006d38;
+  color: "rgb(0, 109, 56)";
 }
 
 .home-ruta #page-header #page-mast .texto-bienvenida {
@@ -772,7 +772,7 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(n+3):not(:last-child) {
-  background-image: url("data:image/svg+xml, %3Csvg height='auto' width='100%' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='#006d38' d='M231.9743097756687,144.4894306236695 L34.23931043837641,144.6099759266518 C21.08000638301136,145.22777060443585 9.808613846952934,137.09096265313266 9.135694889576314,126.46790782782017 L0.032596771731464205,20.127397996914983 C-0.7524753452079281,7.876981581341759 12.761980382105904,-1.796778982985419 27.753119376996203,0.28262749345875804 L254.3301729151808,14.310176296329782 C267.3960160042436,16.118355841063835 276.1065780636188,26.198956802956186 273.6579007464983,36.71653448815924 L253.9376368567112,128.9089502132111 C251.9375721778418,137.54300753931622 242.87185844651788,143.9771130859949 231.9743097756687,144.4894306236695Z'%3E%3C/path%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml, %3Csvg height='auto' width='100%' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='rgb(0, 109, 56)' d='M231.9743097756687,144.4894306236695 L34.23931043837641,144.6099759266518 C21.08000638301136,145.22777060443585 9.808613846952934,137.09096265313266 9.135694889576314,126.46790782782017 L0.032596771731464205,20.127397996914983 C-0.7524753452079281,7.876981581341759 12.761980382105904,-1.796778982985419 27.753119376996203,0.28262749345875804 L254.3301729151808,14.310176296329782 C267.3960160042436,16.118355841063835 276.1065780636188,26.198956802956186 273.6579007464983,36.71653448815924 L253.9376368567112,128.9089502132111 C251.9375721778418,137.54300753931622 242.87185844651788,143.9771130859949 231.9743097756687,144.4894306236695Z'%3E%3C/path%3E%3C/svg%3E");
   background-size: cover;
 }
 
@@ -784,7 +784,7 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
 
 .home-ruta #page-header #page-mast #course-toc #chapters .chapter-title {
   line-height: 1.2;
-  color: #fadc5d;
+  color: "rgb(250, 220, 93)";
   text-decoration: none;
 }
 
@@ -802,12 +802,12 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
 }
 
 ::-moz-selection {
-  background: #fadc5d;
+  background: "rgb(250, 220, 93)";
   color: #fff;
 }
 
 ::selection {
-  background: #fadc5d;
+  background: "rgb(250, 220, 93)";
   color: #fff;
 }
 
