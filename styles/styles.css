@@ -544,7 +544,6 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:hover {
-<<<<<<< HEAD
   /*    background-color: $amarillo!important;
         .chapter-title {
             color: $verde;
@@ -554,17 +553,6 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
         } */
   background-image: url("data:image/svg+xml, %3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='yellow' d='M231.9743097756687,144.4894306236695 L34.23931043837641,144.6099759266518 C21.08000638301136,145.22777060443585 9.808613846952934,137.09096265313266 9.135694889576314,126.46790782782017 L0.032596771731464205,20.127397996914983 C-0.7524753452079281,7.876981581341759 12.761980382105904,-1.796778982985419 27.753119376996203,0.28262749345875804 L254.3301729151808,14.310176296329782 C267.3960160042436,16.118355841063835 276.1065780636188,26.198956802956186 273.6579007464983,36.71653448815924 L253.9376368567112,128.9089502132111 C251.9375721778418,137.54300753931622 242.87185844651788,143.9771130859949 231.9743097756687,144.4894306236695Z'%3E%3C/path%3E%3C/svg%3E");
   background-size: cover;
-=======
-  background-color: #fadc5d !important;
-}
-
-.home-ruta #page-header #page-mast #course-toc #chapters li:hover .chapter-title {
-  color: #2b2b2b;
-}
-
-.home-ruta #page-header #page-mast #course-toc #chapters li:hover .text {
-  color: #006d38;
->>>>>>> a808f071b40845f918c1944d73f3bc69a0174fc9
 }
 
 #page-header #page-mast h1::before,

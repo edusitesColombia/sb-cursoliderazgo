@@ -200,7 +200,7 @@ $caja-amarilla: "%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http:/
                             0);
                         }
                         &:nth-child(n+3):not(:last-child) {
-                            background-image: url("data:image/svg+xml, #{$caja-verde}");
+                            background-image: url('data:image/svg+xml, #{$caja-verde}');
                             background-size: cover;
                         }
                         &:last-child {
