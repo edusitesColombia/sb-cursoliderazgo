@@ -506,6 +506,8 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
 
 .separador-opciones .opcion h3 {
   text-align: left;
+  color: white;
+  text-transform: uppercase;
 }
 
 .separador-opciones .opcion p {
@@ -534,6 +536,8 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
 
 .separador-opciones .opcion.bibliografia::before {
   background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/icono_bibliografia.png);
+  margin-left: -110px;
+  width: 110px;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:hover {

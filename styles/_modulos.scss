@@ -284,6 +284,8 @@ ul.section.img-text .page .asset-wrapper {
         padding-left: 100px;
         h3{
             text-align:left;
+            color:white;
+            text-transform:uppercase;
         }
         p{
             text-align:left;
@@ -308,6 +310,8 @@ ul.section.img-text .page .asset-wrapper {
         }
         &.bibliografia::before{
             background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/icono_bibliografia.png);
+            margin-left: -110px;
+            width: 110px;
         }
     }
 }
