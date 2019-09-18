@@ -27,7 +27,6 @@ $caja-amarilla: "%3Csvg width='100%' height='auto'  xmlns='http://www.w3.org/200
 %resaltado-modulos {
     background-image: url('data:image/svg+xml, #{$caja-amarilla}');
     background-size: cover;
-    /*    background-color: $amarillo!important;*/
     .chapter-title {
         color: $verde;
     }
