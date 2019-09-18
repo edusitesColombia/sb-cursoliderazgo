@@ -470,18 +470,6 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
   color: #2b2b2b;
 }
 
-.home-ruta #page-header #page-mast #chapters li.modulo-completado {
-  background-color: #fadc5d !important;
-}
-
-.home-ruta #page-header #page-mast #chapters li.modulo-completado .chapter-title {
-  color: #2b2b2b;
-}
-
-.home-ruta #page-header #page-mast #chapters li.modulo-completado .text {
-  color: #006d38;
-}
-
 #page-header #page-mast #toc-desktop-menu-heading {
   display: none;
 }
@@ -505,6 +493,9 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 #page-header #page-mast #chapters li .text {
@@ -569,6 +560,22 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
   background-image: url(http://jkvela.website/pluginfile.php/62/block_html/content/fondo_avance0.svg);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-ruta #page-header .breadcrumb-nav {
+  visibility: hidden;
+}
+
+.home-ruta #page-header #page-mast {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .home-ruta #page-header #page-mast > h1 {
@@ -589,10 +596,10 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
 }
 
 .home-ruta #page-header #page-mast > h1 a {
-  color: #006d38;
   text-decoration: none;
 }
 
+.home-ruta #page-header #page-mast > h1 a,
 .home-ruta #page-header #page-mast > h1 a:hover {
   color: #006d38;
   text-shadow: none;
@@ -611,12 +618,13 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 45vh;
+  height: 56vh;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 100%;
   background-color: transparent;
+  margin-top: auto;
 }
 
 .home-ruta #page-header #page-mast #chapters {

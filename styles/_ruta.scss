@@ -18,6 +18,7 @@
         image: url(http://jkvela.website/pluginfile.php/62/block_html/content/#{$file}.#{$format});
         position: center;
         size: cover;
+        repeat: no-repeat;
     }
 }
 
@@ -29,18 +30,6 @@
         }
         .text {
             color: $negro;
-        }
-    }
-}
-
-%completado-modulos {
-    &.modulo-completado {
-        background-color: $amarillo!important;
-        .chapter-title {
-            color: $negro;
-        }
-        .text {
-            color: $verde;
         }
     }
 }
@@ -61,6 +50,7 @@
                 counter-increment: modulo;
                 display: flex;
                 flex-direction: column-reverse;
+                justify-content: flex-end;
                 .text {
                     @include textos-ruta($amarillo, .7rem);
                     &::before {
@@ -114,9 +104,15 @@
 
 .home-ruta {
     #page-header {
+        .breadcrumb-nav {
+            visibility: hidden;
+        }
         height: 100vh;
         @include imagen-background('fondo_avance0', 'svg', 'center', 'cover');
         #page-mast {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
             &>h1 {
                 @include textos-ruta($verde, 1.6rem, $peso: bold);
                 text-shadow: none;
@@ -126,9 +122,9 @@
                     @include textos-ruta($negro, 1.3rem, initial, bold);
                 }
                 a {
-                    color: $verde;
                     text-decoration: none;
                 }
+                a,
                 a:hover {
                     color: $verde;
                     text-shadow: none;
@@ -141,10 +137,11 @@
             #course-toc {
                 display: flex;
                 flex-direction: column;
-                height: 45vh;
+                height: 56vh;
                 justify-content: flex-end;
                 width: 100%;
                 background-color: transparent;
+                margin-top: auto;
             }
             #chapters {
                 display: flex;
@@ -188,8 +185,10 @@
                     &:last-child {
                         @include posicion-otros-elementos(absolute, 0, 0);
                     }
-                    @extend %resaltado-modulos;
-                    @extend %completado-modulos;
+                    &:hover,
+                    &.modulo-completado {
+                        @extend %resaltado-modulos;
+                    }
                 }
                 .chapter-title {
                     line-height: 1.2;
