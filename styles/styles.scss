@@ -4,14 +4,25 @@
 @import "./misCursos";
 @import "./modulos";
 @import "./ruta";
-body {
-    text-rendering: optimizelegibility;
-    font-family: 'Roboto Condensed', 'Roboto', 'Helvetica', sans-serif!important;
+:root {
+    font: {
+        family: 'Roboto Condensed', 'Roboto', 'Helvetica', sans-serif!important;
+        size: 18px;
+    }
 }
 
-@media screen and (min-width: 1600px){
-    div#page{
+::selection {
+    background: $amarillo;
+    color: #fff;
+}
+
+body {
+    text-rendering: optimizelegibility;
+}
+
+@media screen and (min-width: 1600px) {
+    div#page {
         max-width: 80%;
-        margin:0 auto;
+        margin: 0 auto;
     }
 }
