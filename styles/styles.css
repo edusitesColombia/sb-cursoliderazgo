@@ -8,7 +8,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/bg1.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 108, 56, 0.7)), to(rgba(1, 108, 56, 0.7))), url(http://jkvela.website/theme/snap/pix/segurosbolivar/bg1.jpg);
+  background: linear-gradient(rgba(1, 108, 56, 0.7), rgba(1, 108, 56, 0.7)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/bg1.jpg);
   background-size: cover;
   background-position-x: center;
 }
@@ -18,9 +19,7 @@
 }
 
 #page-login-index main#moodle-page section#region-main {
-  background-color: rgba(255, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  background-color: white;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
