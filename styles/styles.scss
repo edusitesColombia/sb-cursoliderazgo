@@ -11,6 +11,14 @@
     }
 }
 
+#mr-nav,
+#page-header,
+#region-main,
+#moodle-footer,
+#moodle-blocks {
+    font-size: 1rem;
+}
+
 ::selection {
     background: $amarillo;
     color: #fff;

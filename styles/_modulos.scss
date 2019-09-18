@@ -5,8 +5,8 @@ body#page-course-view-topics section#region-main {
     max-width: 100%!important;
     padding: 0;
     margin: 0;
-    .course-content{
-        max-width:100%!important;
+    .course-content {
+        max-width: 100%!important;
     }
     //letra de los titulos
     span.instancename {
@@ -14,234 +14,236 @@ body#page-course-view-topics section#region-main {
         line-height: 1.5rem;
     }
 }
+
 //TODO: revisar span notifications hijo de region-main
-.course-content ul.topics{
-//Fix ancho secciones generales
-li.section.main{
-    max-width: 43.5em;
-    margin: 0 auto!important;
-    &.state-visible:not(#section-1), &.state-visible:not(#section-2), &.state-visible:not(#section-3), &.state-visible:not(#section-4), &.state-visible:not(#section-5) {
-        margin-top: 2rem!important;
-        margin-bottom: 1rem!important;
+.course-content ul.topics {
+    //Fix ancho secciones generales
+    li.section.main {
+        max-width: 43.5em;
+        margin: 0 auto!important;
+        &.state-visible:not(#section-1),
+        &.state-visible:not(#section-2),
+        &.state-visible:not(#section-3),
+        &.state-visible:not(#section-4),
+        &.state-visible:not(#section-5) {
+            margin-top: 2rem!important;
+            margin-bottom: 1rem!important;
+        }
     }
-}
-
-
-//Secciones que contienen modulos de aprendizaje
-li#section-1, li#section-2, li#section-3, li#section-4, li#section-5 {
-    max-width:100%!important;
-    overflow:hidden;
-    &.snap-native{
-        margin:0;
-    }
-    //contenedor del nombre de sección
-    h2.sectionname{
-        height: 40vh;
-        width: 140%;
-        display: flex;
-        align-items: center;
-        padding-left: 25%;
-        background-color: $amarillo;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
-        background-size:cover;
-        background-position:center;
-        text-transform: uppercase;
-        font-weight: 900;
-        font-size: 3em;
-        margin-left:-5em;
-        color:$blanco;
-        &::before{
-            content: "Módulo " counter(annotation-list);
-            color: $amarillo;
-            float: left;
+    //Secciones que contienen modulos de aprendizaje
+    li#section-1,
+    li#section-2,
+    li#section-3,
+    li#section-4,
+    li#section-5 {
+        max-width: 100%!important;
+        overflow: hidden;
+        &.snap-native {
+            margin: 0;
+        }
+        //contenedor del nombre de sección
+        h2.sectionname {
+            //porque ya no se necesita, pero estos estilos pueden servir para la cabecera
+            display: none;
+            height: 40vh;
+            width: 140%;
+            display: flex;
+            align-items: center;
+            padding-left: 25%;
+            background-color: $amarillo;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
+            background-size: cover;
+            background-position: center;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 3em;
+            margin-left: -5em;
+            color: $blanco;
+            &::before {
+                content: "Módulo " counter(annotation-list);
+                color: $amarillo;
+                float: left;
+                position: relative;
+                top: -1.3em;
+                font-size: 2rem;
+                left: 4.25em;
+                white-space: nowrap;
+            }
+        }
+        .video-container {
             position: relative;
-            top: -1.3em;
-            font-size:2rem;
-            left: 4.25em;
-            white-space: nowrap;
-        }
-    }
-
-    .video-container{
-        position: relative;
-        width: 100%;
-        padding-bottom: 56.25%; 
-        height: 0;
-        iframe{
-            position: absolute;
-            top:0;
-            left: 0;
-            margin: 5%;
-            margin-top:3%;
-            max-width: 90%;
             width: 100%;
-            height: 90%;
+            padding-bottom: 56.25%;
+            height: 0;
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin: 5%;
+                margin-top: 3%;
+                max-width: 90%;
+                width: 100%;
+                height: 90%;
+            }
         }
-      }
-
-    //contenedor del parrafo de resumen de la sección
-    div.summary{
-        p{
+        //contenedor del parrafo de resumen de la sección
+        div.summary {
+            p {
+                max-width: 43.5em;
+                margin: 0 auto;
+            }
+            h3 {
+                text-align: center;
+                font-weight: 700;
+                font-style: italic;
+                width: 30%;
+                margin: 2rem auto;
+                padding-bottom: 1rem;
+                border-bottom: 3px solid $amarillo;
+            }
+        }
+        //contenedor de todas las actividades del módulo
+        ul.section.img-text {
+            background: $blanco;
+            counter-reset: actividadNo;
+            li .asset-wrapper {
+                overflow: hidden;
+            }
+        }
+        //contenedor de los botones crear actividad de aprendizaje y arrastre archivos para anexarlos
+        div.row {
             max-width: 43.5em;
             margin: 0 auto;
         }
-        h3{
-            text-align: center;
-            font-weight: 700;
-            font-style: italic;
-            width: 30%;
-            margin: 2rem auto;
-            padding-bottom: 1rem;
-            border-bottom: 3px solid $amarillo;
+        //contenedor de los botones de navegación anterior y siguiente
+        .section_footer {
+            max-width: 43.5em;
+            margin: 1rem auto;
         }
-        
-    }
-
-    //contenedor de todas las actividades del módulo
-    ul.section.img-text{
-        background:$blanco;
-        counter-reset: actividadNo;
-        li .asset-wrapper{
-            overflow:hidden;
+        .label {
+            margin: 0;
+            .asset-wrapper {
+                overflow: hidden;
+            }
+            .separador-amarillo {
+                min-height: 27vh;
+                background-image: linear-gradient(rgba(250, 220, 93, 0.5), rgba(250, 220, 93, 0.5)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-separador.jpg);
+                background-size: cover;
+                background-position: center;
+            }
         }
     }
-
-    //contenedor de los botones crear actividad de aprendizaje y arrastre archivos para anexarlos
-    div.row{
-        max-width:43.5em;
-        margin:0 auto;
-    }
-
-    //contenedor de los botones de navegación anterior y siguiente
-    .section_footer{
-        max-width:43.5em;
-        margin:1rem auto;
-    }
-    .label{
-        margin:0;
-        .asset-wrapper{
-            overflow:hidden;
-        }
-        .separador-amarillo {
-            min-height: 27vh;
-            background-image: linear-gradient(rgba(250, 220, 93, 0.5), rgba(250, 220, 93, 0.5)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-separador.jpg);
-            background-size: cover;
-            background-position: center;
-        }
-    }
-}
-
-// estilos para blockquotes
-blockquote.blockquote{
-    border: 0;
-    height: 70vh;
-    background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-quote.jpg);
-    background-size:cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 0;
-        p, footer {
+    // estilos para blockquotes
+    blockquote.blockquote {
+        border: 0;
+        height: 70vh;
+        background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-quote.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0;
+        p,
+        footer {
             margin: 0!important;
             max-width: 100% !important;
             background: $verde;
             color: white;
             padding: 2rem 5rem;
         }
-        p{
-            font-style:italic;
+        p {
+            font-style: italic;
         }
-        footer{
+        footer {
             padding: 0 5rem 2rem 5rem;
             text-align: right;
             font-size: 1.3rem;
             color: $amarillo;
             font-weight: 600;
-            .usertour{
-                display:none;
-            }
-        }
-    }
-
-//estilos y color intercalado lecciones
-ul.section.img-text li.snap-activity{
-    border:0;
-    margin:0;
-    min-height: 45vh;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    .asset-wrapper{
-        display: flex;
-        position:absolute;
-        width:100%;
-        .activityinstance{
-            background-color:transparent;
-            width: 100%;
-            text-align: center;
-            .snap-assettype{
-                display:none;
-            }
-            .snap-asset-content{
-                display: flex;
-                height: 100%;
-                justify-content: center;
-                flex-direction: column;
-                width: 60%;
-                text-align: right;
-                padding-left: 6%;
-                .contentafterlink{
-                    margin-left:0px;
-                }
-            }
-            .snap-asset-content h3 img{
+            .usertour {
                 display: none;
             }
         }
     }
-    &:nth-child(odd){
-        background-color:$gris-no2;
-        &::before{
-            counter-increment: actividadNo;
-            content: "0" counter(actividadNo);
-            color: $gris-no1;
+    //estilos y color intercalado lecciones
+    ul.section.img-text li.snap-activity {
+        border: 0;
+        margin: 0;
+        min-height: 45vh;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        .asset-wrapper {
+            display: flex;
             position: absolute;
-            bottom: -60px;
-            font-size: 500px;
-            line-height: 19rem;
-            letter-spacing: -40px;
-            right: 4%;
-            font-family: 'Roboto Condensed';
-            font-weight: 900;
-            z-index: 0;
+            width: 100%;
+            .activityinstance {
+                background-color: transparent;
+                width: 100%;
+                text-align: center;
+                .snap-assettype {
+                    display: none;
+                }
+                .snap-asset-content {
+                    display: flex;
+                    height: 100%;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 60%;
+                    text-align: right;
+                    padding-left: 6%;
+                    .contentafterlink {
+                        margin-left: 0px;
+                    }
+                }
+                .snap-asset-content h3 img {
+                    display: none;
+                }
+            }
+        }
+        &:nth-child(odd) {
+            background-color: $gris-no2;
+            &::before {
+                counter-increment: actividadNo;
+                content: "0" counter(actividadNo);
+                color: $gris-no1;
+                position: absolute;
+                bottom: -60px;
+                font-size: 500px;
+                line-height: 19rem;
+                letter-spacing: -40px;
+                right: 4%;
+                font-family: 'Roboto Condensed';
+                font-weight: 900;
+                z-index: 0;
+            }
+        }
+        &:nth-child(even) {
+            background-color: $gris-no1;
+            .activityinstance .snap-asset-content {
+                margin-left: auto;
+                text-align: left;
+                padding-right: 6%;
+            }
+            &::before {
+                counter-increment: actividadNo;
+                content: "0" counter(actividadNo);
+                color: $gris-no2;
+                position: absolute;
+                top: -60px;
+                font-size: 500px;
+                letter-spacing: -40px;
+                line-height: 19rem;
+                left: 3%;
+                font-family: 'Roboto Condensed';
+                font-weight: 900;
+                z-index: 0;
+            }
+        }
+        &:last-of-type::before {
+            content: "gato"!important;
         }
     }
-    &:nth-child(even){
-        background-color:$gris-no1; 
-        .activityinstance .snap-asset-content{
-            margin-left: auto;
-            text-align: left;
-            padding-right: 6%;
-        }
-        &::before{
-            counter-increment: actividadNo;
-            content: "0" counter(actividadNo);
-            color: $gris-no2;
-            position: absolute;
-            top: -60px;
-            font-size: 500px;
-            letter-spacing: -40px;
-            line-height: 19rem;
-            left: 3%;
-            font-family: 'Roboto Condensed';
-            font-weight: 900;
-            z-index: 0;
-        }       
-    }
-    &:last-of-type::before{
-        content:"gato"!important;
-    }  
-}
 }
 
 //estilos para actividad: pagina
@@ -262,7 +264,7 @@ ul.section.img-text .page .asset-wrapper {
         padding: 3rem;
         background-repeat: no-repeat;
         border: 0;
-        &:hover:not(:disabled){
+        &:hover:not(:disabled) {
             background-color: transparent!important;
             border-color: transparent!important;
             color: $verde;
@@ -271,46 +273,45 @@ ul.section.img-text .page .asset-wrapper {
     }
 }
 
-.separador-opciones{
-    min-height:30vh;
-    display:flex;
-    align-items:center;
-    background-color:$verde;
-    color:$blanco;
-    padding:4rem 11%;
-    font-size:80%;
-    .opcion{
-        width:33%;
-        display:flex;
-        flex-direction:column;
-        padding:1rem;
+.separador-opciones {
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    background-color: $verde;
+    color: $blanco;
+    padding: 4rem 11%;
+    font-size: 80%;
+    .opcion {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
         padding-left: 100px;
-        h3{
-            text-align:left;
-            color:white;
-            text-transform:uppercase;
+        h3 {
+            text-align: left;
+            color: white;
+            text-transform: uppercase;
         }
-        p{
-            text-align:left;
+        p {
+            text-align: left;
         }
         &::before {
             content: "";
             display: inline-block;
             height: 110px;
             width: 90px;
-            
             background-size: cover;
             background-repeat: no-repeat;
             position: absolute;
             margin-left: -90px;
         }
-        &.glosario::before{
+        &.glosario::before {
             background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/icono_glosario.png);
         }
-        &.cartilla::before{
+        &.cartilla::before {
             background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/icono_cartilla.png);
         }
-        &.bibliografia::before{
+        &.bibliografia::before {
             background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/icono_bibliografia.png);
             margin-left: -110px;
             width: 110px;
