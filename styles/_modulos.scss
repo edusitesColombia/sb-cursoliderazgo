@@ -31,6 +31,9 @@ li.section.main{
 li#section-1, li#section-2, li#section-3, li#section-4, li#section-5 {
     max-width:100%!important;
     overflow:hidden;
+    &.snap-native{
+        margin:0;
+    }
     //contenedor del nombre de sección
     h2.sectionname{
         height: 40vh;
@@ -48,7 +51,7 @@ li#section-1, li#section-2, li#section-3, li#section-4, li#section-5 {
         margin-left:-5em;
         color:$blanco;
         &::before{
-            content: "Módulo " counter(annotation-list)-1;
+            content: "Módulo " counter(annotation-list);
             color: $amarillo;
             float: left;
             position: relative;
@@ -110,6 +113,18 @@ li#section-1, li#section-2, li#section-3, li#section-4, li#section-5 {
     .section_footer{
         max-width:43.5em;
         margin:1rem auto;
+    }
+    &.label{
+        margin:0;
+        .asset-wrapper{
+            overflow:hidden;
+        }
+        .separador-amarillo {
+            min-height: 27vh;
+            background-image: linear-gradient(rgba(250, 220, 93, 0.5), rgba(250, 220, 93, 0.5)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-separador.jpg);
+            background-size: cover;
+            background-position: center;
+        }
     }
 }
 
@@ -245,10 +260,58 @@ ul.section.img-text .page .asset-wrapper {
         background-repeat: no-repeat;
         border: 0;
         &:hover:not(:disabled){
-            background-color: none;
-            border-color: none;
-            color: $verde   ;
+            background-color: transparent!important;
+            border-color: transparent!important;
+            color: $verde;
             outline: 0px auto gray;
+        }
+    }
+}
+
+.separador-opciones{
+    min-height:30vh;
+    display:flex;
+    align-items:center;
+    background-color:$verde;
+    color:$blanco;
+    padding:4rem 11%;
+    font-size:80%;
+    .opcion{
+        width:33%;
+        display:flex;
+        flex-direction:column;
+        padding:1rem;
+        padding-left: 100px;
+        h3{
+            text-align:left;
+            color:white;
+            text-transform:uppercase;
+        }
+        p{
+            text-align:left;
+        }
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 110px;
+            width: 90px;
+            
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            float: left;
+            margin-left: -90px;
+        }
+        &.glosario::before{
+            background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/icono_glosario.png);
+        }
+        &.cartilla::before{
+            background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/icono_cartilla.png);
+        }
+        &.bibliografia::before{
+            background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/icono_bibliografia.png);
+            margin-left: -110px;
+            width: 110px;
         }
     }
 }
