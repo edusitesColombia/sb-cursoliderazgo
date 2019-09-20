@@ -1,6 +1,4 @@
-
 @import "./mixins";
-
 //hacer el contenedor de ancho completo
 //max-width del contenedor es 60.5em
 //max-width del contenido es 43.5em
@@ -37,7 +35,7 @@ body#page-course-view-topics section#region-main {
                             display: flex;
                         }
                         .chapter-title {
-                            @include textos-ruta($blanco, 2rem, $peso: bold)
+                            @include textos-ruta($blanco, 1.77rem, $peso: bold)
                         }
                         .text {
                             @include textos-ruta($amarillo, 1.44rem);
