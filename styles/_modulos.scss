@@ -1,5 +1,5 @@
-//espacio para gregar el mixin
 
+@import "./mixins";
 
 //hacer el contenedor de ancho completo
 //max-width del contenedor es 60.5em
@@ -27,8 +27,7 @@ body#page-course-view-topics section#region-main {
         #page-mast {
             display: block;
             &>h1 {
-                @include textos-ruta($blanco,
-                .7rem);
+                @include textos-ruta($blanco, .7rem);
             }
             #course-toc {
                 #chapters {
@@ -38,8 +37,7 @@ body#page-course-view-topics section#region-main {
                             display: flex;
                         }
                         .chapter-title {
-                            @include textos-ruta($blanco,
-                            2rem)
+                            @include textos-ruta($blanco, 2rem)
                         }
                     }
                     .toc-footer {
@@ -50,9 +48,9 @@ body#page-course-view-topics section#region-main {
             }
         }
     }
- }
+}
 
- #page-header {
+#page-header {
     #page-mast {
         display: none;
         h1 {
@@ -81,8 +79,7 @@ body#page-course-view-topics section#region-main {
                 flex-direction: column-reverse;
                 justify-content: flex-end;
                 .text {
-                    @include textos-ruta($amarillo,
-                    .7rem);
+                    @include textos-ruta($amarillo, .7rem);
                     &::before {
                         content: 'Módulo ' counter(modulo);
                     }
@@ -97,7 +94,7 @@ body#page-course-view-topics section#region-main {
             display: none;
         }
     }
- }
+}
 
 //TODO: revisar span notifications hijo de region-main
 .course-content ul.topics {
@@ -173,9 +170,8 @@ body#page-course-view-topics section#region-main {
             p {
                 max-width: 43.5em;
                 margin: 0 auto;
-            }            
+            }
         }
-        
         //contenedor de todas las actividades del módulo
         ul.section.img-text {
             background: $blanco;
@@ -318,15 +314,16 @@ body#page-course-view-topics section#region-main {
         }
     }
 }
+
 //estilos descripcion modulo, objetivos
 .contenedor-objetivos {
     width: 70%;
     margin: 0 auto;
     min-width: 980px;
-    display:flex;
-    flex-wrap:nowrap;
-    padding:1rem;
-    #objetivo-modulo{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 1rem;
+    #objetivo-modulo {
         width: 60%;
         display: flex;
         padding: 4.5rem 5rem 7.5rem 6.5rem;
@@ -337,7 +334,7 @@ body#page-course-view-topics section#region-main {
         background-size: contain;
         background-position: center;
     }
-    #complemento-objetivos{
+    #complemento-objetivos {
         background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/caja_objetivos.svg);
         background-repeat: no-repeat;
         background-position: center;
@@ -352,6 +349,7 @@ body#page-course-view-topics section#region-main {
         }
     }
 }
+
 h3#final-descripcion {
     text-align: center;
     font-weight: 700;
@@ -361,6 +359,7 @@ h3#final-descripcion {
     padding-bottom: 1rem;
     border-bottom: 3px solid $amarillo;
 }
+
 //estilos para actividad: pagina
 ul.section.img-text .page .asset-wrapper {
     display: flex;
@@ -403,12 +402,12 @@ ul.section.img-text .page .asset-wrapper {
         flex-direction: column;
         padding: 1rem;
         padding-left: 100px;
-        h3 a{
+        h3 a {
             text-align: left;
             color: white!important;
             text-transform: uppercase;
-            &:visited{
-                color:white;
+            &:visited {
+                color: white;
                 text-decoration: none;
             }
         }
