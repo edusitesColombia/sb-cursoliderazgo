@@ -15,6 +15,87 @@ body#page-course-view-topics section#region-main {
     }
 }
 
+//cabecera modulo
+#page-header {
+    .por-defecto {
+        .breadcrumb-nav {
+            visibility: hidden;
+        }
+        #page-mast {
+            display: block;
+            &>h1 {
+                @include textos-ruta($blanco,
+                .7rem);
+            }
+            #course-toc {
+                #chapters {
+                    li {
+                        display: none;
+                        &.snap-visible-section {
+                            display: flex;
+                        }
+                        .chapter-title {
+                            @include textos-ruta($blanco,
+                            2rem)
+                        }
+                    }
+                    .toc-footer {
+                        margin-top: 30px;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+ }
+
+ #page-header {
+    #page-mast {
+        display: none;
+        h1 {
+            &::before,
+            a,
+            a:hover {
+                text-shadow: none;
+            }
+        }
+        #course-toc {
+            background-color: transparent;
+        }
+        #toc-desktop-menu-heading {
+            display: none;
+        }
+        #toc-search {
+            display: none;
+        }
+        #chapters {
+            list-style: none;
+            counter-reset: modulo -1;
+            li {
+                border: none;
+                counter-increment: modulo;
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: flex-end;
+                .text {
+                    @include textos-ruta($amarillo,
+                    .7rem);
+                    &::before {
+                        content: 'Módulo ' counter(modulo);
+                    }
+                }
+            }
+            .toc-footer {
+                margin-top: 30px;
+                margin-bottom: 15px;
+            }
+        }
+        .texto-bienvenida {
+            display: none;
+        }
+    }
+ }
+
 //TODO: revisar span notifications hijo de region-main
 .course-content ul.topics {
     //Fix ancho secciones generales
@@ -232,13 +313,26 @@ body#page-course-view-topics section#region-main {
                 z-index: 0;
             }
         }
-        &:last-of-type::before {
-            content: "gato"!important;
-        }
     }
 }
-//estilos descripcion modulo
+//estilos descripcion modulo, objetivos
+.contenedor-objetivos {
+    width: 70%;
+    margin: 0 auto;
+    min-width: 980px;
+    display:flex;
+    flex-wrap:nowrap;
+    padding:1rem;
+    #objetivo-modulo{
+        width:65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #complemento-objetivos{
 
+    }
+}
 h3#final-descripcion {
     text-align: center;
     font-weight: 700;
