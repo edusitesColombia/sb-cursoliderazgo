@@ -11,11 +11,11 @@
             display: flex;
             flex-direction: column;
             &>h1 {
-                @include textos-ruta($verde, 1.6rem, $peso: bold);
+                @include textos-ruta($verde, 1.77rem, $peso: bold);
                 &::before {
                     content: 'Bienvenido al curso';
                     display: block;
-                    @include textos-ruta($negro, 1.3rem, initial, bold);
+                    @include textos-ruta($negro, 1.44rem, initial, bold);
                 }
                 a {
                     text-decoration: none;
@@ -76,7 +76,7 @@
                         &:nth-child(n+3):not(:last-child) {
                             background-image: url('data:image/svg+xml, #{$caja-verde}');
                             background-size: 100% 100%;
-                            max-width: 280px;
+                            max-width: 300px;
                         }
                         &:nth-child(n+3):not(:last-child):hover,
                         &:nth-child(n+3):not(:last-child).modulo-completado {

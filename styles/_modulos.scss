@@ -25,7 +25,7 @@ body#page-course-view-topics section#region-main {
         #page-mast {
             display: block;
             &>h1 {
-                @include textos-ruta($blanco, .7rem);
+                @include textos-ruta($blanco, 1.44rem);
             }
             #course-toc {
                 #chapters {
@@ -35,7 +35,10 @@ body#page-course-view-topics section#region-main {
                             display: flex;
                         }
                         .chapter-title {
-                            @include textos-ruta($blanco, 2rem)
+                            @include textos-ruta($blanco, 2rem, $peso: bold)
+                        }
+                        .text {
+                            @include textos-ruta($amarillo, 1.44rem);
                         }
                     }
                     .toc-footer {
