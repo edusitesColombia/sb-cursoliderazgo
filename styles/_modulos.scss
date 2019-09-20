@@ -37,7 +37,7 @@ body#page-course-view-topics section#region-main {
                             display: flex;
                         }
                         .chapter-title {
-                            @include textos-ruta($blanco, 2rem)
+                            @include textos-ruta($blanco, 2rem);
                             line-height: 1.8rem;
                             padding-top: 0.5rem;
                         }
