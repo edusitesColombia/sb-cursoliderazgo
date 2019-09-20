@@ -217,7 +217,6 @@ body#page-course-view-topics section#region-main span.instancename {
 
 .por-defecto #page-header #page-mast #course-toc #chapters li.snap-visible-section {
   visibility: visible;
-  height: auto;
 }
 
 .por-defecto #page-header #page-mast #course-toc #chapters li .chapter-title {
