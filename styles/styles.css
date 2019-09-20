@@ -195,39 +195,39 @@ body#page-course-view-topics section#region-main span.instancename {
   line-height: 1.5rem;
 }
 
-#page-header .por-defecto .breadcrumb-nav {
+.por-defecto #page-header .breadcrumb-nav {
   visibility: hidden;
 }
 
-#page-header .por-defecto #page-mast {
+.por-defecto #page-header #page-mast {
   display: block;
 }
 
-#page-header .por-defecto #page-mast > h1 {
+.por-defecto #page-header #page-mast > h1 {
   color: white;
   text-transform: uppercase;
   font-size: 0.7rem;
   font-weight: normal;
 }
 
-#page-header .por-defecto #page-mast #course-toc #chapters li {
+.por-defecto #page-header #page-mast #course-toc #chapters li {
   display: none;
 }
 
-#page-header .por-defecto #page-mast #course-toc #chapters li.snap-visible-section {
+.por-defecto #page-header #page-mast #course-toc #chapters li.snap-visible-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#page-header .por-defecto #page-mast #course-toc #chapters li .chapter-title {
+.por-defecto #page-header #page-mast #course-toc #chapters li .chapter-title {
   color: white;
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: normal;
 }
 
-#page-header .por-defecto #page-mast #course-toc #chapters .toc-footer {
+.por-defecto #page-header #page-mast #course-toc #chapters .toc-footer {
   margin-top: 30px;
   margin-bottom: 15px;
 }
