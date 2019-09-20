@@ -283,20 +283,6 @@ body#page-course-view-topics section#region-main span.instancename {
   margin: 0 auto;
 }
 
-.course-content ul.topics li#section-1 h3.final-descripcion,
-.course-content ul.topics li#section-2 h3.final-descripcion,
-.course-content ul.topics li#section-3 h3.final-descripcion,
-.course-content ul.topics li#section-4 h3.final-descripcion,
-.course-content ul.topics li#section-5 h3.final-descripcion {
-  text-align: center;
-  font-weight: 700;
-  font-style: italic;
-  width: 30%;
-  margin: 2rem auto;
-  padding-bottom: 1rem;
-  border-bottom: 3px solid #fadc5d;
-}
-
 .course-content ul.topics li#section-1 ul.section.img-text,
 .course-content ul.topics li#section-2 ul.section.img-text,
 .course-content ul.topics li#section-3 ul.section.img-text,
@@ -505,6 +491,16 @@ body#page-course-view-topics section#region-main span.instancename {
 
 .course-content ul.topics ul.section.img-text li.snap-activity:last-of-type::before {
   content: "gato" !important;
+}
+
+h3#final-descripcion {
+  text-align: center;
+  font-weight: 700;
+  font-style: italic;
+  width: 30%;
+  margin: 2rem auto;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #fadc5d;
 }
 
 ul.section.img-text .page .asset-wrapper {

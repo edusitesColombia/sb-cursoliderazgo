@@ -91,15 +91,7 @@ body#page-course-view-topics section#region-main {
                 margin: 0 auto;
             }            
         }
-        h3.final-descripcion {
-            text-align: center;
-            font-weight: 700;
-            font-style: italic;
-            width: 30%;
-            margin: 2rem auto;
-            padding-bottom: 1rem;
-            border-bottom: 3px solid $amarillo;
-        }
+        
         //contenedor de todas las actividades del módulo
         ul.section.img-text {
             background: $blanco;
@@ -243,7 +235,17 @@ body#page-course-view-topics section#region-main {
         }
     }
 }
+//estilos descripcion modulo
 
+h3#final-descripcion {
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    width: 30%;
+    margin: 2rem auto;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid $amarillo;
+}
 //estilos para actividad: pagina
 ul.section.img-text .page .asset-wrapper {
     display: flex;
