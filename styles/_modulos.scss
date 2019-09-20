@@ -271,6 +271,7 @@ ul.section.img-text .page .asset-wrapper {
     }
 }
 
+//separador verde con opciones entre glosario bibliografia y cartilla
 .separador-opciones {
     min-height: 30vh;
     display: flex;
@@ -285,10 +286,14 @@ ul.section.img-text .page .asset-wrapper {
         flex-direction: column;
         padding: 1rem;
         padding-left: 100px;
-        h3 {
+        h3 a{
             text-align: left;
             color: white;
             text-transform: uppercase;
+            &:visited{
+                color:white;
+                text-decoration: none;
+            }
         }
         p {
             text-align: left;

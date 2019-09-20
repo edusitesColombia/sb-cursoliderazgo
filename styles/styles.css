@@ -567,10 +567,15 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
   padding-left: 100px;
 }
 
-.separador-opciones .opcion h3 {
+.separador-opciones .opcion h3 a {
   text-align: left;
   color: white;
   text-transform: uppercase;
+}
+
+.separador-opciones .opcion h3 a:visited {
+  color: white;
+  text-decoration: none;
 }
 
 .separador-opciones .opcion p {
