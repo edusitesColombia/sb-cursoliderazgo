@@ -195,55 +195,6 @@ body#page-course-view-topics section#region-main span.instancename {
   line-height: 1.5rem;
 }
 
-.por-defecto #page-header .breadcrumb-nav {
-  visibility: hidden;
-}
-
-.por-defecto #page-header #page-mast {
-  display: block;
-}
-
-.por-defecto #page-header #page-mast > h1 {
-  color: white;
-  text-transform: uppercase;
-  font-size: 0.88rem;
-  font-weight: normal;
-}
-
-.por-defecto #page-header #page-mast #course-toc #chapters li {
-  visibility: hidden;
-  height: 0px;
-}
-
-.por-defecto #page-header #page-mast #course-toc #chapters li.snap-visible-section {
-  visibility: visible;
-}
-
-.por-defecto #page-header #page-mast #course-toc #chapters li .chapter-title {
-  color: white;
-  text-transform: uppercase;
-  font-size: 1.77rem;
-  font-weight: bold;
-}
-
-.por-defecto #page-header #page-mast #course-toc #chapters li .text {
-  color: #fadc5d;
-  text-transform: uppercase;
-  font-size: 1.44rem;
-  font-weight: normal;
-  line-height: 1.8rem;
-  padding-top: 0.5rem;
-}
-
-.por-defecto #page-header #page-mast #course-toc #chapters li .text small {
-  display: block;
-}
-
-.por-defecto #page-header #page-mast #course-toc #chapters .toc-footer {
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
-
 #page-header #page-mast {
   display: none;
 }
@@ -308,6 +259,60 @@ body#page-course-view-topics section#region-main span.instancename {
 
 #page-header #page-mast .texto-bienvenida {
   display: none;
+}
+
+.por-defecto #page-header .breadcrumb-nav {
+  visibility: hidden;
+}
+
+.por-defecto #page-header #page-mast {
+  display: block;
+}
+
+.por-defecto #page-header #page-mast > h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.88rem;
+  font-weight: normal;
+}
+
+.por-defecto #page-header #page-mast #course-toc #chapters {
+  -webkit-column-count: 1;
+          column-count: 1;
+}
+
+.por-defecto #page-header #page-mast #course-toc #chapters li {
+  visibility: hidden;
+  height: 0px;
+}
+
+.por-defecto #page-header #page-mast #course-toc #chapters li.snap-visible-section {
+  visibility: visible;
+}
+
+.por-defecto #page-header #page-mast #course-toc #chapters li .chapter-title {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.77rem;
+  font-weight: bold;
+}
+
+.por-defecto #page-header #page-mast #course-toc #chapters li .text {
+  color: #fadc5d;
+  text-transform: uppercase;
+  font-size: 1.44rem;
+  font-weight: normal;
+  line-height: 1.8rem;
+  padding-top: 0.5rem;
+}
+
+.por-defecto #page-header #page-mast #course-toc #chapters li .text small {
+  display: block;
+}
+
+.por-defecto #page-header #page-mast #course-toc #chapters .toc-footer {
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 .course-content ul.topics li.section.main {
@@ -880,7 +885,7 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
   margin-left: .7em;
-  padding: 25px 30px 25px 25px;
+  padding: 35px 40px;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li .text {

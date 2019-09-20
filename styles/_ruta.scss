@@ -43,7 +43,7 @@
                     li {
                         flex-basis: 25%;
                         margin-left: .7em;
-                        padding: 25px 30px 25px 25px;
+                        padding: 35px 40px;
                         .text {
                             @include textos-ruta($blanco, 1rem);
                             &::before {

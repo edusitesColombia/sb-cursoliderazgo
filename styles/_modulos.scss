@@ -17,46 +17,6 @@ body#page-course-view-topics section#region-main {
 }
 
 //cabecera modulo
-.por-defecto {
-    #page-header {
-        .breadcrumb-nav {
-            visibility: hidden;
-        }
-        #page-mast {
-            display: block;
-            &>h1 {
-                @include textos-ruta($blanco, 0.88rem);
-            }
-            #course-toc {
-                #chapters {
-                    li {
-                        visibility: hidden;
-                        height: 0px;
-                        &.snap-visible-section {
-                            visibility: visible;
-                        }
-                        .chapter-title {
-                            @include textos-ruta($blanco, 1.77rem, $peso: bold)
-                        }
-                        .text {
-                            @include textos-ruta($amarillo, 1.44rem);
-                            line-height: 1.8rem;
-                            padding-top: 0.5rem;
-                            small {
-                                display: block;
-                            }
-                        }
-                    }
-                    .toc-footer {
-                        margin-top: 30px;
-                        margin-bottom: 15px;
-                    }
-                }
-            }
-        }
-    }
-}
-
 #page-header {
     #page-mast {
         display: none;
@@ -102,6 +62,47 @@ body#page-course-view-topics section#region-main {
         }
         .texto-bienvenida {
             display: none;
+        }
+    }
+}
+
+.por-defecto {
+    #page-header {
+        .breadcrumb-nav {
+            visibility: hidden;
+        }
+        #page-mast {
+            display: block;
+            &>h1 {
+                @include textos-ruta($blanco, 0.88rem);
+            }
+            #course-toc {
+                #chapters {
+                    column-count: 1;
+                    li {
+                        visibility: hidden;
+                        height: 0px;
+                        &.snap-visible-section {
+                            visibility: visible;
+                        }
+                        .chapter-title {
+                            @include textos-ruta($blanco, 1.77rem, $peso: bold)
+                        }
+                        .text {
+                            @include textos-ruta($amarillo, 1.44rem);
+                            line-height: 1.8rem;
+                            padding-top: 0.5rem;
+                            small {
+                                display: block;
+                            }
+                        }
+                    }
+                    .toc-footer {
+                        margin-top: 30px;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
         }
     }
 }
