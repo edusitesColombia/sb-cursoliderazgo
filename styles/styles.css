@@ -491,8 +491,30 @@ body#page-course-view-topics section#region-main span.instancename {
   z-index: 0;
 }
 
-.course-content ul.topics ul.section.img-text li.snap-activity:last-of-type::before {
-  content: "gato" !important;
+.contenedor-objetivos {
+  width: 70%;
+  margin: 0 auto;
+  min-width: 980px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 1rem;
+}
+
+.contenedor-objetivos #objetivo-modulo {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 h3#final-descripcion {
