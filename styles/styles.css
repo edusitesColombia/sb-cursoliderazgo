@@ -348,9 +348,11 @@ body#page-course-view-topics section#region-main span.instancename {
 
 .course-content ul.topics blockquote.blockquote {
   border: 0;
+  min-height: 650px;
   height: 70vh;
   background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-quote.jpg);
   background-size: cover;
+  background-attachment: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
