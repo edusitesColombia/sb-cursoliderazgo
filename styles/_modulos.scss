@@ -38,6 +38,8 @@ body#page-course-view-topics section#region-main {
                         }
                         .chapter-title {
                             @include textos-ruta($blanco, 2rem)
+                            line-height: 1.8rem;
+                            padding-top: 0.5rem;
                         }
                     }
                     .toc-footer {
