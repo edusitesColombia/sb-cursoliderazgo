@@ -75,7 +75,7 @@
                         }
                         &:nth-child(n+3):not(:last-child) {
                             background-image: url('data:image/svg+xml, #{$caja-verde}');
-                            background-size: cover;
+                            background-size: 100% 100%;
                             max-width: 280px;
                         }
                         &:nth-child(n+3):not(:last-child):hover,
