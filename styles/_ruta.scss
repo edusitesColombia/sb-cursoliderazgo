@@ -1,65 +1,21 @@
-$caja-verde: "%3Csvg width='100% heigth='100%' viewport='0 0 275 145' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='rgb(0, 109, 56)' d='M231.9743097756687,144.4894306236695 L34.23931043837641,144.6099759266518 C21.08000638301136,145.22777060443585 9.808613846952934,137.09096265313266 9.135694889576314,126.46790782782017 L0.032596771731464205,20.127397996914983 C-0.7524753452079281,7.876981581341759 12.761980382105904,-1.796778982985419 27.753119376996203,0.28262749345875804 L254.3301729151808,14.310176296329782 C267.3960160042436,16.118355841063835 276.1065780636188,26.198956802956186 273.6579007464983,36.71653448815924 L253.9376368567112,128.9089502132111 C251.9375721778418,137.54300753931622 242.87185844651788,143.9771130859949 231.9743097756687,144.4894306236695Z'%3E%3C/path%3E%3C/svg%3E";
-$caja-amarilla: "%3Csvg width='100%' heigth='100%' viewport='0 0 275 145' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='rgb(250, 220, 93)' d='M231.9743097756687,144.4894306236695 L34.23931043837641,144.6099759266518 C21.08000638301136,145.22777060443585 9.808613846952934,137.09096265313266 9.135694889576314,126.46790782782017 L0.032596771731464205,20.127397996914983 C-0.7524753452079281,7.876981581341759 12.761980382105904,-1.796778982985419 27.753119376996203,0.28262749345875804 L254.3301729151808,14.310176296329782 C267.3960160042436,16.118355841063835 276.1065780636188,26.198956802956186 273.6579007464983,36.71653448815924 L253.9376368567112,128.9089502132111 C251.9375721778418,137.54300753931622 242.87185844651788,143.9771130859949 231.9743097756687,144.4894306236695Z'%3E%3C/path%3E%3C/svg%3E";
-@mixin textos-ruta ($color, $tamano, $transform:uppercase, $peso:normal) {
-    color: $color;
-    text-transform: $transform;
-    font: {
-        size: $tamano;
-        weight: $peso;
-    }
-}
-
-@mixin posicion-otros-elementos ($position, $top, $right:unset) {
-    position: $position;
-    top: $top;
-    right: $right;
-}
-
-@mixin imagen-background ($file, $format, $position, $size) {
-    background: {
-        image: url(http://jkvela.website/pluginfile.php/62/block_html/content/#{$file}.#{$format});
-        position: center -50px;
-        size: cover;
-        repeat: no-repeat;
-    }
-}
-
-%resaltado-modulos {
-    background-image: url('data:image/svg+xml, #{$caja-amarilla}')!important;
-    background-size: cover;
-    .chapter-title {
-        color: $verde;
-    }
-    .text {
-        color: $negro;
-    }
-}
-
+@import "./mixins";
 .home-ruta {
     #page-header {
         .breadcrumb-nav {
             visibility: hidden;
         }
         height: 105vh;
-        @include imagen-background('fondo_avance0',
-        'svg',
-        'center',
-        'cover');
+        @include imagen-background('fondo_avance0', 'svg', 'center', 'cover');
         #page-mast {
             height: 85vh;
             display: flex;
             flex-direction: column;
             &>h1 {
-                @include textos-ruta($verde,
-                1.6rem,
-                $peso: bold);
+                @include textos-ruta($verde, 1.6rem, $peso: bold);
                 &::before {
                     content: 'Bienvenido al curso';
                     display: block;
-                    @include textos-ruta($negro,
-                    1.3rem,
-                    initial,
-                    bold);
+                    @include textos-ruta($negro, 1.3rem, initial, bold);
                 }
                 a {
                     text-decoration: none;
@@ -89,8 +45,7 @@ $caja-amarilla: "%3Csvg width='100%' heigth='100%' viewport='0 0 275 145' xmlns=
                         margin-left: .7em;
                         padding: 25px 30px 25px 25px;
                         .text {
-                            @include textos-ruta($blanco,
-                            1rem);
+                            @include textos-ruta($blanco, 1rem);
                             &::before {
                                 width: 48%;
                                 display: inline-block;
@@ -116,8 +71,7 @@ $caja-amarilla: "%3Csvg width='100%' heigth='100%' viewport='0 0 275 145' xmlns=
                             display: none;
                         }
                         &:nth-child(2) {
-                            @include posicion-otros-elementos(absolute,
-                            0);
+                            @include posicion-otros-elementos(absolute, 0);
                         }
                         &:nth-child(n+3):not(:last-child) {
                             background-image: url('data:image/svg+xml, #{$caja-verde}');
