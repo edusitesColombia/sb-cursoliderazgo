@@ -33,7 +33,8 @@ body#page-course-view-topics section#region-main {
                         visibility: hidden;
                         height: 0px;
                         &.snap-visible-section {
-                            display: flex;
+                            visibility: visible;
+                            height: auto;
                         }
                         .chapter-title {
                             @include textos-ruta($blanco, 1.77rem, $peso: bold)
