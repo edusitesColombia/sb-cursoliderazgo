@@ -569,7 +569,7 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
 
 .separador-opciones .opcion h3 a {
   text-align: left;
-  color: white;
+  color: white !important;
   text-transform: uppercase;
 }
 
