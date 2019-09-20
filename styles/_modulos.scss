@@ -25,12 +25,13 @@ body#page-course-view-topics section#region-main {
         #page-mast {
             display: block;
             &>h1 {
-                @include textos-ruta($blanco, 1.44rem);
+                @include textos-ruta($blanco, 0.88rem);
             }
             #course-toc {
                 #chapters {
                     li {
-                        display: none;
+                        visibility: hidden;
+                        height: 0px;
                         &.snap-visible-section {
                             display: flex;
                         }
@@ -41,6 +42,9 @@ body#page-course-view-topics section#region-main {
                             @include textos-ruta($amarillo, 1.44rem);
                             line-height: 1.8rem;
                             padding-top: 0.5rem;
+                            small {
+                                display: block;
+                            }
                         }
                     }
                     .toc-footer {
@@ -81,6 +85,9 @@ body#page-course-view-topics section#region-main {
                 display: flex;
                 flex-direction: column-reverse;
                 justify-content: flex-end;
+                &:first-child {
+                    display: none;
+                }
                 .text {
                     @include textos-ruta($amarillo, .7rem);
                     &::before {

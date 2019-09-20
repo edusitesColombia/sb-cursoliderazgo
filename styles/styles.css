@@ -1,90 +1,55 @@
 @charset "UTF-8";
 #page-login-index header#mr-nav {
-  display: none;
-}
-
+  display: none; }
 #page-login-index main#moodle-page {
   min-height: 90vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 108, 56, 0.7)), to(rgba(1, 108, 56, 0.7))), url(http://jkvela.website/theme/snap/pix/segurosbolivar/bg1.jpg);
   background: linear-gradient(rgba(1, 108, 56, 0.7), rgba(1, 108, 56, 0.7)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/bg1.jpg);
   background-size: cover;
-  background-position-x: center;
-}
-
-#page-login-index main#moodle-page div#page-header {
-  display: none;
-}
-
-#page-login-index main#moodle-page section#region-main {
-  background-color: white;
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 !important;
-}
-
-#page-login-index main#moodle-page section#region-main div[role="main"] {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  width: 100%;
-}
+  background-position-x: center; }
+  #page-login-index main#moodle-page div#page-header {
+    display: none; }
+  #page-login-index main#moodle-page section#region-main {
+    background-color: white;
+    width: 50%;
+    display: flex;
+    margin: 0 !important; }
+    #page-login-index main#moodle-page section#region-main div[role="main"] {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100%; }
 
 #page-login-index .snap-login, #page-login-signup .snap-login {
-  background-color: rgba(255, 255, 255, 0) !important;
-}
+  background-color: rgba(255, 255, 255, 0) !important; }
 
 #page-login-index section#region-main div[role="main"] .snap-login {
-  padding: 2em 9%;
-}
-
-#page-login-index section#region-main div[role="main"] .snap-login h4 {
-  margin-bottom: 0px;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  font-weight: 200;
-  color: #828282;
-}
-
-#page-login-index section#region-main div[role="main"] .snap-login h2 {
-  font-weight: 900;
-  font: size 2.5rem;
-  color: #006d38;
-  line-height: 2.2rem;
-}
-
-#page-login-index section#region-main div[role="main"] .snap-login p {
-  padding: 0.7rem 0 1.3rem 0;
-  border-bottom: 1px solid #eaeaea;
-  margin-bottom: 1.5rem;
-  line-height: 1.4rem;
-  color: #6b6b6b;
-}
-
-#page-login-index section#region-main div[role="main"] .snap-login button#loginbtn {
-  width: 70%;
-  margin: 0 auto;
-  border-radius: 24px;
-}
+  padding: 2em 9%; }
+  #page-login-index section#region-main div[role="main"] .snap-login h4 {
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 200;
+    color: #828282; }
+  #page-login-index section#region-main div[role="main"] .snap-login h2 {
+    font-weight: 900;
+    font: size 2.5rem;
+    color: #006d38;
+    line-height: 2.2rem; }
+  #page-login-index section#region-main div[role="main"] .snap-login p {
+    padding: 0.7rem 0 1.3rem 0;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 1.5rem;
+    line-height: 1.4rem;
+    color: #6b6b6b; }
+  #page-login-index section#region-main div[role="main"] .snap-login button#loginbtn {
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 24px; }
 
 header#mr-nav a#snap-home {
-  display: none;
-}
-
+  display: none; }
 header#mr-nav::before {
   content: "";
   background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/logo_segurosbolivar_blanco.png);
@@ -92,381 +57,261 @@ header#mr-nav::before {
   background-size: contain;
   background-repeat: no-repeat;
   min-width: 216px;
-  min-height: 45px;
-}
+  min-height: 45px; }
 
 #snap-pm-header {
   padding: 1rem 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#snap-pm-header a {
-  color: #fadc5d !important;
-  padding: 0;
-}
-
-#snap-pm-header a.h1 {
-  color: white !important;
-  font-size: 1.8rem;
-  display: block;
-  margin: 0;
-  margin-top: 0.5rem;
-}
-
-#snap-pm-header .snap-pm-user {
-  width: 100%;
-}
-
-#snap-pm-header #snap-pm-header-quicklinks a {
-  text-transform: uppercase;
-}
-
-#snap-pm-header #snap-pm-header-quicklinks a::after {
-  content: "";
-}
-
-#snap-pm-header #snap-pm-header-quicklinks :nth-child(2) {
-  display: none;
-}
+  flex-direction: row-reverse;
+  align-items: center; }
+  #snap-pm-header a {
+    color: #fadc5d !important;
+    padding: 0; }
+    #snap-pm-header a.h1 {
+      color: white !important;
+      font-size: 1.8rem;
+      display: block;
+      margin: 0;
+      margin-top: 0.5rem; }
+  #snap-pm-header .snap-pm-user {
+    width: 100%; }
+  #snap-pm-header #snap-pm-header-quicklinks a {
+    text-transform: uppercase; }
+    #snap-pm-header #snap-pm-header-quicklinks a::after {
+      content: ""; }
+  #snap-pm-header #snap-pm-header-quicklinks :nth-child(2) {
+    display: none; }
 
 section#snap-pm-courses {
-  padding: 0 3rem;
-}
-
-section#snap-pm-courses .coursecard {
-  border-radius: 8% 0 0 0;
-}
-
-section#snap-pm-courses .coursecard .coursecard-body {
-  padding: 1em .5em 1em .5em;
-}
-
-section#snap-pm-courses .coursecard .coursecard-body h3 {
-  padding: 0.5rem 0.5rem 1rem 0.5rem;
-  border-bottom: 1px solid lightgray;
-}
-
-section#snap-pm-courses .coursecard .coursecard-body h3 a.coursecard-coursename {
-  color: #2b2b2b;
-}
-
-section#snap-pm-courses .coursecard .coursecard-body .coursecard-dynamicinfo {
-  padding-top: 0.5rem;
-}
-
-section#snap-pm-courses .snap-personal-menu-more {
-  display: none;
-}
+  padding: 0 3rem; }
+  section#snap-pm-courses .coursecard {
+    border-radius: 8% 0 0 0; }
+    section#snap-pm-courses .coursecard .coursecard-body {
+      padding: 1em .5em 1em .5em; }
+      section#snap-pm-courses .coursecard .coursecard-body h3 {
+        padding: 0.5rem 0.5rem 1rem 0.5rem;
+        border-bottom: 1px solid lightgray; }
+        section#snap-pm-courses .coursecard .coursecard-body h3 a.coursecard-coursename {
+          color: #2b2b2b; }
+      section#snap-pm-courses .coursecard .coursecard-body .coursecard-dynamicinfo {
+        padding-top: 0.5rem; }
+  section#snap-pm-courses .snap-personal-menu-more {
+    display: none; }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(n+3):not(:last-child):hover, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado:nth-child(n+3):not(:last-child) {
   background-image: url("data:image/svg+xml, %3Csvg width='100%' viewBox='0 0 275 145' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='rgb(250, 220, 93)' d='M231.9743097756687,144.4894306236695 L34.23931043837641,144.6099759266518 C21.08000638301136,145.22777060443585 9.808613846952934,137.09096265313266 9.135694889576314,126.46790782782017 L0.032596771731464205,20.127397996914983 C-0.7524753452079281,7.876981581341759 12.761980382105904,-1.796778982985419 27.753119376996203,0.28262749345875804 L254.3301729151808,14.310176296329782 C267.3960160042436,16.118355841063835 276.1065780636188,26.198956802956186 273.6579007464983,36.71653448815924 L253.9376368567112,128.9089502132111 C251.9375721778418,137.54300753931622 242.87185844651788,143.9771130859949 231.9743097756687,144.4894306236695Z'%3E%3C/path%3E%3C/svg%3E") !important;
-  background-size: 100% 100%;
-}
-
-.home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(n+3):not(:last-child):hover .chapter-title, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado:nth-child(n+3):not(:last-child) .chapter-title {
-  color: #006d38;
-}
-
-.home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(n+3):not(:last-child):hover .text, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado:nth-child(n+3):not(:last-child) .text {
-  color: #2b2b2b;
-}
+  background-size: 100% 100%; }
+  .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(n+3):not(:last-child):hover .chapter-title, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado:nth-child(n+3):not(:last-child) .chapter-title {
+    color: #006d38; }
+  .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(n+3):not(:last-child):hover .text, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado:nth-child(n+3):not(:last-child) .text {
+    color: #2b2b2b; }
 
 body#page-course-view-topics section#region-main {
   max-width: 100% !important;
   padding: 0;
-  margin: 0;
-}
-
-body#page-course-view-topics section#region-main .course-content {
-  max-width: 100% !important;
-}
-
-body#page-course-view-topics section#region-main span.instancename {
-  font-size: 2rem;
-  line-height: 1.5rem;
-}
+  margin: 0; }
+  body#page-course-view-topics section#region-main .course-content {
+    max-width: 100% !important; }
+  body#page-course-view-topics section#region-main span.instancename {
+    font-size: 2rem;
+    line-height: 1.5rem; }
 
 .por-defecto #page-header .breadcrumb-nav {
-  visibility: hidden;
-}
-
+  visibility: hidden; }
 .por-defecto #page-header #page-mast {
-  display: block;
-}
-
-.por-defecto #page-header #page-mast > h1 {
-  color: white;
-  text-transform: uppercase;
-  font-size: 1.44rem;
-  font-weight: normal;
-}
-
-.por-defecto #page-header #page-mast #course-toc #chapters li {
-  display: none;
-}
-
-.por-defecto #page-header #page-mast #course-toc #chapters li.snap-visible-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.por-defecto #page-header #page-mast #course-toc #chapters li .chapter-title {
-  color: white;
-  text-transform: uppercase;
-  font-size: 1.77rem;
-  font-weight: bold;
-}
-
-.por-defecto #page-header #page-mast #course-toc #chapters li .text {
-  color: #fadc5d;
-  text-transform: uppercase;
-  font-size: 1.44rem;
-  font-weight: normal;
-  line-height: 1.8rem;
-  padding-top: 0.5rem;
-}
-
-.por-defecto #page-header #page-mast #course-toc #chapters .toc-footer {
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
+  display: block; }
+  .por-defecto #page-header #page-mast > h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.88rem;
+    font-weight: normal; }
+  .por-defecto #page-header #page-mast #course-toc #chapters li {
+    visibility: hidden;
+    height: 0px; }
+    .por-defecto #page-header #page-mast #course-toc #chapters li.snap-visible-section {
+      display: flex; }
+    .por-defecto #page-header #page-mast #course-toc #chapters li .chapter-title {
+      color: white;
+      text-transform: uppercase;
+      font-size: 1.77rem;
+      font-weight: bold; }
+    .por-defecto #page-header #page-mast #course-toc #chapters li .text {
+      color: #fadc5d;
+      text-transform: uppercase;
+      font-size: 1.44rem;
+      font-weight: normal;
+      line-height: 1.8rem;
+      padding-top: 0.5rem; }
+      .por-defecto #page-header #page-mast #course-toc #chapters li .text small {
+        display: block; }
+  .por-defecto #page-header #page-mast #course-toc #chapters .toc-footer {
+    margin-top: 30px;
+    margin-bottom: 15px; }
 
 #page-header #page-mast {
-  display: none;
-}
-
-#page-header #page-mast h1::before,
-#page-header #page-mast h1 a,
-#page-header #page-mast h1 a:hover {
-  text-shadow: none;
-}
-
-#page-header #page-mast #course-toc {
-  background-color: transparent;
-}
-
-#page-header #page-mast #toc-desktop-menu-heading {
-  display: none;
-}
-
-#page-header #page-mast #toc-search {
-  display: none;
-}
-
-#page-header #page-mast #chapters {
-  list-style: none;
-  counter-reset: modulo -1;
-}
-
-#page-header #page-mast #chapters li {
-  border: none;
-  counter-increment: modulo;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-#page-header #page-mast #chapters li .text {
-  color: #fadc5d;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  font-weight: normal;
-}
-
-#page-header #page-mast #chapters li .text::before {
-  content: "Módulo " counter(modulo);
-}
-
-#page-header #page-mast #chapters .toc-footer {
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
-
-#page-header #page-mast .texto-bienvenida {
-  display: none;
-}
+  display: none; }
+  #page-header #page-mast h1::before,
+  #page-header #page-mast h1 a,
+  #page-header #page-mast h1 a:hover {
+    text-shadow: none; }
+  #page-header #page-mast #course-toc {
+    background-color: transparent; }
+  #page-header #page-mast #toc-desktop-menu-heading {
+    display: none; }
+  #page-header #page-mast #toc-search {
+    display: none; }
+  #page-header #page-mast #chapters {
+    list-style: none;
+    counter-reset: modulo -1; }
+    #page-header #page-mast #chapters li {
+      border: none;
+      counter-increment: modulo;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: flex-end; }
+      #page-header #page-mast #chapters li:first-child {
+        display: none; }
+      #page-header #page-mast #chapters li .text {
+        color: #fadc5d;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        font-weight: normal; }
+        #page-header #page-mast #chapters li .text::before {
+          content: "Módulo " counter(modulo); }
+    #page-header #page-mast #chapters .toc-footer {
+      margin-top: 30px;
+      margin-bottom: 15px; }
+  #page-header #page-mast .texto-bienvenida {
+    display: none; }
 
 .course-content ul.topics li.section.main {
   max-width: 43.5em;
-  margin: 0 auto !important;
-}
-
-.course-content ul.topics li.section.main.state-visible:not(#section-1), .course-content ul.topics li.section.main.state-visible:not(#section-2), .course-content ul.topics li.section.main.state-visible:not(#section-3), .course-content ul.topics li.section.main.state-visible:not(#section-4), .course-content ul.topics li.section.main.state-visible:not(#section-5) {
-  margin-top: 2rem !important;
-  margin-bottom: 1rem !important;
-}
-
+  margin: 0 auto !important; }
+  .course-content ul.topics li.section.main.state-visible:not(#section-1), .course-content ul.topics li.section.main.state-visible:not(#section-2), .course-content ul.topics li.section.main.state-visible:not(#section-3), .course-content ul.topics li.section.main.state-visible:not(#section-4), .course-content ul.topics li.section.main.state-visible:not(#section-5) {
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important; }
 .course-content ul.topics li#section-1,
 .course-content ul.topics li#section-2,
 .course-content ul.topics li#section-3,
 .course-content ul.topics li#section-4,
 .course-content ul.topics li#section-5 {
   max-width: 100% !important;
-  overflow: hidden;
-}
-
-.course-content ul.topics li#section-1.snap-native,
-.course-content ul.topics li#section-2.snap-native,
-.course-content ul.topics li#section-3.snap-native,
-.course-content ul.topics li#section-4.snap-native,
-.course-content ul.topics li#section-5.snap-native {
-  margin: 0;
-}
-
-.course-content ul.topics li#section-1 h2.sectionname,
-.course-content ul.topics li#section-2 h2.sectionname,
-.course-content ul.topics li#section-3 h2.sectionname,
-.course-content ul.topics li#section-4 h2.sectionname,
-.course-content ul.topics li#section-5 h2.sectionname {
-  height: 40vh;
-  width: 140%;
-  display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 25%;
-  background-color: #fadc5d;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
-  background-size: cover;
-  background-position: center;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 3em;
-  margin-left: -5em;
-  color: white;
-}
-
-.course-content ul.topics li#section-1 h2.sectionname::before,
-.course-content ul.topics li#section-2 h2.sectionname::before,
-.course-content ul.topics li#section-3 h2.sectionname::before,
-.course-content ul.topics li#section-4 h2.sectionname::before,
-.course-content ul.topics li#section-5 h2.sectionname::before {
-  content: "Módulo " counter(annotation-list);
-  color: #fadc5d;
-  float: left;
-  position: relative;
-  top: -1.3em;
-  font-size: 2rem;
-  left: 4.25em;
-  white-space: nowrap;
-}
-
-.course-content ul.topics li#section-1 .video-container,
-.course-content ul.topics li#section-2 .video-container,
-.course-content ul.topics li#section-3 .video-container,
-.course-content ul.topics li#section-4 .video-container,
-.course-content ul.topics li#section-5 .video-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-  height: 0;
-}
-
-.course-content ul.topics li#section-1 .video-container iframe,
-.course-content ul.topics li#section-2 .video-container iframe,
-.course-content ul.topics li#section-3 .video-container iframe,
-.course-content ul.topics li#section-4 .video-container iframe,
-.course-content ul.topics li#section-5 .video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 5%;
-  margin-top: 3%;
-  max-width: 90%;
-  width: 100%;
-  height: 90%;
-}
-
-.course-content ul.topics li#section-1 div.summary p,
-.course-content ul.topics li#section-2 div.summary p,
-.course-content ul.topics li#section-3 div.summary p,
-.course-content ul.topics li#section-4 div.summary p,
-.course-content ul.topics li#section-5 div.summary p {
-  max-width: 43.5em;
-  margin: 0 auto;
-}
-
-.course-content ul.topics li#section-1 ul.section.img-text,
-.course-content ul.topics li#section-2 ul.section.img-text,
-.course-content ul.topics li#section-3 ul.section.img-text,
-.course-content ul.topics li#section-4 ul.section.img-text,
-.course-content ul.topics li#section-5 ul.section.img-text {
-  background: white;
-  counter-reset: actividadNo;
-}
-
-.course-content ul.topics li#section-1 ul.section.img-text li .asset-wrapper,
-.course-content ul.topics li#section-2 ul.section.img-text li .asset-wrapper,
-.course-content ul.topics li#section-3 ul.section.img-text li .asset-wrapper,
-.course-content ul.topics li#section-4 ul.section.img-text li .asset-wrapper,
-.course-content ul.topics li#section-5 ul.section.img-text li .asset-wrapper {
-  overflow: hidden;
-}
-
-.course-content ul.topics li#section-1 div.row,
-.course-content ul.topics li#section-2 div.row,
-.course-content ul.topics li#section-3 div.row,
-.course-content ul.topics li#section-4 div.row,
-.course-content ul.topics li#section-5 div.row {
-  max-width: 43.5em;
-  margin: 0 auto;
-}
-
-.course-content ul.topics li#section-1 .section_footer,
-.course-content ul.topics li#section-2 .section_footer,
-.course-content ul.topics li#section-3 .section_footer,
-.course-content ul.topics li#section-4 .section_footer,
-.course-content ul.topics li#section-5 .section_footer {
-  max-width: 43.5em;
-  margin: 1rem auto;
-}
-
-.course-content ul.topics li#section-1 .label,
-.course-content ul.topics li#section-2 .label,
-.course-content ul.topics li#section-3 .label,
-.course-content ul.topics li#section-4 .label,
-.course-content ul.topics li#section-5 .label {
-  margin: 0;
-}
-
-.course-content ul.topics li#section-1 .label .asset-wrapper,
-.course-content ul.topics li#section-2 .label .asset-wrapper,
-.course-content ul.topics li#section-3 .label .asset-wrapper,
-.course-content ul.topics li#section-4 .label .asset-wrapper,
-.course-content ul.topics li#section-5 .label .asset-wrapper {
-  overflow: hidden;
-}
-
-.course-content ul.topics li#section-1 .label .separador-amarillo,
-.course-content ul.topics li#section-2 .label .separador-amarillo,
-.course-content ul.topics li#section-3 .label .separador-amarillo,
-.course-content ul.topics li#section-4 .label .separador-amarillo,
-.course-content ul.topics li#section-5 .label .separador-amarillo {
-  min-height: 27vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(250, 220, 93, 0.5)), to(rgba(250, 220, 93, 0.5))), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-separador.jpg);
-  background-image: linear-gradient(rgba(250, 220, 93, 0.5), rgba(250, 220, 93, 0.5)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-separador.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
+  overflow: hidden; }
+  .course-content ul.topics li#section-1.snap-native,
+  .course-content ul.topics li#section-2.snap-native,
+  .course-content ul.topics li#section-3.snap-native,
+  .course-content ul.topics li#section-4.snap-native,
+  .course-content ul.topics li#section-5.snap-native {
+    margin: 0; }
+  .course-content ul.topics li#section-1 h2.sectionname,
+  .course-content ul.topics li#section-2 h2.sectionname,
+  .course-content ul.topics li#section-3 h2.sectionname,
+  .course-content ul.topics li#section-4 h2.sectionname,
+  .course-content ul.topics li#section-5 h2.sectionname {
+    height: 40vh;
+    width: 140%;
+    display: none;
+    align-items: center;
+    padding-left: 25%;
+    background-color: #fadc5d;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
+    background-size: cover;
+    background-position: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 3em;
+    margin-left: -5em;
+    color: white; }
+    .course-content ul.topics li#section-1 h2.sectionname::before,
+    .course-content ul.topics li#section-2 h2.sectionname::before,
+    .course-content ul.topics li#section-3 h2.sectionname::before,
+    .course-content ul.topics li#section-4 h2.sectionname::before,
+    .course-content ul.topics li#section-5 h2.sectionname::before {
+      content: "Módulo " counter(annotation-list);
+      color: #fadc5d;
+      float: left;
+      position: relative;
+      top: -1.3em;
+      font-size: 2rem;
+      left: 4.25em;
+      white-space: nowrap; }
+  .course-content ul.topics li#section-1 .video-container,
+  .course-content ul.topics li#section-2 .video-container,
+  .course-content ul.topics li#section-3 .video-container,
+  .course-content ul.topics li#section-4 .video-container,
+  .course-content ul.topics li#section-5 .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0; }
+    .course-content ul.topics li#section-1 .video-container iframe,
+    .course-content ul.topics li#section-2 .video-container iframe,
+    .course-content ul.topics li#section-3 .video-container iframe,
+    .course-content ul.topics li#section-4 .video-container iframe,
+    .course-content ul.topics li#section-5 .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 5%;
+      margin-top: 3%;
+      max-width: 90%;
+      width: 100%;
+      height: 90%; }
+  .course-content ul.topics li#section-1 div.summary p,
+  .course-content ul.topics li#section-2 div.summary p,
+  .course-content ul.topics li#section-3 div.summary p,
+  .course-content ul.topics li#section-4 div.summary p,
+  .course-content ul.topics li#section-5 div.summary p {
+    max-width: 43.5em;
+    margin: 0 auto; }
+  .course-content ul.topics li#section-1 ul.section.img-text,
+  .course-content ul.topics li#section-2 ul.section.img-text,
+  .course-content ul.topics li#section-3 ul.section.img-text,
+  .course-content ul.topics li#section-4 ul.section.img-text,
+  .course-content ul.topics li#section-5 ul.section.img-text {
+    background: white;
+    counter-reset: actividadNo; }
+    .course-content ul.topics li#section-1 ul.section.img-text li .asset-wrapper,
+    .course-content ul.topics li#section-2 ul.section.img-text li .asset-wrapper,
+    .course-content ul.topics li#section-3 ul.section.img-text li .asset-wrapper,
+    .course-content ul.topics li#section-4 ul.section.img-text li .asset-wrapper,
+    .course-content ul.topics li#section-5 ul.section.img-text li .asset-wrapper {
+      overflow: hidden; }
+  .course-content ul.topics li#section-1 div.row,
+  .course-content ul.topics li#section-2 div.row,
+  .course-content ul.topics li#section-3 div.row,
+  .course-content ul.topics li#section-4 div.row,
+  .course-content ul.topics li#section-5 div.row {
+    max-width: 43.5em;
+    margin: 0 auto; }
+  .course-content ul.topics li#section-1 .section_footer,
+  .course-content ul.topics li#section-2 .section_footer,
+  .course-content ul.topics li#section-3 .section_footer,
+  .course-content ul.topics li#section-4 .section_footer,
+  .course-content ul.topics li#section-5 .section_footer {
+    max-width: 43.5em;
+    margin: 1rem auto; }
+  .course-content ul.topics li#section-1 .label,
+  .course-content ul.topics li#section-2 .label,
+  .course-content ul.topics li#section-3 .label,
+  .course-content ul.topics li#section-4 .label,
+  .course-content ul.topics li#section-5 .label {
+    margin: 0; }
+    .course-content ul.topics li#section-1 .label .asset-wrapper,
+    .course-content ul.topics li#section-2 .label .asset-wrapper,
+    .course-content ul.topics li#section-3 .label .asset-wrapper,
+    .course-content ul.topics li#section-4 .label .asset-wrapper,
+    .course-content ul.topics li#section-5 .label .asset-wrapper {
+      overflow: hidden; }
+    .course-content ul.topics li#section-1 .label .separador-amarillo,
+    .course-content ul.topics li#section-2 .label .separador-amarillo,
+    .course-content ul.topics li#section-3 .label .separador-amarillo,
+    .course-content ul.topics li#section-4 .label .separador-amarillo,
+    .course-content ul.topics li#section-5 .label .separador-amarillo {
+      min-height: 27vh;
+      background-image: linear-gradient(rgba(250, 220, 93, 0.5), rgba(250, 220, 93, 0.5)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-separador.jpg);
+      background-size: cover;
+      background-position: center; }
 .course-content ul.topics blockquote.blockquote {
   border: 0;
   min-height: 650px;
@@ -474,200 +319,121 @@ body#page-course-view-topics section#region-main span.instancename {
   background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-quote.jpg);
   background-size: cover;
   background-attachment: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding: 0;
-}
-
-.course-content ul.topics blockquote.blockquote p,
-.course-content ul.topics blockquote.blockquote footer {
-  margin: 0 !important;
-  max-width: 100% !important;
-  background: #006d38;
-  color: white;
-  padding: 2rem 5rem;
-}
-
-.course-content ul.topics blockquote.blockquote p {
-  font-style: italic;
-}
-
-.course-content ul.topics blockquote.blockquote footer {
-  padding: 0 5rem 2rem 5rem;
-  text-align: right;
-  font-size: 1.3rem;
-  color: #fadc5d;
-  font-weight: 600;
-}
-
-.course-content ul.topics blockquote.blockquote footer .usertour {
-  display: none;
-}
-
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0; }
+  .course-content ul.topics blockquote.blockquote p,
+  .course-content ul.topics blockquote.blockquote footer {
+    margin: 0 !important;
+    max-width: 100% !important;
+    background: #006d38;
+    color: white;
+    padding: 2rem 5rem; }
+  .course-content ul.topics blockquote.blockquote p {
+    font-style: italic; }
+  .course-content ul.topics blockquote.blockquote footer {
+    padding: 0 5rem 2rem 5rem;
+    text-align: right;
+    font-size: 1.3rem;
+    color: #fadc5d;
+    font-weight: 600; }
+    .course-content ul.topics blockquote.blockquote footer .usertour {
+      display: none; }
 .course-content ul.topics ul.section.img-text li.snap-activity {
   border: 0;
   margin: 0;
   min-height: 350px;
   height: 45vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
-}
-
-.course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  width: 100%;
-}
-
-.course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance {
-  background-color: transparent;
-  width: 100%;
-  text-align: center;
-}
-
-.course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-assettype {
-  display: none;
-}
-
-.course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 60%;
-  text-align: right;
-  padding-left: 6%;
-}
-
-.course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content .contentafterlink {
-  margin-left: 0px;
-}
-
-.course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content h3 img {
-  display: none;
-}
-
-.course-content ul.topics ul.section.img-text li.snap-activity:nth-child(odd) {
-  background-color: #f7f7f7;
-}
-
-.course-content ul.topics ul.section.img-text li.snap-activity:nth-child(odd)::before {
-  counter-increment: actividadNo;
-  content: "0" counter(actividadNo);
-  color: #eaeaea;
-  position: absolute;
-  bottom: -60px;
-  font-size: 500px;
-  line-height: 19rem;
-  letter-spacing: -40px;
-  right: 4%;
-  font-family: 'Roboto Condensed';
-  font-weight: 900;
-  z-index: 0;
-}
-
-.course-content ul.topics ul.section.img-text li.snap-activity:nth-child(even) {
-  background-color: #eaeaea;
-}
-
-.course-content ul.topics ul.section.img-text li.snap-activity:nth-child(even) .activityinstance .snap-asset-content {
-  margin-left: auto;
-  text-align: left;
-  padding-right: 6%;
-}
-
-.course-content ul.topics ul.section.img-text li.snap-activity:nth-child(even)::before {
-  counter-increment: actividadNo;
-  content: "0" counter(actividadNo);
-  color: #f7f7f7;
-  position: absolute;
-  top: -60px;
-  font-size: 500px;
-  letter-spacing: -40px;
-  line-height: 19rem;
-  left: 3%;
-  font-family: 'Roboto Condensed';
-  font-weight: 900;
-  z-index: 0;
-}
+  align-items: center;
+  overflow: hidden; }
+  .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper {
+    display: flex;
+    position: absolute;
+    width: 100%; }
+    .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance {
+      background-color: transparent;
+      width: 100%;
+      text-align: center; }
+      .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-assettype {
+        display: none; }
+      .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+        width: 60%;
+        text-align: right;
+        padding-left: 6%; }
+        .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content .contentafterlink {
+          margin-left: 0px; }
+      .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content h3 img {
+        display: none; }
+  .course-content ul.topics ul.section.img-text li.snap-activity:nth-child(odd) {
+    background-color: #f7f7f7; }
+    .course-content ul.topics ul.section.img-text li.snap-activity:nth-child(odd)::before {
+      counter-increment: actividadNo;
+      content: "0" counter(actividadNo);
+      color: #eaeaea;
+      position: absolute;
+      bottom: -60px;
+      font-size: 500px;
+      line-height: 19rem;
+      letter-spacing: -40px;
+      right: 4%;
+      font-family: 'Roboto Condensed';
+      font-weight: 900;
+      z-index: 0; }
+  .course-content ul.topics ul.section.img-text li.snap-activity:nth-child(even) {
+    background-color: #eaeaea; }
+    .course-content ul.topics ul.section.img-text li.snap-activity:nth-child(even) .activityinstance .snap-asset-content {
+      margin-left: auto;
+      text-align: left;
+      padding-right: 6%; }
+    .course-content ul.topics ul.section.img-text li.snap-activity:nth-child(even)::before {
+      counter-increment: actividadNo;
+      content: "0" counter(actividadNo);
+      color: #f7f7f7;
+      position: absolute;
+      top: -60px;
+      font-size: 500px;
+      letter-spacing: -40px;
+      line-height: 19rem;
+      left: 3%;
+      font-family: 'Roboto Condensed';
+      font-weight: 900;
+      z-index: 0; }
 
 .contenedor-objetivos {
   width: 70%;
   margin: 0 auto;
   min-width: 980px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  padding: 1rem;
-}
-
-.contenedor-objetivos #objetivo-modulo {
-  width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 4.5rem 5rem 7.5rem 6.5rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/globo_objetivos.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.contenedor-objetivos #complemento-objetivos {
-  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/caja_objetivos.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0rem 0rem 0rem 0rem;
-}
-
-.contenedor-objetivos #complemento-objetivos .bloque {
-  width: 45%;
-}
+  flex-wrap: nowrap;
+  padding: 1rem; }
+  .contenedor-objetivos #objetivo-modulo {
+    width: 60%;
+    display: flex;
+    padding: 4.5rem 5rem 7.5rem 6.5rem;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/globo_objetivos.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+  .contenedor-objetivos #complemento-objetivos {
+    background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/caja_objetivos.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 0rem 0rem 0rem; }
+    .contenedor-objetivos #complemento-objetivos .bloque {
+      width: 45%; }
 
 h3#final-descripcion {
   text-align: center;
@@ -676,306 +442,191 @@ h3#final-descripcion {
   width: 30%;
   margin: 2rem auto;
   padding-bottom: 1rem;
-  border-bottom: 3px solid #fadc5d;
-}
+  border-bottom: 3px solid #fadc5d; }
 
 ul.section.img-text .page .asset-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 5rem 4rem;
-  text-align: center;
-}
-
-ul.section.img-text .page .asset-wrapper span.instancename {
-  color: black;
-  font-weight: 900;
-}
-
-ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore {
-  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_resumen.svg);
-  overflow: visible;
-  background-size: contain;
-  background-position: center;
-  padding: 3rem;
-  background-repeat: no-repeat;
-  border: 0;
-}
-
-ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:hover:not(:disabled) {
-  background-color: transparent !important;
-  border-color: transparent !important;
-  color: #006d38;
-  outline: 0px auto gray;
-}
+  text-align: center; }
+  ul.section.img-text .page .asset-wrapper span.instancename {
+    color: black;
+    font-weight: 900; }
+  ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore {
+    background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_resumen.svg);
+    overflow: visible;
+    background-size: contain;
+    background-position: center;
+    padding: 3rem;
+    background-repeat: no-repeat;
+    border: 0; }
+    ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:hover:not(:disabled) {
+      background-color: transparent !important;
+      border-color: transparent !important;
+      color: #006d38;
+      outline: 0px auto gray; }
 
 .separador-opciones {
   min-height: 30vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background-color: #006d38;
   color: white;
   padding: 4rem 11%;
-  font-size: 80%;
-}
-
-.separador-opciones .opcion {
-  width: 33%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 1rem;
-  padding-left: 100px;
-}
-
-.separador-opciones .opcion h3 a {
-  text-align: left;
-  color: white !important;
-  text-transform: uppercase;
-}
-
-.separador-opciones .opcion h3 a:visited {
-  color: white;
-  text-decoration: none;
-}
-
-.separador-opciones .opcion p {
-  text-align: left;
-}
-
-.separador-opciones .opcion::before {
-  content: "";
-  display: inline-block;
-  height: 110px;
-  width: 90px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  margin-left: -90px;
-}
-
-.separador-opciones .opcion.glosario::before {
-  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/icono_glosario.png);
-}
-
-.separador-opciones .opcion.cartilla::before {
-  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/icono_cartilla.png);
-}
-
-.separador-opciones .opcion.bibliografia::before {
-  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/icono_bibliografia.png);
-  margin-left: -110px;
-  width: 110px;
-}
+  font-size: 80%; }
+  .separador-opciones .opcion {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-left: 100px; }
+    .separador-opciones .opcion h3 a {
+      text-align: left;
+      color: white !important;
+      text-transform: uppercase; }
+      .separador-opciones .opcion h3 a:visited {
+        color: white;
+        text-decoration: none; }
+    .separador-opciones .opcion p {
+      text-align: left; }
+    .separador-opciones .opcion::before {
+      content: "";
+      display: inline-block;
+      height: 110px;
+      width: 90px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      margin-left: -90px; }
+    .separador-opciones .opcion.glosario::before {
+      background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/icono_glosario.png); }
+    .separador-opciones .opcion.cartilla::before {
+      background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/icono_cartilla.png); }
+    .separador-opciones .opcion.bibliografia::before {
+      background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/icono_bibliografia.png);
+      margin-left: -110px;
+      width: 110px; }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(n+3):not(:last-child):hover, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado:nth-child(n+3):not(:last-child) {
   background-image: url("data:image/svg+xml, %3Csvg width='100%' viewBox='0 0 275 145' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='rgb(250, 220, 93)' d='M231.9743097756687,144.4894306236695 L34.23931043837641,144.6099759266518 C21.08000638301136,145.22777060443585 9.808613846952934,137.09096265313266 9.135694889576314,126.46790782782017 L0.032596771731464205,20.127397996914983 C-0.7524753452079281,7.876981581341759 12.761980382105904,-1.796778982985419 27.753119376996203,0.28262749345875804 L254.3301729151808,14.310176296329782 C267.3960160042436,16.118355841063835 276.1065780636188,26.198956802956186 273.6579007464983,36.71653448815924 L253.9376368567112,128.9089502132111 C251.9375721778418,137.54300753931622 242.87185844651788,143.9771130859949 231.9743097756687,144.4894306236695Z'%3E%3C/path%3E%3C/svg%3E") !important;
-  background-size: 100% 100%;
-}
-
-.home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(n+3):not(:last-child):hover .chapter-title, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado:nth-child(n+3):not(:last-child) .chapter-title {
-  color: #006d38;
-}
-
-.home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(n+3):not(:last-child):hover .text, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado:nth-child(n+3):not(:last-child) .text {
-  color: #2b2b2b;
-}
+  background-size: 100% 100%; }
+  .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(n+3):not(:last-child):hover .chapter-title, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado:nth-child(n+3):not(:last-child) .chapter-title {
+    color: #006d38; }
+  .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(n+3):not(:last-child):hover .text, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado:nth-child(n+3):not(:last-child) .text {
+    color: #2b2b2b; }
 
 .home-ruta #page-header {
   height: 105vh;
   background-image: url(http://jkvela.website/pluginfile.php/62/block_html/content/fondo_avance0.svg);
   background-position: center -50px;
   background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.home-ruta #page-header .breadcrumb-nav {
-  visibility: hidden;
-}
-
-.home-ruta #page-header #page-mast {
-  height: 85vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.home-ruta #page-header #page-mast > h1 {
-  color: #006d38;
-  text-transform: uppercase;
-  font-size: 1.77rem;
-  font-weight: bold;
-}
-
-.home-ruta #page-header #page-mast > h1::before {
-  content: 'Bienvenido al curso';
-  display: block;
-  color: #2b2b2b;
-  text-transform: initial;
-  font-size: 1.44rem;
-  font-weight: bold;
-}
-
-.home-ruta #page-header #page-mast > h1 a {
-  text-decoration: none;
-}
-
-.home-ruta #page-header #page-mast > h1 a,
-.home-ruta #page-header #page-mast > h1 a:hover {
-  color: #006d38;
-}
-
-.home-ruta #page-header #page-mast .texto-bienvenida {
-  display: block;
-  max-width: 530px;
-}
-
-.home-ruta #page-header #page-mast #course-toc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 56vh;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 100%;
-  margin-top: auto;
-}
-
-.home-ruta #page-header #page-mast #course-toc #chapters {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-width: 100%;
-  min-height: 150px;
-}
-
-.home-ruta #page-header #page-mast #course-toc #chapters li {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
-  margin-left: .7em;
-  padding: 25px 30px 25px 25px;
-}
-
-.home-ruta #page-header #page-mast #course-toc #chapters li .text {
-  color: white;
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: normal;
-}
-
-.home-ruta #page-header #page-mast #course-toc #chapters li .text::before {
-  width: 48%;
-  display: inline-block;
-}
-
-.home-ruta #page-header #page-mast #course-toc #chapters li .text::after {
-  display: block;
-  border-bottom: 1px solid white;
-  width: 100%;
-  content: '';
-  margin: 10px 0 10px 0;
-}
-
-.home-ruta #page-header #page-mast #course-toc #chapters li .text small {
-  font-size: 0.7rem !important;
-  text-align: right;
-  width: 50%;
-  display: inline-block;
-}
-
-.home-ruta #page-header #page-mast #course-toc #chapters li .text .snap-section-complete {
-  display: none;
-}
-
-.home-ruta #page-header #page-mast #course-toc #chapters li:first-child {
-  display: none;
-}
-
-.home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) {
-  position: absolute;
-  top: 0;
-  right: unset;
-}
-
-.home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(n+3):not(:last-child) {
-  background-image: url("data:image/svg+xml, %3Csvg width='100%' viewBox='0 0 275 145' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='rgb(0, 109, 56)' d='M231.9743097756687,144.4894306236695 L34.23931043837641,144.6099759266518 C21.08000638301136,145.22777060443585 9.808613846952934,137.09096265313266 9.135694889576314,126.46790782782017 L0.032596771731464205,20.127397996914983 C-0.7524753452079281,7.876981581341759 12.761980382105904,-1.796778982985419 27.753119376996203,0.28262749345875804 L254.3301729151808,14.310176296329782 C267.3960160042436,16.118355841063835 276.1065780636188,26.198956802956186 273.6579007464983,36.71653448815924 L253.9376368567112,128.9089502132111 C251.9375721778418,137.54300753931622 242.87185844651788,143.9771130859949 231.9743097756687,144.4894306236695Z'%3E%3C/path%3E%3C/svg%3E");
-  background-size: 100% 100%;
-  max-width: 300px;
-}
-
-.home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.home-ruta #page-header #page-mast #course-toc #chapters .chapter-title {
-  line-height: 1.2;
-  color: #fadc5d;
-  text-decoration: none;
-}
-
-.home-ruta #page-header .course-content #section-0 .state-visible {
-  display: none;
-}
-
+  background-repeat: no-repeat; }
+  .home-ruta #page-header .breadcrumb-nav {
+    visibility: hidden; }
+  .home-ruta #page-header #page-mast {
+    height: 85vh;
+    display: flex;
+    flex-direction: column; }
+    .home-ruta #page-header #page-mast > h1 {
+      color: #006d38;
+      text-transform: uppercase;
+      font-size: 1.77rem;
+      font-weight: bold; }
+      .home-ruta #page-header #page-mast > h1::before {
+        content: 'Bienvenido al curso';
+        display: block;
+        color: #2b2b2b;
+        text-transform: initial;
+        font-size: 1.44rem;
+        font-weight: bold; }
+      .home-ruta #page-header #page-mast > h1 a {
+        text-decoration: none; }
+      .home-ruta #page-header #page-mast > h1 a,
+      .home-ruta #page-header #page-mast > h1 a:hover {
+        color: #006d38; }
+    .home-ruta #page-header #page-mast .texto-bienvenida {
+      display: block;
+      max-width: 530px; }
+    .home-ruta #page-header #page-mast #course-toc {
+      display: flex;
+      flex-direction: column;
+      height: 56vh;
+      justify-content: flex-end;
+      width: 100%;
+      margin-top: auto; }
+      .home-ruta #page-header #page-mast #course-toc #chapters {
+        display: flex;
+        min-width: 100%;
+        min-height: 150px; }
+        .home-ruta #page-header #page-mast #course-toc #chapters li {
+          flex-basis: 25%;
+          margin-left: .7em;
+          padding: 25px 30px 25px 25px; }
+          .home-ruta #page-header #page-mast #course-toc #chapters li .text {
+            color: white;
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-weight: normal; }
+            .home-ruta #page-header #page-mast #course-toc #chapters li .text::before {
+              width: 48%;
+              display: inline-block; }
+            .home-ruta #page-header #page-mast #course-toc #chapters li .text::after {
+              display: block;
+              border-bottom: 1px solid white;
+              width: 100%;
+              content: '';
+              margin: 10px 0 10px 0; }
+            .home-ruta #page-header #page-mast #course-toc #chapters li .text small {
+              font-size: 0.7rem !important;
+              text-align: right;
+              width: 50%;
+              display: inline-block; }
+            .home-ruta #page-header #page-mast #course-toc #chapters li .text .snap-section-complete {
+              display: none; }
+          .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) {
+            position: absolute;
+            top: 0;
+            right: unset; }
+          .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(n+3):not(:last-child) {
+            background-image: url("data:image/svg+xml, %3Csvg width='100%' viewBox='0 0 275 145' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='rgb(0, 109, 56)' d='M231.9743097756687,144.4894306236695 L34.23931043837641,144.6099759266518 C21.08000638301136,145.22777060443585 9.808613846952934,137.09096265313266 9.135694889576314,126.46790782782017 L0.032596771731464205,20.127397996914983 C-0.7524753452079281,7.876981581341759 12.761980382105904,-1.796778982985419 27.753119376996203,0.28262749345875804 L254.3301729151808,14.310176296329782 C267.3960160042436,16.118355841063835 276.1065780636188,26.198956802956186 273.6579007464983,36.71653448815924 L253.9376368567112,128.9089502132111 C251.9375721778418,137.54300753931622 242.87185844651788,143.9771130859949 231.9743097756687,144.4894306236695Z'%3E%3C/path%3E%3C/svg%3E");
+            background-size: 100% 100%;
+            max-width: 300px; }
+          .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
+            position: absolute;
+            top: 0;
+            right: 0; }
+        .home-ruta #page-header #page-mast #course-toc #chapters .chapter-title {
+          line-height: 1.2;
+          color: #fadc5d;
+          text-decoration: none; }
+  .home-ruta #page-header .course-content #section-0 .state-visible {
+    display: none; }
 .home-ruta #region-main {
-  display: none;
-}
+  display: none; }
 
 :root {
   font-family: "Roboto Condensed", "Roboto", "Helvetica", sans-serif !important;
-  font-size: 18px;
-}
+  font-size: 18px; }
 
 #mr-nav,
 #page-header,
 #region-main,
 #moodle-footer,
 #moodle-blocks {
-  font-size: 1rem;
-}
-
-::-moz-selection {
-  background: #fadc5d;
-  color: #fff;
-}
+  font-size: 1rem; }
 
 ::selection {
   background: #fadc5d;
-  color: #fff;
-}
+  color: #fff; }
 
 .alert.alert-danger, #page-admin-index .releasenoteslink.alert-danger, #page-admin-index #page-admin-index .adminerror.releasenoteslink, #page-admin-index .adminwarning.alert-danger, #page-admin-index #page-admin-index .adminerror.adminwarning, #page-admin-index .adminerror.alert-danger, #page-admin-index #page-admin-index .adminerror, .que .formulation.alert-danger, .que #page-admin-index .adminerror.formulation, #page-admin-index .que .adminerror.formulation, .que .outcome.alert-danger, .que #page-admin-index .adminerror.outcome, #page-admin-index .que .adminerror.outcome, .que .comment.alert-danger, .que #page-admin-index .adminerror.comment, #page-admin-index .que .adminerror.comment, .assignfeedback_editpdf_widget .label.alert-danger, .assignfeedback_editpdf_widget #page-admin-index .adminerror.label, #page-admin-index .assignfeedback_editpdf_widget .adminerror.label, #page-admin-index .adminerror.alert, #page-admin-index #page-admin-index .releasenoteslink.adminerror, #page-admin-index #page-admin-index .adminwarning.adminerror, #page-admin-index .que .formulation.adminerror, .que #page-admin-index .formulation.adminerror, #page-admin-index .que .outcome.adminerror, .que #page-admin-index .outcome.adminerror, #page-admin-index .que .comment.adminerror, .que #page-admin-index .comment.adminerror, #page-admin-index .assignfeedback_editpdf_widget .label.adminerror, .assignfeedback_editpdf_widget #page-admin-index .label.adminerror {
   color: #990f3d;
   background-color: #faf3f5;
-  border-color: #990f3d;
-}
+  border-color: #990f3d; }
 
 @media screen and (min-width: 1600px) {
   div#page {
     max-width: 80%;
-    margin: 0 auto;
-  }
-}
+    margin: 0 auto; } }
+
 /*# sourceMappingURL=styles.css.map */

@@ -67,9 +67,6 @@
                                 display: none;
                             }
                         }
-                        &:first-child {
-                            display: none;
-                        }
                         &:nth-child(2) {
                             @include posicion-otros-elementos(absolute, 0);
                         }
