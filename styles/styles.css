@@ -95,6 +95,88 @@ header#mr-nav::before {
   min-height: 45px;
 }
 
+#page-login-index header#mr-nav {
+  display: none;
+}
+
+#page-login-index main#moodle-page {
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 108, 56, 0.7)), to(rgba(1, 108, 56, 0.7))), url(http://jkvela.website/theme/snap/pix/segurosbolivar/bg1.jpg);
+  background: linear-gradient(rgba(1, 108, 56, 0.7), rgba(1, 108, 56, 0.7)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/bg1.jpg);
+  background-size: cover;
+  background-position-x: center;
+}
+
+#page-login-index main#moodle-page div#page-header {
+  display: none;
+}
+
+#page-login-index main#moodle-page section#region-main {
+  background-color: white;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 !important;
+}
+
+#page-login-index main#moodle-page section#region-main div[role="main"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+#page-login-index .snap-login, #page-login-signup .snap-login {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+#page-login-index section#region-main div[role="main"] .snap-login {
+  padding: 2em 9%;
+}
+
+#page-login-index section#region-main div[role="main"] .snap-login h4 {
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 200;
+  color: #828282;
+}
+
+#page-login-index section#region-main div[role="main"] .snap-login h2 {
+  font-weight: 900;
+  font: size 2.5rem;
+  color: #006d38;
+  line-height: 2.2rem;
+}
+
+#page-login-index section#region-main div[role="main"] .snap-login p {
+  padding: 0.7rem 0 1.3rem 0;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 1.5rem;
+  line-height: 1.4rem;
+  color: #6b6b6b;
+}
+
+#page-login-index section#region-main div[role="main"] .snap-login button#loginbtn {
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 24px;
+}
+
 #snap-pm-header {
   padding: 1rem 3rem;
   display: -webkit-box;
