@@ -259,12 +259,13 @@ body#page-course-view-topics section#region-main {
         overflow: hidden;
         .asset-wrapper {
             display: flex;
-            position: absolute;
             width: 100%;
+            align-self: baseline;
             .activityinstance {
                 background-color: transparent;
                 width: 100%;
-                text-align: center;
+                position: absolute;
+                height: 100%;
                 .snap-assettype {
                     display: none;
                 }
