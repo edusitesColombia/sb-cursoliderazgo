@@ -345,6 +345,10 @@ body#page-course-view-topics section#region-main {
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
+        h4{
+            font-weight: 600;
+            color:$verde;
+        }
     }
     #complemento-objetivos {
         background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/caja_objetivos.svg);
@@ -355,9 +359,13 @@ body#page-course-view-topics section#region-main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0rem 0rem 0rem 0rem;
+        padding: 1.5rem 0rem 0rem 0rem;
         .bloque {
             width: 45%;
+            h5{
+                font-weight: 600;
+                margin:0;
+            }
         }
     }
 }

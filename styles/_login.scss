@@ -22,6 +22,7 @@
             width: 50%;
             display:flex;
             margin:0!important;
+            overflow:hidden;
             //contenedor directo de los elementos del login
             div[role="main"]{
                 display: flex;
@@ -30,6 +31,11 @@
                 justify-content: space-evenly;
                 width: 100%;
                 height:95vh;
+                .loginerrors .alert.alertdanger{
+                    color: $negro;
+                    background-color: $gris-no1;
+                    border-color: $amarillo;
+                }
             }
             .login-guest{
                 display:none;
