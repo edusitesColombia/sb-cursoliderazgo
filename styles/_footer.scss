@@ -1,5 +1,5 @@
 #moodle-footer{
-    div:not(.snap-site-footer){
+    div:not(#snap-site-footer){
         display:none!important;
     }
 }

@@ -44,6 +44,10 @@
   width: 100%;
 }
 
+#page-login-index main#moodle-page section#region-main .login-guest {
+  display: none;
+}
+
 #page-login-index .snap-login, #page-login-signup .snap-login {
   background-color: rgba(255, 255, 255, 0) !important;
 }
@@ -95,7 +99,7 @@ header#mr-nav::before {
   min-height: 45px;
 }
 
-#moodle-footer div:not(.snap-site-footer) {
+#moodle-footer div:not(#snap-site-footer) {
   display: none !important;
 }
 
