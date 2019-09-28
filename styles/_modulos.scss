@@ -257,6 +257,9 @@ body#page-course-view-topics section#region-main {
         display: flex;
         align-items: center;
         overflow: hidden;
+        &.snap-can-edit{
+            overflow: visible;
+        }
         .asset-wrapper {
             display: flex;
             width: 100%;
