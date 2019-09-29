@@ -31,4 +31,39 @@
             width:30%;
         }
     }
+    .bloque-verde-derecha{
+        height: 60vh;
+        min-height: 400px;
+        display: flex;
+        justify-content: flex-end;
+        background-image:url(http://jkvela.website/theme/snap/pix/segurosbolivar/bg-lesson2_1.jpg);
+        background-size:cover;
+        background-position: center;
+        p{
+            background: #016c38d9;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            color: white;
+        }
+    }
+
+    .bloque-verde-izquierda{
+        height: 60vh;
+        min-height: 400px;
+        display: flex;
+        justify-content: flex-start;
+        background-image:url(http://jkvela.website/theme/snap/pix/segurosbolivar/bg-lesson2_2.jpg);
+        background-size:cover;
+        background-position: center;
+        p{
+            background: #016c38d9;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            text-align: right;
+            color: white;
+        }
+    }
 }
