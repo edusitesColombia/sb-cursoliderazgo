@@ -3,3 +3,29 @@
         display:none!important;
     }
 }
+
+.pull-left:before, .pull-right:before {
+    content: "";
+    background: transparent url(/theme/image.php/snap/theme/1568573515/right-arrow) no-repeat 50% 50%;
+    display: block;
+    height: 1em;
+    width: 1em;
+    margin: .1em auto;
+}
+
+.pull-left:before {
+    background-image: url(/theme/image.php/snap/theme/1568573515/left-arrow);
+}
+
+.pull-right {
+    float: right;
+    margin-left: .3em;
+    border-left: 1px solid #dee2e6;
+    width: 50px;
+}
+
+.pull-left {
+    float: left;
+    margin-right: .3em;
+    border-right: 1px solid #dee2e6;
+}

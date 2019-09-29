@@ -28,5 +28,15 @@
         .ddarea{
             display: flex;
         }
+        .truefalse{
+            .prompt{
+                display:none;
+            }
+            .ablock .answer{
+                display: flex;
+                justify-content: space-evenly;
+                font-size: 1.4rem;
+            }
+        }
     }
 }

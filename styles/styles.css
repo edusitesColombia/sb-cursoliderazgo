@@ -111,6 +111,32 @@ header#mr-nav::before {
   display: none !important;
 }
 
+.pull-left:before, .pull-right:before {
+  content: "";
+  background: transparent url(/theme/image.php/snap/theme/1568573515/right-arrow) no-repeat 50% 50%;
+  display: block;
+  height: 1em;
+  width: 1em;
+  margin: .1em auto;
+}
+
+.pull-left:before {
+  background-image: url(/theme/image.php/snap/theme/1568573515/left-arrow);
+}
+
+.pull-right {
+  float: right;
+  margin-left: .3em;
+  border-left: 1px solid #dee2e6;
+  width: 50px;
+}
+
+.pull-left {
+  float: left;
+  margin-right: .3em;
+  border-right: 1px solid #dee2e6;
+}
+
 #snap-pm-header {
   padding: 1rem 3rem;
   display: -webkit-box;
@@ -1006,6 +1032,20 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#page-mod-quiz-attempt .que .truefalse .prompt {
+  display: none;
+}
+
+#page-mod-quiz-attempt .que .truefalse .ablock .answer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 1.4rem;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(n+3):not(:last-child):hover, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado:nth-child(n+3):not(:last-child) {
