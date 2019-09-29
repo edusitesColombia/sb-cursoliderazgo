@@ -111,19 +111,6 @@ header#mr-nav::before {
   display: none !important;
 }
 
-.activity-navigation .pull-left:before, .activity-navigation .pull-right:before {
-  content: "";
-  background: transparent url(/theme/image.php/snap/theme/1568573515/right-arrow) no-repeat 50% 50%;
-  display: block;
-  height: 1em;
-  width: 1em;
-  margin: .1em auto;
-}
-
-.activity-navigation .pull-left:before {
-  background-image: url(/theme/image.php/snap/theme/1568573515/left-arrow);
-}
-
 .activity-navigation .pull-right {
   float: right;
   margin-left: .3em;
