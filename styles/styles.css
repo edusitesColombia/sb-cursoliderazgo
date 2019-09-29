@@ -784,6 +784,10 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .table tbody tr td:fi
           text-decoration: dotted;
 }
 
+ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
+  padding-left: 0 !important;
+}
+
 .separador-opciones {
   min-height: 30vh;
   display: -webkit-box;
