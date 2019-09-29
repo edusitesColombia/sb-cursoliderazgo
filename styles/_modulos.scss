@@ -439,6 +439,32 @@ ul.section.img-text .page .asset-wrapper {
         }
     }
 }
+#page-mod-page-view{
+    div[role="main"]{
+        text-align: center;
+        .table{
+            font-family:"Roboto Condensed"!important;
+            td{
+                vertical-align: middle;
+            }
+
+            p{
+                margin:0;
+            }
+
+            thead td{
+                background:$verde;
+                font-size:1.8rem;
+                color:$blanco;
+            }
+
+            tbody tr td:first-child {
+                font-size: 1.4rem;
+                text-decoration: dotted;
+            }
+        }
+    }
+}
 
 //separador verde con opciones entre glosario bibliografia y cartilla
 .separador-opciones {

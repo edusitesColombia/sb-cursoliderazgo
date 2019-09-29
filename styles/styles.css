@@ -812,6 +812,34 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
   padding-left: 0 !important;
 }
 
+#page-mod-page-view div[role="main"] {
+  text-align: center;
+}
+
+#page-mod-page-view div[role="main"] .table {
+  font-family: "Roboto Condensed" !important;
+}
+
+#page-mod-page-view div[role="main"] .table td {
+  vertical-align: middle;
+}
+
+#page-mod-page-view div[role="main"] .table p {
+  margin: 0;
+}
+
+#page-mod-page-view div[role="main"] .table thead td {
+  background: #006d38;
+  font-size: 1.8rem;
+  color: white;
+}
+
+#page-mod-page-view div[role="main"] .table tbody tr td:first-child {
+  font-size: 1.4rem;
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
+}
+
 .separador-opciones {
   min-height: 30vh;
   display: -webkit-box;
