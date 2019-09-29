@@ -1,0 +1,31 @@
+#page-mod-lesson-view div[role="main"]{
+    text-align: center;
+    font-family: "Roboto Condensed"!important;
+     h2{
+        min-height: 22vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $gris-no1;
+        margin-bottom: 2rem;
+        box-shadow: inset 0 0 5px #a1a1a2, inset 0 0 8px #b1b1b1;
+    }
+    h3:first-child{
+        display:none!important;
+    }
+    h3{
+        font-weight: 600;
+        b{
+            color:$verde;
+        }
+    }
+    .contenedor-imagenes {
+        display: flex;
+        flex-wrap: wrap;
+        padding:1rem;
+
+        img{
+            width:30%;
+        }
+    }
+}
