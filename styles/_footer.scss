@@ -8,12 +8,15 @@
         float: right;
         margin-left: .3em;
         border-left: 1px solid #dee2e6;
-        width: 50px;
     }
-
     .pull-left {
         float: left;
         margin-right: .3em;
         border-right: 1px solid #dee2e6;
+    }
+    .activity-navigation .col-md-4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
