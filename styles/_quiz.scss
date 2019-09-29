@@ -8,7 +8,7 @@
         .info{
             margin-bottom:1.5rem;
         }
-        h3.no {
+        &:not(.truefalse) h3.no {
             font-size: 2rem;
             font-weight: 400;
             min-height: 22vh;

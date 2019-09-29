@@ -975,7 +975,7 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
   margin-bottom: 1.5rem;
 }
 
-#page-mod-quiz-attempt .que h3.no {
+#page-mod-quiz-attempt .que:not(.truefalse) h3.no {
   font-size: 2rem;
   font-weight: 400;
   min-height: 22vh;
@@ -994,7 +994,7 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
           box-shadow: inset 0 0 5px #a1a1a2, inset 0 0 8px #b1b1b1;
 }
 
-#page-mod-quiz-attempt .que h3.no .qno {
+#page-mod-quiz-attempt .que:not(.truefalse) h3.no .qno {
   margin-left: 3px;
 }
 
