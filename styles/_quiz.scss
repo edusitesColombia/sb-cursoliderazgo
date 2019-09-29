@@ -1,0 +1,32 @@
+#page-mod-quiz-attempt{
+    form#responseform {
+        line-height: 1.5rem;
+        font-size: 80%;
+    }
+
+    .que{
+        .info{
+            margin-bottom:1.5rem;
+        }
+        h3.no {
+            font-size: 2rem;
+            font-weight: 400;
+            min-height: 22vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $gris-no1;
+            margin-bottom: 0rem;
+            box-shadow: inset 0 0 5px #a1a1a2, inset 0 0 8px #b1b1b1;
+            .qno{
+                margin-left:3px;
+            }
+        }
+        .qtext{
+            margin-bottom:1.5rem;
+        }
+        .ddarea{
+            display: flex;
+        }
+    }
+}
