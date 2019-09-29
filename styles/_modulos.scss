@@ -394,6 +394,9 @@ ul.section.img-text .page .asset-wrapper {
         color: black;
         font-weight: 900;
     }
+    .summary-text p{
+        max-width: 43.5em;
+    } 
     a.btn.btn-secondary.pagemod-readmore {
         background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_resumen.svg);
         overflow: visible;
@@ -407,6 +410,27 @@ ul.section.img-text .page .asset-wrapper {
             border-color: transparent!important;
             color: $verde;
             outline: 0px auto gray;
+        }
+    }
+    .contentafterlink .table{
+        font-family:"Roboto Condensed"!important;
+        td{
+            vertical-align: middle;
+        }
+
+        p{
+            margin:0;
+        }
+
+        thead td{
+            background:$verde;
+            font-size:1.8rem;
+            color:$blanco;
+        }
+
+        tbody tr td:first-child {
+            font-size: 1.4rem;
+            text-decoration: dotted;
         }
     }
 }

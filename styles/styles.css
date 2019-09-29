@@ -739,6 +739,10 @@ ul.section.img-text .page .asset-wrapper span.instancename {
   font-weight: 900;
 }
 
+ul.section.img-text .page .asset-wrapper .summary-text p {
+  max-width: 43.5em;
+}
+
 ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore {
   background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_resumen.svg);
   overflow: visible;
@@ -754,6 +758,30 @@ ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore:ho
   border-color: transparent !important;
   color: #006d38;
   outline: 0px auto gray;
+}
+
+ul.section.img-text .page .asset-wrapper .contentafterlink .table {
+  font-family: "Roboto Condensed" !important;
+}
+
+ul.section.img-text .page .asset-wrapper .contentafterlink .table td {
+  vertical-align: middle;
+}
+
+ul.section.img-text .page .asset-wrapper .contentafterlink .table p {
+  margin: 0;
+}
+
+ul.section.img-text .page .asset-wrapper .contentafterlink .table thead td {
+  background: #006d38;
+  font-size: 1.8rem;
+  color: white;
+}
+
+ul.section.img-text .page .asset-wrapper .contentafterlink .table tbody tr td:first-child {
+  font-size: 1.4rem;
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
 }
 
 .separador-opciones {
