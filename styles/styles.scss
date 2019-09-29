@@ -31,6 +31,10 @@
     border-color: #990f3d;
 }
 
+div#page{
+    min-height: 95vh;
+}
+
 @media screen and (min-width: 1600px) {
     div#page {
         max-width: 80%;
