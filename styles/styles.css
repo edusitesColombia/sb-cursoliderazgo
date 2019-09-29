@@ -889,6 +889,10 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
   color: #006d38;
 }
 
+#page-mod-lesson-view div[role="main"] p {
+  padding: 2rem;
+}
+
 #page-mod-lesson-view div[role="main"] .contenedor-imagenes {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -896,6 +900,9 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #page-mod-lesson-view div[role="main"] .contenedor-imagenes img {

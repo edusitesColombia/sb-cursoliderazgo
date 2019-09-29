@@ -1,7 +1,7 @@
 #page-mod-lesson-view div[role="main"]{
     text-align: center;
     font-family: "Roboto Condensed"!important;
-     h2{
+    h2{
         min-height: 22vh;
         display: flex;
         justify-content: center;
@@ -19,11 +19,14 @@
             color:$verde;
         }
     }
+    p{
+        padding:2rem;
+    }
     .contenedor-imagenes {
         display: flex;
         flex-wrap: wrap;
         padding:1rem;
-
+        justify-content: center;
         img{
             width:30%;
         }
