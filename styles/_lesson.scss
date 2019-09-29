@@ -15,6 +15,7 @@
     }
     h3{
         font-weight: 600;
+        margin-top: 2rem;
         b{
             color:$verde;
         }
@@ -46,6 +47,7 @@
             align-items: center;
             text-align: left;
             color: white;
+            height: 100%;
         }
     }
 
@@ -64,6 +66,7 @@
             align-items: center;
             text-align: right;
             color: white;
+            height: 100%;
         }
     }
 }

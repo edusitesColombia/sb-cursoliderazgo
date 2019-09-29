@@ -883,6 +883,7 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
 
 #page-mod-lesson-view div[role="main"] h3 {
   font-weight: 600;
+  margin-top: 2rem;
 }
 
 #page-mod-lesson-view div[role="main"] h3 b {
@@ -934,6 +935,7 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
           align-items: center;
   text-align: left;
   color: white;
+  height: 100%;
 }
 
 #page-mod-lesson-view div[role="main"] .bloque-verde-izquierda {
@@ -961,6 +963,7 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
           align-items: center;
   text-align: right;
   color: white;
+  height: 100%;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(n+3):not(:last-child):hover, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado:nth-child(n+3):not(:last-child) {
