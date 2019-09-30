@@ -7,7 +7,7 @@
         min-height: 105vh;
         @include imagen-background('fondo_avance0', 'svg', 'center', 'cover');
         #page-mast {
-            min-height: 85vh;
+            height: 85vh;
             display: flex;
             flex-direction: column;
             &>h1 {
@@ -127,6 +127,10 @@
 }
 
 @mixin ruta-sm(){
+    .home-ruta #page-header #page-mast{
+        height: auto;
+        min-height: 85vh;
+    }
     .home-ruta #page-header #page-mast #course-toc #chapters{
         flex-wrap:wrap;
         justify-content: center;
@@ -156,7 +160,7 @@
     }
 
     .home-ruta #page-header #page-mast #course-toc #chapters li{
-        padding: 20px 4%;
+        padding: 30px 4%;
         flex-basis: 65%;
     }
 
