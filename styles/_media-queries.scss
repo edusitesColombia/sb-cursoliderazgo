@@ -9,3 +9,8 @@
     @include login-sm();
     @include ruta-sm();
 }
+
+// xtra mobile view (xs)
+@media (max-width: 433px) {
+    @include ruta-xs();
+}
