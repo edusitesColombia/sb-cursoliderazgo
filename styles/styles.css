@@ -1267,6 +1267,19 @@ div#page {
   min-height: 95vh;
 }
 
+@media (max-width: 1250px) {
+  #page-login-index main#moodle-page section#region-main {
+    width: 75%;
+  }
+}
+
+@media (max-width: 900px) {
+  #page-login-index main#moodle-page section#region-main {
+    width: 90%;
+    margin: 0 auto !important;
+  }
+}
+
 @media screen and (min-width: 1600px) {
   div#page {
     max-width: 80%;

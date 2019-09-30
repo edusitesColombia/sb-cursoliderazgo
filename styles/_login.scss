@@ -79,3 +79,16 @@
         border-radius: 24px;
     }
 }
+
+@mixin login-md(){
+    #page-login-index main#moodle-page section#region-main{
+        width:75%;
+    }
+}
+
+@mixin login-sm(){
+    #page-login-index main#moodle-page section#region-main{
+        width:90%;
+        margin:0 auto!important;
+    }
+}

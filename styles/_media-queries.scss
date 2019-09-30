@@ -1,0 +1,9 @@
+// medium screen size (md)
+@media (max-width: 1250px) {
+    @include login-md();
+}
+
+// small screen size (sm)
+@media (max-width: 900px) {
+    @include login-sm();
+}
