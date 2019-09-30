@@ -152,6 +152,10 @@
         #course-toc{
             position: relative!important;
             padding:0;
+            li{
+                padding: 20px 4%;
+                flex-basis: 65%;
+            }            
         }
     }
 
