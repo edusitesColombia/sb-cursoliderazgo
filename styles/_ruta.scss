@@ -4,7 +4,7 @@
         .breadcrumb-nav {
             visibility: hidden;
         }
-        height: 105vh;
+        min-height: 105vh;
         @include imagen-background('fondo_avance0', 'svg', 'center', 'cover');
         #page-mast {
             height: 85vh;
@@ -103,5 +103,40 @@
     }
     #region-main {
         display: none;
+    }
+}
+
+
+@mixin ruta-md(){
+    .home-ruta #page-header #page-mast #course-toc{
+        height:79vh;
+        #chapters li{
+            padding: 35px 16px;
+            font-size: 75%;
+            .text small{
+                width: 100%;
+                margin-top: -3px;
+                display: block;
+            }
+        }
+    }
+
+    .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2), .home-ruta #page-header #page-mast #course-toc #chapters li:last-child{
+        top:230px;
+    }
+}
+
+@mixin ruta-sm(){
+    .home-ruta #page-header #page-mast #course-toc #chapters{
+        flex-wrap:wrap;
+        li{
+            flex-basis: 49%;
+            margin:2px;
+            padding: 35px 5%;
+        }
+    }
+
+    .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2), .home-ruta #page-header #page-mast #course-toc #chapters li:last-child{
+        top:175px;
     }
 }

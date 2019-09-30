@@ -1088,7 +1088,7 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
 }
 
 .home-ruta #page-header {
-  height: 105vh;
+  min-height: 105vh;
   background-image: url(http://jkvela.website/pluginfile.php/62/block_html/content/fondo_avance0.svg);
   background-position: center -50px;
   background-size: cover;
@@ -1271,12 +1271,40 @@ div#page {
   #page-login-index main#moodle-page section#region-main {
     width: 75%;
   }
+  .home-ruta #page-header #page-mast #course-toc {
+    height: 79vh;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters li {
+    padding: 35px 16px;
+    font-size: 75%;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters li .text small {
+    width: 100%;
+    margin-top: -3px;
+    display: block;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2), .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
+    top: 230px;
+  }
 }
 
 @media (max-width: 900px) {
   #page-login-index main#moodle-page section#region-main {
     width: 90%;
     margin: 0 auto !important;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters li {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+    margin: 2px;
+    padding: 35px 5%;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2), .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
+    top: 175px;
   }
 }
 
