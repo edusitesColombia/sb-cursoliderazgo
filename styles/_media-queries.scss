@@ -2,15 +2,18 @@
 @media (max-width: 1250px) {
     @include login-md();
     @include ruta-md();
+    @include modulos-md();
 }
 
 // small screen size (sm)
 @media (max-width: 900px) {
     @include login-sm();
     @include ruta-sm();
+    @include modulos-sm();
 }
 
 // xtra mobile view (xs)
 @media (max-width: 433px) {
     @include ruta-xs();
+    @include modulos-xs();
 }

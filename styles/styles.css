@@ -1286,6 +1286,12 @@ div#page {
   .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2), .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
     top: 32%;
   }
+  .separador-opciones {
+    padding: 3rem 4%;
+  }
+  .separador-opciones h3 {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 900px) {
@@ -1316,6 +1322,49 @@ div#page {
   .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) {
     left: 0;
   }
+  .course-content ul.topics li.section div.summary p {
+    padding: 13px;
+  }
+  .contenedor-objetivos {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    min-width: auto;
+  }
+  .contenedor-objetivos #objetivo-modulo {
+    padding: 9.5% 7% 16.5% 9.5%;
+  }
+  .contenedor-objetivos #complemento-objetivos {
+    min-height: 370px;
+  }
+  .contenedor-objetivos #complemento-objetivos .bloque {
+    width: 43%;
+  }
+  .course-content ul.topics blockquote.blockquote p,
+  .course-content ul.topics blockquote.blockquote footer {
+    padding: 1.5rem 1.5rem;
+  }
+  .course-content ul.topics ul.section.img-text li.snap-activity {
+    height: 60vh;
+  }
+  .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content {
+    width: 85%;
+  }
+  .separador-opciones {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .separador-opciones .opcion {
+    width: 80%;
+  }
 }
 
 @media (max-width: 433px) {
@@ -1336,6 +1385,23 @@ div#page {
   }
   .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) {
     left: 0;
+  }
+  .contenedor-objetivos #objetivo-modulo {
+    width: 90%;
+  }
+  .contenedor-objetivos #complemento-objetivos .bloque {
+    width: 66%;
+  }
+  .course-content ul.topics blockquote.blockquote {
+    height: auto;
+  }
+  .course-content ul.topics ul.section.img-text li.snap-activity {
+    height: 80vh;
+  }
+  .separador-opciones {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
