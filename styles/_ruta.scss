@@ -122,13 +122,14 @@
     }
 
     .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2), .home-ruta #page-header #page-mast #course-toc #chapters li:last-child{
-        top:230px;
+        top:32%;
     }
 }
 
 @mixin ruta-sm(){
     .home-ruta #page-header #page-mast #course-toc #chapters{
         flex-wrap:wrap;
+        justify-content: center;
         li{
             flex-basis: 49%;
             margin:2px;
@@ -138,5 +139,9 @@
 
     .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2), .home-ruta #page-header #page-mast #course-toc #chapters li:last-child{
         top:175px;
+    }
+
+    .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2){
+        left:0;
     }
 }
