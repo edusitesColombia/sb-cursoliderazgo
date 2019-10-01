@@ -1258,13 +1258,17 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
 }
 
 .alert.alert-danger, #page-admin-index .releasenoteslink.alert-danger, #page-admin-index #page-admin-index .adminerror.releasenoteslink, #page-admin-index .adminwarning.alert-danger, #page-admin-index #page-admin-index .adminerror.adminwarning, #page-admin-index .adminerror.alert-danger, #page-admin-index #page-admin-index .adminerror, .que .formulation.alert-danger, .que #page-admin-index .adminerror.formulation, #page-admin-index .que .adminerror.formulation, .que .outcome.alert-danger, .que #page-admin-index .adminerror.outcome, #page-admin-index .que .adminerror.outcome, .que .comment.alert-danger, .que #page-admin-index .adminerror.comment, #page-admin-index .que .adminerror.comment, .assignfeedback_editpdf_widget .label.alert-danger, .assignfeedback_editpdf_widget #page-admin-index .adminerror.label, #page-admin-index .assignfeedback_editpdf_widget .adminerror.label, #page-admin-index .adminerror.alert, #page-admin-index #page-admin-index .releasenoteslink.adminerror, #page-admin-index #page-admin-index .adminwarning.adminerror, #page-admin-index .que .formulation.adminerror, .que #page-admin-index .formulation.adminerror, #page-admin-index .que .outcome.adminerror, .que #page-admin-index .outcome.adminerror, #page-admin-index .que .comment.adminerror, .que #page-admin-index .comment.adminerror, #page-admin-index .assignfeedback_editpdf_widget .label.adminerror, .assignfeedback_editpdf_widget #page-admin-index .label.adminerror {
-  color: #990f3d;
+  color: #2b2b2b;
   background-color: #faf3f5;
-  border-color: #990f3d;
+  border-color: #fadc5d;
 }
 
 div#page {
   min-height: 95vh;
+}
+
+#page-site-index #snap-pm-header #snap-pm-close {
+  display: none;
 }
 
 @media (max-width: 1250px) {
