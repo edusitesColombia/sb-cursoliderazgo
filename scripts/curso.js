@@ -38,35 +38,44 @@ function marcarPadreClase(elemento, nombreClaseAgregar) {
 
 //el hash lo uso como forma de controlar la navegacion con los botones del navegador porque las clases estan cargando lento y tocaria hacer esto cuando este todo cargado.
 document.addEventListener('DOMContentLoaded', function() {
-    if ((claseControl == true && section0.classList.contains('state-visible') == true && location.hash == '') || location.hash == '#section-0') {
-        insertaClaseRuta();
-        let textoBienvenida = document.createElement('p');
-        textoBienvenida.classList.add('texto-bienvenida');
-        let titulo = document.getElementById('page-mast').firstElementChild;
-        textoBienvenida.innerText = 'Esperamos que este espacio virtual, permita a todos los docentes acercarse a reflexiones y ejercicios que promuevan su capacidad de liderazgo en sus contextos escolares';
-        titulo.insertAdjacentElement('afterend', textoBienvenida);
+    if (claseControl == true) {
+        if (section0.classList.contains('state-visible') == true || (location.hash == '' || location.hash == 'section-0')) {
+            insertaClaseRuta();
+            let textoBienvenida = document.createElement('p');
+            textoBienvenida.classList.add('texto-bienvenida');
+            let titulo = document.getElementById('page-mast').firstElementChild;
+            textoBienvenida.innerText = 'Esperamos que este espacio virtual, permita a todos los docentes acercarse a reflexiones y ejercicios que promuevan su capacidad de liderazgo en sus contextos escolares';
+            titulo.insertAdjacentElement('afterend', textoBienvenida);
 
-        let modulos = document.getElementsByClassName('chapter-title');
-        for (i = 0; i < modulos.length; i++) {
-            modulos[i].addEventListener('click', function() {
-                insertaClasePorDefecto();
-            });
+            let modulos = document.getElementsByClassName('chapter-title');
+            for (i = 0; i < modulos.length; i++) {
+                modulos[i].addEventListener('click', function() {
+                    insertaClasePorDefecto();
+                });
+            }
+            //identifica si el modulo fue completado y agrega la clase
+            marcarPadreClase(document.getElementsByClassName('snap-section-complete'), 'modulo-completado');
+
+        } else if (location.hash != '' && location.hash != 'section-0') {
+            insertaClasePorDefecto();
         }
-        //identifica si el modulo fue completado y agrega la clase
-        marcarPadreClase(document.getElementsByClassName('snap-section-complete'), 'modulo-completado');
-
-    } else if (claseControl == true && location.hash != '' && location.hash != 'section-0') {
-        insertaClasePorDefecto();
     }
 });
+/*Controla el flujo con las flechas del navegador y los cambios de seccion con los botones del tema porque toda la informacion esta cargada en la misma pagina y solo se habilita y deshabilita
+el hash permite controlar si va o se devuelve a la ruta
+*/
 window.addEventListener('hashchange', function() {
-    if ((claseControl == true && identPrincipal.classList.contains('por-defecto') == true) || location.hash == '#section-0') {
-        insertaClaseRuta();
-        let modulos = document.getElementsByClassName('chapter-title');
-        for (i = 0; i < modulos.length; i++) {
-            modulos[i].addEventListener('click', function() {
-                insertaClasePorDefecto();
-            });
+    if (claseControl == true) {
+        if (identPrincipal.classList.contains('por-defecto') == true && (location.hash == '' || location.hash == 'section-0')) {
+            insertaClaseRuta();
+            let modulos = document.getElementsByClassName('chapter-title');
+            for (i = 0; i < modulos.length; i++) {
+                modulos[i].addEventListener('click', function() {
+                    insertaClasePorDefecto();
+                });
+            }
+        } else if (identPrincipal.classList.contains('home-ruta') == true && (location.hash != '' && location.hash != 'section-0')) {
+            insertaClasePorDefecto();
         }
     }
 });
