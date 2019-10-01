@@ -203,6 +203,7 @@ body#page-course-view-topics section#region-main {
         }
         .label {
             margin: 0;
+            padding: 0;
             .asset-wrapper {
                 overflow: hidden;
             }
@@ -226,6 +227,7 @@ body#page-course-view-topics section#region-main {
         flex-direction: column;
         justify-content: flex-end;
         padding: 0;
+        margin:0;
         p,
         footer {
             margin: 0!important;
