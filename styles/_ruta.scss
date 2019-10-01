@@ -94,81 +94,73 @@
             }
         }
         .course-content {
-            #section-0 {
-                .state-visible {
-                    display: none;
-                }
+            ul.topics,
+            #section-0 .state-visible {
+                display: none;
             }
         }
     }
-    #region-main {
-        display: none;
-    }
 }
 
-
-@mixin ruta-md(){
-    .home-ruta #page-header #page-mast #course-toc{
-        height:79vh;
-        #chapters li{
+@mixin ruta-md() {
+    .home-ruta #page-header #page-mast #course-toc {
+        height: 79vh;
+        #chapters li {
             padding: 35px 16px;
             font-size: 75%;
-            .text small{
+            .text small {
                 width: 100%;
                 margin-top: -3px;
                 display: block;
             }
         }
     }
-
-    .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2), .home-ruta #page-header #page-mast #course-toc #chapters li:last-child{
-        top:32%;
+    .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
+    .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
+        top: 32%;
     }
 }
 
-@mixin ruta-sm(){
-    .home-ruta #page-header #page-mast{
+@mixin ruta-sm() {
+    .home-ruta #page-header #page-mast {
         height: auto;
         min-height: 85vh;
     }
-    .home-ruta #page-header #page-mast #course-toc #chapters{
-        flex-wrap:wrap;
+    .home-ruta #page-header #page-mast #course-toc #chapters {
+        flex-wrap: wrap;
         justify-content: center;
-        li{
+        li {
             flex-basis: 49%;
-            margin:2px;
+            margin: 2px;
             padding: 35px 5%;
         }
     }
-
-    .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2), .home-ruta #page-header #page-mast #course-toc #chapters li:last-child{
-        top:175px;
+    .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
+    .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
+        top: 175px;
     }
-
-    .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2){
-        left:0;
+    .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) {
+        left: 0;
     }
 }
 
-@mixin ruta-xs(){
-    .home-ruta #page-header{
+@mixin ruta-xs() {
+    .home-ruta #page-header {
         padding-top: 4.5rem;
-        #course-toc{
+        #course-toc {
             position: relative!important;
-            padding:0;   
+            padding: 0;
         }
     }
-
-    .home-ruta #page-header #page-mast #course-toc #chapters li{
+    .home-ruta #page-header #page-mast #course-toc #chapters li {
         padding: 30px 4%;
         flex-basis: 65%;
     }
-
-    .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2), .home-ruta #page-header #page-mast #course-toc #chapters li:last-child{
-        top:-50px;
+    .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
+    .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
+        top: -50px;
     }
-
-    .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2){
-        left:0;
+    .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) {
+        left: 0;
     }
 }
