@@ -38,9 +38,7 @@ function marcarPadreClase(elemento, nombreClaseAgregar) {
 //el hash lo uso como forma de controlar la navegacion con los botones del navegador porque las clases estan cargando lento y tocaria hacer esto cuando este todo cargado.
 document.addEventListener('DOMContentLoaded', function() {
     if (claseControl == true) {
-        console.log(location.hash);
         if (location.hash == '' || location.hash == 'section-0') {
-            console.log(location.hash);
             insertaClaseRuta();
             let textoBienvenida = document.createElement('p');
             textoBienvenida.classList.add('texto-bienvenida');
@@ -77,7 +75,7 @@ window.addEventListener('hashchange', function() {
                     insertaClasePorDefecto();
                 });
             }
-        } else if (identPrincipal.classList.contains('home-ruta') == true && (location.hash != '' && location.hash != 'section-0')) {
+        } else if (identPrincipal.classList.contains('home-ruta') == true && (location.hash != '' && location.hash != 'section-0' && location.hash != 'coursetools')) {
             insertaClasePorDefecto();
         }
     }
