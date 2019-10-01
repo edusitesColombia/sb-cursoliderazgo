@@ -93,11 +93,10 @@
                 }
             }
         }
-        .course-content {
-            ul.topics,
-            #section-0 .state-visible {
-                display: none;
-            }
+    }
+    .course-content {
+        ul.topics {
+            display: none;
         }
     }
 }

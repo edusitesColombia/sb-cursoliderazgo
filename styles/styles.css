@@ -1226,8 +1226,7 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
   text-decoration: none;
 }
 
-.home-ruta #page-header .course-content ul.topics,
-.home-ruta #page-header .course-content #section-0 .state-visible {
+.home-ruta .course-content ul.topics {
   display: none;
 }
 
