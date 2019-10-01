@@ -17,7 +17,7 @@ $caja-amarilla: "%3Csvg width='100%' viewBox='0 0 275 145' xmlns='http://www.w3.
 
 @mixin imagen-background ($file, $format, $position, $size) {
     background: {
-        image: url(http://jkvela.website/pluginfile.php/62/block_html/content/#{$file}.#{$format});
+        image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/#{$file}.#{$format});
         position: center -50px;
         size: cover;
         repeat: no-repeat;
