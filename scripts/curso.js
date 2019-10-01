@@ -1,4 +1,3 @@
-var section0 = document.getElementById('section-0');
 var identPrincipal = document.getElementById('moodle-page');
 var claseControl = document.body.classList.contains('path-course-view');
 
@@ -39,7 +38,9 @@ function marcarPadreClase(elemento, nombreClaseAgregar) {
 //el hash lo uso como forma de controlar la navegacion con los botones del navegador porque las clases estan cargando lento y tocaria hacer esto cuando este todo cargado.
 document.addEventListener('DOMContentLoaded', function() {
     if (claseControl == true) {
-        if (section0.classList.contains('state-visible') == true || (location.hash == '' || location.hash == 'section-0')) {
+        console.log(location.hash);
+        if (location.hash == '' || location.hash == 'section-0') {
+            console.log(location.hash);
             insertaClaseRuta();
             let textoBienvenida = document.createElement('p');
             textoBienvenida.classList.add('texto-bienvenida');
@@ -57,7 +58,9 @@ document.addEventListener('DOMContentLoaded', function() {
             marcarPadreClase(document.getElementsByClassName('snap-section-complete'), 'modulo-completado');
 
         } else if (location.hash != '' && location.hash != 'section-0') {
-            insertaClasePorDefecto();
+            if (location.hash != 'coursetools') {
+                insertaClasePorDefecto();
+            }
         }
     }
 });
