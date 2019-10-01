@@ -1369,7 +1369,7 @@ div#page {
   }
 }
 
-@media (max-width: 433px) {
+@media (max-width: 577px) {
   .home-ruta #page-header {
     padding-top: 4.5rem;
   }
