@@ -591,6 +591,8 @@ body#page-course-view-topics section#region-main span.instancename {
   width: 100%;
   -ms-flex-item-align: baseline;
       align-self: baseline;
+  margin: 0;
+  padding: 0;
 }
 
 .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance {
@@ -671,6 +673,10 @@ body#page-course-view-topics section#region-main span.instancename {
   font-family: 'Roboto Condensed';
   font-weight: 900;
   z-index: 0;
+}
+
+.section .activity.modtype_label.label .asset-wrapper, .section .activity.modtype_label.label .activityinstance {
+  padding: 0 !important;
 }
 
 .contenedor-objetivos {

@@ -266,6 +266,8 @@ body#page-course-view-topics section#region-main {
             display: flex;
             width: 100%;
             align-self: baseline;
+            margin: 0;
+            padding: 0;
             .activityinstance {
                 background-color: transparent;
                 width: 100%;
@@ -331,6 +333,10 @@ body#page-course-view-topics section#region-main {
             }
         }
     }
+}
+
+.section .activity.modtype_label.label .asset-wrapper, .section .activity.modtype_label.label .activityinstance{
+    padding:0!important;
 }
 
 //estilos descripcion modulo, objetivos
