@@ -69,6 +69,13 @@
                         }
                         &:nth-child(2) {
                             @include posicion-otros-elementos(absolute, 0);
+                            background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_metodologia.svg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            a{
+                                color:$negro;
+                            }
                         }
                         &:nth-child(n+3):not(:last-child) {
                             background-image: url('data:image/svg+xml, #{$caja-verde}');
@@ -83,6 +90,16 @@
                             @include posicion-otros-elementos(absolute,
                             0,
                             0);
+                            background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_caja_herramientas.svg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            a{
+                                color: $verde;
+                                padding: 13px 8px 13px 40px;
+                                width: 70%;
+                                margin: 0 auto;
+                            }
                         }
                     }
                     .chapter-title {
