@@ -1,3 +1,6 @@
+nav#snap-pm{
+    background-color:$blanco;
+}
 #snap-pm-header {
     padding: 1rem 3rem;
     display: flex;
@@ -33,18 +36,25 @@
 section#snap-pm-courses {
     padding: 0 3rem;
     .coursecard {
-        border-radius: 8% 0 0 0;
+        border-radius: 8%;
+        min-width: 30%;
         .coursecard-body {
             padding: 1em .5em 1em .5em;
             h3 {
                 padding: 0.5rem 0.5rem 1rem 0.5rem;
-                border-bottom: 1px solid lightgray;
+                border-bottom: 1px solid $gris-no1;
                 a.coursecard-coursename {
                     color: $negro;
                 }
             }
             .coursecard-dynamicinfo {
                 padding-top: 0.5rem;
+            }
+            .completionstatus{
+                padding-bottom:0.5em;
+            }
+            .completion-line{
+                background-color:$amarillo;
             }
         }
     }

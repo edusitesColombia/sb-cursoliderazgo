@@ -141,6 +141,10 @@ header#mr-nav::before {
           justify-content: center;
 }
 
+nav#snap-pm {
+  background-color: white;
+}
+
 #snap-pm-header {
   padding: 1rem 3rem;
   display: -webkit-box;
@@ -189,7 +193,8 @@ section#snap-pm-courses {
 }
 
 section#snap-pm-courses .coursecard {
-  border-radius: 8% 0 0 0;
+  border-radius: 8%;
+  min-width: 30%;
 }
 
 section#snap-pm-courses .coursecard .coursecard-body {
@@ -198,7 +203,7 @@ section#snap-pm-courses .coursecard .coursecard-body {
 
 section#snap-pm-courses .coursecard .coursecard-body h3 {
   padding: 0.5rem 0.5rem 1rem 0.5rem;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #eaeaea;
 }
 
 section#snap-pm-courses .coursecard .coursecard-body h3 a.coursecard-coursename {
@@ -207,6 +212,14 @@ section#snap-pm-courses .coursecard .coursecard-body h3 a.coursecard-coursename 
 
 section#snap-pm-courses .coursecard .coursecard-body .coursecard-dynamicinfo {
   padding-top: 0.5rem;
+}
+
+section#snap-pm-courses .coursecard .coursecard-body .completionstatus {
+  padding-bottom: 0.5em;
+}
+
+section#snap-pm-courses .coursecard .coursecard-body .completion-line {
+  background-color: #fadc5d;
 }
 
 section#snap-pm-courses .snap-personal-menu-more {
