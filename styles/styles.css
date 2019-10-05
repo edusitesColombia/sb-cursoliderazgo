@@ -54,6 +54,10 @@
   border-color: #fadc5d !important;
 }
 
+#page-login-index main#moodle-page section#region-main div[role="main"] .snap-login {
+  padding: 0 9%;
+}
+
 #page-login-index main#moodle-page section#region-main .login-guest {
   display: none;
 }
