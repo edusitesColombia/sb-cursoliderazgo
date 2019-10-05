@@ -113,7 +113,7 @@ header#mr-nav::before {
   min-height: 45px;
 }
 
-#moodle-footer div:not(#snap-site-footer) {
+#moodle-footer > div:not(#snap-site-footer) {
   display: none !important;
 }
 
