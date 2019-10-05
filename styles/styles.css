@@ -27,7 +27,7 @@
   margin: 0 !important;
   overflow: hidden;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #page-login-index main#moodle-page section#region-main div[role="main"] {
@@ -45,7 +45,7 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 100%;
-  height: 95vh;
+  min-height: 100vh;
 }
 
 #page-login-index main#moodle-page section#region-main div[role="main"] .alert.alertdanger {
