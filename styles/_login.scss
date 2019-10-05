@@ -23,6 +23,8 @@
             display:flex;
             margin:0!important;
             overflow:hidden;
+            padding: 0;
+            height: 100vh;
             //contenedor directo de los elementos del login
             div[role="main"]{
                 display: flex;

@@ -26,6 +26,8 @@
   display: flex;
   margin: 0 !important;
   overflow: hidden;
+  padding: 0;
+  height: 100vh;
 }
 
 #page-login-index main#moodle-page section#region-main div[role="main"] {
