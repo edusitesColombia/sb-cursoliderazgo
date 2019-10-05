@@ -62,3 +62,13 @@ section#snap-pm-courses {
         display: none;
     }
 }
+
+@mixin miscursos-sm(){
+    section#snap-pm-courses .coursecard{
+        min-height: 35vh;
+    }
+}
+
+@mixin miscursos-xs(){
+
+}
