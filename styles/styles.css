@@ -1578,6 +1578,15 @@ div#page {
   .activity-navigation .row .col-md-4:nth-child(1), .activity-navigation .row .col-md-4:nth-child(3) {
     display: none;
   }
+  section#region-main div.m-t-2.m-b-1 .col-md-4 {
+    min-height: 1em;
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .bloque-verde-derecha p, .bloque-verde-izquierda p {
+    width: 65%;
+  }
 }
 
 @media (max-width: 577px) {
@@ -1651,6 +1660,9 @@ div#page {
   }
   #page-mod-lesson-view div[role="main"] h3 {
     padding: 10px 10%;
+  }
+  .bloque-verde-derecha p, .bloque-verde-izquierda p {
+    width: 85%;
   }
 }
 
