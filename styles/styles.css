@@ -1636,7 +1636,7 @@ div#page {
   .video-container {
     padding-bottom: 72.25%;
   }
-  h3.final-descripcion {
+  h3#final-descripcion {
     width: 65%;
   }
   section#region-main {
