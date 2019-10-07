@@ -1,6 +1,18 @@
 #moodle-footer{
+    margin: 0;
+    padding: 0;    
     &>div:not(#snap-site-footer){
         display:none!important;
+    }
+    ul{
+        text-decoration: none;
+        list-style: none;
+    }
+    #snap-footer-content{
+        padding:1em;
+    }
+    #snap-site-footer{
+        display:flex;
     }
 }
 .activity-navigation{

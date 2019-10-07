@@ -113,8 +113,28 @@ header#mr-nav::before {
   min-height: 45px;
 }
 
+#moodle-footer {
+  margin: 0;
+  padding: 0;
+}
+
 #moodle-footer > div:not(#snap-site-footer) {
   display: none !important;
+}
+
+#moodle-footer ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+#moodle-footer #snap-footer-content {
+  padding: 1em;
+}
+
+#moodle-footer #snap-site-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .activity-navigation .pull-right {
