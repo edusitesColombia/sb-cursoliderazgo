@@ -193,20 +193,28 @@
 @mixin ruta-xs() {
     .home-ruta #page-header {
         padding-top: 4.5rem;
+        background:$blanco!important;
         #course-toc {
-            position: relative!important;
             padding: 0;
         }
     }
     .home-ruta #page-header #page-mast #course-toc #chapters li {
         padding: 30px 4%;
         flex-basis: 65%;
+        .chapter-title{
+            padding:1rem;
+        }
     }
     .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
     .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
-        top: -50px;
+        top: 0px;
     }
     .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) {
         left: 0;
+        position: relative;
+        text-align: center;
+        a[href="#section-1"]::before{
+            margin-left:-10px;
+        }
     }
 }
