@@ -163,7 +163,7 @@ body#page-course-view-topics section#region-main {
         .video-container {
             position: relative;
             width: 100%;
-            padding-bottom: 56.25%;
+            padding-bottom: 65.25%;
             height: 0;
             iframe {
                 position: absolute;
@@ -300,7 +300,7 @@ body#page-course-view-topics section#region-main {
                 content: "0" counter(actividadNo);
                 color: $gris-no1;
                 position: absolute;
-                bottom: -60px;
+                top: -60px;
                 font-size: 500px;
                 line-height: 19rem;
                 letter-spacing: -40px;
@@ -322,7 +322,7 @@ body#page-course-view-topics section#region-main {
                 content: "0" counter(actividadNo);
                 color: $gris-no2;
                 position: absolute;
-                top: -60px;
+                bottom: -60px;
                 font-size: 500px;
                 letter-spacing: -40px;
                 line-height: 19rem;
@@ -554,7 +554,7 @@ ul.section.img-text .page .asset-wrapper {
         }
     }
     .course-content ul.topics blockquote.blockquote p, .course-content ul.topics blockquote.blockquote footer{
-        padding: 1.5rem 1.5rem;
+        padding: 1.5rem 15%;
     }
     .course-content ul.topics ul.section.img-text li.snap-activity{
         height: 60vh;
@@ -572,11 +572,18 @@ ul.section.img-text .page .asset-wrapper {
 }
 
 @mixin modulos-xs(){
-    .contenedor-objetivos #objetivo-modulo{
-        width:90%;
-    }
-    .contenedor-objetivos #complemento-objetivos .bloque{
-        width:66%;
+    .contenedor-objetivos{ 
+        #objetivo-modulo{
+            width:90%;
+            min-height: 398px;
+        }
+        #complemento-objetivos {
+            min-height: 420px;
+            .bloque{
+                width:66%;
+                padding:0 10%;
+            }
+        }
     }
     .course-content ul.topics blockquote.blockquote{
         height: auto;
