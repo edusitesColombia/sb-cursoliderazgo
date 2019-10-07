@@ -1633,6 +1633,22 @@ div#page {
   .video-container {
     padding-bottom: 72.25%;
   }
+  h3.final-descripcion {
+    width: 65%;
+  }
+  section#region-main {
+    padding: 0;
+  }
+  #page-mod-lesson-view div[role="main"] p {
+    padding: 1rem 10%;
+    margin: 0;
+  }
+  #page-mod-lesson-view div[role="main"] .contenedor-imagenes img {
+    width: 55%;
+  }
+  #page-mod-lesson-view div[role="main"] h3 {
+    padding: 10px 10%;
+  }
 }
 
 @media screen and (min-width: 1600px) {

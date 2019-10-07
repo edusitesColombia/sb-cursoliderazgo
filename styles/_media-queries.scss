@@ -18,4 +18,5 @@
 @media (max-width: 577px) {
     @include ruta-xs();
     @include modulos-xs();
+    @include lesson-xs();
 }

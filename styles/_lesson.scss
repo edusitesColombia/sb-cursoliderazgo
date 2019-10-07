@@ -70,3 +70,26 @@
         }
     }
 }
+
+@mixin lesson-md(){
+    .activity-navigation .row .col-md-4:nth-child(1),.activity-navigation .row .col-md-4:nth-child(3){
+        display:none;
+    }
+}
+@mixin lesson-xs(){
+    section#region-main{
+        padding:0;
+    }
+    #page-mod-lesson-view div[role="main"] {
+        p{
+            padding: 1rem 10%;
+            margin: 0;
+        }
+        .contenedor-imagenes img{
+            width:55%;
+        }
+        h3{
+            padding: 10px 10%;
+        }
+    }
+}
