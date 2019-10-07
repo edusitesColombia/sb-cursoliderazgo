@@ -154,6 +154,9 @@ header#mr-nav::before {
       -ms-flex-align: center;
           align-items: center;
   font-size: inherit;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
 }
 
 #moodle-footer #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container .terminosycondiciones {
@@ -169,7 +172,7 @@ header#mr-nav::before {
 }
 
 #moodle-footer #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container .terminosycondiciones li {
-  margin-left: 5px;
+  margin-right: 12px;
   font-size: inherit;
 }
 
@@ -1406,6 +1409,21 @@ div#page {
   #page-login-index main#moodle-page section#region-main {
     width: 90%;
     margin: 0 auto !important;
+  }
+  #moodle-footer #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #moodle-footer #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container .redes {
+    width: 60%;
+    margin-bottom: 5px;
   }
   .home-ruta #page-header #page-mast {
     height: auto;

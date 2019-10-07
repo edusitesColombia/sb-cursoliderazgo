@@ -8,6 +8,7 @@
 // small screen size (sm)
 @media (max-width: 900px) {
     @include login-sm();
+    @include footer-sm();
     @include ruta-sm();
     @include modulos-sm();
     @include miscursos-sm();
