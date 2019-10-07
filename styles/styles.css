@@ -1272,6 +1272,8 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
 .home-ruta #page-header #page-mast #course-toc #chapters li .text::before {
   width: 48%;
   display: inline-block;
+  white-space: nowrap;
+  margin-bottom: 3px;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li .text::after {
@@ -1463,6 +1465,20 @@ div#page {
     width: 60%;
     margin-bottom: 5px;
   }
+  #moodle-footer #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container .terminosycondiciones {
+    margin-bottom: 5px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #moodle-footer #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container .terminosycondiciones li {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    text-align: center;
+  }
+  #moodle-footer #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container .copyright {
+    text-align: center;
+  }
   .home-ruta #page-header #page-mast {
     height: auto;
     min-height: 85vh;
@@ -1477,6 +1493,7 @@ div#page {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 1rem;
   }
   .home-ruta #page-header #page-mast #course-toc #chapters li {
     -ms-flex-preferred-size: 49%;
@@ -1551,13 +1568,17 @@ div#page {
     padding: 30px 4%;
     -ms-flex-preferred-size: 65%;
         flex-basis: 65%;
+    min-width: 314px;
   }
   .home-ruta #page-header #page-mast #course-toc #chapters li .chapter-title {
     padding: 1rem;
+    margin-left: 13px;
+    margin-right: 13px;
   }
   .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
   .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
     top: 0px;
+    position: relative;
   }
   .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) {
     left: 0;
