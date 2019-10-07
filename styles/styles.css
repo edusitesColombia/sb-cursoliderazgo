@@ -1344,6 +1344,7 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
   padding: 13px 8px 13px 40px;
   width: 70%;
   margin: 0 auto;
+  padding-left: 38px;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:last-child a::before {
@@ -1357,7 +1358,7 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
-  margin-left: -30px;
+  margin-left: -32px;
   margin-top: 2px;
 }
 
