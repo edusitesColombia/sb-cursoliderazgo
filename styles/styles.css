@@ -1467,6 +1467,10 @@ div#page {
     height: auto;
     min-height: 85vh;
   }
+  .home-ruta #page-header #page-mast #course-toc {
+    height: auto;
+    min-height: 79vh;
+  }
   .home-ruta #page-header #page-mast #course-toc #chapters {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
