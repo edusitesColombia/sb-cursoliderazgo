@@ -1192,6 +1192,10 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
   color: #2b2b2b;
 }
 
+html #mr-nav {
+  z-index: 99;
+}
+
 .home-ruta #page-header {
   min-height: 105vh;
   background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/fondo_avance0.svg);

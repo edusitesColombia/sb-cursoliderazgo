@@ -1,4 +1,7 @@
 @import "./mixins";
+html #mr-nav{
+    z-index: 99;
+}
 .home-ruta {
     #page-header {
         .breadcrumb-nav {
