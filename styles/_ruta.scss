@@ -110,15 +110,14 @@
                             background-position: center;
                             a{
                                 color: $verde;
-                                padding: 13px 8px 13px 40px;
+                                padding: 20px 23px 20px 61px;
                                 width: 70%;
                                 margin: 0 auto;
-                                padding-left: 38px;
                                 &::before{
                                     content:'';
                                     box-sizing: border-box;
                                     display:block;
-                                    width:32px;
+                                    width:28px;
                                     height:32px;
                                     background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/iconos/icono_cajaherramientas_32px.svg);
                                     background-repeat: no-repeat;
@@ -163,6 +162,9 @@
     .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
         top: 32%;
     }
+    .home-ruta #page-header #page-mast #course-toc #chapters li:last-child a{
+        padding: 13px 8px 13px 40px;
+    }
 }
 
 @mixin ruta-sm() {
@@ -184,7 +186,7 @@
         top: 175px;
     }
     .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) {
-        left: 0;
+        left: 10%;
     }
 }
 
