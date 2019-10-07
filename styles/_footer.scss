@@ -7,12 +7,37 @@
     ul{
         text-decoration: none;
         list-style: none;
+        margin: 0;
+        padding: 0;
+    }
     }
     #snap-footer-content{
         padding:1em;
     }
-    #snap-site-footer{
-        display:flex;
+    #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container{
+        display: grid;
+        grid: 1fr 1fr / 20% 1fr;
+        width: 70%;
+        max-width: 960px;
+        margin: 0 auto;
+        font-size:12px;
+        .redes{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size:inherit;
+        }
+        .terminosycondiciones{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            li{
+                margin-left:5px;
+                font-size:inherit;
+            }
+        }
+
     }
 }
 .activity-navigation{
