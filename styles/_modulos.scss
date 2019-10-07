@@ -73,6 +73,7 @@ body#page-course-view-topics section#region-main {
         }
         #page-mast {
             display: block;
+            padding: 0 10%;
             &>h1 {
                 @include textos-ruta($blanco, 0.88rem);
             }
@@ -82,15 +83,17 @@ body#page-course-view-topics section#region-main {
                     li {
                         visibility: hidden;
                         height: 0px;
+                        margin-left:0;
                         &.snap-visible-section {
                             visibility: visible;
                         }
                         .chapter-title {
-                            @include textos-ruta($blanco, 1.77rem, $peso: bold)
+                            @include textos-ruta($blanco, 1.77rem, $peso: bold);    
+                            line-height: 1.3;
                         }
                         .text {
                             @include textos-ruta($amarillo, 1.44rem);
-                            line-height: 1.8rem;
+                            line-height: 1.4rem;
                             padding-top: 0.5rem;
                             small {
                                 display: block;
@@ -198,8 +201,9 @@ body#page-course-view-topics section#region-main {
         }
         //contenedor de los botones de navegación anterior y siguiente
         .section_footer {
-            max-width: 43.5em;
+            max-width: 100%;
             margin: 1rem auto;
+            padding:0 10%;
         }
         .label {
             margin: 0;
@@ -208,7 +212,8 @@ body#page-course-view-topics section#region-main {
                 overflow: hidden;
             }
             .separador-amarillo {
-                min-height: 27vh;
+                min-height: 270px;
+                height: 27vh;
                 background-image: linear-gradient(rgba(250, 220, 93, 0.5), rgba(250, 220, 93, 0.5)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-separador.jpg);
                 background-size: cover;
                 background-position: center;
@@ -234,13 +239,13 @@ body#page-course-view-topics section#region-main {
             max-width: 100% !important;
             background: $verde;
             color: white;
-            padding: 2rem 5rem;
+            padding: 2rem 18%;
         }
         p {
             font-style: italic;
         }
         footer {
-            padding: 0 5rem 2rem 5rem;
+            padding: 0 18% 2rem;
             text-align: right;
             font-size: 1.3rem;
             color: $amarillo;
@@ -295,6 +300,10 @@ body#page-course-view-topics section#region-main {
         }
         &:nth-child(odd) {
             background-color: $gris-no2;
+            .activityinstance .snap-asset-content {
+                padding-left: 15%;
+                padding-right:6%;
+            }
             &::before {
                 counter-increment: actividadNo;
                 content: "0" counter(actividadNo);
@@ -315,7 +324,8 @@ body#page-course-view-topics section#region-main {
             .activityinstance .snap-asset-content {
                 margin-left: auto;
                 text-align: left;
-                padding-right: 6%;
+                padding-right: 15%;
+                padding-left:6%;
             }
             &::before {
                 counter-increment: actividadNo;
@@ -398,6 +408,9 @@ ul.section.img-text .page .asset-wrapper {
     justify-content: center;
     padding: 5rem 4rem;
     text-align: center;
+    .contentafterlink.conditionalhidden {
+        max-width: 48.5em;
+    }
     span.instancename {
         color: black;
         font-weight: 900;
