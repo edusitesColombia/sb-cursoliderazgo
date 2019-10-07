@@ -42,6 +42,10 @@ div#page{
 #page-site-index #snap-pm-header #snap-pm-close{
     display:none;
 }
+//quitar el menu que sale en mobile
+.theme-snap #toc-mobile-menu-toggle {
+    display: none;
+}
 
 @import "./media-queries";
 @media screen and (min-width: 1600px) {
