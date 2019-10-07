@@ -54,3 +54,8 @@ div#page{
         margin: 0 auto;
     }
 }
+@media (max-width: 991.98px){
+    #page-header #course-toc {
+        position: relative!important;
+    }
+}

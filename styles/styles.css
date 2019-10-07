@@ -1305,6 +1305,7 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) a {
   color: #2b2b2b;
+  padding-left: 32px;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) a[href="#section-1"]::before {
@@ -1312,9 +1313,14 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: block;
-  width: 32px;
+  width: 28px;
   height: 32px;
   background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/iconos/icono_metodologia_32px.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  margin-left: -38px;
+  margin-top: -6px;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(n+3):not(:last-child) {
@@ -1348,6 +1354,11 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
   width: 32px;
   height: 32px;
   background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/iconos/icono_cajaherramientas_32px.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  margin-left: -30px;
+  margin-top: 2px;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters .chapter-title {
@@ -1564,6 +1575,12 @@ div#page {
   div#page {
     max-width: 80%;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #page-header #course-toc {
+    position: relative !important;
   }
 }
 /*# sourceMappingURL=styles.css.map */

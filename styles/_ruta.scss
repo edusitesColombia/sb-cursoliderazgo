@@ -75,14 +75,20 @@
                             background-position: center;
                             a{
                                 color:$negro;
+                                padding-left: 32px;
                             }
                             a[href="#section-1"]::before{   
                                 content:'';
                                 box-sizing: border-box;
                                 display:block;
-                                width:32px;
+                                width:28px;
                                 height:32px;
                                 background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/iconos/icono_metodologia_32px.png);
+                                background-repeat:no-repeat;
+                                background-size:100%;
+                                position: absolute;
+                                margin-left: -38px;
+                                margin-top: -6px;
                             }
                         }
                         &:nth-child(n+3):not(:last-child) {
@@ -107,6 +113,7 @@
                                 padding: 13px 8px 13px 40px;
                                 width: 70%;
                                 margin: 0 auto;
+                                padding-left: 38px
                                 &::before{
                                     content:'';
                                     box-sizing: border-box;
@@ -114,6 +121,11 @@
                                     width:32px;
                                     height:32px;
                                     background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/iconos/icono_cajaherramientas_32px.svg);
+                                    background-repeat: no-repeat;
+                                    background-size: 100%;
+                                    position: absolute;
+                                    margin-left: -32px;
+                                    margin-top: 2px;
                                 }
                             }
                         }
