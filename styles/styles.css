@@ -1575,6 +1575,9 @@ div#page {
   section#snap-pm-courses .coursecard {
     min-height: 35vh;
   }
+  .activity-navigation .row .col-md-4:nth-child(1), .activity-navigation .row .col-md-4:nth-child(3) {
+    display: none;
+  }
 }
 
 @media (max-width: 577px) {
