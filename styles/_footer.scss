@@ -37,7 +37,9 @@
                 font-size:inherit;
             }
         }
-
+        .footer-linksalternos.copyright {
+            grid-column-start: 2;
+        }
     }
 }
 .activity-navigation{

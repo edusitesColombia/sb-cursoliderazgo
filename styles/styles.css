@@ -173,6 +173,11 @@ header#mr-nav::before {
   font-size: inherit;
 }
 
+#moodle-footer #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container .footer-linksalternos.copyright {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+
 .activity-navigation .pull-right {
   float: right;
   margin-left: .3em;
