@@ -7,7 +7,7 @@ html #mr-nav {
     #page-header {
         padding-top: 5rem;
         min-height: 105vh;
-        @include imagen-background('fondo_avance0', 'svg', 'center', 'cover');        
+        @include imagen-background('fondo_avance0', 'svg', 'center', 'cover');
         .breadcrumb-nav {
             display: none;
         }
@@ -103,10 +103,11 @@ html #mr-nav {
                         &:nth-child(n+3):not(:last-child) {
                             background-image: url('data:image/svg+xml, #{$caja-verde}');
                             width: 300px;
+                            max-width: 300px;
                             background-repeat: no-repeat;
                             background-position: center;
                             min-height: 170px;
-                            right:5%;
+                            right: 5%;
                         }
                         &:nth-child(n+3):not(:last-child):hover,
                         &:nth-child(n+3):not(:last-child).modulo-completado {
@@ -168,7 +169,10 @@ html #mr-nav {
             li {
                 flex-basis: 49%;
                 margin: 2px;
+<<<<<<< HEAD
+=======
                 padding: 35px 11% 35px 11%; 
+>>>>>>> 932ac73127be380c9b2ac4fbe492b8bfdca03940
             }
         }
     }
