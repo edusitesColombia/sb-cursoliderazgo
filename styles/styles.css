@@ -1012,6 +1012,10 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
   width: 110px;
 }
 
+section#region-main {
+  padding: 0;
+}
+
 #page-mod-lesson-view div[role="main"] {
   text-align: center;
   font-family: "Roboto Condensed" !important;
