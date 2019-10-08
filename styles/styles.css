@@ -333,7 +333,7 @@ body#page-course-view-topics section#region-main span.instancename {
 }
 
 #page-course-view-topics #page-header #page-mast {
-  display: none;
+  display: block;
 }
 
 #page-course-view-topics #page-header #page-mast h1::before,
