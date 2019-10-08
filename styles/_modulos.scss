@@ -17,15 +17,12 @@ body#page-course-view-topics section#region-main {
 }
 
 //cabecera modulo
-#page-course-view-topics #page-header {
-    padding:0;
-    padding-top:3rem;
-    margin:0;
+#page-header {
     .breadcrumb-nav {
         display: block;
     }
     #page-mast {
-        display: block;
+        display: none;
         h1 {
             &::before,
             a,
@@ -70,6 +67,12 @@ body#page-course-view-topics section#region-main {
             display: none;
         }
     }
+}
+
+#page-course-view-topics #page-header{
+    padding:0;
+    padding-top:3rem;
+    margin:0;
 }
 
 .por-defecto {

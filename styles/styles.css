@@ -322,44 +322,38 @@ body#page-course-view-topics section#region-main span.instancename {
   line-height: 1.5rem;
 }
 
-#page-course-view-topics #page-header {
-  padding: 0;
-  padding-top: 3rem;
-  margin: 0;
-}
-
-#page-course-view-topics #page-header .breadcrumb-nav {
+#page-header .breadcrumb-nav {
   display: block;
 }
 
-#page-course-view-topics #page-header #page-mast {
-  display: block;
+#page-header #page-mast {
+  display: none;
 }
 
-#page-course-view-topics #page-header #page-mast h1::before,
-#page-course-view-topics #page-header #page-mast h1 a,
-#page-course-view-topics #page-header #page-mast h1 a:hover {
+#page-header #page-mast h1::before,
+#page-header #page-mast h1 a,
+#page-header #page-mast h1 a:hover {
   text-shadow: none;
 }
 
-#page-course-view-topics #page-header #page-mast #course-toc {
+#page-header #page-mast #course-toc {
   background-color: transparent;
 }
 
-#page-course-view-topics #page-header #page-mast #toc-desktop-menu-heading {
+#page-header #page-mast #toc-desktop-menu-heading {
   display: none;
 }
 
-#page-course-view-topics #page-header #page-mast #toc-search {
+#page-header #page-mast #toc-search {
   display: none;
 }
 
-#page-course-view-topics #page-header #page-mast #chapters {
+#page-header #page-mast #chapters {
   list-style: none;
   counter-reset: modulo -1;
 }
 
-#page-course-view-topics #page-header #page-mast #chapters li {
+#page-header #page-mast #chapters li {
   border: none;
   counter-increment: modulo;
   display: -webkit-box;
@@ -374,28 +368,34 @@ body#page-course-view-topics section#region-main span.instancename {
           justify-content: flex-end;
 }
 
-#page-course-view-topics #page-header #page-mast #chapters li:first-child {
+#page-header #page-mast #chapters li:first-child {
   display: none;
 }
 
-#page-course-view-topics #page-header #page-mast #chapters li .text {
+#page-header #page-mast #chapters li .text {
   color: #fadc5d;
   text-transform: uppercase;
   font-size: 0.7rem;
   font-weight: normal;
 }
 
-#page-course-view-topics #page-header #page-mast #chapters li .text::before {
+#page-header #page-mast #chapters li .text::before {
   content: "Módulo " counter(modulo);
 }
 
-#page-course-view-topics #page-header #page-mast #chapters .toc-footer {
+#page-header #page-mast #chapters .toc-footer {
   margin-top: 30px;
   margin-bottom: 15px;
 }
 
-#page-course-view-topics #page-header #page-mast .texto-bienvenida {
+#page-header #page-mast .texto-bienvenida {
   display: none;
+}
+
+#page-course-view-topics #page-header {
+  padding: 0;
+  padding-top: 3rem;
+  margin: 0;
 }
 
 .por-defecto #page-header .breadcrumb-nav {
