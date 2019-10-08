@@ -1604,7 +1604,7 @@ section#coursetools div#coursetools-list > a {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
     margin: 2px;
-    padding: 35px 10%;
+    padding: 35px 10% 35px 5%;
   }
   .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
   .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
