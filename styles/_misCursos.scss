@@ -1,6 +1,7 @@
-nav#snap-pm{
-    background-color:$blanco;
+nav#snap-pm {
+    background-color: $blanco;
 }
+
 #snap-pm-header {
     padding: 1rem 3rem;
     display: flex;
@@ -11,7 +12,7 @@ nav#snap-pm{
         padding: 0;
         &.h1 {
             color: $blanco!important;
-            font-size: 1.8rem;
+            font-size: 1.4rem;
             display: block;
             margin: 0;
             margin-top: 0.5rem;
@@ -19,10 +20,13 @@ nav#snap-pm{
     }
     .snap-pm-user {
         width: 100%;
+        .userpicture {
+            width: 3.7rem;
+        }
     }
     #snap-pm-header-quicklinks {
         a {
-            text-transform: uppercase;
+            @include textos-ruta (inherit, .8rem, $peso: bold);
             &::after {
                 content: "";
             }
@@ -36,7 +40,6 @@ nav#snap-pm{
 section#snap-pm-courses {
     padding: 0 3rem;
     .coursecard {
-        border-radius: 8%;
         min-width: 30%;
         .coursecard-body {
             padding: 1em .5em 1em .5em;
@@ -50,11 +53,11 @@ section#snap-pm-courses {
             .coursecard-dynamicinfo {
                 padding-top: 0.5rem;
             }
-            .completionstatus{
-                padding-bottom:0.5em;
+            .completionstatus {
+                padding-bottom: 0.5em;
             }
-            .completion-line{
-                background-color:$amarillo;
+            .completion-line {
+                background-color: $amarillo;
             }
         }
     }
@@ -63,13 +66,13 @@ section#snap-pm-courses {
     }
 }
 
-@mixin miscursos-sm(){
-    section#snap-pm-courses .coursecard{
-        min-height: 35vh;
+@mixin miscursos-sm() {
+    section#snap-pm-courses .coursecard {
+        min-height: 45vh;
     }
 }
 
-@mixin miscursos-xs(){
+@mixin miscursos-xs() {
     #snap-pm-header .pull-right {
         right: 20px;
         position: fixed;
@@ -82,19 +85,22 @@ section#snap-pm-courses {
         align-items: center;
         text-align: center;
     }
-    #snap-pm-header .snap-pm-user{
+    #snap-pm-header .snap-pm-user {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        font-size: 80%;        
-        a.h1{
-            margin:0;
+        font-size: 80%;
+        a.h1 {
+            margin: 0;
             font-size: 1.3rem;
         }
-        .userpicture{
+        .userpicture {
             margin-bottom: 5px;
-            width:55px;
+            width: 55px;
         }
+    }
+    .coursecard {
+        width: 50%;
     }
 }

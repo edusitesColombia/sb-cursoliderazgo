@@ -1,85 +1,86 @@
 //identificador de snap de la pagina de login
-#page-login-index{
+#page-login-index {
     //ocultar navegación
-    header#mr-nav{
-        display:none;        
+    header#mr-nav {
+        display: none;
     }
     #maincontent {
         height: 0;
         display: none;
     }
-
     //contenedor principal que lleva la imagen de fondo
-    main#moodle-page{
-        min-height:90vh;
-        display:flex;
+    main#moodle-page {
+        min-height: 90vh;
+        display: flex;
         background: linear-gradient(rgba(1, 108, 56, 0.7), rgba(1, 108, 56, 0.7)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/bg1.jpg);
         background-size: cover;
         background-position-x: center;
-
         //div vacio que lleva un header por defecto de moodle, se utiliza para dejar medio contenedor principal vacio para que se vea el background
-        div#page-header{
-            display:none;
-        }        
-        section#region-main{
-            background-color: $blanco; 
+        div#page-header {
+            display: none;
+        }
+        section#region-main {
+            background-color: $blanco;
             width: 50%;
-            display:flex;
-            margin:0!important;
-            overflow:hidden;
+            display: flex;
+            margin: 0!important;
+            overflow: hidden;
             padding: 0;
             min-height: 100vh;
             //contenedor directo de los elementos del login
-            div[role="main"]{
+            div[role="main"] {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-evenly;
                 width: 100%;
-                min-height:100vh;
-                .alert.alertdanger{
+                min-height: 100vh;
+                .alert.alertdanger {
                     color: $negro!important;
                     background-color: $gris-no1!important;
                     border-color: $amarillo!important;
                 }
-                .snap-login{
+                .snap-login {
                     padding: 0 9%;
                 }
             }
-            .login-guest{
-                display:none;
+            .login-guest {
+                display: none;
             }
         }
     }
-
 }
 
 //bg transparente
-#page-login-index .snap-login, #page-login-signup .snap-login {
-    background-color: rgba(255,255,255,0)!important;
+#page-login-index .snap-login,
+#page-login-signup .snap-login {
+    background-color: rgba(255, 255, 255, 0)!important;
 }
 
 //Estilos del contenido
-#page-login-index section#region-main div[role="main"] .snap-login{
-    padding:2em 9%;
-    h4{
+#page-login-index section#region-main div[role="main"] .snap-login {
+    padding: 2em 9%;
+    margin-top: unset;
+    margin-bottom: 2rem;
+    h4 {
         margin-bottom: 0px;
         text-transform: uppercase;
-        font-size: 1.3rem;
+        font-size: 1rem;
+        line-height: 2;
         font-weight: 200;
         color: #828282;
     }
-    h2{
+    h2 {
         font-weight: 900;
-        font: size 2.5rem;
+        font-size: 2.2rem;
         color: $verde;
         line-height: 2.2rem;
     }
-    p{
+    p {
         padding: 0.7rem 0 1.3rem 0;
         border-bottom: 1px solid $gris-no1;
         margin-bottom: 1.5rem;
-        line-height: 1.4rem;
+        line-height: 1.4;
         color: #6b6b6b;
     }
     button#loginbtn {
@@ -89,15 +90,15 @@
     }
 }
 
-@mixin login-md(){
-    #page-login-index main#moodle-page section#region-main{
-        width:75%;
+@mixin login-md() {
+    #page-login-index main#moodle-page section#region-main {
+        width: 75%;
     }
 }
 
-@mixin login-sm(){
-    #page-login-index main#moodle-page section#region-main{
-        width:90%;
-        margin:0 auto!important;
+@mixin login-sm() {
+    #page-login-index main#moodle-page section#region-main {
+        width: 90%;
+        margin: 0 auto!important;
     }
 }
