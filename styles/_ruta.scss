@@ -181,6 +181,20 @@ html #mr-nav {
         height: auto;
         min-height: 85vh;
     }
+    .home-ruta #page-header #page-mast #course-toc {
+        height: auto;
+        min-height: 79vh;
+        #chapters {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 1rem;
+            li {
+                flex-basis: 49%;
+                margin: 2px;
+                padding: 35px 5%;
+            }
+        }
+    }
     .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
     .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
         top: 5%;
