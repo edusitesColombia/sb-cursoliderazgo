@@ -394,6 +394,11 @@ body#page-course-view-topics section#region-main span.instancename {
   margin: 0;
 }
 
+#page-course-view-topics #page-header #course-toc {
+  padding: 0;
+  padding-bottom: 1rem;
+}
+
 .por-defecto #page-header .breadcrumb-nav {
   visibility: hidden;
 }
@@ -655,6 +660,7 @@ body#page-course-view-topics section#region-main span.instancename {
   font-size: 1.3rem;
   color: #fadc5d;
   font-weight: 600;
+  margin-top: -1px !important;
 }
 
 .course-content ul.topics blockquote.blockquote footer .usertour {
@@ -695,7 +701,7 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance {
   background-color: transparent;
   width: 100%;
-  position: absolute;
+  position: relative;
   height: auto;
   min-height: 100%;
 }
@@ -1703,7 +1709,7 @@ section#coursetools div#coursetools-list > a {
     left: 10%;
   }
   .course-content ul.topics li.section div.summary p {
-    padding: 13px 13%;
+    padding: 13px 10%;
   }
   .contenedor-objetivos {
     -ms-flex-wrap: wrap;
@@ -1725,7 +1731,7 @@ section#coursetools div#coursetools-list > a {
   }
   .course-content ul.topics blockquote.blockquote p,
   .course-content ul.topics blockquote.blockquote footer {
-    padding: 1.5rem 15%;
+    padding: 1.5rem 10%;
     font-size: 1rem;
   }
   .course-content ul.topics blockquote.blockquote p {
