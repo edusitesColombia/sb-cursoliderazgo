@@ -1164,6 +1164,10 @@ section#region-main {
   margin-bottom: 1.5rem;
 }
 
+#page-mod-quiz-attempt .que.ddmarker div.dragitems span.markertext {
+  max-width: 200px;
+}
+
 #page-mod-quiz-attempt .que:not(.truefalse) h3.no {
   font-size: 2rem;
   font-weight: 400;

@@ -34,6 +34,9 @@
         .info{
             margin-bottom:1.5rem;
         }
+        &.ddmarker div.dragitems span.markertext {
+            max-width: 200px;
+        }
         &:not(.truefalse) h3.no {
             font-size: 2rem;
             font-weight: 400;
