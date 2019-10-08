@@ -1582,7 +1582,7 @@ section#coursetools div#coursetools-list > a {
   display: none;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1249px) {
   #page-login-index main#moodle-page section#region-main {
     width: 75%;
   }
@@ -1767,7 +1767,7 @@ section#coursetools div#coursetools-list > a {
     min-width: 300px;
   }
   .home-ruta #page-header #page-mast #course-toc #chapters li .chapter-title {
-    padding: 1rem;
+    padding: 0;
   }
   .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
   .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
@@ -1786,9 +1786,11 @@ section#coursetools div#coursetools-list > a {
   .contenedor-objetivos #objetivo-modulo {
     width: 90%;
     min-height: 398px;
+    font-size: 80%;
   }
   .contenedor-objetivos #complemento-objetivos {
     min-height: 420px;
+    font-size: 85%;
   }
   .contenedor-objetivos #complemento-objetivos .bloque {
     width: 66%;
