@@ -31,6 +31,7 @@ body#page-course-view-topics section#region-main {
         }
         #course-toc {
             background-color: transparent;
+            display:none;
         }
         #toc-desktop-menu-heading {
             display: none;
@@ -68,11 +69,12 @@ body#page-course-view-topics section#region-main {
     }
 }
 
-#page-course-view-topics #page-header{
+#page-course-view-topics #page-mast #page-header{
     padding:0;
     padding-top:3rem;
     margin:0;
     #course-toc{
+        display:block;
         padding: 0;
         padding-bottom: 1rem;
     }
@@ -324,6 +326,7 @@ body#page-course-view-topics section#region-main {
                     top: 15%;
                     left: 5%;
                     line-height: 0;
+                    width: 10%;
                 }
             }
         }

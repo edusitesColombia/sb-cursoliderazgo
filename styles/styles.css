@@ -356,6 +356,7 @@ body#page-course-view-topics section#region-main span.instancename {
 
 #page-header #page-mast #course-toc {
   background-color: transparent;
+  display: none;
 }
 
 #page-header #page-mast #toc-desktop-menu-heading {
@@ -410,13 +411,14 @@ body#page-course-view-topics section#region-main span.instancename {
   display: none;
 }
 
-#page-course-view-topics #page-header {
+#page-course-view-topics #page-mast #page-header {
   padding: 0;
   padding-top: 3rem;
   margin: 0;
 }
 
-#page-course-view-topics #page-header #course-toc {
+#page-course-view-topics #page-mast #page-header #course-toc {
+  display: block;
   padding: 0;
   padding-bottom: 1rem;
 }
@@ -763,6 +765,7 @@ body#page-course-view-topics section#region-main span.instancename {
   top: 15%;
   left: 5%;
   line-height: 0;
+  width: 10%;
 }
 
 .course-content ul.topics ul.section.img-text li.snap-activity:nth-child(odd) {
