@@ -1,3 +1,26 @@
+#page-mod-quiz-view{
+    section#region-main{
+        padding:1rem 10%;
+    }
+    h2{
+        font-size: 2rem;
+        font-weight: 400;
+        min-height: 22vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background: #eaeaea;
+        margin-bottom: 0rem;
+        -webkit-box-shadow: inset 0 0 5px #a1a1a2, inset 0 0 8px #b1b1b1;
+        box-shadow: inset 0 0 5px #a1a1a2, inset 0 0 8px #b1b1b1;
+    }
+}
 #page-mod-quiz-attempt{
     form#responseform {
         line-height: 1.5rem;
