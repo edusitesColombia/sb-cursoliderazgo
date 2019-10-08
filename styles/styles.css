@@ -1665,7 +1665,7 @@ div#page {
   #page-mod-lesson-view div[role="main"] h3 {
     padding: 10px 10%;
   }
-  .bloque-verde-derecha p, .bloque-verde-izquierda p {
+  #page-mod-lesson-view div[role="main"] .bloque-verde-derecha p, #page-mod-lesson-view div[role="main"] .bloque-verde-izquierda p {
     width: 85%;
   }
 }
