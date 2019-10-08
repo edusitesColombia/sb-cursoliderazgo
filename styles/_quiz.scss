@@ -47,6 +47,7 @@
         }
         &.description{
             border-bottom: none;
+            margin-bottom:0;
         }
         &:not(.truefalse) h3.no {
             
@@ -60,7 +61,7 @@
         .ddarea{
             display: flex;
         }
-        .truefalse{
+        &.truefalse{
             .prompt{
                 display:none;
             }

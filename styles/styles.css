@@ -1180,6 +1180,7 @@ section#region-main {
 
 #page-mod-quiz-attempt .que.description {
   border-bottom: none;
+  margin-bottom: 0;
 }
 
 #page-mod-quiz-attempt .que:not(.truefalse) h3.no .qno {
@@ -1196,11 +1197,11 @@ section#region-main {
   display: flex;
 }
 
-#page-mod-quiz-attempt .que .truefalse .prompt {
+#page-mod-quiz-attempt .que.truefalse .prompt {
   display: none;
 }
 
-#page-mod-quiz-attempt .que .truefalse .answer {
+#page-mod-quiz-attempt .que.truefalse .answer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1210,7 +1211,7 @@ section#region-main {
   font-size: 1.4rem;
 }
 
-#page-mod-quiz-attempt .que .truefalse .answer > div {
+#page-mod-quiz-attempt .que.truefalse .answer > div {
   padding: 0.5em 1em;
   border: 1px solid #f7f7f7;
   border-radius: 5px;
