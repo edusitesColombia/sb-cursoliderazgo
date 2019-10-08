@@ -842,7 +842,7 @@ h3#final-descripcion {
   text-align: center;
   font-weight: 700;
   font-style: italic;
-  width: 30%;
+  width: 40%;
   margin: 2rem auto;
   padding-bottom: 1rem;
   border-bottom: 3px solid #fadc5d;
@@ -1045,6 +1045,7 @@ section#region-main {
 #page-mod-lesson-view div[role="main"] h3 {
   font-weight: 600;
   margin-top: 2rem;
+  padding: 0 10%;
 }
 
 #page-mod-lesson-view div[role="main"] h3 b {
