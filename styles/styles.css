@@ -981,6 +981,7 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
   text-align: left;
   color: white !important;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .separador-opciones .opcion h3 a:visited {
@@ -1813,6 +1814,7 @@ div#page {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-align: center;
   }
   #snap-pm-header .snap-pm-user {
     display: -webkit-box;
