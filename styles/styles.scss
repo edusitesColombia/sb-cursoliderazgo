@@ -66,6 +66,17 @@ div#page {
     min-height: 95vh;
 }
 
+section#coursetools {
+    padding: 3rem 15%;
+    div#coursetools-list {
+        display: flex;
+        flex-wrap: wrap;
+        &>a {
+            height: auto;
+        }
+    }
+}
+
 //quitar la x para no poder regresar a la pagina principal cuando estan recien logueados
 #page-site-index #snap-pm-header #snap-pm-close {
     display: none;

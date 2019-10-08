@@ -1558,6 +1558,22 @@ div#page {
   min-height: 95vh;
 }
 
+section#coursetools {
+  padding: 3rem 15%;
+}
+
+section#coursetools div#coursetools-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section#coursetools div#coursetools-list > a {
+  height: auto;
+}
+
 #page-site-index #snap-pm-header #snap-pm-close {
   display: none;
 }
