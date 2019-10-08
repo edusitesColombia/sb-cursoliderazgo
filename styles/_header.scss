@@ -1,9 +1,9 @@
 //quitar el link a home de moodle y agregar logo de seguros bolivar
-header#mr-nav{
-    a#snap-home{
+header#mr-nav {
+    a#snap-home {
         display: none;
     }
-    &::before{
+    &::before {
         content: "";
         background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/logo_segurosbolivar_blanco.png);
         display: inline-block;
@@ -11,5 +11,13 @@ header#mr-nav{
         background-repeat: no-repeat;
         min-width: 216px;
         min-height: 45px;
+    }
+}
+
+@mixin ruta-xs() {
+    header#mr-nav {
+        &::before {
+            display: none;
+        }
     }
 }
