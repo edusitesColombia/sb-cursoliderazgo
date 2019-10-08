@@ -1572,6 +1572,7 @@ section#coursetools div#coursetools-list {
 
 section#coursetools div#coursetools-list > a {
   height: auto;
+  line-height: 1.1rem;
 }
 
 #page-site-index #snap-pm-header #snap-pm-close {
