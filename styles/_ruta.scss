@@ -69,9 +69,6 @@ html #mr-nav {
                             }
                             small {
                                 font-size: .7rem!important;
-                                text-align: right;
-                                width: 50%;
-                                display: inline-block;
                             }
                             .snap-section-complete {
                                 display: none;
@@ -103,8 +100,10 @@ html #mr-nav {
                         }
                         &:nth-child(n+3):not(:last-child) {
                             background-image: url('data:image/svg+xml, #{$caja-verde}');
-                            background-size: 100% 100%;
-                            max-width: 300px;
+                            background-size: 100%;
+                            width: 300px;
+                            background-repeat: no-repeat;
+                            min-height: 170px;
                         }
                         &:nth-child(n+3):not(:last-child):hover,
                         &:nth-child(n+3):not(:last-child).modulo-completado {
@@ -160,11 +159,6 @@ html #mr-nav {
         height: 79vh;
         #chapters li {
             padding: 35px 16px;
-            .text small {
-                width: 100%;
-                margin-top: -3px;
-                display: block;
-            }
         }
     }
     .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
