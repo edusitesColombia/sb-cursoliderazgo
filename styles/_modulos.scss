@@ -267,8 +267,9 @@ body#page-course-view-topics section#region-main {
     ul.section.img-text li.snap-activity {
         border: 0;
         margin: 0;
-        min-height: 350px;
-        height: 45vh;
+        min-height: 370px;
+        height: auto;
+        padding:2rem 0;
         display: flex;
         align-items: center;
         overflow: hidden;
@@ -281,17 +282,20 @@ body#page-course-view-topics section#region-main {
             align-self: baseline;
             margin: 0;
             padding: 0;
+            height:auto;
             .activityinstance {
                 background-color: transparent;
                 width: 100%;
                 position: absolute;
-                height: 100%;
+                height: auto;
+                min-height:100%;
                 .snap-assettype {
                     display: none;
                 }
                 .snap-asset-content {
                     display: flex;
-                    height: 100%;
+                    height: auto;
+                    min-height:100%;
                     justify-content: center;
                     flex-direction: column;
                     width: 60%;
@@ -625,6 +629,8 @@ ul.section.img-text .page .asset-wrapper {
     }
     .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content {
         width: 90%;
+        margin: 0;
+        padding: 5px;
     }
     .separador-opciones {
         align-items: center;
