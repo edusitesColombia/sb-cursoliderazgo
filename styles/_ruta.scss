@@ -6,7 +6,7 @@ html #mr-nav {
 .home-ruta {
     #page-header {
         .breadcrumb-nav {
-            visibility: hidden;
+            display: none;
         }
         min-height: 105vh;
         @include imagen-background('fondo_avance0', 'svg', 'center', 'cover');
@@ -31,7 +31,7 @@ html #mr-nav {
             }
             .texto-bienvenida {
                 display: block;
-                max-width: 480px;
+                max-width: 530px;
             }
             #course-toc {
                 display: flex;
@@ -58,7 +58,7 @@ html #mr-nav {
                                 display: inline-block;
                                 white-space: nowrap;
                                 margin-bottom: 3px;
-                                flex: 0 1 57%;
+                                flex: 1 0 50%;
                             }
                             &::after {
                                 display: block;

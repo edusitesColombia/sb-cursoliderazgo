@@ -292,7 +292,6 @@ section#snap-pm-courses .snap-personal-menu-more {
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(n+3):not(:last-child):hover, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado:nth-child(n+3):not(:last-child) {
   background-image: url("data:image/svg+xml, %3Csvg width='100%' viewBox='0 0 275 145' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='rgb(250, 220, 93)' d='M231.9743097756687,144.4894306236695 L34.23931043837641,144.6099759266518 C21.08000638301136,145.22777060443585 9.808613846952934,137.09096265313266 9.135694889576314,126.46790782782017 L0.032596771731464205,20.127397996914983 C-0.7524753452079281,7.876981581341759 12.761980382105904,-1.796778982985419 27.753119376996203,0.28262749345875804 L254.3301729151808,14.310176296329782 C267.3960160042436,16.118355841063835 276.1065780636188,26.198956802956186 273.6579007464983,36.71653448815924 L253.9376368567112,128.9089502132111 C251.9375721778418,137.54300753931622 242.87185844651788,143.9771130859949 231.9743097756687,144.4894306236695Z'%3E%3C/path%3E%3C/svg%3E") !important;
-  background-size: 100% 100%;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(n+3):not(:last-child):hover .chapter-title, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado:nth-child(n+3):not(:last-child) .chapter-title {
@@ -316,6 +315,10 @@ body#page-course-view-topics section#region-main .course-content {
 body#page-course-view-topics section#region-main span.instancename {
   font-size: 2rem;
   line-height: 1.5rem;
+}
+
+#page-header .breadcrumb-nav {
+  display: block;
 }
 
 #page-header #page-mast {
@@ -398,6 +401,10 @@ body#page-course-view-topics section#region-main span.instancename {
   text-transform: uppercase;
   font-size: 0.88rem;
   font-weight: normal;
+}
+
+.por-defecto #page-header #page-mast .snap-coverimagecontrol {
+  display: none;
 }
 
 .por-defecto #page-header #page-mast #course-toc #chapters {
@@ -768,7 +775,8 @@ body#page-course-view-topics section#region-main span.instancename {
   z-index: 0;
 }
 
-.section .activity.modtype_label.label .asset-wrapper, .section .activity.modtype_label.label .activityinstance {
+.section .activity.modtype_label.label .asset-wrapper,
+.section .activity.modtype_label.label .activityinstance {
   padding: 0 !important;
 }
 
@@ -1231,7 +1239,6 @@ section#region-main {
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(n+3):not(:last-child):hover, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado:nth-child(n+3):not(:last-child) {
   background-image: url("data:image/svg+xml, %3Csvg width='100%' viewBox='0 0 275 145' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='rgb(250, 220, 93)' d='M231.9743097756687,144.4894306236695 L34.23931043837641,144.6099759266518 C21.08000638301136,145.22777060443585 9.808613846952934,137.09096265313266 9.135694889576314,126.46790782782017 L0.032596771731464205,20.127397996914983 C-0.7524753452079281,7.876981581341759 12.761980382105904,-1.796778982985419 27.753119376996203,0.28262749345875804 L254.3301729151808,14.310176296329782 C267.3960160042436,16.118355841063835 276.1065780636188,26.198956802956186 273.6579007464983,36.71653448815924 L253.9376368567112,128.9089502132111 C251.9375721778418,137.54300753931622 242.87185844651788,143.9771130859949 231.9743097756687,144.4894306236695Z'%3E%3C/path%3E%3C/svg%3E") !important;
-  background-size: 100% 100%;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(n+3):not(:last-child):hover .chapter-title, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado:nth-child(n+3):not(:last-child) .chapter-title {
@@ -1255,7 +1262,7 @@ html #mr-nav {
 }
 
 .home-ruta #page-header .breadcrumb-nav {
-  visibility: hidden;
+  display: none;
 }
 
 .home-ruta #page-header #page-mast {
@@ -1296,7 +1303,7 @@ html #mr-nav {
 
 .home-ruta #page-header #page-mast .texto-bienvenida {
   display: block;
-  max-width: 480px;
+  max-width: 530px;
 }
 
 .home-ruta #page-header #page-mast #course-toc {
@@ -1350,9 +1357,9 @@ html #mr-nav {
   display: inline-block;
   white-space: nowrap;
   margin-bottom: 3px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 57%;
-          flex: 0 1 57%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li .text::after {
