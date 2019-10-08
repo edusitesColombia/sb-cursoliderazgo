@@ -1426,7 +1426,7 @@ html #mr-nav {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  left: 10%;
+  left: 5%;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) a {
@@ -1455,6 +1455,7 @@ html #mr-nav {
   background-repeat: no-repeat;
   background-position: center;
   min-height: 170px;
+  right: 5%;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
@@ -1758,7 +1759,7 @@ section#coursetools div#coursetools-list > a {
 
 @media (max-width: 577px) {
   .home-ruta #page-header {
-    padding-top: 4.5rem;
+    padding-top: 18vh;
     background: white !important;
   }
   .home-ruta #page-header #course-toc {
