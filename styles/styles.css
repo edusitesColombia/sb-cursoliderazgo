@@ -1593,6 +1593,7 @@ section#coursetools div#coursetools-list > a {
   .home-ruta #page-header #page-mast #course-toc {
     height: auto;
     min-height: 79vh;
+    padding: 3em 4%;
   }
   .home-ruta #page-header #page-mast #course-toc #chapters {
     -ms-flex-wrap: wrap;
@@ -1610,7 +1611,7 @@ section#coursetools div#coursetools-list > a {
   }
   .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
   .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
-    top: 5%;
+    top: 1%;
   }
   .home-ruta #page-header #page-mast #course-toc #chapters li:last-child a {
     padding: 40px 20px;
