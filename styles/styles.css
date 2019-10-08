@@ -1831,7 +1831,6 @@ section#coursetools div#coursetools-list > a {
     height: auto;
   }
   .course-content ul.topics ul.section.img-text li.snap-activity {
-    min-height: 64vh;
     height: auto;
   }
   .course-content ul.topics ul.section.img-text li.snap-activity:nth-child(odd)::before {
