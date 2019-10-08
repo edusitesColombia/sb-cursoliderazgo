@@ -1321,6 +1321,7 @@ html #mr-nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 2rem 2rem 0 2rem;
 }
 
 .home-ruta #page-header #page-mast > h1 {
