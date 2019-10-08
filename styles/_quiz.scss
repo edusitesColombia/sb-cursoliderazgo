@@ -34,6 +34,14 @@
     }
 
     .que{
+        padding: 0.5rem 2%;
+        .ablock{
+            display: flex;
+            justify-content: center;            
+        }
+        .qtext{
+            font-size:1.1rem;
+        }
         .info{
             margin-bottom:1.5rem;
         }
@@ -68,7 +76,7 @@
             .answer{
                 display: flex;
                 justify-content: space-evenly;
-                font-size: 1.4rem;
+                font-size: 1rem;
                 &>div{
                     padding: 0.5em 1em;
                     border: 1px solid $gris-no2;
@@ -77,6 +85,12 @@
                 }
             }
         }
+    }
+    table.answer {
+        font-family: 'Roboto Condensed';
+    }
+    .formulation input[type="text"], .formulation select {
+        width: 100%;
     }
 }
 
@@ -95,5 +109,21 @@
     h4.responsehistoryheader {
         text-align: center;
         padding-top: 10px;
+    }
+}
+
+@mixin quiz-sm(){
+    #page-mod-quiz-attempt .que .ddarea {
+        flex-wrap: wrap;
+        .droparea {
+            width: 100%;
+        }
+    }
+}
+
+@mixin quiz-xs(){
+    #page-mod-quiz-attempt .que.truefalse .answer > div {
+        padding: 0.5em 0.4em;
+        margin-right: 5px;
     }
 }

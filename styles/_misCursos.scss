@@ -70,5 +70,24 @@ section#snap-pm-courses {
 }
 
 @mixin miscursos-xs(){
-
+    #snap-pm-header .pull-right {
+        right: 20px;
+        position: fixed;
+        top: 20px;
+    }
+    #snap-pm-header .snap-pm-user{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center
+        font-size: 80%;        
+        a.h1{
+            margin:0;
+            font-size: 1.3rem;
+        }
+        .userpicture{
+            margin-bottom: 5px;
+            width:55px;
+        }
+    }
 }
