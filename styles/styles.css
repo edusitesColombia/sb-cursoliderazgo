@@ -989,6 +989,7 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
   text-align: left;
   color: white !important;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .separador-opciones .opcion h3 a:visited {
@@ -1555,6 +1556,23 @@ html #mr-nav {
 
 div#page {
   min-height: 95vh;
+}
+
+section#coursetools {
+  padding: 3rem 15%;
+}
+
+section#coursetools div#coursetools-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section#coursetools div#coursetools-list > a {
+  height: auto;
+  line-height: 1.1rem;
 }
 
 #page-site-index #snap-pm-header #snap-pm-close {
