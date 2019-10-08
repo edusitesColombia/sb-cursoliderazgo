@@ -1941,35 +1941,8 @@ section#coursetools div#coursetools-list > a {
     margin-bottom: 5px;
     width: 55px;
   }
-  .home-ruta #page-header {
-    padding-top: 18vh;
-    background: white !important;
-  }
-  .home-ruta #page-header #course-toc {
-    padding: 0;
-  }
-  .home-ruta #page-header #page-mast #course-toc #chapters li {
-    padding: 30px 35px;
-    -ms-flex-preferred-size: 65%;
-        flex-basis: 65%;
-    min-width: 300px;
-  }
-  .home-ruta #page-header #page-mast #course-toc #chapters li .chapter-title {
-    padding: 0;
-  }
-  .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
-  .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
-    top: 0px;
-    position: relative;
-  }
-  .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) {
-    left: 0;
-    position: relative;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) a[href="#section-1"]::before {
-    margin-left: -10px;
+  header#mr-nav::before {
+    display: none;
   }
 }
 

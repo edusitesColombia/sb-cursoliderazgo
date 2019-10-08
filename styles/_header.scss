@@ -14,7 +14,7 @@ header#mr-nav {
     }
 }
 
-@mixin ruta-xs() {
+@mixin header-xs() {
     header#mr-nav {
         &::before {
             display: none;
