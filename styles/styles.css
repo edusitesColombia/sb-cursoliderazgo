@@ -1898,6 +1898,50 @@ section#coursetools div#coursetools-list > a {
     padding: 0.5em 0.4em;
     margin-right: 5px;
   }
+  #snap-pm-header .pull-right {
+    right: 20px;
+    position: fixed;
+    top: 20px;
+  }
+  div#snap-pm-header-quicklinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  #snap-pm-header .snap-pm-user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 80%;
+  }
+  #snap-pm-header .snap-pm-user a.h1 {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+  #snap-pm-header .snap-pm-user .userpicture {
+    margin-bottom: 5px;
+    width: 55px;
+  }
+  .coursecard {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 1600px) {
