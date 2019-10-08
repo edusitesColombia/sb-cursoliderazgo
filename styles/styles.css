@@ -1796,6 +1796,33 @@ div#page {
     padding: 0.5em 0.4em;
     margin-right: 5px;
   }
+  #snap-pm-header .pull-right {
+    right: 20px;
+    position: fixed;
+    top: 20px;
+  }
+  #snap-pm-header .snap-pm-user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 80%;
+  }
+  #snap-pm-header .snap-pm-user a.h1 {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+  #snap-pm-header .snap-pm-user .userpicture {
+    margin-bottom: 5px;
+    width: 55px;
+  }
 }
 
 @media screen and (min-width: 1600px) {
