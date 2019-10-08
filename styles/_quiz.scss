@@ -66,3 +66,21 @@
         }
     }
 }
+
+#page-mod-quiz-review{
+    section#region-main {
+        padding: 1rem 10%;
+    }
+    .que p {
+        font-size: 19px;
+    }
+
+    .responsehistoryheader table * {
+        font-size: 19px;
+        font-family: 'Roboto COndensed';
+    }
+    h4.responsehistoryheader {
+        text-align: center;
+        padding-top: 10px;
+    }
+}
