@@ -1588,10 +1588,22 @@ section#coursetools div#coursetools-list > a {
     width: 75%;
   }
   .home-ruta #page-header #page-mast #course-toc {
-    height: 79vh;
+    height: auto;
+    min-height: 79vh;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 1rem;
   }
   .home-ruta #page-header #page-mast #course-toc #chapters li {
-    padding: 35px 16px;
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+    margin: 2px;
+    padding: 35px 5%;
   }
   .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
   .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {

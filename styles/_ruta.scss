@@ -156,9 +156,17 @@ html #mr-nav {
 
 @mixin ruta-md() {
     .home-ruta #page-header #page-mast #course-toc {
-        height: 79vh;
-        #chapters li {
-            padding: 35px 16px;
+        height: auto;
+        min-height: 79vh;
+        #chapters {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 1rem;
+            li {
+                flex-basis: 49%;
+                margin: 2px;
+                padding: 35px 5%;
+            }
         }
     }
     .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
