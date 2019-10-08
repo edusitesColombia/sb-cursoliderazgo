@@ -326,10 +326,6 @@ body#page-course-view-topics section#region-main span.instancename {
   display: block;
 }
 
-#page-header #page-mast {
-  display: none;
-}
-
 #page-header #page-mast h1::before,
 #page-header #page-mast h1 a,
 #page-header #page-mast h1 a:hover {
