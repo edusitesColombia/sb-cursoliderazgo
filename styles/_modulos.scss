@@ -574,6 +574,9 @@ ul.section.img-text .page .asset-wrapper {
 }
 
 @mixin modulos-sm() {
+    .por-defecto #page-header #page-mast #course-toc #chapters li .chapter-title{
+        line-height: 1;
+    }
     .course-content ul.topics li.section div.summary p {
         padding: 13px 10%;
     }
@@ -639,10 +642,17 @@ ul.section.img-text .page .asset-wrapper {
         min-height: 64vh;
         height: auto;
     }
+    .course-content ul.topics ul.section.img-text li.snap-activity:nth-child(odd)::before{
+        bottom: -60px;
+        top: auto;
+    }
     .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content {
         width: 90%;
         margin: 0 auto;
         padding: 5px;
+    }
+    .course-content ul.topics ul.section.img-text li.snap-activity:nth-child(odd)::before{
+
     }
     .separador-opciones {
         align-items: center;
