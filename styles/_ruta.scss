@@ -103,6 +103,7 @@ html #mr-nav {
                             background-image: url('data:image/svg+xml, #{$caja-verde}');
                             width: 300px;
                             background-repeat: no-repeat;
+                            background-position: center;
                             min-height: 170px;
                         }
                         &:nth-child(n+3):not(:last-child):hover,
@@ -164,7 +165,7 @@ html #mr-nav {
             li {
                 flex-basis: 49%;
                 margin: 2px;
-                padding: 35px 5%;
+                padding: 35px 10%;
             }
         }
     }
