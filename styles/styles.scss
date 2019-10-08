@@ -7,11 +7,10 @@
 @import "./lesson";
 @import "./quiz";
 @import "./ruta";
-
 :root {
     font: {
         family: 'Roboto Condensed', 'Roboto', 'Helvetica', sans-serif!important;
-        size: 18px;
+        size: 20px;
     }
 }
 
@@ -28,20 +27,50 @@
     color: #fff;
 }
 
-.alert.alert-danger, #page-admin-index .releasenoteslink.alert-danger, #page-admin-index #page-admin-index .adminerror.releasenoteslink, #page-admin-index .adminwarning.alert-danger, #page-admin-index #page-admin-index .adminerror.adminwarning, #page-admin-index .adminerror.alert-danger, #page-admin-index #page-admin-index .adminerror, .que .formulation.alert-danger, .que #page-admin-index .adminerror.formulation, #page-admin-index .que .adminerror.formulation, .que .outcome.alert-danger, .que #page-admin-index .adminerror.outcome, #page-admin-index .que .adminerror.outcome, .que .comment.alert-danger, .que #page-admin-index .adminerror.comment, #page-admin-index .que .adminerror.comment, .assignfeedback_editpdf_widget .label.alert-danger, .assignfeedback_editpdf_widget #page-admin-index .adminerror.label, #page-admin-index .assignfeedback_editpdf_widget .adminerror.label, #page-admin-index .adminerror.alert, #page-admin-index #page-admin-index .releasenoteslink.adminerror, #page-admin-index #page-admin-index .adminwarning.adminerror, #page-admin-index .que .formulation.adminerror, .que #page-admin-index .formulation.adminerror, #page-admin-index .que .outcome.adminerror, .que #page-admin-index .outcome.adminerror, #page-admin-index .que .comment.adminerror, .que #page-admin-index .comment.adminerror, #page-admin-index .assignfeedback_editpdf_widget .label.adminerror, .assignfeedback_editpdf_widget #page-admin-index .label.adminerror {
+.alert.alert-danger,
+#page-admin-index .releasenoteslink.alert-danger,
+#page-admin-index #page-admin-index .adminerror.releasenoteslink,
+#page-admin-index .adminwarning.alert-danger,
+#page-admin-index #page-admin-index .adminerror.adminwarning,
+#page-admin-index .adminerror.alert-danger,
+#page-admin-index #page-admin-index .adminerror,
+.que .formulation.alert-danger,
+.que #page-admin-index .adminerror.formulation,
+#page-admin-index .que .adminerror.formulation,
+.que .outcome.alert-danger,
+.que #page-admin-index .adminerror.outcome,
+#page-admin-index .que .adminerror.outcome,
+.que .comment.alert-danger,
+.que #page-admin-index .adminerror.comment,
+#page-admin-index .que .adminerror.comment,
+.assignfeedback_editpdf_widget .label.alert-danger,
+.assignfeedback_editpdf_widget #page-admin-index .adminerror.label,
+#page-admin-index .assignfeedback_editpdf_widget .adminerror.label,
+#page-admin-index .adminerror.alert,
+#page-admin-index #page-admin-index .releasenoteslink.adminerror,
+#page-admin-index #page-admin-index .adminwarning.adminerror,
+#page-admin-index .que .formulation.adminerror,
+.que #page-admin-index .formulation.adminerror,
+#page-admin-index .que .outcome.adminerror,
+.que #page-admin-index .outcome.adminerror,
+#page-admin-index .que .comment.adminerror,
+.que #page-admin-index .comment.adminerror,
+#page-admin-index .assignfeedback_editpdf_widget .label.adminerror,
+.assignfeedback_editpdf_widget #page-admin-index .label.adminerror {
     color: $negro;
     background-color: #faf3f5;
     border-color: $amarillo;
 }
 
-div#page{
+div#page {
     min-height: 95vh;
 }
 
 //quitar la x para no poder regresar a la pagina principal cuando estan recien logueados
-#page-site-index #snap-pm-header #snap-pm-close{
-    display:none;
+#page-site-index #snap-pm-header #snap-pm-close {
+    display: none;
 }
+
 //quitar el menu que sale en mobile
 .theme-snap #toc-mobile-menu-toggle {
     display: none;
@@ -54,7 +83,8 @@ div#page{
         margin: 0 auto;
     }
 }
-@media (max-width: 991.98px){
+
+@media (max-width: 991.98px) {
     #page-header #course-toc {
         position: relative!important;
     }

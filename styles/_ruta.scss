@@ -1,7 +1,8 @@
 @import "./mixins";
-html #mr-nav{
+html #mr-nav {
     z-index: 99;
 }
+
 .home-ruta {
     #page-header {
         .breadcrumb-nav {
@@ -30,7 +31,7 @@ html #mr-nav{
             }
             .texto-bienvenida {
                 display: block;
-                max-width: 530px;
+                max-width: 480px;
             }
             #course-toc {
                 display: flex;
@@ -49,11 +50,15 @@ html #mr-nav{
                         padding: 35px 40px;
                         .text {
                             @include textos-ruta($blanco, 1rem);
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: center;
                             &::before {
                                 width: 48%;
                                 display: inline-block;
                                 white-space: nowrap;
                                 margin-bottom: 3px;
+                                flex: 0 1 57%;
                             }
                             &::after {
                                 display: block;
@@ -78,19 +83,19 @@ html #mr-nav{
                             background-repeat: no-repeat;
                             background-size: contain;
                             background-position: center;
-                            a{
-                                color:$negro;
+                            a {
+                                color: $negro;
                                 padding-left: 32px;
                             }
-                            a[href="#section-1"]::before{   
-                                content:'';
+                            a[href="#section-1"]::before {
+                                content: '';
                                 box-sizing: border-box;
-                                display:block;
-                                width:28px;
-                                height:32px;
+                                display: block;
+                                width: 28px;
+                                height: 32px;
                                 background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/iconos/icono_metodologia_32px.png);
-                                background-repeat:no-repeat;
-                                background-size:100%;
+                                background-repeat: no-repeat;
+                                background-size: 100%;
                                 position: absolute;
                                 margin-left: -38px;
                                 margin-top: -6px;
@@ -113,17 +118,17 @@ html #mr-nav{
                             background-repeat: no-repeat;
                             background-size: contain;
                             background-position: center;
-                            a{
+                            a {
                                 color: $verde;
                                 padding: 20px 23px 20px 61px;
                                 width: 70%;
                                 margin: 0 auto;
-                                &::before{
-                                    content:'';
+                                &::before {
+                                    content: '';
                                     box-sizing: border-box;
-                                    display:block;
-                                    width:28px;
-                                    height:32px;
+                                    display: block;
+                                    width: 28px;
+                                    height: 32px;
                                     background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/iconos/icono_cajaherramientas_32px.svg);
                                     background-repeat: no-repeat;
                                     background-size: 100%;
@@ -166,7 +171,7 @@ html #mr-nav{
     .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
         top: 32%;
     }
-    .home-ruta #page-header #page-mast #course-toc #chapters li:last-child a{
+    .home-ruta #page-header #page-mast #course-toc #chapters li:last-child a {
         padding: 13px 8px 13px 40px;
     }
 }
@@ -178,7 +183,7 @@ html #mr-nav{
     }
     .home-ruta #page-header #page-mast #course-toc {
         height: auto;
-        min-height:79vh;
+        min-height: 79vh;
         #chapters {
             flex-wrap: wrap;
             justify-content: center;
@@ -188,7 +193,7 @@ html #mr-nav{
                 margin: 2px;
                 padding: 35px 5%;
             }
-        }        
+        }
     }
     .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
     .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
@@ -202,7 +207,7 @@ html #mr-nav{
 @mixin ruta-xs() {
     .home-ruta #page-header {
         padding-top: 4.5rem;
-        background:$blanco!important;
+        background: $blanco!important;
         #course-toc {
             padding: 0;
         }
@@ -210,22 +215,22 @@ html #mr-nav{
     .home-ruta #page-header #page-mast #course-toc #chapters li {
         padding: 30px 35px;
         flex-basis: 65%;
-        min-width:314px;
-        .chapter-title{
-            padding:1rem;
+        min-width: 314px;
+        .chapter-title {
+            padding: 1rem;
         }
     }
     .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
     .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
         top: 0px;
-        position:relative;
+        position: relative;
     }
     .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) {
         left: 0;
         position: relative;
         text-align: center;
-        a[href="#section-1"]::before{
-            margin-left:-10px;
+        a[href="#section-1"]::before {
+            margin-left: -10px;
         }
     }
 }
