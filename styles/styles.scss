@@ -78,6 +78,9 @@ section#coursetools {
     }
 }
 
+.pagelayout-admin #page-content{
+    padding:0 10%;
+}
 //quitar la x para no poder regresar a la pagina principal cuando estan recien logueados
 #page-site-index #snap-pm-header #snap-pm-close {
     display: none;
