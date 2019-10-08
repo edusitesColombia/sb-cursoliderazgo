@@ -1425,6 +1425,7 @@ html #mr-nav {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  left: 10%;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) a {
@@ -1606,7 +1607,7 @@ section#coursetools div#coursetools-list > a {
   }
   .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
   .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
-    top: 32%;
+    top: 10%;
   }
   .home-ruta #page-header #page-mast #course-toc #chapters li:last-child a {
     padding: 13px 8px 13px 40px;
