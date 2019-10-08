@@ -1936,7 +1936,7 @@ section#coursetools div#coursetools-list > a {
     width: 55px;
   }
   .coursecard {
-    width: 50%;
+    min-width: 50%;
   }
 }
 
