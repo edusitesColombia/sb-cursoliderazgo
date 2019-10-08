@@ -1155,6 +1155,10 @@ section#region-main {
   padding: 0 10%;
 }
 
+#page-mod-quiz-attempt section#region-main {
+  padding: 0 10%;
+}
+
 #page-mod-quiz-attempt form#responseform {
   line-height: 1.5rem;
   font-size: 80%;
@@ -1164,8 +1168,18 @@ section#region-main {
   margin-bottom: 1.5rem;
 }
 
+#page-mod-quiz-attempt .que .im-controls {
+  margin: .5em 0;
+  text-align: right;
+  margin-right: 20px;
+}
+
 #page-mod-quiz-attempt .que.ddmarker div.dragitems span.markertext {
   max-width: 200px;
+}
+
+#page-mod-quiz-attempt .que.description {
+  border-bottom: none;
 }
 
 #page-mod-quiz-attempt .que:not(.truefalse) h3.no .qno {
@@ -1186,7 +1200,7 @@ section#region-main {
   display: none;
 }
 
-#page-mod-quiz-attempt .que .truefalse .ablock .answer {
+#page-mod-quiz-attempt .que .truefalse .answer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1194,6 +1208,13 @@ section#region-main {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   font-size: 1.4rem;
+}
+
+#page-mod-quiz-attempt .que .truefalse .answer > div {
+  padding: 0.5em 1em;
+  border: 1px solid #f7f7f7;
+  border-radius: 5px;
+  margin-right: 20px;
 }
 
 #page-mod-quiz-review section#region-main {

@@ -25,6 +25,9 @@
     }
 }
 #page-mod-quiz-attempt{
+    section#region-main{
+        padding:0 10%;
+    }
     form#responseform {
         line-height: 1.5rem;
         font-size: 80%;
@@ -34,15 +37,23 @@
         .info{
             margin-bottom:1.5rem;
         }
+        .im-controls {
+            margin: .5em 0;
+            text-align: right;
+            margin-right: 20px;
+        }
         &.ddmarker div.dragitems span.markertext {
             max-width: 200px;
+        }
+        &.description{
+            border-bottom: none;
         }
         &:not(.truefalse) h3.no {
             
             .qno{
                 margin-left:3px;
             }
-        }
+        }        
         .qtext{
             margin-bottom:1.5rem;
         }
@@ -53,10 +64,16 @@
             .prompt{
                 display:none;
             }
-            .ablock .answer{
+            .answer{
                 display: flex;
                 justify-content: space-evenly;
                 font-size: 1.4rem;
+                &>div{
+                    padding: 0.5em 1em;
+                    border: 1px solid $gris-no2;
+                    border-radius: 5px;
+                    margin-right: 20px;
+                }
             }
         }
     }
