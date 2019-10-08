@@ -72,6 +72,10 @@ body#page-course-view-topics section#region-main {
     padding:0;
     padding-top:3rem;
     margin:0;
+    #course-toc{
+        padding: 0;
+        padding-bottom: 1rem;
+    }
 }
 
 .por-defecto {
@@ -264,6 +268,7 @@ body#page-course-view-topics section#region-main {
             font-size: 1.3rem;
             color: $amarillo;
             font-weight: 600;
+            margin-top: -1px!important;
             .usertour {
                 display: none;
             }
@@ -292,7 +297,7 @@ body#page-course-view-topics section#region-main {
             .activityinstance {
                 background-color: transparent;
                 width: 100%;
-                position: absolute;
+                position: relative;
                 height: auto;
                 min-height:100%;
                 .snap-assettype {
@@ -569,8 +574,11 @@ ul.section.img-text .page .asset-wrapper {
 }
 
 @mixin modulos-sm() {
+    .por-defecto #page-header #page-mast #course-toc #chapters li .chapter-title{
+        line-height: 1;
+    }
     .course-content ul.topics li.section div.summary p {
-        padding: 13px 13%;
+        padding: 13px 10%;
     }
     .contenedor-objetivos {
         flex-wrap: wrap;
@@ -589,7 +597,7 @@ ul.section.img-text .page .asset-wrapper {
     }
     .course-content ul.topics blockquote.blockquote p,
     .course-content ul.topics blockquote.blockquote footer {
-        padding: 1.5rem 15%;
+        padding: 1.5rem 10%;
         font-size: 1rem;
     }
     .course-content ul.topics blockquote.blockquote p {
@@ -633,6 +641,10 @@ ul.section.img-text .page .asset-wrapper {
     .course-content ul.topics ul.section.img-text li.snap-activity {
         min-height: 64vh;
         height: auto;
+    }
+    .course-content ul.topics ul.section.img-text li.snap-activity:nth-child(odd)::before{
+        bottom: -60px;
+        top: auto;
     }
     .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content {
         width: 90%;
