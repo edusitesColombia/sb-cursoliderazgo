@@ -413,7 +413,6 @@ body#page-course-view-topics section#region-main span.instancename {
 
 #page-course-view-topics #page-header #page-mast {
   padding: 0;
-  padding-top: 3rem;
   margin: 0;
 }
 
@@ -1937,7 +1936,7 @@ section#coursetools div#coursetools-list > a {
     width: 55px;
   }
   .coursecard {
-    width: 50%;
+    min-width: 50%;
   }
 }
 
