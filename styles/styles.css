@@ -639,7 +639,7 @@ body#page-course-view-topics section#region-main span.instancename {
   max-width: 100% !important;
   background: #006d38;
   color: white;
-  padding: 2rem 18%;
+  padding: 2rem 10%;
 }
 
 .course-content ul.topics blockquote.blockquote p {
@@ -1725,6 +1725,7 @@ section#coursetools div#coursetools-list > a {
   }
   .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content {
     width: 85%;
+    line-height: 1.15rem;
   }
   .separador-opciones {
     -webkit-box-orient: vertical;
@@ -1815,7 +1816,7 @@ section#coursetools div#coursetools-list > a {
   }
   .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content {
     width: 90%;
-    margin: 0;
+    margin: 0 auto;
     padding: 5px;
   }
   .separador-opciones {
@@ -1861,6 +1862,9 @@ section#coursetools div#coursetools-list > a {
 @media (max-width: 991.98px) {
   #page-header #course-toc {
     position: relative !important;
+  }
+  #page-course-view-topics #page-header #course-toc .chapters {
+    display: block;
   }
 }
 /*# sourceMappingURL=styles.css.map */
