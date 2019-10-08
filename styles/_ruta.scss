@@ -100,7 +100,6 @@ html #mr-nav {
                         }
                         &:nth-child(n+3):not(:last-child) {
                             background-image: url('data:image/svg+xml, #{$caja-verde}');
-                            background-size: 100%;
                             width: 300px;
                             background-repeat: no-repeat;
                             min-height: 170px;
