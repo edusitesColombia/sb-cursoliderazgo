@@ -1,4 +1,16 @@
 @charset "UTF-8";
+.home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(n+3):not(:last-child):hover, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado:nth-child(n+3):not(:last-child) {
+  background-image: url("data:image/svg+xml, %3Csvg width='100%' viewBox='0 0 275 145' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='rgb(250, 220, 93)' d='M231.9743097756687,144.4894306236695 L34.23931043837641,144.6099759266518 C21.08000638301136,145.22777060443585 9.808613846952934,137.09096265313266 9.135694889576314,126.46790782782017 L0.032596771731464205,20.127397996914983 C-0.7524753452079281,7.876981581341759 12.761980382105904,-1.796778982985419 27.753119376996203,0.28262749345875804 L254.3301729151808,14.310176296329782 C267.3960160042436,16.118355841063835 276.1065780636188,26.198956802956186 273.6579007464983,36.71653448815924 L253.9376368567112,128.9089502132111 C251.9375721778418,137.54300753931622 242.87185844651788,143.9771130859949 231.9743097756687,144.4894306236695Z'%3E%3C/path%3E%3C/svg%3E") !important;
+}
+
+.home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(n+3):not(:last-child):hover .chapter-title, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado:nth-child(n+3):not(:last-child) .chapter-title {
+  color: #006d38;
+}
+
+.home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(n+3):not(:last-child):hover .text, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado:nth-child(n+3):not(:last-child) .text {
+  color: #2b2b2b;
+}
+
 #page-login-index header#mr-nav {
   display: none;
 }
@@ -67,25 +79,29 @@
   display: none;
 }
 
-#page-login-index .snap-login, #page-login-signup .snap-login {
+#page-login-index .snap-login,
+#page-login-signup .snap-login {
   background-color: rgba(255, 255, 255, 0) !important;
 }
 
 #page-login-index section#region-main div[role="main"] .snap-login {
   padding: 2em 9%;
+  margin-top: unset;
+  margin-bottom: 2rem;
 }
 
 #page-login-index section#region-main div[role="main"] .snap-login h4 {
   margin-bottom: 0px;
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1rem;
+  line-height: 2;
   font-weight: 200;
   color: #828282;
 }
 
 #page-login-index section#region-main div[role="main"] .snap-login h2 {
   font-weight: 900;
-  font: size 2.5rem;
+  font-size: 2.2rem;
   color: #006d38;
   line-height: 2.2rem;
 }
@@ -94,7 +110,7 @@
   padding: 0.7rem 0 1.3rem 0;
   border-bottom: 1px solid #eaeaea;
   margin-bottom: 1.5rem;
-  line-height: 1.4rem;
+  line-height: 1.4;
   color: #6b6b6b;
 }
 
@@ -235,7 +251,7 @@ nav#snap-pm {
 
 #snap-pm-header a.h1 {
   color: white !important;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   display: block;
   margin: 0;
   margin-top: 0.5rem;
@@ -245,8 +261,15 @@ nav#snap-pm {
   width: 100%;
 }
 
+#snap-pm-header .snap-pm-user .userpicture {
+  width: 3.7rem;
+}
+
 #snap-pm-header #snap-pm-header-quicklinks a {
+  color: inherit;
   text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 #snap-pm-header #snap-pm-header-quicklinks a::after {
@@ -262,7 +285,6 @@ section#snap-pm-courses {
 }
 
 section#snap-pm-courses .coursecard {
-  border-radius: 8%;
   min-width: 30%;
 }
 
@@ -1069,13 +1091,13 @@ section#region-main {
   display: none !important;
 }
 
-#page-mod-lesson-view div[role="main"] h3 {
+#page-mod-lesson-view div[role="main"] h3:not(#final-descripcion) {
   font-weight: 600;
   margin-top: 2rem;
   padding: 0 10%;
 }
 
-#page-mod-lesson-view div[role="main"] h3 b {
+#page-mod-lesson-view div[role="main"] h3:not(#final-descripcion) b {
   color: #006d38;
 }
 
@@ -1308,7 +1330,7 @@ html #mr-nav {
   padding-top: 5rem;
   min-height: 105vh;
   background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/fondo_avance0.svg);
-  background-background-size: 100% 100%;
+  background-size: 100% 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1573,7 +1595,7 @@ html #mr-nav {
 }
 
 div#page {
-  min-height: 94vh;
+  min-height: 95vh;
 }
 
 section#coursetools {
@@ -1760,7 +1782,7 @@ section#coursetools div#coursetools-list > a {
     width: 80%;
   }
   section#snap-pm-courses .coursecard {
-    min-height: 35vh;
+    min-height: 45vh;
   }
   .activity-navigation .row .col-md-4:nth-child(1), .activity-navigation .row .col-md-4:nth-child(3) {
     display: none;
