@@ -26,7 +26,6 @@ $caja-amarilla: "%3Csvg width='100%' viewBox='0 0 275 145' xmlns='http://www.w3.
 
 %resaltado-modulos {
     background-image: url('data:image/svg+xml, #{$caja-amarilla}')!important;
-    background-size: 100% 100%;
     .chapter-title {
         color: $verde;
     }

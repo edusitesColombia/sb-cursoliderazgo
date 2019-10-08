@@ -18,6 +18,9 @@ body#page-course-view-topics section#region-main {
 
 //cabecera modulo
 #page-header {
+    .breadcrumb-nav {
+        display: block;
+    }
     #page-mast {
         display: none;
         h1 {
@@ -77,18 +80,21 @@ body#page-course-view-topics section#region-main {
             &>h1 {
                 @include textos-ruta($blanco, 0.88rem);
             }
+            .snap-coverimagecontrol {
+                display: none;
+            }
             #course-toc {
                 #chapters {
                     column-count: 1;
                     li {
                         visibility: hidden;
                         height: 0px;
-                        margin-left:0;
+                        margin-left: 0;
                         &.snap-visible-section {
                             visibility: visible;
                         }
                         .chapter-title {
-                            @include textos-ruta($blanco, 1.77rem, $peso: bold);    
+                            @include textos-ruta($blanco, 1.77rem, $peso: bold);
                             line-height: 1.3;
                         }
                         .text {
@@ -109,6 +115,7 @@ body#page-course-view-topics section#region-main {
         }
     }
 }
+
 //contenedor videos
 .video-container {
     position: relative;
@@ -126,6 +133,7 @@ body#page-course-view-topics section#region-main {
         height: 90%;
     }
 }
+
 //TODO: revisar span notifications hijo de region-main
 .course-content ul.topics {
     //Fix ancho secciones generales
@@ -178,7 +186,7 @@ body#page-course-view-topics section#region-main {
                 left: 4.25em;
                 white-space: nowrap;
             }
-        }        
+        }
         //contenedor del parrafo de resumen de la sección
         div.summary {
             p {
@@ -203,7 +211,7 @@ body#page-course-view-topics section#region-main {
         .section_footer {
             max-width: 100%;
             margin: 1rem auto;
-            padding:0 10%;
+            padding: 0 10%;
         }
         .label {
             margin: 0;
@@ -232,7 +240,7 @@ body#page-course-view-topics section#region-main {
         flex-direction: column;
         justify-content: flex-end;
         padding: 0;
-        margin:0;
+        margin: 0;
         p,
         footer {
             margin: 0!important;
@@ -264,7 +272,7 @@ body#page-course-view-topics section#region-main {
         display: flex;
         align-items: center;
         overflow: hidden;
-        &.snap-can-edit{
+        &.snap-can-edit {
             overflow: visible;
         }
         .asset-wrapper {
@@ -308,7 +316,7 @@ body#page-course-view-topics section#region-main {
             background-color: $gris-no2;
             .activityinstance .snap-asset-content {
                 padding-left: 15%;
-                padding-right:6%;
+                padding-right: 6%;
             }
             &::before {
                 counter-increment: actividadNo;
@@ -331,7 +339,7 @@ body#page-course-view-topics section#region-main {
                 margin-left: auto;
                 text-align: left;
                 padding-right: 15%;
-                padding-left:6%;
+                padding-left: 6%;
             }
             &::before {
                 counter-increment: actividadNo;
@@ -351,8 +359,9 @@ body#page-course-view-topics section#region-main {
     }
 }
 
-.section .activity.modtype_label.label .asset-wrapper, .section .activity.modtype_label.label .activityinstance{
-    padding:0!important;
+.section .activity.modtype_label.label .asset-wrapper,
+.section .activity.modtype_label.label .activityinstance {
+    padding: 0!important;
 }
 
 //estilos descripcion modulo, objetivos
@@ -373,9 +382,9 @@ body#page-course-view-topics section#region-main {
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
-        h4{
+        h4 {
             font-weight: 600;
-            color:$verde;
+            color: $verde;
         }
     }
     #complemento-objetivos {
@@ -390,9 +399,9 @@ body#page-course-view-topics section#region-main {
         padding: 1.5rem 0rem 0rem 0rem;
         .bloque {
             width: 45%;
-            h5{
+            h5 {
                 font-weight: 600;
-                margin:0;
+                margin: 0;
             }
         }
     }
@@ -421,9 +430,9 @@ ul.section.img-text .page .asset-wrapper {
         color: black;
         font-weight: 900;
     }
-    .summary-text p{
+    .summary-text p {
         max-width: 43.5em;
-    } 
+    }
     a.btn.btn-secondary.pagemod-readmore {
         background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_resumen.svg);
         overflow: visible;
@@ -439,52 +448,47 @@ ul.section.img-text .page .asset-wrapper {
             outline: 0px auto gray;
         }
     }
-    .contentafterlink{
-        .table{
-            font-family:"Roboto Condensed"!important;
-            td{
+    .contentafterlink {
+        .table {
+            font-family: "Roboto Condensed"!important;
+            td {
                 vertical-align: middle;
             }
-
-            p{
-                margin:0;
+            p {
+                margin: 0;
             }
-
-            thead td{
-                background:$verde;
-                font-size:1.8rem;
-                color:$blanco;
+            thead td {
+                background: $verde;
+                font-size: 1.8rem;
+                color: $blanco;
             }
-
             tbody tr td:first-child {
                 font-size: 1.4rem;
                 text-decoration: dotted;
             }
         }
-        .d-block{
-            padding-left:0!important;
+        .d-block {
+            padding-left: 0!important;
         }
     }
 }
-#page-mod-page-view{
-    div[role="main"]{
+
+#page-mod-page-view {
+    div[role="main"] {
         text-align: center;
-        .table{
-            font-family:"Roboto Condensed"!important;
-            td{
+        .table {
+            font-family: "Roboto Condensed"!important;
+            td {
                 vertical-align: middle;
             }
-
-            p{
-                margin:0;
+            p {
+                margin: 0;
             }
-
-            thead td{
-                background:$verde;
-                font-size:1.8rem;
-                color:$blanco;
+            thead td {
+                background: $verde;
+                font-size: 1.8rem;
+                color: $blanco;
             }
-
             tbody tr td:first-child {
                 font-size: 1.4rem;
                 text-decoration: dotted;
@@ -545,84 +549,85 @@ ul.section.img-text .page .asset-wrapper {
     }
 }
 
-@mixin modulos-md(){
-    .separador-opciones{
+@mixin modulos-md() {
+    .separador-opciones {
         padding: 3rem 4%;
-        h3{
+        h3 {
             font-size: 1.5rem;
         }
     }
 }
 
-@mixin modulos-sm(){
-    .course-content ul.topics li.section div.summary p{
-        padding:13px 13%;
+@mixin modulos-sm() {
+    .course-content ul.topics li.section div.summary p {
+        padding: 13px 13%;
     }
-    .contenedor-objetivos{
+    .contenedor-objetivos {
         flex-wrap: wrap;
         justify-content: center;
-        width:100%;
+        width: 100%;
         min-width: auto;
-        #objetivo-modulo{
+        #objetivo-modulo {
             padding: 9.5% 7% 16.5% 9.5%;
         }
-        #complemento-objetivos{
+        #complemento-objetivos {
             min-height: 412px;
-            .bloque{
-                width:43%;
+            .bloque {
+                width: 43%;
             }
         }
     }
-    .course-content ul.topics blockquote.blockquote p, .course-content ul.topics blockquote.blockquote footer{
+    .course-content ul.topics blockquote.blockquote p,
+    .course-content ul.topics blockquote.blockquote footer {
         padding: 1.5rem 15%;
         font-size: 1rem;
     }
-    .course-content ul.topics blockquote.blockquote p{
-        padding-bottom:0;
+    .course-content ul.topics blockquote.blockquote p {
+        padding-bottom: 0;
     }
-    .course-content ul.topics ul.section.img-text li.snap-activity{
+    .course-content ul.topics ul.section.img-text li.snap-activity {
         min-height: 40vh;
         .asset-wrapper .activityinstance .snap-asset-content {
             width: 85%;
         }
     }
-    .separador-opciones{
-        flex-direction:column;
+    .separador-opciones {
+        flex-direction: column;
         align-items: flex-end;
-        .opcion{
+        .opcion {
             width: 80%;
         }
     }
 }
 
-@mixin modulos-xs(){
-    .contenedor-objetivos{ 
-        #objetivo-modulo{
-            width:90%;
+@mixin modulos-xs() {
+    .contenedor-objetivos {
+        #objetivo-modulo {
+            width: 90%;
             min-height: 398px;
         }
         #complemento-objetivos {
             min-height: 420px;
-            .bloque{
-                width:66%;
-                padding:0 10%;
+            .bloque {
+                width: 66%;
+                padding: 0 10%;
             }
         }
     }
-    .course-content ul.topics blockquote.blockquote{
+    .course-content ul.topics blockquote.blockquote {
         height: auto;
     }
-    .course-content ul.topics ul.section.img-text li.snap-activity{
+    .course-content ul.topics ul.section.img-text li.snap-activity {
         min-height: 50vh;
-        height:auto;
+        height: auto;
     }
-    .separador-opciones{
+    .separador-opciones {
         align-items: center;
     }
     .video-container {
         padding-bottom: 72.25%;
     }
-    h3#final-descripcion{
-        width:65%;
+    h3#final-descripcion {
+        width: 65%;
     }
 }
