@@ -5,11 +5,12 @@ html #mr-nav {
 
 .home-ruta {
     #page-header {
+        padding-top: 5rem;
+        min-height: 105vh;
+        @include imagen-background('fondo_avance0', 'svg', 'center', 'cover');        
         .breadcrumb-nav {
             display: none;
         }
-        min-height: 105vh;
-        @include imagen-background('fondo_avance0', 'svg', 'center', 'cover');
         #page-mast {
             height: 85vh;
             display: flex;

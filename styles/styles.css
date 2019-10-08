@@ -1292,6 +1292,7 @@ html #mr-nav {
 }
 
 .home-ruta #page-header {
+  padding-top: 5rem;
   min-height: 105vh;
   background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/fondo_avance0.svg);
   background-background-size: 100% 100%;
