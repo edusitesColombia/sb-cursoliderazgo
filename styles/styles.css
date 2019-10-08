@@ -354,6 +354,10 @@ body#page-course-view-topics section#region-main span.instancename {
   text-shadow: none;
 }
 
+#page-header #page-mast #snap-coverimagecontrol {
+  display: none;
+}
+
 #page-header #page-mast #course-toc {
   background-color: transparent;
   display: none;
@@ -574,7 +578,7 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-4 div.summary p,
 .course-content ul.topics li#section-5 div.summary p {
   max-width: 43.5em;
-  margin: 0 auto;
+  margin: 0 auto 1rem;
 }
 
 .course-content ul.topics li#section-1 ul.section.img-text,
@@ -1785,6 +1789,8 @@ section#coursetools div#coursetools-list > a {
   }
   section#snap-pm-courses .coursecard {
     min-height: 45vh;
+    min-width: 47%;
+    height: 300px;
   }
   .activity-navigation .row .col-md-4:nth-child(1), .activity-navigation .row .col-md-4:nth-child(3) {
     display: none;
@@ -1935,8 +1941,35 @@ section#coursetools div#coursetools-list > a {
     margin-bottom: 5px;
     width: 55px;
   }
-  .coursecard {
-    min-width: 50%;
+  .home-ruta #page-header {
+    padding-top: 18vh;
+    background: white !important;
+  }
+  .home-ruta #page-header #course-toc {
+    padding: 0;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters li {
+    padding: 30px 35px;
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+    min-width: 300px;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters li .chapter-title {
+    padding: 0;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
+  .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
+    top: 0px;
+    position: relative;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) {
+    left: 0;
+    position: relative;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) a[href="#section-1"]::before {
+    margin-left: -10px;
   }
 }
 
