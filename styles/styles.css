@@ -1570,7 +1570,7 @@ div#page {
   }
   .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
   .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
-    top: 32%;
+    top: 5%;
   }
   .home-ruta #page-header #page-mast #course-toc #chapters li:last-child a {
     padding: 13px 8px 13px 40px;
@@ -1800,6 +1800,19 @@ div#page {
     right: 20px;
     position: fixed;
     top: 20px;
+  }
+  div#snap-pm-header-quicklinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #snap-pm-header .snap-pm-user {
     display: -webkit-box;

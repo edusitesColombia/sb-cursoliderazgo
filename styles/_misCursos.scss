@@ -75,6 +75,12 @@ section#snap-pm-courses {
         position: fixed;
         top: 20px;
     }
+    div#snap-pm-header-quicklinks {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
     #snap-pm-header .snap-pm-user{
         display: flex;
         flex-wrap: wrap;
