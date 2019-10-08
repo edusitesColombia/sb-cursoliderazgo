@@ -17,7 +17,10 @@ body#page-course-view-topics section#region-main {
 }
 
 //cabecera modulo
-#page-header {
+#page-course-view-topics #page-header {
+    padding:0;
+    padding-top:3rem;
+    margin:0;
     .breadcrumb-nav {
         display: block;
     }
@@ -76,7 +79,8 @@ body#page-course-view-topics section#region-main {
         }
         #page-mast {
             display: block;
-            padding: 0 10%;
+            margin: 0 auto;
+            max-width: 43.5em;
             &>h1 {
                 @include textos-ruta($blanco, 0.88rem);
             }
