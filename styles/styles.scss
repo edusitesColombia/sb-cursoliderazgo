@@ -98,6 +98,11 @@ section#coursetools {
 
 @media (max-width: 991.98px) {
     #page-header #course-toc {
-        position: relative!important;
+        position: relative!important;        
+    }
+
+    #page-course-view-topics #page-header #course-toc .chapters{
+        display:block;
+        color:inherit;
     }
 }
