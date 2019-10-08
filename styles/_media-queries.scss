@@ -13,6 +13,7 @@
     @include modulos-sm();
     @include miscursos-sm();
     @include lesson-sm();
+    @include quiz-sm();
 }
 
 // xtra mobile view (xs)
@@ -20,4 +21,5 @@
     @include ruta-xs();
     @include modulos-xs();
     @include lesson-xs();
+    @include quiz-xs();
 }
