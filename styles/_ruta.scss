@@ -165,16 +165,17 @@ html #mr-nav {
             li {
                 flex-basis: 49%;
                 margin: 2px;
-                padding: 35px 10% 35px 5%;
+                padding: 35px 13% 35px 13%; 
             }
         }
     }
     .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
     .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
-        top: 10%;
+        top: 5%;
     }
     .home-ruta #page-header #page-mast #course-toc #chapters li:last-child a {
-        padding: 13px 8px 13px 40px;
+        padding: 40px 20px;
+        margin-top: -3%;
     }
 }
 
