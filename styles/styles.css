@@ -661,8 +661,9 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics ul.section.img-text li.snap-activity {
   border: 0;
   margin: 0;
-  min-height: 350px;
-  height: 45vh;
+  min-height: 370px;
+  height: auto;
+  padding: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -685,13 +686,15 @@ body#page-course-view-topics section#region-main span.instancename {
       align-self: baseline;
   margin: 0;
   padding: 0;
+  height: auto;
 }
 
 .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance {
   background-color: transparent;
   width: 100%;
   position: absolute;
-  height: 100%;
+  height: auto;
+  min-height: 100%;
 }
 
 .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-assettype {
@@ -702,7 +705,8 @@ body#page-course-view-topics section#region-main span.instancename {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: auto;
+  min-height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1607,7 +1611,7 @@ section#coursetools div#coursetools-list > a {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
     margin: 2px;
-    padding: 35px 13% 35px 13%;
+    padding: 35px 11% 35px 11%;
   }
   .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
   .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
