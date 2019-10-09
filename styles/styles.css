@@ -448,6 +448,10 @@ body#page-course-view-topics section#region-main span.instancename {
           column-count: 1;
 }
 
+.por-defecto #page-header #page-mast #course-toc #chapters ol {
+  padding-top: 300px;
+}
+
 .por-defecto #page-header #page-mast #course-toc #chapters li {
   visibility: hidden;
   height: 0px;
@@ -1731,6 +1735,9 @@ section#coursetools div#coursetools-list > a {
   }
   .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) {
     left: 10%;
+  }
+  .por-defecto #page-header #page-mast {
+    padding: 0 10%;
   }
   .por-defecto #page-header #page-mast #course-toc #chapters li .chapter-title {
     line-height: 1;
