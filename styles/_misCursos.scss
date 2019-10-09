@@ -69,6 +69,8 @@ section#snap-pm-courses {
 @mixin miscursos-sm() {
     section#snap-pm-courses .coursecard {
         min-height: 45vh;
+        min-width: 47%;
+        height: 300px;
     }
 }
 
@@ -98,8 +100,5 @@ section#snap-pm-courses {
             margin-bottom: 5px;
             width: 55px;
         }
-    }
-    .coursecard {
-        min-width: 50%;
     }
 }
