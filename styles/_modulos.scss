@@ -100,9 +100,7 @@ body#page-course-view-topics section#region-main {
             #course-toc {
                 #chapters {
                     column-count: 1;
-                    ol{
-                        padding-top:300px;
-                    }
+                    padding-top:300px;
                     li {
                         visibility: hidden;
                         height: 0px;

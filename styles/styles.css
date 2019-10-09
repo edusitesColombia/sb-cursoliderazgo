@@ -450,9 +450,6 @@ body#page-course-view-topics section#region-main span.instancename {
 .por-defecto #page-header #page-mast #course-toc #chapters {
   -webkit-column-count: 1;
           column-count: 1;
-}
-
-.por-defecto #page-header #page-mast #course-toc #chapters ol {
   padding-top: 300px;
 }
 
