@@ -16,11 +16,12 @@
     }
     #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container{
         display: grid;
-        grid: 1fr 1fr / 20% 1fr;
+        grid: 1fr 1fr / 30% 1fr;
         width: 70%;
-        max-width: 960px;
+        max-width: 630px;
         margin: 0 auto;
         font-size:12px;
+        grid-column-gap: 20px;
         .redes{
             width: 100%;
             display: flex;

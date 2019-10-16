@@ -15,7 +15,7 @@
         display: flex;
         background: linear-gradient(rgba(1, 108, 56, 0.7), rgba(1, 108, 56, 0.7)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/bg1.jpg);
         background-size: cover;
-        background-position-x: center;
+        background-position: 200px;
         //div vacio que lleva un header por defecto de moodle, se utiliza para dejar medio contenedor principal vacio para que se vea el background
         div#page-header {
             display: none;
@@ -43,6 +43,12 @@
                 }
                 .snap-login {
                     padding: 0 9%;
+                    .img-fluid,
+                    .img-responsive {
+                        max-width: 70%;
+                        margin: auto;
+                        display: block;
+                    }
                 }
             }
             .login-guest {
