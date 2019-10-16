@@ -1693,8 +1693,12 @@ section#coursetools div#coursetools-list > a {
   background-position: center;
 }
 
-:not(.home-ruta) #page-header.mast-image .breadcrumb li, :not(.por-defecto) #page-header.mast-image .breadcrumb li {
-  color: #686868;
+:not(.home-ruta) #page-header #page-mast, :not(.por-defecto) #page-header #page-mast {
+  display: none;
+}
+
+:not(.home-ruta) #page-header.mast-image .breadcrumb-nav, :not(.home-ruta) #page-header.mast-image .breadcrumb, :not(.por-defecto) #page-header.mast-image .breadcrumb-nav, :not(.por-defecto) #page-header.mast-image .breadcrumb {
+  margin: 0;
 }
 
 @media (max-width: 1249px) {
