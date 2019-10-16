@@ -415,6 +415,11 @@ body#page-course-view-topics section#region-main span.instancename {
   display: none;
 }
 
+#page-course-view-topics .por-defecto #page-header {
+  -webkit-box-shadow: inset 0 0 0 50vw #21252996;
+          box-shadow: inset 0 0 0 50vw #21252996;
+}
+
 #page-course-view-topics .por-defecto #page-header .breadcrumb-nav {
   visibility: hidden;
 }
@@ -446,7 +451,6 @@ body#page-course-view-topics section#region-main span.instancename {
 #page-course-view-topics .por-defecto #page-header #page-mast #course-toc #chapters {
   -webkit-column-count: 1;
           column-count: 1;
-  padding-top: 300px;
 }
 
 #page-course-view-topics .por-defecto #page-header #page-mast #course-toc #chapters li {

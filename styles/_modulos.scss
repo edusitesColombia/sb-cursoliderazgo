@@ -74,6 +74,7 @@ body#page-course-view-topics section#region-main {
 
 #page-course-view-topics .por-defecto {
     #page-header {
+        box-shadow: inset 0 0 0 50vw #21252996;
         .breadcrumb-nav {
             visibility: hidden;
         }
@@ -94,7 +95,6 @@ body#page-course-view-topics section#region-main {
                 padding-bottom: 1rem;
                 #chapters {
                     column-count: 1;
-                    padding-top:300px;
                     li {
                         visibility: hidden;
                         height: 0px;
