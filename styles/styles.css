@@ -415,12 +415,12 @@ body#page-course-view-topics section#region-main span.instancename {
   display: none;
 }
 
-#page-course-view-topics #page-header #page-mast {
+#page-course-view-topics .por-defecto #page-header #page-mast {
   padding: 0;
   margin: 0;
 }
 
-#page-course-view-topics #page-header #page-mast #course-toc {
+#page-course-view-topics .por-defecto #page-header #page-mast #course-toc {
   display: block;
   padding: 0;
   padding-bottom: 1rem;
