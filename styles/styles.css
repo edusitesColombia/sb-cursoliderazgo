@@ -1687,6 +1687,10 @@ section#coursetools div#coursetools-list > a {
   margin-top: 2rem;
 }
 
+.path-user .home-ruta #page-content h2 {
+  margin-top: 5rem;
+}
+
 .path-user .home-ruta #page-header {
   display: none;
 }

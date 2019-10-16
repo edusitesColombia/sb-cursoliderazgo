@@ -89,10 +89,14 @@ section#coursetools {
     }
 }
 
-.path-user .home-ruta #page-header{
-    display:none;
+.path-user .home-ruta {
+    #page-content h2{
+        margin-top:5rem;
+    }
+    #page-header{
+        display:none;
+    }
 }
-
 
 //quitar la x para no poder regresar a la pagina principal cuando estan recien logueados
 #page-site-index #snap-pm-header #snap-pm-close {
