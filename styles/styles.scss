@@ -91,7 +91,7 @@ section#coursetools {
     display: none;
 }
 
-main:not(.home-ruta) #page-header, main:not(.por-defecto) #page-header{
+main:not(.home-ruta, .por-defecto) #page-header{
     min-height: 10vh;
     box-shadow: inset 0 0 0 50vw #21252996;
     background-position: center;
@@ -104,6 +104,20 @@ main:not(.home-ruta) #page-header, main:not(.por-defecto) #page-header{
         }
     }
 }
+/*
+main:not(.por-defecto) #page-header{
+    min-height: 10vh;
+    box-shadow: inset 0 0 0 50vw #21252996;
+    background-position: center;
+    #page-mast  {
+        display:none;
+    }
+    &.mast-image{
+        .breadcrumb-nav, .breadcrumb{
+            margin: 0;
+        }
+    }
+}*/
 
 @import "./media-queries";
 @media screen and (min-width: 1600px) {

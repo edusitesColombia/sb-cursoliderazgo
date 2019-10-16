@@ -1687,21 +1687,35 @@ section#coursetools div#coursetools-list > a {
   display: none;
 }
 
-main:not(.home-ruta) #page-header, main:not(.por-defecto) #page-header {
+main:not(.home-ruta):not(.por-defecto) #page-header {
   min-height: 10vh;
   -webkit-box-shadow: inset 0 0 0 50vw #21252996;
           box-shadow: inset 0 0 0 50vw #21252996;
   background-position: center;
 }
 
-main:not(.home-ruta) #page-header #page-mast, main:not(.por-defecto) #page-header #page-mast {
+main  #page-header #page-mast {
   display: none;
 }
 
-main:not(.home-ruta) #page-header.mast-image .breadcrumb-nav, main:not(.home-ruta) #page-header.mast-image .breadcrumb, main:not(.por-defecto) #page-header.mast-image .breadcrumb-nav, main:not(.por-defecto) #page-header.mast-image .breadcrumb {
+main  #page-header.mast-image .breadcrumb-nav, main  #page-header.mast-image .breadcrumb {
   margin: 0;
 }
 
+/*
+main:not(.por-defecto) #page-header{
+    min-height: 10vh;
+    box-shadow: inset 0 0 0 50vw #21252996;
+    background-position: center;
+    #page-mast  {
+        display:none;
+    }
+    &.mast-image{
+        .breadcrumb-nav, .breadcrumb{
+            margin: 0;
+        }
+    }
+}*/
 @media (max-width: 1249px) {
   #page-login-index main#moodle-page section#region-main {
     width: 75%;
