@@ -569,11 +569,15 @@ body#page-course-view-topics section#region-main span.instancename {
   white-space: nowrap;
 }
 
-.course-content ul.topics li#section-1 div.summary p,
+.course-content ul.topics li#section-1 div.summary p, .course-content ul.topics li#section-1 div.summary h3,
 .course-content ul.topics li#section-2 div.summary p,
+.course-content ul.topics li#section-2 div.summary h3,
 .course-content ul.topics li#section-3 div.summary p,
+.course-content ul.topics li#section-3 div.summary h3,
 .course-content ul.topics li#section-4 div.summary p,
-.course-content ul.topics li#section-5 div.summary p {
+.course-content ul.topics li#section-4 div.summary h3,
+.course-content ul.topics li#section-5 div.summary p,
+.course-content ul.topics li#section-5 div.summary h3 {
   max-width: 43.5em;
   margin: 0 auto 1rem;
 }
@@ -1817,7 +1821,7 @@ section#coursetools div#coursetools-list > a {
     width: 80%;
     margin: 0 auto;
   }
-  .bloque-verde-derecha p, .bloque-verde-izquierda p {
+  #page-mod-lesson-view div[role="main"] .bloque-verde-derecha p, #page-mod-lesson-view div[role="main"] .bloque-verde-izquierda p {
     width: 65%;
   }
   #page-mod-quiz-attempt .que .ddarea {
