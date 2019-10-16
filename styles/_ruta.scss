@@ -5,6 +5,7 @@ html #mr-nav {
 
 .home-ruta {
     #page-header {
+        padding:0;
         padding-top: 5rem;
         min-height: 105vh;
         @include imagen-background('fondo_avance0', 'svg', 'center', 'cover');
@@ -12,7 +13,7 @@ html #mr-nav {
             display: none;
         }
         #page-mast {
-            height: 85vh;
+            min-height: 85vh;
             display: flex;
             flex-direction: column;
             padding: 2rem 2rem 0 2rem;
@@ -46,6 +47,7 @@ html #mr-nav {
                     display: flex;
                     min-width: 100%;
                     min-height: 150px;
+                    justify-content: center;
                     li {
                         flex-basis: 25%;
                         margin-left: .7em;
@@ -100,6 +102,9 @@ html #mr-nav {
                                 margin-left: -38px;
                                 margin-top: -6px;
                             }
+                            span.text.completionstatus{
+                                display:none!important;
+                            }
                         }
                         &:nth-child(n+3):not(:last-child) {
                             background-image: url('data:image/svg+xml, #{$caja-verde}');
@@ -116,11 +121,12 @@ html #mr-nav {
                         }
                         &:last-child {
                             @include posicion-otros-elementos(absolute,
-                            0,
+                            -5rem,
                             0);
                             background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_caja_herramientas.svg);
                             background-repeat: no-repeat;
                             background-size: contain;
+                            background-position: center;
                             a {
                                 color: $verde;
                                 padding: 20px 23px 20px 61px;
@@ -161,7 +167,6 @@ html #mr-nav {
 @mixin ruta-md() {
     .home-ruta #page-header #page-mast #course-toc {
         height: auto;
-        min-height: 79vh;
         padding: 3em 4%;
         #chapters {
             flex-wrap: wrap;
@@ -171,7 +176,7 @@ html #mr-nav {
                 flex-basis: 49%;
                 margin: 2px;
                 padding: 35px;
-                margin-right: 80px; 
+                margin-right: 57px; 
             }
         }
     }
@@ -180,9 +185,20 @@ html #mr-nav {
         top: 1%;
         margin: 0;
     }
-    .home-ruta #page-header #page-mast #course-toc #chapters li:last-child a {
-        padding: 40px 20px;
-        margin-top: -3%;
+    .home-ruta #page-header #page-mast #course-toc #chapters li:last-child{
+        padding: 0 0 0 13px;
+        width: 26%;
+        top: -5rem;
+        a {
+            padding: 40px 18px;
+            margin-top: -3%;
+        }
+    }
+    .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(3), .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(4){
+        margin-top:2rem;
+    }
+    .home-ruta #page-header #page-mast .texto-bienvenida{
+        background: #ffffffb0;
     }
 }
 
@@ -209,8 +225,14 @@ html #mr-nav {
     .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
         top: 5%;
     }
-    .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) {
-        left: 10%;
+    .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
+        width: 54%;
+        max-width: 275px;
+        padding: 0 0px 0px 20px;
+        max-height: 132px;
+    }
+    .home-ruta #page-header #page-mast .texto-bienvenida{
+        background: #ffffffc7;
     }
 }
 

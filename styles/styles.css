@@ -415,54 +415,56 @@ body#page-course-view-topics section#region-main span.instancename {
   display: none;
 }
 
-#page-course-view-topics #page-header #page-mast {
-  padding: 0;
-  margin: 0;
+#page-course-view-topics .por-defecto #page-header {
+  -webkit-box-shadow: inset 0 0 0 50vw #21252996;
+          box-shadow: inset 0 0 0 50vw #21252996;
+  background-position: center;
 }
 
-#page-course-view-topics #page-header #page-mast #course-toc {
-  display: block;
-  padding: 0;
-  padding-bottom: 1rem;
-}
-
-.por-defecto #page-header .breadcrumb-nav {
+#page-course-view-topics .por-defecto #page-header .breadcrumb-nav {
   visibility: hidden;
 }
 
-.por-defecto #page-header #page-mast {
+#page-course-view-topics .por-defecto #page-header #page-mast {
   display: block;
   margin: 0 auto;
   max-width: 43.5em;
+  padding: 0;
 }
 
-.por-defecto #page-header #page-mast > h1 {
+#page-course-view-topics .por-defecto #page-header #page-mast > h1 {
   color: white;
   text-transform: uppercase;
   font-size: 0.88rem;
   font-weight: normal;
 }
 
-.por-defecto #page-header #page-mast .snap-coverimagecontrol {
+#page-course-view-topics .por-defecto #page-header #page-mast .snap-coverimagecontrol {
   display: none;
 }
 
-.por-defecto #page-header #page-mast #course-toc #chapters {
+#page-course-view-topics .por-defecto #page-header #page-mast #course-toc {
+  display: block;
+  padding: 0;
+  padding-bottom: 1rem;
+}
+
+#page-course-view-topics .por-defecto #page-header #page-mast #course-toc #chapters {
   -webkit-column-count: 1;
           column-count: 1;
 }
 
-.por-defecto #page-header #page-mast #course-toc #chapters li {
+#page-course-view-topics .por-defecto #page-header #page-mast #course-toc #chapters li {
   visibility: hidden;
   height: 0px;
   margin-left: 0;
 }
 
-.por-defecto #page-header #page-mast #course-toc #chapters li.snap-visible-section {
+#page-course-view-topics .por-defecto #page-header #page-mast #course-toc #chapters li.snap-visible-section {
   visibility: visible;
 }
 
-.por-defecto #page-header #page-mast #course-toc #chapters li .chapter-title {
+#page-course-view-topics .por-defecto #page-header #page-mast #course-toc #chapters li .chapter-title {
   color: white;
   text-transform: uppercase;
   font-size: 1.77rem;
@@ -470,7 +472,7 @@ body#page-course-view-topics section#region-main span.instancename {
   line-height: 1.3;
 }
 
-.por-defecto #page-header #page-mast #course-toc #chapters li .text {
+#page-course-view-topics .por-defecto #page-header #page-mast #course-toc #chapters li .text {
   color: #fadc5d;
   text-transform: uppercase;
   font-size: 1.44rem;
@@ -479,11 +481,11 @@ body#page-course-view-topics section#region-main span.instancename {
   padding-top: 0.5rem;
 }
 
-.por-defecto #page-header #page-mast #course-toc #chapters li .text small {
+#page-course-view-topics .por-defecto #page-header #page-mast #course-toc #chapters li .text small {
   display: block;
 }
 
-.por-defecto #page-header #page-mast #course-toc #chapters .toc-footer {
+#page-course-view-topics .por-defecto #page-header #page-mast #course-toc #chapters .toc-footer {
   margin-top: 30px;
   margin-bottom: 15px;
 }
@@ -504,6 +506,12 @@ body#page-course-view-topics section#region-main span.instancename {
   max-width: 90%;
   width: 100%;
   height: 90%;
+}
+
+.course-content ul.topics li.label h3 {
+  max-width: 21.5em;
+  text-align: center;
+  margin: 0 auto 1rem;
 }
 
 .course-content ul.topics li.section.main {
@@ -572,11 +580,15 @@ body#page-course-view-topics section#region-main span.instancename {
   white-space: nowrap;
 }
 
-.course-content ul.topics li#section-1 div.summary p,
+.course-content ul.topics li#section-1 div.summary p, .course-content ul.topics li#section-1 div.summary h3,
 .course-content ul.topics li#section-2 div.summary p,
+.course-content ul.topics li#section-2 div.summary h3,
 .course-content ul.topics li#section-3 div.summary p,
+.course-content ul.topics li#section-3 div.summary h3,
 .course-content ul.topics li#section-4 div.summary p,
-.course-content ul.topics li#section-5 div.summary p {
+.course-content ul.topics li#section-4 div.summary h3,
+.course-content ul.topics li#section-5 div.summary p,
+.course-content ul.topics li#section-5 div.summary h3 {
   max-width: 43.5em;
   margin: 0 auto 1rem;
 }
@@ -757,6 +769,16 @@ body#page-course-view-topics section#region-main span.instancename {
 
 .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content .contentafterlink {
   margin-left: 0px;
+}
+
+.course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content h3.snap-asset-link {
+  -webkit-box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+          box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
+  margin: -10px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content h3 img {
@@ -1067,8 +1089,36 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
   width: 110px;
 }
 
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(1, 108, 56, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(1, 108, 56, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(1, 108, 56, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(1, 108, 56, 0.4);
+            box-shadow: 0 0 0 0 rgba(1, 108, 56, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(1, 108, 56, 0);
+            box-shadow: 0 0 0 10px rgba(1, 108, 56, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(1, 108, 56, 0);
+            box-shadow: 0 0 0 0 rgba(1, 108, 56, 0);
+  }
+}
+
 section#region-main {
   padding: 0;
+  overflow: hidden;
 }
 
 #page-mod-lesson-view div[role="main"] {
@@ -1089,8 +1139,7 @@ section#region-main {
           align-items: center;
   background: #eaeaea;
   margin-bottom: 2rem;
-  -webkit-box-shadow: inset 0 0 5px #a1a1a2, inset 0 0 8px #b1b1b1;
-          box-shadow: inset 0 0 5px #a1a1a2, inset 0 0 8px #b1b1b1;
+  margin-top: 2rem;
 }
 
 #page-mod-lesson-view div[role="main"] h3:first-child {
@@ -1195,15 +1244,14 @@ section#region-main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #eaeaea;
   margin-bottom: 0rem;
-  -webkit-box-shadow: inset 0 0 5px #a1a1a2, inset 0 0 8px #b1b1b1;
-  box-shadow: inset 0 0 5px #a1a1a2, inset 0 0 8px #b1b1b1;
+  margin-top: 2rem;
 }
 
 #page-mod-quiz-view #intro, #page-mod-quiz-view table.generaltable.quizattemptsummary, #page-mod-quiz-view h3, #page-mod-quiz-view div.box {
@@ -1233,7 +1281,7 @@ section#region-main {
 }
 
 #page-mod-quiz-attempt .que .qtext {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 #page-mod-quiz-attempt .que .info {
@@ -1298,6 +1346,10 @@ section#region-main {
   width: 100%;
 }
 
+#page-mod-quiz-attempt #region-main div.m-t-2.m-b-1.activity-navigation {
+  display: none;
+}
+
 #page-mod-quiz-review section#region-main {
   padding: 1rem 10%;
 }
@@ -1333,6 +1385,7 @@ html #mr-nav {
 }
 
 .home-ruta #page-header {
+  padding: 0;
   padding-top: 5rem;
   min-height: 105vh;
   background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/fondo_avance0.svg);
@@ -1347,7 +1400,7 @@ html #mr-nav {
 }
 
 .home-ruta #page-header #page-mast {
-  height: 85vh;
+  min-height: 85vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1410,6 +1463,9 @@ html #mr-nav {
   display: flex;
   min-width: 100%;
   min-height: 150px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li {
@@ -1491,6 +1547,10 @@ html #mr-nav {
   margin-top: -6px;
 }
 
+.home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) span.text.completionstatus {
+  display: none !important;
+}
+
 .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(n+3):not(:last-child) {
   background-image: url("data:image/svg+xml, %3Csvg width='100%' viewBox='0 0 275 145' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='rgb(0, 109, 56)' d='M231.9743097756687,144.4894306236695 L34.23931043837641,144.6099759266518 C21.08000638301136,145.22777060443585 9.808613846952934,137.09096265313266 9.135694889576314,126.46790782782017 L0.032596771731464205,20.127397996914983 C-0.7524753452079281,7.876981581341759 12.761980382105904,-1.796778982985419 27.753119376996203,0.28262749345875804 L254.3301729151808,14.310176296329782 C267.3960160042436,16.118355841063835 276.1065780636188,26.198956802956186 273.6579007464983,36.71653448815924 L253.9376368567112,128.9089502132111 C251.9375721778418,137.54300753931622 242.87185844651788,143.9771130859949 231.9743097756687,144.4894306236695Z'%3E%3C/path%3E%3C/svg%3E");
   width: 300px;
@@ -1503,11 +1563,12 @@ html #mr-nav {
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
   position: absolute;
-  top: 0;
+  top: -5rem;
   right: 0;
   background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_caja_herramientas.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:last-child a {
@@ -1601,11 +1662,15 @@ html #mr-nav {
 }
 
 div#page {
-  min-height: 95vh;
+  min-height: 94vh;
 }
 
 section#coursetools {
-  padding: 3rem 15%;
+  padding: 0 15%;
+}
+
+section#coursetools h2 {
+  margin-top: 2rem;
 }
 
 section#coursetools div#coursetools-list {
@@ -1621,8 +1686,20 @@ section#coursetools div#coursetools-list > a {
   line-height: 1.1rem;
 }
 
-.pagelayout-admin #page-content {
+.pagelayout-admin #page-content, .layout-report #page-content, .admin #page-content, .path-badges #page-content, .path-user #page-content {
   padding: 0 10%;
+}
+
+.pagelayout-admin #page-content h2, .layout-report #page-content h2, .admin #page-content h2, .path-badges #page-content h2, .path-user #page-content h2 {
+  margin-top: 2rem;
+}
+
+.path-user .home-ruta #page-content h2 {
+  margin-top: 5rem;
+}
+
+.path-user .home-ruta #page-header {
+  display: none;
 }
 
 #page-site-index #snap-pm-header #snap-pm-close {
@@ -1633,13 +1710,41 @@ section#coursetools div#coursetools-list > a {
   display: none;
 }
 
+main:not(.home-ruta):not(.por-defecto) #page-header {
+  min-height: 10vh;
+  -webkit-box-shadow: inset 0 0 0 50vw #21252996;
+          box-shadow: inset 0 0 0 50vw #21252996;
+  background-position: center;
+}
+
+main  #page-header #page-mast {
+  display: none;
+}
+
+main  #page-header.mast-image .breadcrumb-nav, main  #page-header.mast-image .breadcrumb {
+  margin: 0;
+}
+
+/*
+main:not(.por-defecto) #page-header{
+    min-height: 10vh;
+    box-shadow: inset 0 0 0 50vw #21252996;
+    background-position: center;
+    #page-mast  {
+        display:none;
+    }
+    &.mast-image{
+        .breadcrumb-nav, .breadcrumb{
+            margin: 0;
+        }
+    }
+}*/
 @media (max-width: 1249px) {
   #page-login-index main#moodle-page section#region-main {
     width: 75%;
   }
   .home-ruta #page-header #page-mast #course-toc {
     height: auto;
-    min-height: 79vh;
     padding: 3em 4%;
   }
   .home-ruta #page-header #page-mast #course-toc #chapters {
@@ -1655,16 +1760,27 @@ section#coursetools div#coursetools-list > a {
         flex-basis: 49%;
     margin: 2px;
     padding: 35px;
-    margin-right: 80px;
+    margin-right: 57px;
   }
   .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
   .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
     top: 1%;
     margin: 0;
   }
+  .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
+    padding: 0 0 0 13px;
+    width: 26%;
+    top: -5rem;
+  }
   .home-ruta #page-header #page-mast #course-toc #chapters li:last-child a {
-    padding: 40px 20px;
+    padding: 40px 18px;
     margin-top: -3%;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(3), .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(4) {
+    margin-top: 2rem;
+  }
+  .home-ruta #page-header #page-mast .texto-bienvenida {
+    background: #ffffffb0;
   }
   .separador-opciones {
     padding: 3rem 4%;
@@ -1733,8 +1849,17 @@ section#coursetools div#coursetools-list > a {
   .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
     top: 5%;
   }
-  .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) {
-    left: 10%;
+  .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
+    width: 54%;
+    max-width: 275px;
+    padding: 0 0px 0px 20px;
+    max-height: 132px;
+  }
+  .home-ruta #page-header #page-mast .texto-bienvenida {
+    background: #ffffffc7;
+  }
+  .por-defecto #page-header #page-mast {
+    padding: 0 10%;
   }
   .por-defecto #page-header #page-mast #course-toc #chapters li .chapter-title {
     line-height: 1;
@@ -1801,7 +1926,7 @@ section#coursetools div#coursetools-list > a {
     width: 80%;
     margin: 0 auto;
   }
-  .bloque-verde-derecha p, .bloque-verde-izquierda p {
+  #page-mod-lesson-view div[role="main"] .bloque-verde-derecha p, #page-mod-lesson-view div[role="main"] .bloque-verde-izquierda p {
     width: 65%;
   }
   #page-mod-quiz-attempt .que .ddarea {
@@ -1813,7 +1938,7 @@ section#coursetools div#coursetools-list > a {
   }
 }
 
-@media (max-width: 577px) {
+@media (max-width: 630px) {
   .home-ruta #page-header {
     padding-top: 18vh;
     background: white !important;
@@ -1896,6 +2021,9 @@ section#coursetools div#coursetools-list > a {
   #page-mod-lesson-view div[role="main"] h3 {
     padding: 10px 10%;
   }
+  #page-mod-lesson-view div[role="main"] .bloque-verde-derecha, #page-mod-lesson-view div[role="main"] .bloque-verde-izquierda {
+    height: auto;
+  }
   #page-mod-lesson-view div[role="main"] .bloque-verde-derecha p, #page-mod-lesson-view div[role="main"] .bloque-verde-izquierda p {
     width: 85%;
   }
@@ -1950,6 +2078,12 @@ section#coursetools div#coursetools-list > a {
   div#page {
     max-width: 80%;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 1001px) {
+  :not(.home-ruta) #page-header, :not(.por-defecto) #page-header {
+    padding-top: 4em !important;
   }
 }
 
