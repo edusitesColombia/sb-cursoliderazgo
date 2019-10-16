@@ -1661,7 +1661,7 @@ section#coursetools div#coursetools-list > a {
         flex-basis: 49%;
     margin: 2px;
     padding: 35px;
-    margin-right: 80px;
+    margin-right: 40px;
   }
   .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
   .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
@@ -1749,6 +1749,9 @@ section#coursetools div#coursetools-list > a {
     max-width: 275px;
     padding: 0 0px 0px 20px;
     max-height: 132px;
+  }
+  .home-ruta #page-header #page-mast .texto-bienvenida {
+    background: #ffffffc7;
   }
   .por-defecto #page-header #page-mast {
     padding: 0 10%;
