@@ -100,6 +100,9 @@ html #mr-nav {
                                 margin-left: -38px;
                                 margin-top: -6px;
                             }
+                            span.text.completionstatus{
+                                display:none!important;
+                            }
                         }
                         &:nth-child(n+3):not(:last-child) {
                             background-image: url('data:image/svg+xml, #{$caja-verde}');
@@ -121,6 +124,7 @@ html #mr-nav {
                             background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_caja_herramientas.svg);
                             background-repeat: no-repeat;
                             background-size: contain;
+                            background-position: center;
                             a {
                                 color: $verde;
                                 padding: 20px 23px 20px 61px;
