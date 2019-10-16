@@ -91,7 +91,7 @@ section#coursetools {
     display: none;
 }
 
-:not(.home-ruta) #page-header, :not(.por-defecto) #page-header{
+main:not(.home-ruta) #page-header, main:not(.por-defecto) #page-header{
     min-height: 10vh;
     box-shadow: inset 0 0 0 50vw #21252996;
     background-position: center;

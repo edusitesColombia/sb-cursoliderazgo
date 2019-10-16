@@ -1687,18 +1687,18 @@ section#coursetools div#coursetools-list > a {
   display: none;
 }
 
-:not(.home-ruta) #page-header, :not(.por-defecto) #page-header {
+main:not(.home-ruta) #page-header, main:not(.por-defecto) #page-header {
   min-height: 10vh;
   -webkit-box-shadow: inset 0 0 0 50vw #21252996;
           box-shadow: inset 0 0 0 50vw #21252996;
   background-position: center;
 }
 
-:not(.home-ruta) #page-header #page-mast, :not(.por-defecto) #page-header #page-mast {
+main:not(.home-ruta) #page-header #page-mast, main:not(.por-defecto) #page-header #page-mast {
   display: none;
 }
 
-:not(.home-ruta) #page-header.mast-image .breadcrumb-nav, :not(.home-ruta) #page-header.mast-image .breadcrumb, :not(.por-defecto) #page-header.mast-image .breadcrumb-nav, :not(.por-defecto) #page-header.mast-image .breadcrumb {
+main:not(.home-ruta) #page-header.mast-image .breadcrumb-nav, main:not(.home-ruta) #page-header.mast-image .breadcrumb, main:not(.por-defecto) #page-header.mast-image .breadcrumb-nav, main:not(.por-defecto) #page-header.mast-image .breadcrumb {
   margin: 0;
 }
 
