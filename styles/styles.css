@@ -415,9 +415,26 @@ body#page-course-view-topics section#region-main span.instancename {
   display: none;
 }
 
+#page-course-view-topics .por-defecto #page-header .breadcrumb-nav {
+  visibility: hidden;
+}
+
 #page-course-view-topics .por-defecto #page-header #page-mast {
+  display: block;
+  margin: 0 auto;
+  max-width: 43.5em;
   padding: 0;
-  margin: 0;
+}
+
+#page-course-view-topics .por-defecto #page-header #page-mast > h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.88rem;
+  font-weight: normal;
+}
+
+#page-course-view-topics .por-defecto #page-header #page-mast .snap-coverimagecontrol {
+  display: none;
 }
 
 #page-course-view-topics .por-defecto #page-header #page-mast #course-toc {
@@ -426,44 +443,23 @@ body#page-course-view-topics section#region-main span.instancename {
   padding-bottom: 1rem;
 }
 
-.por-defecto #page-header .breadcrumb-nav {
-  visibility: hidden;
-}
-
-.por-defecto #page-header #page-mast {
-  display: block;
-  margin: 0 auto;
-  max-width: 43.5em;
-}
-
-.por-defecto #page-header #page-mast > h1 {
-  color: white;
-  text-transform: uppercase;
-  font-size: 0.88rem;
-  font-weight: normal;
-}
-
-.por-defecto #page-header #page-mast .snap-coverimagecontrol {
-  display: none;
-}
-
-.por-defecto #page-header #page-mast #course-toc #chapters {
+#page-course-view-topics .por-defecto #page-header #page-mast #course-toc #chapters {
   -webkit-column-count: 1;
           column-count: 1;
   padding-top: 300px;
 }
 
-.por-defecto #page-header #page-mast #course-toc #chapters li {
+#page-course-view-topics .por-defecto #page-header #page-mast #course-toc #chapters li {
   visibility: hidden;
   height: 0px;
   margin-left: 0;
 }
 
-.por-defecto #page-header #page-mast #course-toc #chapters li.snap-visible-section {
+#page-course-view-topics .por-defecto #page-header #page-mast #course-toc #chapters li.snap-visible-section {
   visibility: visible;
 }
 
-.por-defecto #page-header #page-mast #course-toc #chapters li .chapter-title {
+#page-course-view-topics .por-defecto #page-header #page-mast #course-toc #chapters li .chapter-title {
   color: white;
   text-transform: uppercase;
   font-size: 1.77rem;
@@ -471,7 +467,7 @@ body#page-course-view-topics section#region-main span.instancename {
   line-height: 1.3;
 }
 
-.por-defecto #page-header #page-mast #course-toc #chapters li .text {
+#page-course-view-topics .por-defecto #page-header #page-mast #course-toc #chapters li .text {
   color: #fadc5d;
   text-transform: uppercase;
   font-size: 1.44rem;
@@ -480,11 +476,11 @@ body#page-course-view-topics section#region-main span.instancename {
   padding-top: 0.5rem;
 }
 
-.por-defecto #page-header #page-mast #course-toc #chapters li .text small {
+#page-course-view-topics .por-defecto #page-header #page-mast #course-toc #chapters li .text small {
   display: block;
 }
 
-.por-defecto #page-header #page-mast #course-toc #chapters .toc-footer {
+#page-course-view-topics .por-defecto #page-header #page-mast #course-toc #chapters .toc-footer {
   margin-top: 30px;
   margin-bottom: 15px;
 }
