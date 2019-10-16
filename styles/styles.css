@@ -1118,6 +1118,7 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
 
 section#region-main {
   padding: 0;
+  overflow: hidden;
 }
 
 #page-mod-lesson-view div[role="main"] {
