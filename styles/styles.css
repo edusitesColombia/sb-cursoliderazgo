@@ -1381,6 +1381,7 @@ html #mr-nav {
 }
 
 .home-ruta #page-header {
+  padding: 0;
   padding-top: 5rem;
   min-height: 105vh;
   background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/fondo_avance0.svg);
@@ -1395,7 +1396,7 @@ html #mr-nav {
 }
 
 .home-ruta #page-header #page-mast {
-  height: 85vh;
+  min-height: 85vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1692,7 +1693,6 @@ section#coursetools div#coursetools-list > a {
   }
   .home-ruta #page-header #page-mast #course-toc {
     height: auto;
-    min-height: 79vh;
     padding: 3em 4%;
   }
   .home-ruta #page-header #page-mast #course-toc #chapters {
@@ -1708,7 +1708,7 @@ section#coursetools div#coursetools-list > a {
         flex-basis: 49%;
     margin: 2px;
     padding: 35px;
-    margin-right: 40px;
+    margin-right: 57px;
   }
   .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
   .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {

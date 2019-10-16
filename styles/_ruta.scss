@@ -5,6 +5,7 @@ html #mr-nav {
 
 .home-ruta {
     #page-header {
+        padding:0;
         padding-top: 5rem;
         min-height: 105vh;
         @include imagen-background('fondo_avance0', 'svg', 'center', 'cover');
@@ -12,7 +13,7 @@ html #mr-nav {
             display: none;
         }
         #page-mast {
-            height: 85vh;
+            min-height: 85vh;
             display: flex;
             flex-direction: column;
             padding: 2rem 2rem 0 2rem;
@@ -165,7 +166,6 @@ html #mr-nav {
 @mixin ruta-md() {
     .home-ruta #page-header #page-mast #course-toc {
         height: auto;
-        min-height: 79vh;
         padding: 3em 4%;
         #chapters {
             flex-wrap: wrap;
@@ -175,7 +175,7 @@ html #mr-nav {
                 flex-basis: 49%;
                 margin: 2px;
                 padding: 35px;
-                margin-right: 40px; 
+                margin-right: 57px; 
             }
         }
     }
