@@ -1724,8 +1724,11 @@ section#coursetools div#coursetools-list > a {
     padding: 40px 18px;
     margin-top: -3%;
   }
-  .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(3) {
+  .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(3), .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(4) {
     margin-top: 2rem;
+  }
+  .home-ruta #page-header #page-mast .texto-bienvenida {
+    background: #ffffffb0;
   }
   .separador-opciones {
     padding: 3rem 4%;
