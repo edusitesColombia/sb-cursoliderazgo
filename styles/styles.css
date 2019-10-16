@@ -1138,6 +1138,7 @@ section#region-main {
           align-items: center;
   background: #eaeaea;
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 #page-mod-lesson-view div[role="main"] h3:first-child {
