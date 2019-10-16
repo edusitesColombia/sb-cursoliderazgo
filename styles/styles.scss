@@ -91,6 +91,15 @@ section#coursetools {
     display: none;
 }
 
+:not(.home-ruta) #page-header, :not(.por-defecto) #page-header{
+    min-height: 10vh;
+    box-shadow: inset 0 0 0 50vw #21252996;
+    background-position: center;
+    &.mast-image .breadcrumb li{
+        color:$gris-oscuro;
+    }
+}
+
 @import "./media-queries";
 @media screen and (min-width: 1600px) {
     div#page {
