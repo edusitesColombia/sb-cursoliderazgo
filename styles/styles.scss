@@ -68,6 +68,9 @@ div#page {
 
 section#coursetools {
     padding: 0 15%;
+    h2{
+        margin-top:2rem;
+    }
     div#coursetools-list {
         display: flex;
         flex-wrap: wrap;
@@ -78,9 +81,15 @@ section#coursetools {
     }
 }
 
-.pagelayout-admin #page-content{
+.pagelayout-admin #page-content, .layout-report #page-content, .admin #page-content, .path-badges #page-content, .path-user #page-content 
+{
     padding:0 10%;
+    h2{
+        margin-top:2rem;
+    }
 }
+
+
 //quitar la x para no poder regresar a la pagina principal cuando estan recien logueados
 #page-site-index #snap-pm-header #snap-pm-close {
     display: none;
