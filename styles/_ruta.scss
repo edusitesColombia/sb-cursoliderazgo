@@ -119,7 +119,7 @@ html #mr-nav {
                         }
                         &:last-child {
                             @include posicion-otros-elementos(absolute,
-                            0,
+                            -5rem,
                             0);
                             background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_caja_herramientas.svg);
                             background-repeat: no-repeat;
@@ -184,9 +184,14 @@ html #mr-nav {
         top: 1%;
         margin: 0;
     }
-    .home-ruta #page-header #page-mast #course-toc #chapters li:last-child a {
-        padding: 40px 20px;
-        margin-top: -3%;
+    .home-ruta #page-header #page-mast #course-toc #chapters li:last-child{
+        padding: 0 0 0 13px;
+        width: 30%;
+        top: -5rem;
+        a {
+            padding: 40px 20px;
+            margin-top: -3%;
+        }
     }
 }
 
