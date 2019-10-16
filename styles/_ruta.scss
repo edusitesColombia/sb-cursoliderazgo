@@ -47,6 +47,7 @@ html #mr-nav {
                     display: flex;
                     min-width: 100%;
                     min-height: 150px;
+                    justify-content: center;
                     li {
                         flex-basis: 25%;
                         margin-left: .7em;
