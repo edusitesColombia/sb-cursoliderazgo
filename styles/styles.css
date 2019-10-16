@@ -2044,6 +2044,12 @@ section#coursetools div#coursetools-list > a {
   }
 }
 
+@media (max-width: 1001px) {
+  :not(.home-ruta) #page-header, :not(.por-defecto) #page-header {
+    padding-top: 4em !important;
+  }
+}
+
 @media (max-width: 991.98px) {
   #page-header #course-toc {
     position: relative !important;
