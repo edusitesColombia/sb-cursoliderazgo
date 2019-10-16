@@ -1687,7 +1687,7 @@ section#coursetools div#coursetools-list > a {
   margin-top: 2rem;
 }
 
-.path-user .home-ruta {
+.path-user .home-ruta #page-header {
   display: none;
 }
 
