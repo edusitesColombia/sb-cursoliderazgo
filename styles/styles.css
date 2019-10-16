@@ -1687,6 +1687,10 @@ section#coursetools div#coursetools-list > a {
   margin-top: 2rem;
 }
 
+.path-user .home-ruta {
+  display: none;
+}
+
 #page-site-index #snap-pm-header #snap-pm-close {
   display: none;
 }
