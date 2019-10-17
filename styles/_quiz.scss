@@ -1,8 +1,8 @@
-#page-mod-quiz-view{
-    section#region-main{
-        padding:0;
+#page-mod-quiz-view {
+    section#region-main {
+        padding: 0;
     }
-    h2{
+    h2 {
         font-size: 2rem;
         font-weight: 400;
         min-height: 22vh;
@@ -11,32 +11,35 @@
         align-items: center;
         background: #eaeaea;
         margin-bottom: 0rem;
-        margin-top:2rem;
+        margin-top: 2rem;
     }
-    #intro, table.generaltable.quizattemptsummary, h3, div.box{
+    #intro,
+    table.generaltable.quizattemptsummary,
+    h3,
+    div.box {
         padding: 0 10%;
     }
 }
-#page-mod-quiz-attempt{
-    section#region-main{
-        padding:0 10%;
+
+#page-mod-quiz-attempt {
+    section#region-main {
+        padding: 0 10%;
     }
     form#responseform {
         line-height: 1.5rem;
         font-size: 80%;
     }
-
-    .que{
+    .que {
         padding: 0.5rem 2%;
-        .ablock{
+        .ablock {
             display: flex;
-            justify-content: center;            
+            justify-content: center;
         }
-        .qtext{
-            font-size:1rem;
+        .qtext {
+            font-size: 1rem;
         }
-        .info{
-            margin-bottom:1.5rem;
+        .info {
+            margin-bottom: 1.5rem;
         }
         .im-controls {
             margin: .5em 0;
@@ -46,31 +49,35 @@
         &.ddmarker div.dragitems span.markertext {
             max-width: 200px;
         }
-        &.description{
+        &.description {
             border-bottom: none;
-            margin-bottom:0;
+            margin-bottom: 0;
         }
         &:not(.truefalse) h3.no {
-            
-            .qno{
-                margin-left:3px;
+            .qno {
+                margin-left: 3px;
             }
-        }        
-        .qtext{
-            margin-bottom:1.5rem;
         }
-        .ddarea{
+        .qtext {
+            margin-bottom: 1.5rem;
+        }
+        .ddarea {
             display: flex;
-        }
-        &.truefalse{
-            .prompt{
-                display:none;
+            flex-direction: column-reverse;
+            .que.ddmarker .dropbackground {
+                border: none;
+                width: 100%;
             }
-            .answer{
+        }
+        &.truefalse {
+            .prompt {
+                display: none;
+            }
+            .answer {
                 display: flex;
                 justify-content: space-evenly;
                 font-size: 1rem;
-                &>div{
+                &>div {
                     padding: 0.5em 1em;
                     border: 1px solid $gris-no2;
                     border-radius: 5px;
@@ -82,22 +89,22 @@
     table.answer {
         font-family: 'Roboto Condensed';
     }
-    .formulation input[type="text"], .formulation select {
+    .formulation input[type="text"],
+    .formulation select {
         width: 100%;
     }
-    #region-main div.m-t-2.m-b-1.activity-navigation{
-        display:none;
+    #region-main div.m-t-2.m-b-1.activity-navigation {
+        display: none;
     }
 }
 
-#page-mod-quiz-review{
+#page-mod-quiz-review {
     section#region-main {
         padding: 1rem 10%;
     }
     .que p {
         font-size: 19px;
     }
-
     .responsehistoryheader table * {
         font-size: 19px;
         font-family: 'Roboto COndensed';
@@ -108,7 +115,7 @@
     }
 }
 
-@mixin quiz-sm(){
+@mixin quiz-sm() {
     #page-mod-quiz-attempt .que .ddarea {
         flex-wrap: wrap;
         .droparea {
@@ -117,8 +124,8 @@
     }
 }
 
-@mixin quiz-xs(){
-    #page-mod-quiz-attempt .que.truefalse .answer > div {
+@mixin quiz-xs() {
+    #page-mod-quiz-attempt .que.truefalse .answer>div {
         padding: 0.5em 0.4em;
         margin-right: 5px;
     }
