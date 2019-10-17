@@ -178,13 +178,43 @@ main:not(.por-defecto) #page-header{
     outline: none;
 }
 
+.theme-snap #snap-coverimagecontrol>.btn-secondary:focus,
+.theme-snap #snap-coverimagecontrol>.btn-default:focus,
+.theme-snap #page-mod-quiz-review #snap-coverimagecontrol>.arrow_link:focus,
+#page-mod-quiz-review .theme-snap #snap-coverimagecontrol>.arrow_link:focus,
+.theme-snap .gradingform_checklist.editor .addgroup #snap-coverimagecontrol>input:focus,
+.gradingform_checklist.editor .addgroup .theme-snap #snap-coverimagecontrol>input:focus,
+.theme-snap .gradingform_checklist.editor .additem #snap-coverimagecontrol>input:focus,
+.gradingform_checklist.editor .additem .theme-snap #snap-coverimagecontrol>input:focus,
+.theme-snap .gradingform_rubric.editor .addlevel #snap-coverimagecontrol>input:focus,
+.gradingform_rubric.editor .addlevel .theme-snap #snap-coverimagecontrol>input:focus,
+.theme-snap .gradingform_rubric.editor .addcriterion #snap-coverimagecontrol>input:focus,
+.gradingform_rubric.editor .addcriterion .theme-snap #snap-coverimagecontrol>input:focus,
+.theme-snap div[tabindex]:focus,
+.theme-snap .btn.btn-link:focus,
+.theme-snap #page-grade-grading-manage .actions .action.btn-link:focus,
+#page-grade-grading-manage .actions .theme-snap .action.btn-link:focus,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link:focus,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-link:focus,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-link:focus,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-link:focus,
+.theme-snap .custom-select:focus,
+.theme-snap .form-control:focus,
+.theme-snap .categoryname:focus,
+.theme-snap .summary>p:focus,
+.theme-snap .atto_group>button:focus,
+.theme-snap .snap-dropzone>.snap-dropzone-label:focus {
+    outline: none;
+}
+
 .theme-snap a:focus,
 .theme-snap .dropdown-toggle:focus {
     outline: none;
 }
 
-focus {
-    outline: none;
+//Elimina la navegacion de las paginas internas
+section#region-main div.m-t-2.m-b-1 {
+    display: none;
 }
 
 @import "./media-queries";
@@ -200,7 +230,11 @@ focus {
      :not(.por-defecto) #page-header {
         padding-top: 4em!important;
     }
-    .course-content ul.topics li#section-1 .section_footer, .course-content ul.topics li#section-2 .section_footer, .course-content ul.topics li#section-3 .section_footer, .course-content ul.topics li#section-4 .section_footer, .course-content ul.topics li#section-5 .section_footer{
+    .course-content ul.topics li#section-1 .section_footer,
+    .course-content ul.topics li#section-2 .section_footer,
+    .course-content ul.topics li#section-3 .section_footer,
+    .course-content ul.topics li#section-4 .section_footer,
+    .course-content ul.topics li#section-5 .section_footer {
         max-width: 90%;
     }
 }
@@ -213,7 +247,6 @@ focus {
         display: block;
         color: inherit;
     }
-    
 }
 
 .page-grade-grading-manage .actions .theme-snap .action.btn-primary:active,

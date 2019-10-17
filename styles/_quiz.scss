@@ -64,9 +64,10 @@
         .ddarea {
             display: flex;
             flex-direction: column-reverse;
-            .que.ddmarker .dropbackground {
-                border: none;
-                width: 100%;
+            .que.ddmarker .dropbackground,
+            form.mform fieldset#id_previewareaheader .dropbackground {
+                border: none!important;
+                width: 100%!important;
             }
         }
         &.truefalse {
