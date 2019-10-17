@@ -13,6 +13,15 @@ function insertaClasePorDefecto() {
     identPrincipal.classList.add('por-defecto');
 }
 
+function rutaInsertaClasePorDefecto() {
+    let modulos = document.getElementsByClassName('chapter-title');
+    for (i = 0; i < modulos.length; i++) {
+        modulos[i].addEventListener('click', function() {
+            insertaClasePorDefecto();
+        });
+    }
+}
+
 // Busca el padre con etiqueta <li> de un elemento y lo retorna.
 function recorrerPadres(elementoComparar) {
     var padre = elementoComparar;
@@ -45,20 +54,14 @@ document.addEventListener('DOMContentLoaded', function() {
             let titulo = document.getElementById('page-mast').firstElementChild;
             textoBienvenida.innerText = 'Esperamos que este espacio virtual, permita a todos los docentes acercarse a reflexiones y ejercicios que promuevan su capacidad de liderazgo en sus contextos escolares';
             titulo.insertAdjacentElement('afterend', textoBienvenida);
+            //Inserta a los modulos de la ruta la clase por defecto
+            rutaInsertaClasePorDefecto();
 
-            let modulos = document.getElementsByClassName('chapter-title');
-            for (i = 0; i < modulos.length; i++) {
-                modulos[i].addEventListener('click', function() {
-                    insertaClasePorDefecto();
-                });
-            }
             //identifica si el modulo fue completado y agrega la clase
             marcarPadreClase(document.getElementsByClassName('snap-section-complete'), 'modulo-completado');
 
-        } else if (location.hash != '' && location.hash != '#section-0') {
-            if (location.hash != '#coursetools') {
-                insertaClasePorDefecto();
-            }
+        } else if (location.hash != '' && location.hash != '#section-0' && location.hash != '#coursetools') {
+            insertaClasePorDefecto();
         }
     }
 });
@@ -70,14 +73,11 @@ function locationHashChanged() {
         if (identPrincipal.classList.contains('por-defecto') == true && (location.hash == '' || location.hash == '#section-0')) {
 
             insertaClaseRuta();
-            let modulos = document.getElementsByClassName('chapter-title');
-            for (i = 0; i < modulos.length; i++) {
-                modulos[i].addEventListener('click', function() {
-                    insertaClasePorDefecto();
-                });
-            }
+            rutaInsertaClasePorDefecto();
         } else if (identPrincipal.classList.contains('home-ruta') == true && (location.hash != '' && location.hash != '#section-0')) {
             insertaClasePorDefecto();
+        } else if (location.hash == '#coursetols') {
+            identPrincipal.classList.add('por-defecto');
         }
     }
 }
