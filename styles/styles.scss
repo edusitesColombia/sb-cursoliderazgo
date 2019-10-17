@@ -183,6 +183,10 @@ main:not(.por-defecto) #page-header{
     outline: none;
 }
 
+focus {
+    outline: none;
+}
+
 @import "./media-queries";
 @media screen and (min-width: 1600px) {
     div#page {

@@ -87,7 +87,7 @@ html #mr-nav {
                             background-size: contain;
                             background-position: center;
                             a {
-                                @include textos-ruta ($negro, 0.88rem, $transform: uppercase, $peso: inherit);
+                                @include textos-ruta ($negro, 0.77rem, $transform: uppercase, $peso: bold);
                                 padding-left: 32px;
                             }
                             a[href="#section-1"]::before {
@@ -130,9 +130,10 @@ html #mr-nav {
                             background-position: center;
                             a {
                                 @include textos-ruta ($negro,
-                                0.88rem,
-                                $transform: uppercase, $peso: inherit) padding: 20px 23px 20px 61px;
-                                width: 55%;
+                                0.77rem,
+                                $transform: uppercase, $peso: bold);
+                                padding: 10px 20px 10px 50px;
+                                width: 58%;
                                 margin: 0 auto;
                                 &::before {
                                     content: '';
@@ -153,8 +154,7 @@ html #mr-nav {
                     .chapter-title {
                         @include textos-ruta ($amarillo,
                         inherit,
-                        unset,
-                        $peso: bold);
+                        unset);
                         line-height: 1.2;
                         text-decoration: none;
                     }

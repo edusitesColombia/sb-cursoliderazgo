@@ -11,8 +11,7 @@ body#page-course-view-topics section#region-main {
     }
     //letra de los titulos
     span.instancename {
-        font-size: 2rem;
-        line-height: 1.5rem;
+        font-size: 1.77rem;
     }
 }
 
@@ -76,16 +75,18 @@ body#page-course-view-topics section#region-main {
     #page-header {
         box-shadow: inset 0 0 0 50vw #21252996;
         background-position: center;
+        height: 60vh;
         .breadcrumb-nav {
             visibility: hidden;
         }
         #page-mast {
             display: block;
             margin: 0 auto;
+            margin-top: 3rem;
             max-width: 43.5em;
             padding: 0;
             &>h1 {
-                @include textos-ruta($blanco, 0.88rem);
+                @include textos-ruta($blanco, 0.77rem);
             }
             .snap-coverimagecontrol {
                 display: none;
@@ -149,8 +150,7 @@ body#page-course-view-topics section#region-main {
     //Fix ancho secciones generales
     li.label h3 {
         max-width: 21.5em;
-        text-align: center;
-        margin: 0 auto 1rem;
+        text-align: left;
     }
     li.section.main {
         max-width: 43.5em;
@@ -357,7 +357,7 @@ body#page-course-view-topics section#region-main {
                 font-size: 500px;
                 line-height: 19rem;
                 letter-spacing: -40px;
-                right: 4%;
+                right: 11%;
                 font-family: 'Roboto Condensed';
                 font-weight: 900;
                 z-index: 0;
@@ -380,7 +380,7 @@ body#page-course-view-topics section#region-main {
                 font-size: 500px;
                 letter-spacing: -40px;
                 line-height: 19rem;
-                left: 3%;
+                left: 12%;
                 font-family: 'Roboto Condensed';
                 font-weight: 900;
                 z-index: 0;
@@ -431,6 +431,8 @@ body#page-course-view-topics section#region-main {
             width: 45%;
             h5 {
                 font-weight: 600;
+                font-size: 1rem;
+                line-height: 1.7;
                 margin: 0;
             }
         }
@@ -542,6 +544,7 @@ ul.section.img-text .page .asset-wrapper {
         flex-direction: column;
         padding: 1rem;
         padding-left: 100px;
+        height: 150px;
         h3 a {
             text-align: left;
             color: white!important;
@@ -625,7 +628,6 @@ ul.section.img-text .page .asset-wrapper {
         min-height: 40vh;
         .asset-wrapper .activityinstance .snap-asset-content {
             width: 85%;
-            line-height: 1.15rem;
         }
     }
     .separador-opciones {
