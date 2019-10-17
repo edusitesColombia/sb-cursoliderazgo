@@ -66,8 +66,11 @@ document.addEventListener('DOMContentLoaded', function() {
 el hash permite controlar si va o se devuelve a la ruta
 */
 window.addEventListener('hashchange', function() {
+    console.log(location.hash);
     if (claseControl == true) {
+        console.log(location.hash);
         if (identPrincipal.classList.contains('por-defecto') == true && (location.hash == '' || location.hash == 'section-0')) {
+            console.log(location.hash);
             insertaClaseRuta();
             let modulos = document.getElementsByClassName('chapter-title');
             for (i = 0; i < modulos.length; i++) {
