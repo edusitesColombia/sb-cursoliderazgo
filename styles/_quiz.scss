@@ -64,11 +64,6 @@
         .ddarea {
             display: flex;
             flex-direction: column-reverse;
-            .que.ddmarker .dropbackground,
-            form.mform fieldset#id_previewareaheader .dropbackground {
-                border: none!important;
-                width: 100%!important;
-            }
         }
         &.truefalse {
             .prompt {
@@ -86,6 +81,12 @@
                 }
             }
         }
+    }
+    //Hace que la imagen en la que se arrastran los marcadores tome el 100% del ancho
+    .que.ddmarker .dropbackground,
+    form.mform fieldset#id_previewareaheader .dropbackground {
+        border: none!important;
+        width: 100%!important;
     }
     table.answer {
         font-family: 'Roboto Condensed';
