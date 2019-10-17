@@ -965,6 +965,7 @@ ul.section.img-text .page .asset-wrapper span.instancename {
 
 ul.section.img-text .page .asset-wrapper .summary-text p {
   max-width: 43.5em;
+  margin: 0 auto 1rem;
 }
 
 ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore {
