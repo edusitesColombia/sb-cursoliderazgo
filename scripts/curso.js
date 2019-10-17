@@ -64,21 +64,10 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 /*prueba*/
 function locationHashChanged() { 
-    if (location.hash === '#section-0') { 
-      console.log("Gatico"); 
-    } 
-  } 
-  
-  window.onhashchange = locationHashChanged;
-/*Controla el flujo con las flechas del navegador y los cambios de seccion con los botones del tema porque toda la informacion esta cargada en la misma pagina y solo se habilita y deshabilita
-el hash permite controlar si va o se devuelve a la ruta
-*/
-window.addEventListener('hashchange', function() {
-    console.log(location.hash);
     if (claseControl == true) {
-        console.log(location.hash);
+        
         if (identPrincipal.classList.contains('por-defecto') == true && (location.hash == '' || location.hash == 'section-0')) {
-            console.log(location.hash);
+            
             insertaClaseRuta();
             let modulos = document.getElementsByClassName('chapter-title');
             for (i = 0; i < modulos.length; i++) {
@@ -90,4 +79,27 @@ window.addEventListener('hashchange', function() {
             insertaClasePorDefecto();
         }
     }
-});
+  } 
+  
+  window.onhashchange = locationHashChanged;
+/*Controla el flujo con las flechas del navegador y los cambios de seccion con los botones del tema porque toda la informacion esta cargada en la misma pagina y solo se habilita y deshabilita
+el hash permite controlar si va o se devuelve a la ruta
+*/
+/*window.addEventListener('hashchange', function() {
+    
+    if (claseControl == true) {
+        
+        if (identPrincipal.classList.contains('por-defecto') == true && (location.hash == '' || location.hash == 'section-0')) {
+            
+            insertaClaseRuta();
+            let modulos = document.getElementsByClassName('chapter-title');
+            for (i = 0; i < modulos.length; i++) {
+                modulos[i].addEventListener('click', function() {
+                    insertaClasePorDefecto();
+                });
+            }
+        } else if (identPrincipal.classList.contains('home-ruta') == true && (location.hash != '' && location.hash != 'section-0' && location.hash != 'coursetools')) {
+            insertaClasePorDefecto();
+        }
+    }
+});*/
