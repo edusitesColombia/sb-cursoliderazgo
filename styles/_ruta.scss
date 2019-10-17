@@ -53,7 +53,7 @@ html #mr-nav {
                     li {
                         flex-basis: 25%;
                         margin-left: .7em;
-                        padding: 35px 40px;
+                        padding: 40px;
                         .text {
                             @include textos-ruta($blanco, 1rem);
                             display: flex;
@@ -87,7 +87,7 @@ html #mr-nav {
                             background-size: contain;
                             background-position: center;
                             a {
-                                color: $negro;
+                                @include textos-ruta ($negro, 0.88rem, $transform: uppercase, $peso: inherit);
                                 padding-left: 32px;
                             }
                             a[href="#section-1"]::before {
@@ -129,9 +129,10 @@ html #mr-nav {
                             background-size: contain;
                             background-position: center;
                             a {
-                                color: $verde;
-                                padding: 20px 23px 20px 61px;
-                                width: 70%;
+                                @include textos-ruta ($negro,
+                                0.88rem,
+                                $transform: uppercase, $peso: inherit) padding: 20px 23px 20px 61px;
+                                width: 55%;
                                 margin: 0 auto;
                                 &::before {
                                     content: '';
@@ -150,8 +151,11 @@ html #mr-nav {
                         }
                     }
                     .chapter-title {
+                        @include textos-ruta ($amarillo,
+                        inherit,
+                        unset,
+                        $peso: bold);
                         line-height: 1.2;
-                        color: $amarillo;
                         text-decoration: none;
                     }
                 }

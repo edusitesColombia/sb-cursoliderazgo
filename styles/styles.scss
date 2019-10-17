@@ -178,6 +178,11 @@ main:not(.por-defecto) #page-header{
     outline: none;
 }
 
+.theme-snap a:focus,
+.theme-snap .dropdown-toggle:focus {
+    outline: none;
+}
+
 @import "./media-queries";
 @media screen and (min-width: 1600px) {
     div#page {
@@ -203,7 +208,7 @@ main:not(.por-defecto) #page-header{
     }
 }
 
-page-grade-grading-manage .actions .theme-snap .action.btn-primary:active,
+.page-grade-grading-manage .actions .theme-snap .action.btn-primary:active,
 .theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary:active,
 #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary:active,
 .theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary:active,

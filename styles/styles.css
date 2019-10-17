@@ -589,7 +589,8 @@ body#page-course-view-topics section#region-main span.instancename {
   white-space: nowrap;
 }
 
-.course-content ul.topics li#section-1 div.summary p, .course-content ul.topics li#section-1 div.summary h3,
+.course-content ul.topics li#section-1 div.summary p,
+.course-content ul.topics li#section-1 div.summary h3,
 .course-content ul.topics li#section-2 div.summary p,
 .course-content ul.topics li#section-2 div.summary h3,
 .course-content ul.topics li#section-3 div.summary p,
@@ -700,10 +701,11 @@ body#page-course-view-topics section#region-main span.instancename {
 
 .course-content ul.topics blockquote.blockquote p {
   font-style: italic;
+  text-align: right;
 }
 
 .course-content ul.topics blockquote.blockquote footer {
-  padding: 0 18% 2rem;
+  padding: 0 10% 2rem;
   text-align: right;
   font-size: 1.3rem;
   color: #fadc5d;
@@ -1483,7 +1485,7 @@ html #mr-nav {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
   margin-left: .7em;
-  padding: 35px 40px;
+  padding: 40px;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li .text {
@@ -1540,6 +1542,9 @@ html #mr-nav {
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) a {
   color: #2b2b2b;
+  text-transform: uppercase;
+  font-size: 0.88rem;
+  font-weight: inherit;
   padding-left: 32px;
 }
 
@@ -1584,9 +1589,12 @@ html #mr-nav {
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:last-child a {
-  color: #006d38;
+  color: #2b2b2b;
+  text-transform: uppercase;
+  font-size: 0.88rem;
+  font-weight: inherit;
   padding: 20px 23px 20px 61px;
-  width: 70%;
+  width: 55%;
   margin: 0 auto;
 }
 
@@ -1606,8 +1614,11 @@ html #mr-nav {
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters .chapter-title {
-  line-height: 1.2;
   color: #fadc5d;
+  text-transform: unset;
+  font-size: inherit;
+  font-weight: bold;
+  line-height: 1.2;
   text-decoration: none;
 }
 
@@ -1792,6 +1803,11 @@ main:not(.por-defecto) #page-header{
 #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary.active,
 .theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary.active,
 #rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-primary.active {
+  outline: none;
+}
+
+.theme-snap a:focus,
+.theme-snap .dropdown-toggle:focus {
   outline: none;
 }
 
@@ -2155,7 +2171,7 @@ main:not(.por-defecto) #page-header{
   }
 }
 
-page-grade-grading-manage .actions .theme-snap .action.btn-primary:active,
+.page-grade-grading-manage .actions .theme-snap .action.btn-primary:active,
 .theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary:active,
 #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary:active,
 .theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary:active,
