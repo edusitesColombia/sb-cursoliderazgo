@@ -115,6 +115,8 @@ main:not(.home-ruta, .por-defecto) #page-header {
     min-height: 10vh;
     box-shadow: inset 0 0 0 50vw #21252996;
     background-position: center;
+    position: sticky;
+    top: -75px;
     #page-mast {
         display: none;
     }
