@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 /*prueba*/
-function locationHashChanged() { 
+/*function locationHashChanged() { 
     if (claseControl == true) {
         
         if (identPrincipal.classList.contains('por-defecto') == true && (location.hash == '' || location.hash == '#section-0')) {
@@ -82,16 +82,14 @@ function locationHashChanged() {
     }
   } 
   
-  window.onhashchange = locationHashChanged;
+  window.onhashchange = locationHashChanged;*/
 /*Controla el flujo con las flechas del navegador y los cambios de seccion con los botones del tema porque toda la informacion esta cargada en la misma pagina y solo se habilita y deshabilita
 el hash permite controlar si va o se devuelve a la ruta
 */
-/*window.addEventListener('hashchange', function() {
-    
+window.addEventListener('hashchange', function() {
+
     if (claseControl == true) {
-        
-        if (identPrincipal.classList.contains('por-defecto') == true && (location.hash == '' || location.hash == 'section-0')) {
-            
+        if (identPrincipal.classList.contains('por-defecto') == true && (location.hash == '' || location.hash == '#section-0')) {
             insertaClaseRuta();
             let modulos = document.getElementsByClassName('chapter-title');
             for (i = 0; i < modulos.length; i++) {
@@ -99,8 +97,8 @@ el hash permite controlar si va o se devuelve a la ruta
                     insertaClasePorDefecto();
                 });
             }
-        } else if (identPrincipal.classList.contains('home-ruta') == true && (location.hash != '' && location.hash != 'section-0' && location.hash != 'coursetools')) {
+        } else if (identPrincipal.classList.contains('home-ruta') == true && (location.hash != '' && location.hash != '#section-0' && location.hash != '#coursetools')) {
             insertaClasePorDefecto();
         }
     }
-});*/
+});
