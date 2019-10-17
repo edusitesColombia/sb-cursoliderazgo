@@ -200,6 +200,9 @@ focus {
      :not(.por-defecto) #page-header {
         padding-top: 4em!important;
     }
+    .course-content ul.topics li#section-1 .section_footer, .course-content ul.topics li#section-2 .section_footer, .course-content ul.topics li#section-3 .section_footer, .course-content ul.topics li#section-4 .section_footer, .course-content ul.topics li#section-5 .section_footer{
+        max-width: 90%;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -210,6 +213,7 @@ focus {
         display: block;
         color: inherit;
     }
+    
 }
 
 .page-grade-grading-manage .actions .theme-snap .action.btn-primary:active,
