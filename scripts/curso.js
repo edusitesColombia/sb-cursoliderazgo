@@ -62,11 +62,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
 /*prueba*/
 function locationHashChanged() { 
     if (claseControl == true) {
         
-        if (identPrincipal.classList.contains('por-defecto') == true && (location.hash == '' || location.hash == 'section-0')) {
+        if (identPrincipal.classList.contains('por-defecto') == true && (location.hash == '' || location.hash == '#section-0')) {
             
             insertaClaseRuta();
             let modulos = document.getElementsByClassName('chapter-title');
@@ -75,7 +76,7 @@ function locationHashChanged() {
                     insertaClasePorDefecto();
                 });
             }
-        } else if (identPrincipal.classList.contains('home-ruta') == true && (location.hash != '' && location.hash != 'section-0' && location.hash != 'coursetools')) {
+        } else if (identPrincipal.classList.contains('home-ruta') == true && (location.hash != '' && location.hash != '#section-0' && location.hash != 'coursetools')) {
             insertaClasePorDefecto();
         }
     }
