@@ -5,7 +5,7 @@ html #mr-nav {
 
 .home-ruta {
     #page-header {
-        padding:0;
+        padding: 0;
         padding-top: 5rem;
         min-height: 105vh;
         @include imagen-background('fondo_avance0', 'svg', 'center', 'cover');
@@ -16,13 +16,15 @@ html #mr-nav {
             min-height: 85vh;
             display: flex;
             flex-direction: column;
-            padding: 2rem 2rem 0 2rem;
+            padding: 1rem 4% 0 4%;
             &>h1 {
                 @include textos-ruta($verde, 1.77rem, $peso: bold);
+                margin-bottom: 26px;
                 &::before {
                     content: 'Bienvenido al curso';
                     display: block;
                     @include textos-ruta($negro, 1.44rem, initial, bold);
+                    line-height: 1.5;
                 }
                 a {
                     text-decoration: none;
@@ -39,15 +41,15 @@ html #mr-nav {
             #course-toc {
                 display: flex;
                 flex-direction: column;
-                height: 56vh;
+                height: 80vh;
                 justify-content: flex-end;
-                width: 100%;
-                margin-top: auto;
+                width: 96%;
+                position: absolute;
                 #chapters {
                     display: flex;
                     min-width: 100%;
                     min-height: 150px;
-                    justify-content: center;
+                    justify-content: space-between;
                     li {
                         flex-basis: 25%;
                         margin-left: .7em;
@@ -79,7 +81,7 @@ html #mr-nav {
                             }
                         }
                         &:nth-child(2) {
-                            @include posicion-otros-elementos(absolute, 0);
+                            @include posicion-otros-elementos(absolute, 200px, 0);
                             background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_metodologia.svg);
                             background-repeat: no-repeat;
                             background-size: contain;
@@ -102,8 +104,8 @@ html #mr-nav {
                                 margin-left: -38px;
                                 margin-top: -6px;
                             }
-                            span.text.completionstatus{
-                                display:none!important;
+                            span.text.completionstatus {
+                                display: none!important;
                             }
                         }
                         &:nth-child(n+3):not(:last-child) {
@@ -121,7 +123,7 @@ html #mr-nav {
                         }
                         &:last-child {
                             @include posicion-otros-elementos(absolute,
-                            -5rem,
+                            1rem,
                             0);
                             background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_caja_herramientas.svg);
                             background-repeat: no-repeat;
@@ -176,7 +178,7 @@ html #mr-nav {
                 flex-basis: 49%;
                 margin: 2px;
                 padding: 35px;
-                margin-right: 57px; 
+                margin-right: 57px;
             }
         }
     }
@@ -185,7 +187,7 @@ html #mr-nav {
         top: 1%;
         margin: 0;
     }
-    .home-ruta #page-header #page-mast #course-toc #chapters li:last-child{
+    .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
         padding: 0 0 0 13px;
         width: 26%;
         top: -5rem;
@@ -194,10 +196,11 @@ html #mr-nav {
             margin-top: -3%;
         }
     }
-    .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(3), .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(4){
-        margin-top:2rem;
-    }
-    .home-ruta #page-header #page-mast .texto-bienvenida{
+    /*.home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(3),
+    .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(4) {
+        margin-top: 2rem;
+    }*/
+    .home-ruta #page-header #page-mast .texto-bienvenida {
         background: #ffffffb0;
     }
 }
@@ -231,7 +234,7 @@ html #mr-nav {
         padding: 0 0px 0px 20px;
         max-height: 132px;
     }
-    .home-ruta #page-header #page-mast .texto-bienvenida{
+    .home-ruta #page-header #page-mast .texto-bienvenida {
         background: #ffffffc7;
     }
 }
