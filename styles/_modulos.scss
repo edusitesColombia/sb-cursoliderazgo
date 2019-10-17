@@ -550,14 +550,18 @@ ul.section.img-text .page .asset-wrapper {
         padding: 1rem;
         padding-left: 100px;
         height: 150px;
-        h3 a {
-            text-align: left;
-            color: white!important;
-            text-transform: uppercase;
-            white-space: nowrap;
-            &:visited {
-                color: white;
-                text-decoration: none;
+        h3{
+            text-align:left;
+            margin:0!important; 
+            a {
+                text-align: left;
+                color: white!important;
+                text-transform: uppercase;
+                white-space: nowrap;
+                &:visited {
+                    color: white;
+                    text-decoration: none;
+                }
             }
         }
         p {

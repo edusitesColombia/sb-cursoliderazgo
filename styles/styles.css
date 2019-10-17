@@ -1069,6 +1069,11 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
   height: 150px;
 }
 
+.separador-opciones .opcion h3 {
+  text-align: left;
+  margin: 0 !important;
+}
+
 .separador-opciones .opcion h3 a {
   text-align: left;
   color: white !important;
