@@ -524,12 +524,8 @@ body#page-course-view-topics section#region-main span.instancename {
 
 .course-content ul.topics li.label h3 {
   max-width: 21.5em;
-<<<<<<< HEAD
   text-align: center;
   margin: 0 auto;
-=======
-  text-align: left;
->>>>>>> 0b7b52f00533fd8a2ee4eac6aaadaaa5ec996f57
 }
 
 .course-content ul.topics li.section.main {
