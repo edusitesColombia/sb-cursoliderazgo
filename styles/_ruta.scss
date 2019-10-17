@@ -43,7 +43,7 @@ html #mr-nav {
                 flex-direction: column;
                 height: 80vh;
                 justify-content: flex-end;
-                width: 96%;
+                width: 92%;
                 position: absolute;
                 #chapters {
                     display: flex;
@@ -81,12 +81,11 @@ html #mr-nav {
                             }
                         }
                         &:nth-child(2) {
-                            @include posicion-otros-elementos(absolute, 200px, 0);
+                            @include posicion-otros-elementos(absolute, 200px, $left: 0);
                             background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_metodologia.svg);
                             background-repeat: no-repeat;
                             background-size: contain;
                             background-position: center;
-                            left: 5%;
                             a {
                                 color: $negro;
                                 padding-left: 32px;

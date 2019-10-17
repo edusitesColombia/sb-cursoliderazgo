@@ -1464,7 +1464,7 @@ html #mr-nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 96%;
+  width: 92%;
   position: absolute;
 }
 
@@ -1530,12 +1530,12 @@ html #mr-nav {
 .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) {
   position: absolute;
   top: 200px;
-  right: 0;
+  right: unset;
+  left: 0;
   background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_metodologia.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  left: 5%;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) a {
@@ -1576,6 +1576,7 @@ html #mr-nav {
   position: absolute;
   top: 1rem;
   right: 0;
+  left: unset;
   background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_caja_herramientas.svg);
   background-repeat: no-repeat;
   background-size: contain;

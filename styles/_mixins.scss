@@ -9,10 +9,11 @@ $caja-amarilla: "%3Csvg width='100%' viewBox='0 0 275 145' xmlns='http://www.w3.
     }
 }
 
-@mixin posicion-otros-elementos ($position, $top, $right:unset) {
+@mixin posicion-otros-elementos ($position, $top, $right:unset, $left:unset) {
     position: $position;
     top: $top;
     right: $right;
+    left: $left;
 }
 
 @mixin imagen-background ($file, $format, $position, $size) {
