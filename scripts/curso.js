@@ -55,8 +55,8 @@ document.addEventListener('DOMContentLoaded', function() {
             //identifica si el modulo fue completado y agrega la clase
             marcarPadreClase(document.getElementsByClassName('snap-section-complete'), 'modulo-completado');
 
-        } else if (location.hash != '' && location.hash != 'section-0') {
-            if (location.hash != 'coursetools') {
+        } else if (location.hash != '' && location.hash != '#section-0') {
+            if (location.hash != '#coursetools') {
                 insertaClasePorDefecto();
             }
         }
@@ -64,11 +64,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 /*prueba*/
-/*function locationHashChanged() { 
+function locationHashChanged() {
     if (claseControl == true) {
-        
+
         if (identPrincipal.classList.contains('por-defecto') == true && (location.hash == '' || location.hash == '#section-0')) {
-            
+
             insertaClaseRuta();
             let modulos = document.getElementsByClassName('chapter-title');
             for (i = 0; i < modulos.length; i++) {
@@ -76,17 +76,17 @@ document.addEventListener('DOMContentLoaded', function() {
                     insertaClasePorDefecto();
                 });
             }
-        } else if (identPrincipal.classList.contains('home-ruta') == true && (location.hash != '' && location.hash != '#section-0' && location.hash != 'coursetools')) {
+        } else if (identPrincipal.classList.contains('home-ruta') == true && (location.hash != '' && location.hash != '#section-0' && location.hash != '#coursetools')) {
             insertaClasePorDefecto();
         }
     }
-  } 
-  
-  window.onhashchange = locationHashChanged;*/
+}
+
+window.onhashchange = locationHashChanged;
 /*Controla el flujo con las flechas del navegador y los cambios de seccion con los botones del tema porque toda la informacion esta cargada en la misma pagina y solo se habilita y deshabilita
 el hash permite controlar si va o se devuelve a la ruta
 */
-window.addEventListener('hashchange', function() {
+/*window.addEventListener('hashchange', function() {
 
     if (claseControl == true) {
         if (identPrincipal.classList.contains('por-defecto') == true && (location.hash == '' || location.hash == '#section-0')) {
@@ -101,4 +101,4 @@ window.addEventListener('hashchange', function() {
             insertaClasePorDefecto();
         }
     }
-});
+});*/
