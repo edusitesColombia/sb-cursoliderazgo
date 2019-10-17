@@ -882,7 +882,7 @@ body#page-course-view-topics section#region-main span.instancename {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 4.5rem 5rem 7.5rem 6.5rem;
+  padding: 8.8rem 0.2rem 6rem 4.5rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -890,7 +890,7 @@ body#page-course-view-topics section#region-main span.instancename {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/globo_objetivos.svg);
+  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/avatarF_tablero.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -1088,6 +1088,7 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
 
 .separador-opciones .opcion p {
   text-align: left;
+  margin-top: .5rem;
 }
 
 .separador-opciones .opcion::before {
@@ -1350,11 +1351,6 @@ section#region-main {
           flex-direction: column-reverse;
 }
 
-#page-mod-quiz-attempt .que .ddarea .que.ddmarker .dropbackground {
-  border: none;
-  width: 100%;
-}
-
 #page-mod-quiz-attempt .que.truefalse .prompt {
   display: none;
 }
@@ -1376,6 +1372,12 @@ section#region-main {
   margin-right: 20px;
 }
 
+#page-mod-quiz-attempt .que.ddmarker .dropbackground,
+#page-mod-quiz-attempt form.mform fieldset#id_previewareaheader .dropbackground {
+  border: none !important;
+  width: 100% !important;
+}
+
 #page-mod-quiz-attempt table.answer {
   font-family: 'Roboto Condensed';
 }
@@ -1383,10 +1385,6 @@ section#region-main {
 #page-mod-quiz-attempt .formulation input[type="text"],
 #page-mod-quiz-attempt .formulation select {
   width: 100%;
-}
-
-#page-mod-quiz-attempt #region-main div.m-t-2.m-b-1.activity-navigation {
-  display: none;
 }
 
 #page-mod-quiz-review section#region-main {
@@ -1774,6 +1772,9 @@ main:not(.home-ruta):not(.por-defecto) #page-header {
   -webkit-box-shadow: inset 0 0 0 50vw #21252996;
           box-shadow: inset 0 0 0 50vw #21252996;
   background-position: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -75px;
 }
 
 main  #page-header #page-mast {
@@ -1834,13 +1835,42 @@ main:not(.por-defecto) #page-header{
   outline: none;
 }
 
+.theme-snap #snap-coverimagecontrol > .btn-secondary:focus,
+.theme-snap #snap-coverimagecontrol > .btn-default:focus,
+.theme-snap #page-mod-quiz-review #snap-coverimagecontrol > .arrow_link:focus,
+#page-mod-quiz-review .theme-snap #snap-coverimagecontrol > .arrow_link:focus,
+.theme-snap .gradingform_checklist.editor .addgroup #snap-coverimagecontrol > input:focus,
+.gradingform_checklist.editor .addgroup .theme-snap #snap-coverimagecontrol > input:focus,
+.theme-snap .gradingform_checklist.editor .additem #snap-coverimagecontrol > input:focus,
+.gradingform_checklist.editor .additem .theme-snap #snap-coverimagecontrol > input:focus,
+.theme-snap .gradingform_rubric.editor .addlevel #snap-coverimagecontrol > input:focus,
+.gradingform_rubric.editor .addlevel .theme-snap #snap-coverimagecontrol > input:focus,
+.theme-snap .gradingform_rubric.editor .addcriterion #snap-coverimagecontrol > input:focus,
+.gradingform_rubric.editor .addcriterion .theme-snap #snap-coverimagecontrol > input:focus,
+.theme-snap div[tabindex]:focus,
+.theme-snap .btn.btn-link:focus,
+.theme-snap #page-grade-grading-manage .actions .action.btn-link:focus,
+#page-grade-grading-manage .actions .theme-snap .action.btn-link:focus,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link:focus,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-link:focus,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-link:focus,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-link:focus,
+.theme-snap .custom-select:focus,
+.theme-snap .form-control:focus,
+.theme-snap .categoryname:focus,
+.theme-snap .summary > p:focus,
+.theme-snap .atto_group > button:focus,
+.theme-snap .snap-dropzone > .snap-dropzone-label:focus {
+  outline: none;
+}
+
 .theme-snap a:focus,
 .theme-snap .dropdown-toggle:focus {
   outline: none;
 }
 
-focus {
-  outline: none;
+section#region-main div.m-t-2.m-b-1 {
+  display: none;
 }
 
 @media (max-width: 1249px) {
@@ -1984,7 +2014,8 @@ focus {
     min-width: auto;
   }
   .contenedor-objetivos #objetivo-modulo {
-    padding: 9.5% 7% 16.5% 9.5%;
+    padding: 28.5% 0.5% 19.5% 11.5%;
+    width: 70%;
   }
   .contenedor-objetivos #complemento-objetivos {
     min-height: 412px;
@@ -2076,9 +2107,13 @@ focus {
     margin-left: -10px;
   }
   .contenedor-objetivos #objetivo-modulo {
-    width: 90%;
-    min-height: 398px;
-    font-size: 80%;
+    width: 100%;
+    min-height: 400px;
+    font-size: 70%;
+    padding: 21% 16% 12% 28%;
+  }
+  .contenedor-objetivos #objetivo-modulo h4 {
+    margin: 0;
   }
   .contenedor-objetivos #complemento-objetivos {
     min-height: 420px;
@@ -2185,19 +2220,19 @@ focus {
     max-width: 80%;
     margin: 0 auto;
   }
-}
-
-@media (max-width: 1001px) {
-  :not(.home-ruta) #page-header,
-  :not(.por-defecto) #page-header {
-    padding-top: 4em !important;
-  }
   .course-content ul.topics li#section-1 .section_footer,
   .course-content ul.topics li#section-2 .section_footer,
   .course-content ul.topics li#section-3 .section_footer,
   .course-content ul.topics li#section-4 .section_footer,
   .course-content ul.topics li#section-5 .section_footer {
     max-width: 90%;
+  }
+}
+
+@media (max-width: 1001px) {
+  :not(.home-ruta) #page-header,
+  :not(.por-defecto) #page-header {
+    padding-top: 4em !important;
   }
 }
 
@@ -2368,7 +2403,8 @@ focus {
     min-width: auto;
   }
   .contenedor-objetivos #objetivo-modulo {
-    padding: 9.5% 7% 16.5% 9.5%;
+    padding: 28.5% 0.5% 19.5% 11.5%;
+    width: 70%;
   }
   .contenedor-objetivos #complemento-objetivos {
     min-height: 412px;
@@ -2460,9 +2496,13 @@ focus {
     margin-left: -10px;
   }
   .contenedor-objetivos #objetivo-modulo {
-    width: 90%;
-    min-height: 398px;
-    font-size: 80%;
+    width: 100%;
+    min-height: 400px;
+    font-size: 70%;
+    padding: 21% 16% 12% 28%;
+  }
+  .contenedor-objetivos #objetivo-modulo h4 {
+    margin: 0;
   }
   .contenedor-objetivos #complemento-objetivos {
     min-height: 420px;
