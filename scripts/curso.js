@@ -62,6 +62,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+/*prueba*/
+window.addEventListener('hashchange', function() {
+    console.log('perrito!');
+  }, false);
 /*Controla el flujo con las flechas del navegador y los cambios de seccion con los botones del tema porque toda la informacion esta cargada en la misma pagina y solo se habilita y deshabilita
 el hash permite controlar si va o se devuelve a la ruta
 */
