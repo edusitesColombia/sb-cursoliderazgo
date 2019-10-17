@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-/*prueba*/
+/*El hash se usa para reconocer los cambios de pantalla generados por los botones de avance y retroceso tanto del navegador como del tema*/
 function locationHashChanged() {
     if (claseControl == true) {
 
@@ -76,7 +76,7 @@ function locationHashChanged() {
                     insertaClasePorDefecto();
                 });
             }
-        } else if (identPrincipal.classList.contains('home-ruta') == true && (location.hash != '' && location.hash != '#section-0' && location.hash != '#coursetools')) {
+        } else if (identPrincipal.classList.contains('home-ruta') == true && (location.hash != '' && location.hash != '#section-0')) {
             insertaClasePorDefecto();
         }
     }
