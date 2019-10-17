@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 /*prueba*/
-function locationHashChanged() {
+/*function locationHashChanged() {
     if (claseControl == true) {
 
         if (identPrincipal.classList.contains('por-defecto') == true && (location.hash == '' || location.hash == '#section-0')) {
@@ -82,11 +82,11 @@ function locationHashChanged() {
     }
 }
 
-window.onhashchange = locationHashChanged;
+window.onhashchange = locationHashChanged;*/
 /*Controla el flujo con las flechas del navegador y los cambios de seccion con los botones del tema porque toda la informacion esta cargada en la misma pagina y solo se habilita y deshabilita
 el hash permite controlar si va o se devuelve a la ruta
 */
-/*window.addEventListener('hashchange', function() {
+window.addEventListener('hashchange', function() {
 
     if (claseControl == true) {
         if (identPrincipal.classList.contains('por-defecto') == true && (location.hash == '' || location.hash == '#section-0')) {
@@ -101,4 +101,4 @@ el hash permite controlar si va o se devuelve a la ruta
             insertaClasePorDefecto();
         }
     }
-});*/
+});
