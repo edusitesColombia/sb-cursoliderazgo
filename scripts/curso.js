@@ -78,8 +78,6 @@ function locationHashChanged() {
             }
         } else if (identPrincipal.classList.contains('home-ruta') == true && (location.hash != '' && location.hash != '#section-0' && location.hash != '#coursetools')) {
             insertaClasePorDefecto();
-        } else if (location.hash == '#coursetools') {
-            identPrincipal.classList.remove('home-ruta');
         }
     }
 }
