@@ -5,7 +5,7 @@ html #mr-nav {
 
 .home-ruta {
     #page-header {
-        padding:0;
+        padding: 0;
         padding-top: 5rem;
         min-height: 105vh;
         @include imagen-background('fondo_avance0', 'svg', 'center', 'cover');
@@ -16,13 +16,15 @@ html #mr-nav {
             min-height: 85vh;
             display: flex;
             flex-direction: column;
-            padding: 2rem 2rem 0 2rem;
+            padding: 1rem 4% 0 4%;
             &>h1 {
                 @include textos-ruta($verde, 1.77rem, $peso: bold);
+                margin-bottom: 26px;
                 &::before {
                     content: 'Bienvenido al curso';
                     display: block;
                     @include textos-ruta($negro, 1.44rem, initial, bold);
+                    line-height: 1.5;
                 }
                 a {
                     text-decoration: none;
@@ -39,19 +41,19 @@ html #mr-nav {
             #course-toc {
                 display: flex;
                 flex-direction: column;
-                height: 56vh;
+                height: 80vh;
                 justify-content: flex-end;
-                width: 100%;
-                margin-top: auto;
+                width: 92%;
+                position: absolute;
                 #chapters {
                     display: flex;
                     min-width: 100%;
                     min-height: 150px;
-                    justify-content: center;
+                    justify-content: space-between;
                     li {
                         flex-basis: 25%;
                         margin-left: .7em;
-                        padding: 35px 40px;
+                        padding: 40px;
                         .text {
                             @include textos-ruta($blanco, 1rem);
                             display: flex;
@@ -79,14 +81,13 @@ html #mr-nav {
                             }
                         }
                         &:nth-child(2) {
-                            @include posicion-otros-elementos(absolute, 0);
+                            @include posicion-otros-elementos(absolute, 200px, $left: 0);
                             background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_metodologia.svg);
                             background-repeat: no-repeat;
                             background-size: contain;
                             background-position: center;
-                            left: 5%;
                             a {
-                                color: $negro;
+                                @include textos-ruta ($negro, 0.77rem, $transform: uppercase, $peso: bold);
                                 padding-left: 32px;
                             }
                             a[href="#section-1"]::before {
@@ -102,8 +103,8 @@ html #mr-nav {
                                 margin-left: -38px;
                                 margin-top: -6px;
                             }
-                            span.text.completionstatus{
-                                display:none!important;
+                            span.text.completionstatus {
+                                display: none!important;
                             }
                         }
                         &:nth-child(n+3):not(:last-child) {
@@ -121,16 +122,18 @@ html #mr-nav {
                         }
                         &:last-child {
                             @include posicion-otros-elementos(absolute,
-                            -5rem,
-                            0);
+                            1rem,
+                            -2.5rem);
                             background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_caja_herramientas.svg);
                             background-repeat: no-repeat;
                             background-size: contain;
                             background-position: center;
                             a {
-                                color: $verde;
-                                padding: 20px 23px 20px 61px;
-                                width: 70%;
+                                @include textos-ruta ($negro,
+                                0.77rem,
+                                $transform: uppercase, $peso: bold);
+                                padding: 10px 20px 10px 50px;
+                                width: 58%;
                                 margin: 0 auto;
                                 &::before {
                                     content: '';
@@ -149,8 +152,10 @@ html #mr-nav {
                         }
                     }
                     .chapter-title {
+                        @include textos-ruta ($amarillo,
+                        inherit,
+                        unset);
                         line-height: 1.2;
-                        color: $amarillo;
                         text-decoration: none;
                     }
                 }
@@ -168,6 +173,8 @@ html #mr-nav {
     .home-ruta #page-header #page-mast #course-toc {
         height: auto;
         padding: 3em 4%;
+        width: 100%;
+        position: relative;
         #chapters {
             flex-wrap: wrap;
             justify-content: center;
@@ -176,16 +183,16 @@ html #mr-nav {
                 flex-basis: 49%;
                 margin: 2px;
                 padding: 35px;
-                margin-right: 57px; 
+                margin-right: 57px;
             }
         }
     }
     .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
     .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
-        top: 1%;
+        top: -6%;
         margin: 0;
     }
-    .home-ruta #page-header #page-mast #course-toc #chapters li:last-child{
+    .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
         padding: 0 0 0 13px;
         width: 26%;
         top: -5rem;
@@ -194,10 +201,11 @@ html #mr-nav {
             margin-top: -3%;
         }
     }
-    .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(3), .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(4){
-        margin-top:2rem;
-    }
-    .home-ruta #page-header #page-mast .texto-bienvenida{
+    /*.home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(3),
+    .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(4) {
+        margin-top: 2rem;
+    }*/
+    .home-ruta #page-header #page-mast .texto-bienvenida {
         background: #ffffffb0;
     }
 }
@@ -231,7 +239,7 @@ html #mr-nav {
         padding: 0 0px 0px 20px;
         max-height: 132px;
     }
-    .home-ruta #page-header #page-mast .texto-bienvenida{
+    .home-ruta #page-header #page-mast .texto-bienvenida {
         background: #ffffffc7;
     }
 }

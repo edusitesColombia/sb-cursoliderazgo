@@ -11,8 +11,7 @@ body#page-course-view-topics section#region-main {
     }
     //letra de los titulos
     span.instancename {
-        font-size: 2rem;
-        line-height: 1.5rem;
+        font-size: 1.77rem;
     }
 }
 
@@ -75,17 +74,22 @@ body#page-course-view-topics section#region-main {
 #page-course-view-topics .por-defecto {
     #page-header {
         box-shadow: inset 0 0 0 50vw #21252996;
-        background-position: center;
+        background-position: center 35%;
+        min-height: 450px;
         .breadcrumb-nav {
             visibility: hidden;
         }
         #page-mast {
             display: block;
             margin: 0 auto;
+            margin-top: 3rem;
             max-width: 43.5em;
-            padding:0;
+            padding: 0;
             &>h1 {
-                @include textos-ruta($blanco, 0.88rem);
+                @include textos-ruta($blanco, 0.77rem);
+            }
+            .texto-bienvenida {
+                display: none;
             }
             .snap-coverimagecontrol {
                 display: none;
@@ -147,10 +151,14 @@ body#page-course-view-topics section#region-main {
 //TODO: revisar span notifications hijo de region-main
 .course-content ul.topics {
     //Fix ancho secciones generales
-    li.label h3{
+    li.label h3 {
         max-width: 21.5em;
+<<<<<<< HEAD
         text-align: center;
         margin: 0 auto;
+=======
+        text-align: left;
+>>>>>>> 0b7b52f00533fd8a2ee4eac6aaadaaa5ec996f57
     }
     li.section.main {
         max-width: 43.5em;
@@ -204,7 +212,8 @@ body#page-course-view-topics section#region-main {
         }
         //contenedor del parrafo de resumen de la sección
         div.summary {
-            p, h3 {
+            p,
+            h3 {
                 max-width: 43.5em;
                 margin: 0 auto 1rem;
             }
@@ -266,9 +275,10 @@ body#page-course-view-topics section#region-main {
         }
         p {
             font-style: italic;
+            text-align: right;
         }
         footer {
-            padding: 0 18% 2rem;
+            padding: 0 10% 2rem;
             text-align: right;
             font-size: 1.3rem;
             color: $amarillo;
@@ -320,8 +330,8 @@ body#page-course-view-topics section#region-main {
                     .contentafterlink {
                         margin-left: 0px;
                     }
-                    h3.snap-asset-link{
-                        box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+                    h3.snap-asset-link {
+                        box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
                         animation: pulse 2s infinite;
                         margin: -10px;
                         padding: 10px;
@@ -355,7 +365,7 @@ body#page-course-view-topics section#region-main {
                 font-size: 500px;
                 line-height: 19rem;
                 letter-spacing: -40px;
-                right: 4%;
+                right: 11%;
                 font-family: 'Roboto Condensed';
                 font-weight: 900;
                 z-index: 0;
@@ -378,7 +388,7 @@ body#page-course-view-topics section#region-main {
                 font-size: 500px;
                 letter-spacing: -40px;
                 line-height: 19rem;
-                left: 3%;
+                left: 12%;
                 font-family: 'Roboto Condensed';
                 font-weight: 900;
                 z-index: 0;
@@ -429,6 +439,8 @@ body#page-course-view-topics section#region-main {
             width: 45%;
             h5 {
                 font-weight: 600;
+                font-size: 1rem;
+                line-height: 1.7;
                 margin: 0;
             }
         }
@@ -540,6 +552,7 @@ ul.section.img-text .page .asset-wrapper {
         flex-direction: column;
         padding: 1rem;
         padding-left: 100px;
+        height: 150px;
         h3 a {
             text-align: left;
             color: white!important;
@@ -587,10 +600,10 @@ ul.section.img-text .page .asset-wrapper {
 }
 
 @mixin modulos-sm() {
-    .por-defecto #page-header #page-mast{
-        padding:0 10%;
+    .por-defecto #page-header #page-mast {
+        padding: 0 10%;
     }
-    .por-defecto #page-header #page-mast #course-toc #chapters li .chapter-title{
+    .por-defecto #page-header #page-mast #course-toc #chapters li .chapter-title {
         line-height: 1;
     }
     .course-content ul.topics li.section div.summary p {
@@ -623,7 +636,6 @@ ul.section.img-text .page .asset-wrapper {
         min-height: 40vh;
         .asset-wrapper .activityinstance .snap-asset-content {
             width: 85%;
-            line-height: 1.15rem;
         }
     }
     .separador-opciones {
@@ -679,26 +691,27 @@ ul.section.img-text .page .asset-wrapper {
 
 @-webkit-keyframes pulse {
     0% {
-      -webkit-box-shadow: 0 0 0 0 rgba(1,108,56, 0.4);
+        -webkit-box-shadow: 0 0 0 0 rgba(1, 108, 56, 0.4);
     }
     70% {
-        -webkit-box-shadow: 0 0 0 10px rgba(1,108,56, 0);
+        -webkit-box-shadow: 0 0 0 10px rgba(1, 108, 56, 0);
     }
     100% {
-        -webkit-box-shadow: 0 0 0 0 rgba(1,108,56, 0);
+        -webkit-box-shadow: 0 0 0 0 rgba(1, 108, 56, 0);
     }
-  }
-  @keyframes pulse {
+}
+
+@keyframes pulse {
     0% {
-      -moz-box-shadow: 0 0 0 0 rgba(1,108,56, 0.4);
-      box-shadow: 0 0 0 0 rgba(1,108,56, 0.4);
+        -moz-box-shadow: 0 0 0 0 rgba(1, 108, 56, 0.4);
+        box-shadow: 0 0 0 0 rgba(1, 108, 56, 0.4);
     }
     70% {
-        -moz-box-shadow: 0 0 0 10px rgba(1,108,56, 0);
-        box-shadow: 0 0 0 10px rgba(1,108,56, 0);
+        -moz-box-shadow: 0 0 0 10px rgba(1, 108, 56, 0);
+        box-shadow: 0 0 0 10px rgba(1, 108, 56, 0);
     }
     100% {
-        -moz-box-shadow: 0 0 0 0 rgba(1,108,56, 0);
-        box-shadow: 0 0 0 0 rgba(1,108,56, 0);
+        -moz-box-shadow: 0 0 0 0 rgba(1, 108, 56, 0);
+        box-shadow: 0 0 0 0 rgba(1, 108, 56, 0);
     }
-  }
+}

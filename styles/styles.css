@@ -28,7 +28,7 @@
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 108, 56, 0.7)), to(rgba(1, 108, 56, 0.7))), url(http://jkvela.website/theme/snap/pix/segurosbolivar/bg1.jpg);
   background: linear-gradient(rgba(1, 108, 56, 0.7), rgba(1, 108, 56, 0.7)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/bg1.jpg);
   background-size: cover;
-  background-position-x: center;
+  background-position: 200px;
 }
 
 #page-login-index main#moodle-page div#page-header {
@@ -73,6 +73,13 @@
 
 #page-login-index main#moodle-page section#region-main div[role="main"] .snap-login {
   padding: 0 9%;
+}
+
+#page-login-index main#moodle-page section#region-main div[role="main"] .snap-login .img-fluid,
+#page-login-index main#moodle-page section#region-main div[role="main"] .snap-login .img-responsive {
+  max-width: 70%;
+  margin: auto;
+  display: block;
 }
 
 #page-login-index main#moodle-page section#region-main .login-guest {
@@ -157,11 +164,12 @@ header#mr-nav::before {
 #moodle-footer #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container {
   display: -ms-grid;
   display: grid;
-  grid: 1fr 1fr / 20% 1fr;
+  grid: 1fr 1fr / 30% 1fr;
   width: 70%;
-  max-width: 960px;
+  max-width: 630px;
   margin: 0 auto;
   font-size: 12px;
+  grid-column-gap: 20px;
 }
 
 #moodle-footer #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container .redes {
@@ -286,6 +294,7 @@ section#snap-pm-courses {
 
 section#snap-pm-courses .coursecard {
   min-width: 30%;
+  background-position: right -50px;
 }
 
 section#snap-pm-courses .coursecard .coursecard-body {
@@ -340,8 +349,7 @@ body#page-course-view-topics section#region-main .course-content {
 }
 
 body#page-course-view-topics section#region-main span.instancename {
-  font-size: 2rem;
-  line-height: 1.5rem;
+  font-size: 1.77rem;
 }
 
 #page-header .breadcrumb-nav {
@@ -418,7 +426,8 @@ body#page-course-view-topics section#region-main span.instancename {
 #page-course-view-topics .por-defecto #page-header {
   -webkit-box-shadow: inset 0 0 0 50vw #21252996;
           box-shadow: inset 0 0 0 50vw #21252996;
-  background-position: center;
+  background-position: center 35%;
+  min-height: 450px;
 }
 
 #page-course-view-topics .por-defecto #page-header .breadcrumb-nav {
@@ -428,6 +437,7 @@ body#page-course-view-topics section#region-main span.instancename {
 #page-course-view-topics .por-defecto #page-header #page-mast {
   display: block;
   margin: 0 auto;
+  margin-top: 3rem;
   max-width: 43.5em;
   padding: 0;
 }
@@ -435,8 +445,12 @@ body#page-course-view-topics section#region-main span.instancename {
 #page-course-view-topics .por-defecto #page-header #page-mast > h1 {
   color: white;
   text-transform: uppercase;
-  font-size: 0.88rem;
+  font-size: 0.77rem;
   font-weight: normal;
+}
+
+#page-course-view-topics .por-defecto #page-header #page-mast .texto-bienvenida {
+  display: none;
 }
 
 #page-course-view-topics .por-defecto #page-header #page-mast .snap-coverimagecontrol {
@@ -510,8 +524,12 @@ body#page-course-view-topics section#region-main span.instancename {
 
 .course-content ul.topics li.label h3 {
   max-width: 21.5em;
+<<<<<<< HEAD
   text-align: center;
   margin: 0 auto;
+=======
+  text-align: left;
+>>>>>>> 0b7b52f00533fd8a2ee4eac6aaadaaa5ec996f57
 }
 
 .course-content ul.topics li.section.main {
@@ -580,7 +598,8 @@ body#page-course-view-topics section#region-main span.instancename {
   white-space: nowrap;
 }
 
-.course-content ul.topics li#section-1 div.summary p, .course-content ul.topics li#section-1 div.summary h3,
+.course-content ul.topics li#section-1 div.summary p,
+.course-content ul.topics li#section-1 div.summary h3,
 .course-content ul.topics li#section-2 div.summary p,
 .course-content ul.topics li#section-2 div.summary h3,
 .course-content ul.topics li#section-3 div.summary p,
@@ -691,10 +710,11 @@ body#page-course-view-topics section#region-main span.instancename {
 
 .course-content ul.topics blockquote.blockquote p {
   font-style: italic;
+  text-align: right;
 }
 
 .course-content ul.topics blockquote.blockquote footer {
-  padding: 0 18% 2rem;
+  padding: 0 10% 2rem;
   text-align: right;
   font-size: 1.3rem;
   color: #fadc5d;
@@ -811,7 +831,7 @@ body#page-course-view-topics section#region-main span.instancename {
   font-size: 500px;
   line-height: 19rem;
   letter-spacing: -40px;
-  right: 4%;
+  right: 11%;
   font-family: 'Roboto Condensed';
   font-weight: 900;
   z-index: 0;
@@ -837,7 +857,7 @@ body#page-course-view-topics section#region-main span.instancename {
   font-size: 500px;
   letter-spacing: -40px;
   line-height: 19rem;
-  left: 3%;
+  left: 12%;
   font-family: 'Roboto Condensed';
   font-weight: 900;
   z-index: 0;
@@ -911,6 +931,8 @@ body#page-course-view-topics section#region-main span.instancename {
 
 .contenedor-objetivos #complemento-objetivos .bloque h5 {
   font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.7;
   margin: 0;
 }
 
@@ -1046,6 +1068,7 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
           flex-direction: column;
   padding: 1rem;
   padding-left: 100px;
+  height: 150px;
 }
 
 .separador-opciones .opcion h3 a {
@@ -1254,7 +1277,10 @@ section#region-main {
   margin-top: 2rem;
 }
 
-#page-mod-quiz-view #intro, #page-mod-quiz-view table.generaltable.quizattemptsummary, #page-mod-quiz-view h3, #page-mod-quiz-view div.box {
+#page-mod-quiz-view #intro,
+#page-mod-quiz-view table.generaltable.quizattemptsummary,
+#page-mod-quiz-view h3,
+#page-mod-quiz-view div.box {
   padding: 0 10%;
 }
 
@@ -1315,6 +1341,15 @@ section#region-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+#page-mod-quiz-attempt .que .ddarea .que.ddmarker .dropbackground {
+  border: none;
+  width: 100%;
 }
 
 #page-mod-quiz-attempt .que.truefalse .prompt {
@@ -1342,7 +1377,8 @@ section#region-main {
   font-family: 'Roboto Condensed';
 }
 
-#page-mod-quiz-attempt .formulation input[type="text"], #page-mod-quiz-attempt .formulation select {
+#page-mod-quiz-attempt .formulation input[type="text"],
+#page-mod-quiz-attempt .formulation select {
   width: 100%;
 }
 
@@ -1408,7 +1444,7 @@ html #mr-nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 2rem 2rem 0 2rem;
+  padding: 1rem 4% 0 4%;
 }
 
 .home-ruta #page-header #page-mast > h1 {
@@ -1416,6 +1452,7 @@ html #mr-nav {
   text-transform: uppercase;
   font-size: 1.77rem;
   font-weight: bold;
+  margin-bottom: 26px;
 }
 
 .home-ruta #page-header #page-mast > h1::before {
@@ -1425,6 +1462,7 @@ html #mr-nav {
   text-transform: initial;
   font-size: 1.44rem;
   font-weight: bold;
+  line-height: 1.5;
 }
 
 .home-ruta #page-header #page-mast > h1 a {
@@ -1449,12 +1487,12 @@ html #mr-nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 56vh;
+  height: 80vh;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 100%;
-  margin-top: auto;
+  width: 92%;
+  position: absolute;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters {
@@ -1463,16 +1501,16 @@ html #mr-nav {
   display: flex;
   min-width: 100%;
   min-height: 150px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
   margin-left: .7em;
-  padding: 35px 40px;
+  padding: 40px;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li .text {
@@ -1518,17 +1556,20 @@ html #mr-nav {
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) {
   position: absolute;
-  top: 0;
+  top: 200px;
   right: unset;
+  left: 0;
   background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_metodologia.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  left: 5%;
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) a {
   color: #2b2b2b;
+  text-transform: uppercase;
+  font-size: 0.77rem;
+  font-weight: bold;
   padding-left: 32px;
 }
 
@@ -1563,8 +1604,9 @@ html #mr-nav {
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
   position: absolute;
-  top: -5rem;
-  right: 0;
+  top: 1rem;
+  right: -2.5rem;
+  left: unset;
   background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_caja_herramientas.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -1572,9 +1614,12 @@ html #mr-nav {
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters li:last-child a {
-  color: #006d38;
-  padding: 20px 23px 20px 61px;
-  width: 70%;
+  color: #2b2b2b;
+  text-transform: uppercase;
+  font-size: 0.77rem;
+  font-weight: bold;
+  padding: 10px 20px 10px 50px;
+  width: 58%;
   margin: 0 auto;
 }
 
@@ -1594,8 +1639,11 @@ html #mr-nav {
 }
 
 .home-ruta #page-header #page-mast #course-toc #chapters .chapter-title {
-  line-height: 1.2;
   color: #fadc5d;
+  text-transform: unset;
+  font-size: inherit;
+  font-weight: normal;
+  line-height: 1.2;
   text-decoration: none;
 }
 
@@ -1686,11 +1734,19 @@ section#coursetools div#coursetools-list > a {
   line-height: 1.1rem;
 }
 
-.pagelayout-admin #page-content, .layout-report #page-content, .admin #page-content, .path-badges #page-content, .path-user #page-content {
+.pagelayout-admin #page-content,
+.layout-report #page-content,
+.admin #page-content,
+.path-badges #page-content,
+.path-user #page-content {
   padding: 0 10%;
 }
 
-.pagelayout-admin #page-content h2, .layout-report #page-content h2, .admin #page-content h2, .path-badges #page-content h2, .path-user #page-content h2 {
+.pagelayout-admin #page-content h2,
+.layout-report #page-content h2,
+.admin #page-content h2,
+.path-badges #page-content h2,
+.path-user #page-content h2 {
   margin-top: 2rem;
 }
 
@@ -1721,7 +1777,8 @@ main  #page-header #page-mast {
   display: none;
 }
 
-main  #page-header.mast-image .breadcrumb-nav, main  #page-header.mast-image .breadcrumb {
+main  #page-header.mast-image .breadcrumb-nav,
+main  #page-header.mast-image .breadcrumb {
   margin: 0;
 }
 
@@ -1739,6 +1796,50 @@ main:not(.por-defecto) #page-header{
         }
     }
 }*/
+.theme-snap .button-group > button.default:hover,
+.theme-snap .btn.btn-primary:hover,
+.theme-snap #page-grade-grading-manage .actions .action.btn-primary:hover,
+#page-grade-grading-manage .actions .theme-snap .action.btn-primary:hover,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary:hover,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary:hover,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary:hover,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-primary:hover,
+.theme-snap .button-group > button.default:focus,
+.theme-snap .btn.btn-primary:focus,
+.theme-snap #page-grade-grading-manage .actions .action.btn-primary:focus,
+#page-grade-grading-manage .actions .theme-snap .action.btn-primary:focus,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary:focus,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary:focus,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary:focus,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-primary:focus,
+.theme-snap .button-group > button.default:active,
+.theme-snap .btn.btn-primary:active,
+.theme-snap #page-grade-grading-manage .actions .action.btn-primary:active,
+#page-grade-grading-manage .actions .theme-snap .action.btn-primary:active,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary:active,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary:active,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary:active,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-primary:active,
+.theme-snap .button-group > button.default.active,
+.theme-snap .btn.btn-primary.active,
+.theme-snap #page-grade-grading-manage .actions .action.btn-primary.active,
+#page-grade-grading-manage .actions .theme-snap .action.btn-primary.active,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary.active,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary.active,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary.active,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-primary.active {
+  outline: none;
+}
+
+.theme-snap a:focus,
+.theme-snap .dropdown-toggle:focus {
+  outline: none;
+}
+
+focus {
+  outline: none;
+}
+
 @media (max-width: 1249px) {
   #page-login-index main#moodle-page section#region-main {
     width: 75%;
@@ -1746,6 +1847,8 @@ main:not(.por-defecto) #page-header{
   .home-ruta #page-header #page-mast #course-toc {
     height: auto;
     padding: 3em 4%;
+    width: 100%;
+    position: relative;
   }
   .home-ruta #page-header #page-mast #course-toc #chapters {
     -ms-flex-wrap: wrap;
@@ -1764,7 +1867,7 @@ main:not(.por-defecto) #page-header{
   }
   .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
   .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
-    top: 1%;
+    top: -6%;
     margin: 0;
   }
   .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
@@ -1776,9 +1879,10 @@ main:not(.por-defecto) #page-header{
     padding: 40px 18px;
     margin-top: -3%;
   }
-  .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(3), .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(4) {
-    margin-top: 2rem;
-  }
+  /*.home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(3),
+    .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(4) {
+        margin-top: 2rem;
+    }*/
   .home-ruta #page-header #page-mast .texto-bienvenida {
     background: #ffffffb0;
   }
@@ -1898,7 +2002,6 @@ main:not(.por-defecto) #page-header{
   }
   .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content {
     width: 85%;
-    line-height: 1.15rem;
   }
   .separador-opciones {
     -webkit-box-orient: vertical;
@@ -2082,7 +2185,392 @@ main:not(.por-defecto) #page-header{
 }
 
 @media (max-width: 1001px) {
-  :not(.home-ruta) #page-header, :not(.por-defecto) #page-header {
+  :not(.home-ruta) #page-header,
+  :not(.por-defecto) #page-header {
+    padding-top: 4em !important;
+  }
+  .course-content ul.topics li#section-1 .section_footer,
+  .course-content ul.topics li#section-2 .section_footer,
+  .course-content ul.topics li#section-3 .section_footer,
+  .course-content ul.topics li#section-4 .section_footer,
+  .course-content ul.topics li#section-5 .section_footer {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #page-header #course-toc {
+    position: relative !important;
+  }
+  #page-course-view-topics #page-header #course-toc .chapters {
+    display: block;
+    color: inherit;
+  }
+}
+
+.page-grade-grading-manage .actions .theme-snap .action.btn-primary:active,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary:active,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary:active,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary:active,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-primary:active,
+.theme-snap .button-group > button.default.active,
+.theme-snap .btn.btn-primary.active,
+.theme-snap #page-grade-grading-manage .actions .action.btn-primary.active,
+#page-grade-grading-manage .actions .theme-snap .action.btn-primary.active,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary.active,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary.active,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary.active,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-primary.active {
+  outline: none;
+}
+
+@media (max-width: 1249px) {
+  #page-login-index main#moodle-page section#region-main {
+    width: 75%;
+  }
+  .home-ruta #page-header #page-mast #course-toc {
+    height: auto;
+    padding: 3em 4%;
+    width: 100%;
+    position: relative;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters li {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+    margin: 2px;
+    padding: 35px;
+    margin-right: 57px;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
+  .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
+    top: -6%;
+    margin: 0;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
+    padding: 0 0 0 13px;
+    width: 26%;
+    top: -5rem;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters li:last-child a {
+    padding: 40px 18px;
+    margin-top: -3%;
+  }
+  /*.home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(3),
+    .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(4) {
+        margin-top: 2rem;
+    }*/
+  .home-ruta #page-header #page-mast .texto-bienvenida {
+    background: #ffffffb0;
+  }
+  .separador-opciones {
+    padding: 3rem 4%;
+  }
+  .separador-opciones h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  #page-login-index main#moodle-page section#region-main {
+    width: 90%;
+    margin: 0 auto !important;
+  }
+  #moodle-footer #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #moodle-footer #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container .redes {
+    width: 60%;
+    margin-bottom: 5px;
+  }
+  #moodle-footer #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container .terminosycondiciones {
+    margin-bottom: 5px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #moodle-footer #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container .terminosycondiciones li {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    text-align: center;
+  }
+  #moodle-footer #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container .copyright {
+    text-align: center;
+  }
+  .home-ruta #page-header #page-mast {
+    height: auto;
+    min-height: 85vh;
+  }
+  .home-ruta #page-header #page-mast #course-toc {
+    height: auto;
+    min-height: 79vh;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters li {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+    margin: 2px;
+    padding: 35px 5%;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
+  .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
+    top: 5%;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
+    width: 54%;
+    max-width: 275px;
+    padding: 0 0px 0px 20px;
+    max-height: 132px;
+  }
+  .home-ruta #page-header #page-mast .texto-bienvenida {
+    background: #ffffffc7;
+  }
+  .por-defecto #page-header #page-mast {
+    padding: 0 10%;
+  }
+  .por-defecto #page-header #page-mast #course-toc #chapters li .chapter-title {
+    line-height: 1;
+  }
+  .course-content ul.topics li.section div.summary p {
+    padding: 13px 10%;
+  }
+  .contenedor-objetivos {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    min-width: auto;
+  }
+  .contenedor-objetivos #objetivo-modulo {
+    padding: 9.5% 7% 16.5% 9.5%;
+  }
+  .contenedor-objetivos #complemento-objetivos {
+    min-height: 412px;
+  }
+  .contenedor-objetivos #complemento-objetivos .bloque {
+    width: 43%;
+  }
+  .course-content ul.topics blockquote.blockquote p,
+  .course-content ul.topics blockquote.blockquote footer {
+    padding: 1.5rem 10%;
+    font-size: 1rem;
+  }
+  .course-content ul.topics blockquote.blockquote p {
+    padding-bottom: 0;
+  }
+  .course-content ul.topics ul.section.img-text li.snap-activity {
+    min-height: 40vh;
+  }
+  .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content {
+    width: 85%;
+  }
+  .separador-opciones {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .separador-opciones .opcion {
+    width: 80%;
+  }
+  section#snap-pm-courses .coursecard {
+    min-height: 45vh;
+    min-width: 47%;
+    height: 300px;
+  }
+  .activity-navigation .row .col-md-4:nth-child(1), .activity-navigation .row .col-md-4:nth-child(3) {
+    display: none;
+  }
+  section#region-main div.m-t-2.m-b-1 .col-md-4 {
+    min-height: 1em;
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #page-mod-lesson-view div[role="main"] .bloque-verde-derecha p, #page-mod-lesson-view div[role="main"] .bloque-verde-izquierda p {
+    width: 65%;
+  }
+  #page-mod-quiz-attempt .que .ddarea {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #page-mod-quiz-attempt .que .ddarea .droparea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 630px) {
+  .home-ruta #page-header {
+    padding-top: 18vh;
+    background: white !important;
+  }
+  .home-ruta #page-header #course-toc {
+    padding: 0;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters li {
+    padding: 30px 35px;
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+    min-width: 300px;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters li .chapter-title {
+    padding: 0;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2),
+  .home-ruta #page-header #page-mast #course-toc #chapters li:last-child {
+    top: 0px;
+    position: relative;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) {
+    left: 0;
+    position: relative;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) a[href="#section-1"]::before {
+    margin-left: -10px;
+  }
+  .contenedor-objetivos #objetivo-modulo {
+    width: 90%;
+    min-height: 398px;
+    font-size: 80%;
+  }
+  .contenedor-objetivos #complemento-objetivos {
+    min-height: 420px;
+    font-size: 85%;
+  }
+  .contenedor-objetivos #complemento-objetivos .bloque {
+    width: 66%;
+    padding: 0 10%;
+  }
+  .course-content ul.topics blockquote.blockquote {
+    height: auto;
+  }
+  .course-content ul.topics ul.section.img-text li.snap-activity {
+    height: auto;
+  }
+  .course-content ul.topics ul.section.img-text li.snap-activity:nth-child(odd)::before {
+    bottom: -60px;
+    top: auto;
+  }
+  .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px;
+  }
+  .separador-opciones {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .video-container {
+    padding-bottom: 72.25%;
+  }
+  h3#final-descripcion {
+    width: 65%;
+  }
+  section#region-main {
+    padding: 0;
+  }
+  #page-mod-lesson-view div[role="main"] p {
+    padding: 1rem 10%;
+    margin: 0;
+  }
+  #page-mod-lesson-view div[role="main"] .contenedor-imagenes img {
+    width: 55%;
+  }
+  #page-mod-lesson-view div[role="main"] h3 {
+    padding: 10px 10%;
+  }
+  #page-mod-lesson-view div[role="main"] .bloque-verde-derecha, #page-mod-lesson-view div[role="main"] .bloque-verde-izquierda {
+    height: auto;
+  }
+  #page-mod-lesson-view div[role="main"] .bloque-verde-derecha p, #page-mod-lesson-view div[role="main"] .bloque-verde-izquierda p {
+    width: 85%;
+  }
+  #page-mod-quiz-attempt .que.truefalse .answer > div {
+    padding: 0.5em 0.4em;
+    margin-right: 5px;
+  }
+  #snap-pm-header .pull-right {
+    right: 20px;
+    position: fixed;
+    top: 20px;
+  }
+  div#snap-pm-header-quicklinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  #snap-pm-header .snap-pm-user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 80%;
+  }
+  #snap-pm-header .snap-pm-user a.h1 {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+  #snap-pm-header .snap-pm-user .userpicture {
+    margin-bottom: 5px;
+    width: 55px;
+  }
+  header#mr-nav::before {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  div#page {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1001px) {
+  :not(.home-ruta) #page-header,
+  :not(.por-defecto) #page-header {
     padding-top: 4em !important;
   }
 }
