@@ -19,6 +19,22 @@ body#page-course-view-topics section#region-main {
 #page-header {
     .breadcrumb-nav {
         display: block;
+        .breadcrumb{
+            &::before{
+                content:'>';
+                border: 1px solid $gris-no2;
+                line-height: 0.77rem;
+                min-width: 0.77rem;
+                display: inline-block;
+                text-align: center;
+                margin-right: 5px;
+                border-radius: 50%;
+                font-size: 0.77rem;
+                color: $gris-no2;
+                box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+                animation: pulse 2s infinite;
+            }
+        }
     }
     #page-mast {
         h1 {

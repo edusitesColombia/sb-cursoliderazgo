@@ -357,6 +357,23 @@ body#page-course-view-topics section#region-main span.instancename {
   display: block;
 }
 
+#page-header .breadcrumb-nav .breadcrumb::before {
+  content: '>';
+  border: 1px solid #f7f7f7;
+  line-height: 0.77rem;
+  min-width: 0.77rem;
+  display: inline-block;
+  text-align: center;
+  margin-right: 5px;
+  border-radius: 50%;
+  font-size: 0.77rem;
+  color: #f7f7f7;
+  -webkit-box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+          box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
+}
+
 #page-header #page-mast h1::before,
 #page-header #page-mast h1 a,
 #page-header #page-mast h1 a:hover {
