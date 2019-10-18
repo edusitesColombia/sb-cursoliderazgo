@@ -323,13 +323,13 @@ body#page-course-view-topics section#region-main {
                     .contentafterlink {
                         margin-left: 0px;
                     }
-                    h3.snap-asset-link {
+                    /*h3.snap-asset-link {
                         box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
                         animation: pulse 2s infinite;
                         margin: -10px;
                         padding: 10px;
                         margin-bottom: 10px;
-                    }
+                    }*/
                 }
                 .snap-asset-content h3 img {
                     display: none;
@@ -348,6 +348,11 @@ body#page-course-view-topics section#region-main {
             .activityinstance .snap-asset-content {
                 padding-left: 15%;
                 padding-right: 6%;
+                h3.snap-asset-link::before {
+                    content:'<';
+                    border:1px solid $gris-no1;
+                    border-radius:50%;
+                }
             }
             &::before {
                 counter-increment: actividadNo;
@@ -358,7 +363,7 @@ body#page-course-view-topics section#region-main {
                 font-size: 500px;
                 line-height: 19rem;
                 letter-spacing: -40px;
-                right: 11%;
+                right: 18%;
                 font-family: 'Roboto Condensed';
                 font-weight: 900;
                 z-index: 0;
@@ -371,6 +376,11 @@ body#page-course-view-topics section#region-main {
                 text-align: left;
                 padding-right: 15%;
                 padding-left: 6%;
+                h3.snap-asset-link::before {
+                    content:'>';
+                    border:1px solid $gris-no1;
+                    border-radius:50%;
+                }
             }
             &::before {
                 counter-increment: actividadNo;
@@ -381,7 +391,7 @@ body#page-course-view-topics section#region-main {
                 font-size: 500px;
                 letter-spacing: -40px;
                 line-height: 19rem;
-                left: 12%;
+                left: 18%;
                 font-family: 'Roboto Condensed';
                 font-weight: 900;
                 z-index: 0;
