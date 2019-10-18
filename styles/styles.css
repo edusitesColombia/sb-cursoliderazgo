@@ -1846,7 +1846,7 @@ section#coursetools div#coursetools-list > a {
   margin-top: 2rem;
 }
 
-.path-user .home-ruta #page-content h2 {
+.path-user .home-ruta div[role="main"] > h2 {
   margin-top: 5rem;
 }
 
@@ -1875,6 +1875,10 @@ main:not(.home-ruta):not(.por-defecto) #page-header {
 
 main  #page-header #page-mast {
   display: none;
+}
+
+main  #page-header.mast-image {
+  margin-bottom: 2rem;
 }
 
 main  #page-header.mast-image .breadcrumb-nav,
