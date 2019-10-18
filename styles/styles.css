@@ -2264,6 +2264,7 @@ section#region-main div.m-t-2.m-b-1 {
   }
   #page-mod-lesson-view div[role="main"] .bloque-verde-derecha, #page-mod-lesson-view div[role="main"] .bloque-verde-izquierda {
     height: auto;
+    min-height: 100%;
   }
   #page-mod-lesson-view div[role="main"] .bloque-verde-derecha p, #page-mod-lesson-view div[role="main"] .bloque-verde-izquierda p {
     width: 85%;
@@ -2656,6 +2657,7 @@ section#region-main div.m-t-2.m-b-1 {
   }
   #page-mod-lesson-view div[role="main"] .bloque-verde-derecha, #page-mod-lesson-view div[role="main"] .bloque-verde-izquierda {
     height: auto;
+    min-height: 100%;
   }
   #page-mod-lesson-view div[role="main"] .bloque-verde-derecha p, #page-mod-lesson-view div[role="main"] .bloque-verde-izquierda p {
     width: 85%;
