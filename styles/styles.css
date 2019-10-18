@@ -1838,14 +1838,6 @@ section#coursetools div#coursetools-list > a {
   padding: 0 10%;
 }
 
-.pagelayout-admin #page-content #region-main h2,
-.layout-report #page-content #region-main h2,
-.admin #page-content #region-main h2,
-.path-badges #page-content #region-main h2,
-.path-user #page-content #region-main h2 {
-  margin-top: 2rem;
-}
-
 .path-user .home-ruta div[role="main"] > h2 {
   margin-top: 5rem !important;
 }
