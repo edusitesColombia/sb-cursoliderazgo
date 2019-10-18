@@ -155,6 +155,12 @@ body#page-course-view-topics section#region-main {
             }
         }
     }
+    .section .activityinstance .contentafterlink ul{
+        list-style-type: none;
+        li{
+            padding: 0.5rem;
+        }
+    }
 }
 
 //contenedor videos

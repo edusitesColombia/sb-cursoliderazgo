@@ -535,6 +535,14 @@ body#page-course-view-topics section#region-main span.instancename {
   margin-bottom: 15px;
 }
 
+#page-course-view-topics .por-defecto .section .activityinstance .contentafterlink ul {
+  list-style-type: none;
+}
+
+#page-course-view-topics .por-defecto .section .activityinstance .contentafterlink ul li {
+  padding: 0.5rem;
+}
+
 .video-container {
   position: relative;
   width: 100%;
