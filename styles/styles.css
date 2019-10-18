@@ -1847,7 +1847,7 @@ section#coursetools div#coursetools-list > a {
 }
 
 .path-user .home-ruta div[role="main"] > h2 {
-  margin-top: 5rem;
+  margin-top: 5rem !important;
 }
 
 .path-user .home-ruta #page-header {
