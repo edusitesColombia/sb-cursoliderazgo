@@ -2087,6 +2087,9 @@ section#region-main div.m-t-2.m-b-1 {
   .contenedor-objetivos #complemento-objetivos .bloque {
     width: 43%;
   }
+  .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content h3.snap-asset-link {
+    white-space: normal;
+  }
   .course-content ul.topics blockquote.blockquote p,
   .course-content ul.topics blockquote.blockquote footer {
     padding: 1.5rem 10%;
@@ -2475,6 +2478,9 @@ section#region-main div.m-t-2.m-b-1 {
   }
   .contenedor-objetivos #complemento-objetivos .bloque {
     width: 43%;
+  }
+  .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content h3.snap-asset-link {
+    white-space: normal;
   }
   .course-content ul.topics blockquote.blockquote p,
   .course-content ul.topics blockquote.blockquote footer {
