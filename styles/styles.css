@@ -848,6 +848,18 @@ body#page-course-view-topics section#region-main span.instancename {
   padding-right: 6%;
 }
 
+.course-content ul.topics ul.section.img-text li.snap-activity:nth-child(odd) .activityinstance .snap-asset-content h3.snap-asset-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .course-content ul.topics ul.section.img-text li.snap-activity:nth-child(odd) .activityinstance .snap-asset-content h3.snap-asset-link::after {
   content: '<';
   border: 1px solid #eaeaea;
@@ -889,6 +901,18 @@ body#page-course-view-topics section#region-main span.instancename {
   text-align: left;
   padding-right: 15%;
   padding-left: 6%;
+}
+
+.course-content ul.topics ul.section.img-text li.snap-activity:nth-child(even) .activityinstance .snap-asset-content h3.snap-asset-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .course-content ul.topics ul.section.img-text li.snap-activity:nth-child(even) .activityinstance .snap-asset-content h3.snap-asset-link::before {
