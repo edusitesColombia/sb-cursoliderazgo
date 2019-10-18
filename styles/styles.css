@@ -812,17 +812,19 @@ body#page-course-view-topics section#region-main span.instancename {
   width: 60%;
   text-align: right;
   padding-left: 6%;
-  /*h3.snap-asset-link {
-                        box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
-                        animation: pulse 2s infinite;
-                        margin: -10px;
-                        padding: 10px;
-                        margin-bottom: 10px;
-                    }*/
 }
 
 .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content .contentafterlink {
   margin-left: 0px;
+}
+
+.course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content h3.snap-asset-link {
+  /*box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+                        animation: pulse 2s infinite;
+                        margin: -10px;
+                        padding: 10px;
+                        margin-bottom: 10px;*/
+  white-space: nowrap;
 }
 
 .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content h3 img {
