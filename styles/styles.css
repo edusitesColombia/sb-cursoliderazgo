@@ -1877,13 +1877,13 @@ main  #page-header #page-mast {
   display: none;
 }
 
-main  #page-header.mast-image {
-  margin-bottom: 2rem;
-}
-
 main  #page-header.mast-image .breadcrumb-nav,
 main  #page-header.mast-image .breadcrumb {
   margin: 0;
+}
+
+main  #page-header div[role="main"] > h2, main  #page-header div[role="main"] > div:first-of-type {
+  margin-top: 2rem !important;
 }
 
 /*
