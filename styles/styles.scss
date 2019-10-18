@@ -122,11 +122,13 @@ main:not(.home-ruta, .por-defecto) #page-header {
         display: none;
     }
     &.mast-image {
-        margin-bottom:2rem;
         .breadcrumb-nav,
         .breadcrumb {
             margin: 0;
-        }
+        }        
+    }
+    div[role="main"]>h2, div[role="main"]>div:first-of-type  {
+        margin-top: 2rem!important;
     }
 }
 
