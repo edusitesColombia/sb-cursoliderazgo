@@ -81,11 +81,11 @@ section#coursetools {
     }
 }
 
-.pagelayout-admin #page-content,
-.layout-report #page-content,
-.admin #page-content,
-.path-badges #page-content,
-.path-user #page-content {
+.pagelayout-admin #page-content #region-main,
+.layout-report #page-content #region-main,
+.admin #page-content #region-main,
+.path-badges #page-content #region-main,
+.path-user #page-content #region-main{
     padding: 0 10%;
     h2 {
         margin-top: 2rem;

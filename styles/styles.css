@@ -1830,19 +1830,19 @@ section#coursetools div#coursetools-list > a {
   line-height: 1.1rem;
 }
 
-.pagelayout-admin #page-content,
-.layout-report #page-content,
-.admin #page-content,
-.path-badges #page-content,
-.path-user #page-content {
+.pagelayout-admin #page-content #region-main,
+.layout-report #page-content #region-main,
+.admin #page-content #region-main,
+.path-badges #page-content #region-main,
+.path-user #page-content #region-main {
   padding: 0 10%;
 }
 
-.pagelayout-admin #page-content h2,
-.layout-report #page-content h2,
-.admin #page-content h2,
-.path-badges #page-content h2,
-.path-user #page-content h2 {
+.pagelayout-admin #page-content #region-main h2,
+.layout-report #page-content #region-main h2,
+.admin #page-content #region-main h2,
+.path-badges #page-content #region-main h2,
+.path-user #page-content #region-main h2 {
   margin-top: 2rem;
 }
 
