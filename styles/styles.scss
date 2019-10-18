@@ -145,7 +145,11 @@ main:not(.por-defecto) #page-header{
     }
 }*/
 
-//ELimina el borde que se genera alrededor de los elementos clickeables
+/*Glosario*/
+.glossarypost tr td>div {
+    padding-left: 55px;
+}
+//Elimina el borde que se genera alrededor de los elementos clickeables
 .theme-snap .button-group>button.default:hover,
 .theme-snap .btn.btn-primary:hover,
 .theme-snap #page-grade-grading-manage .actions .action.btn-primary:hover,

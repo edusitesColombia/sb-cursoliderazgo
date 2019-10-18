@@ -1892,6 +1892,11 @@ main:not(.por-defecto) #page-header{
         }
     }
 }*/
+/*Glosario*/
+.glossarypost tr td > div {
+  padding-left: 55px;
+}
+
 .theme-snap .button-group > button.default:hover,
 .theme-snap .btn.btn-primary:hover,
 .theme-snap #page-grade-grading-manage .actions .action.btn-primary:hover,
