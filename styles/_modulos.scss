@@ -349,9 +349,18 @@ body#page-course-view-topics section#region-main {
                 padding-left: 15%;
                 padding-right: 6%;
                 h3.snap-asset-link::before {
-                    content:'<';
-                    border:1px solid $gris-no1;
-                    border-radius:50%;
+                    content: '<';
+                    border: 1px solid $gris-no1;
+                    line-height: 1.7rem;
+                    min-width: 1.7rem;
+                    display: inline-block;
+                    text-align: center;
+                    margin-left: 5px;
+                    border-radius: 50%;
+                    font-size: 1em;
+                    color: $verde;
+                    box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+                    animation: pulse 2s infinite;
                 }
             }
             &::before {
@@ -378,8 +387,17 @@ body#page-course-view-topics section#region-main {
                 padding-left: 6%;
                 h3.snap-asset-link::before {
                     content:'>';
-                    border:1px solid $gris-no1;
-                    border-radius:50%;
+                    border: 1px solid $gris-no2;
+                    line-height: 1.7rem;
+                    min-width: 1.7rem;
+                    display: inline-block;
+                    text-align: center;
+                    margin-right: 5px;
+                    border-radius: 50%;
+                    font-size: 1em;
+                    color: $verde;
+                    box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+                    animation: pulse 2s infinite;
                 }
             }
             &::before {

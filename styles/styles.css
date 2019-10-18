@@ -815,7 +815,18 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics ul.section.img-text li.snap-activity:nth-child(odd) .activityinstance .snap-asset-content h3.snap-asset-link::before {
   content: '<';
   border: 1px solid #eaeaea;
+  line-height: 1.7rem;
+  min-width: 1.7rem;
+  display: inline-block;
+  text-align: center;
+  margin-left: 5px;
   border-radius: 50%;
+  font-size: 1em;
+  color: #006d38;
+  -webkit-box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+          box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
 }
 
 .course-content ul.topics ul.section.img-text li.snap-activity:nth-child(odd)::before {
@@ -846,8 +857,19 @@ body#page-course-view-topics section#region-main span.instancename {
 
 .course-content ul.topics ul.section.img-text li.snap-activity:nth-child(even) .activityinstance .snap-asset-content h3.snap-asset-link::before {
   content: '>';
-  border: 1px solid #eaeaea;
+  border: 1px solid #f7f7f7;
+  line-height: 1.7rem;
+  min-width: 1.7rem;
+  display: inline-block;
+  text-align: center;
+  margin-right: 5px;
   border-radius: 50%;
+  font-size: 1em;
+  color: #006d38;
+  -webkit-box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+          box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
 }
 
 .course-content ul.topics ul.section.img-text li.snap-activity:nth-child(even)::before {
