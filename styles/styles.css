@@ -1472,7 +1472,7 @@ section#region-main {
 #page-mod-quiz-attempt .que.ddmarker .dropbackground,
 #page-mod-quiz-attempt form.mform fieldset#id_previewareaheader .dropbackground {
   border: none !important;
-  width: 100% !important;
+  width: 85% !important;
 }
 
 #page-mod-quiz-attempt table.answer {
