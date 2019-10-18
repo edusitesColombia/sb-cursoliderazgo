@@ -117,6 +117,7 @@ main:not(.home-ruta, .por-defecto) #page-header {
     background-position: center;
     position: sticky;
     top: -75px;
+    z-index: 3;
     #page-mast {
         display: none;
     }

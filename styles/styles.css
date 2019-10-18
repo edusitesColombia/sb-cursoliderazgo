@@ -1775,6 +1775,7 @@ main:not(.home-ruta):not(.por-defecto) #page-header {
   position: -webkit-sticky;
   position: sticky;
   top: -75px;
+  z-index: 3;
 }
 
 main  #page-header #page-mast {
