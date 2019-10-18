@@ -1882,7 +1882,7 @@ main  #page-header.mast-image .breadcrumb {
   margin: 0;
 }
 
-main  #page-header div[role="main"] > h2, main  #page-header div[role="main"] > div:first-of-type {
+main:not(.home-ruta):not(.por-defecto) div[role="main"] > h2, div[role="main"] > div:first-of-type {
   margin-top: 2rem !important;
 }
 
