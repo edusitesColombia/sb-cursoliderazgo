@@ -2225,6 +2225,9 @@ section#region-main div.m-t-2.m-b-1 {
     width: 66%;
     padding: 0 10%;
   }
+  #page-course-view-topics .por-defecto #page-header {
+    padding: 0 10%;
+  }
   .course-content ul.topics blockquote.blockquote {
     height: auto;
   }
@@ -2616,6 +2619,9 @@ section#region-main div.m-t-2.m-b-1 {
   }
   .contenedor-objetivos #complemento-objetivos .bloque {
     width: 66%;
+    padding: 0 10%;
+  }
+  #page-course-view-topics .por-defecto #page-header {
     padding: 0 10%;
   }
   .course-content ul.topics blockquote.blockquote {
