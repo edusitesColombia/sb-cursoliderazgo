@@ -358,10 +358,12 @@ body#page-course-view-topics section#region-main span.instancename {
 }
 
 #page-header .breadcrumb-nav .breadcrumb::before {
-  content: '>';
+  content: '<';
   border: 1px solid #f7f7f7;
   line-height: 0.77rem;
   min-width: 0.77rem;
+  width: 0.77rem;
+  height: 0.77rem;
   display: inline-block;
   text-align: center;
   margin-right: 5px;
@@ -869,7 +871,7 @@ body#page-course-view-topics section#region-main span.instancename {
 }
 
 .course-content ul.topics ul.section.img-text li.snap-activity:nth-child(odd) .activityinstance .snap-asset-content h3.snap-asset-link::after {
-  content: '<';
+  content: '>';
   border: 1px solid #eaeaea;
   line-height: 1.7rem;
   min-width: 1.7rem;
@@ -923,7 +925,7 @@ body#page-course-view-topics section#region-main span.instancename {
           align-items: center;
 }
 
-.course-content ul.topics ul.section.img-text li.snap-activity:nth-child(even) .activityinstance .snap-asset-content h3.snap-asset-link::before {
+.course-content ul.topics ul.section.img-text li.snap-activity:nth-child(even) .activityinstance .snap-asset-content h3.snap-asset-link::after {
   content: '>';
   border: 1px solid #f7f7f7;
   line-height: 1.7rem;

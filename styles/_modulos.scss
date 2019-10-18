@@ -21,10 +21,12 @@ body#page-course-view-topics section#region-main {
         display: block;
         .breadcrumb{
             &::before{
-                content:'>';
+                content:'<';
                 border: 1px solid $gris-no2;
                 line-height: 0.77rem;
                 min-width: 0.77rem;
+                width:0.77rem;
+                height:0.77rem;
                 display: inline-block;
                 text-align: center;
                 margin-right: 5px;
@@ -390,7 +392,7 @@ body#page-course-view-topics section#region-main {
                     justify-content: flex-end;
                     align-items: center;
                     &::after {
-                        content: '<';
+                        content: '>';
                         border: 1px solid $gris-no1;
                         line-height: 1.7rem;
                         min-width: 1.7rem;
@@ -431,7 +433,7 @@ body#page-course-view-topics section#region-main {
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
-                    &::before {
+                    &::after {
                         content:'>';
                         border: 1px solid $gris-no2;
                         line-height: 1.7rem;
