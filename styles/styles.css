@@ -926,7 +926,7 @@ body#page-course-view-topics section#region-main span.instancename {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 8.8rem 0.2rem 6rem 4.5rem;
+  padding: 8.8rem 2.3rem 6rem 6rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
