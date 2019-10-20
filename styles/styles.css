@@ -547,6 +547,14 @@ body#page-course-view-topics section#region-main span.instancename {
   padding: 0.5rem;
 }
 
+#page-course-view-topics .por-defecto .activity.page .activityinstance {
+  width: 100%;
+}
+
+#page-course-view-topics .por-defecto .activity.page .activityinstance .summary-figure {
+  display: none;
+}
+
 .video-container {
   position: relative;
   width: 100%;
