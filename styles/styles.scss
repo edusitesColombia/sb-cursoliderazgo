@@ -27,6 +27,8 @@
     color: #fff;
 }
 
+
+
 .alert.alert-danger,
 #page-admin-index .releasenoteslink.alert-danger,
 #page-admin-index #page-admin-index .adminerror.releasenoteslink,
@@ -64,6 +66,10 @@
 
 div#page {
     min-height: 95vh;
+}
+
+#breadcrumb-nav ol.breadcrumb li a{
+    color:$blanco;
 }
 
 section#coursetools {

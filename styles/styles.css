@@ -1864,6 +1864,10 @@ div#page {
   min-height: 95vh;
 }
 
+#breadcrumb-nav ol.breadcrumb li a {
+  color: white;
+}
+
 section#coursetools {
   padding: 0 15%;
 }
