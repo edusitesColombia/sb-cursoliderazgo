@@ -1771,12 +1771,12 @@ html #mr-nav {
   text-decoration: none;
 }
 
-.home-ruta #page-header #page-mast #course-toc #chapters .chapter-title::after {
+.home-ruta #page-header #page-mast #course-toc #chapters .chapter-title:not(:last-child)::after {
   content: '>';
   padding: 2px;
   font-size: 0.8rem;
   line-height: 0.8rem;
-  border: 1px solid #eaeaea;
+  border: 1px solid #eaeaea7a;
   color: #eaeaea;
   border-radius: 50%;
   min-width: 1rem;
