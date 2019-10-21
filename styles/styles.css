@@ -2348,6 +2348,9 @@ section#region-main div.m-t-2.m-b-1 {
     padding: 0.5em 0.4em;
     margin-right: 5px;
   }
+  .theme-snap #snap-pm-header {
+    padding: 0.5rem 10%;
+  }
   #snap-pm-header .pull-right {
     right: 20px;
     position: fixed;

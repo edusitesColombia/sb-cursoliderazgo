@@ -76,6 +76,9 @@ section#snap-pm-courses {
 }
 
 @mixin miscursos-xs() {
+    .theme-snap #snap-pm-header{
+        padding: 0.5rem 10%;
+    }
     #snap-pm-header .pull-right {
         right: 20px;
         position: fixed;
