@@ -760,6 +760,9 @@
     }
     
     @mixin modulos-xs() {
+        #page-header .breadcrumb-nav::before{
+            content:'';
+        }
         .contenedor-objetivos {
             #objetivo-modulo {
                 width: 100%;

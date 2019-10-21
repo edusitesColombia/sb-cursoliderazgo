@@ -2272,6 +2272,9 @@ section#region-main div.m-t-2.m-b-1 {
   .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(2) a[href="#section-1"]::before {
     margin-left: 10px;
   }
+  #page-header .breadcrumb-nav::before {
+    content: '';
+  }
   .contenedor-objetivos #objetivo-modulo {
     width: 100%;
     min-height: 400px;
