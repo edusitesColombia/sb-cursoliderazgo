@@ -1,102 +1,23 @@
-@import "./mixins";
-//hacer el contenedor de ancho completo
-//max-width del contenedor es 60.5em
-//max-width del contenido es 43.5em
-body#page-course-view-topics section#region-main {
-    max-width: 100%!important;
-    padding: 0;
-    margin: 0;
-    .course-content {
+    @import "./mixins";
+    //hacer el contenedor de ancho completo
+    //max-width del contenedor es 60.5em
+    //max-width del contenido es 43.5em
+    body#page-course-view-topics section#region-main {
         max-width: 100%!important;
-    }
-    //letra de los titulos
-    span.instancename {
-        font-size: 1.77rem;
-    }
-}
-
-//cabecera modulo
-#page-header {
-    .breadcrumb-nav {
-        display: block;
-        .breadcrumb{
-            &::before{
-                content:'<';
-                border: 1px solid $gris-no2;
-                line-height: 0.77rem;
-                min-width: 0.77rem;
-                width:0.77rem;
-                height:0.77rem;
-                display: inline-block;
-                text-align: center;
-                margin-right: 5px;
-                border-radius: 50%;
-                font-size: 0.77rem;
-                padding-bottom:1px;
-                color: $gris-no2;
-                box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
-                animation: pulse 2s infinite;
-                padding-bottom:1px;
-            }
+        padding: 0;
+        margin: 0;
+        .course-content {
+            max-width: 100%!important;
+        }
+        //letra de los titulos
+        span.instancename {
+            font-size: 1.77rem;
         }
     }
-    #page-mast {
-        h1 {
-            &::before,
-            a,
-            a:hover {
-                text-shadow: none;
-            }
-        }
-        #snap-coverimagecontrol {
-            display: none;
-        }
-        #course-toc {
-            background-color: transparent;
-            display: none;
-        }
-        #toc-desktop-menu-heading {
-            display: none;
-        }
-        #toc-search {
-            display: none;
-        }
-        #chapters {
-            list-style: none;
-            counter-reset: modulo -1;
-            li {
-                border: none;
-                counter-increment: modulo;
-                display: flex;
-                flex-direction: column-reverse;
-                justify-content: flex-end;
-                &:first-child {
-                    display: none;
-                }
-                .text {
-                    @include textos-ruta($amarillo, .7rem);
-                    &::before {
-                        content: 'Módulo ' counter(modulo);
-                    }
-                }
-            }
-            .toc-footer {
-                margin-top: 30px;
-                margin-bottom: 15px;
-            }
-        }
-    }
-}
-
-#page-course-view-topics .por-defecto {
+    
+    //cabecera modulo
     #page-header {
-        box-shadow: inset 0 0 0 50vw #21252996;
-        background-position: center 35%;
-        min-height: 450px;
         .breadcrumb-nav {
-            visibility: hidden;
-        }
-        #page-mast {
             display: block;
             margin: 0 auto;
             margin-top: 3rem;
@@ -109,703 +30,798 @@ body#page-course-view-topics section#region-main {
                     border: 1px solid $gris-no2;
                     line-height: 0.77rem;
                     min-width: 0.77rem;
+                    width: 0.77rem;
+                    height: 0.77rem;
                     display: inline-block;
                     text-align: center;
                     margin-right: 5px;
                     border-radius: 50%;
                     font-size: 0.77rem;
+                    padding-bottom: 1px;
                     color: $gris-no2;
                     box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
                     animation: pulse 2s infinite;
                     padding-bottom:1px;
                 }
             }
-            .texto-bienvenida {
-                display: none;
+        }
+        #page-mast {
+            h1 {
+                &::before,
+                a,
+                a:hover {
+                    text-shadow: none;
+                }
             }
-            .snap-coverimagecontrol {
+            #snap-coverimagecontrol {
                 display: none;
             }
             #course-toc {
-                display: block;
-                padding: 0;
-                padding-bottom: 1rem;
-                #chapters {
-                    column-count: 1;
-                    li {
-                        visibility: hidden;
-                        height: 0px;
-                        margin-left: 0;
-                        &.snap-visible-section {
-                            visibility: visible;
-                        }
-                        .chapter-title {
-                            @include textos-ruta($blanco, 1.77rem, $peso: bold);
-                            line-height: 1.3;
-                        }
-                        .text {
-                            @include textos-ruta($amarillo, 1.44rem);
-                            line-height: 1.4rem;
-                            padding-top: 0.5rem;
-                            small {
-                                display: block;
-                            }
-                        }
-                    }
-                    .toc-footer {
-                        margin-top: 30px;
-                        margin-bottom: 15px;
-                    }
-                }
-            }
-        }
-    }
-    .section .activityinstance .contentafterlink ul{
-        list-style-type: none;
-        li{
-            padding: 0.5rem;
-        }
-    }
-}
-
-//contenedor videos
-.video-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 65.25%;
-    height: 0;
-    iframe {
-        position: absolute!important;
-        top: 0!important;
-        left: 0!important;
-        margin: 5%!important;
-        margin-top: 3%!important;
-        max-width: 90%!important;
-        width: 100%!important;
-        height: 90%!important;
-    }
-}
-
-//TODO: revisar span notifications hijo de region-main
-.course-content ul.topics {
-    //Fix ancho secciones generales
-    li.label h3 {
-        max-width: 21.5em;
-        text-align: center;
-        margin: 0 auto;
-    }
-    li.section.main {
-        max-width: 43.5em;
-        margin: 0 auto!important;
-        &.state-visible:not(#section-1),
-        &.state-visible:not(#section-2),
-        &.state-visible:not(#section-3),
-        &.state-visible:not(#section-4),
-        &.state-visible:not(#section-5) {
-            margin-top: 2rem!important;
-            margin-bottom: 1rem!important;
-        }
-    }
-    //Secciones que contienen modulos de aprendizaje
-    li#section-1,
-    li#section-2,
-    li#section-3,
-    li#section-4,
-    li#section-5 {
-        max-width: 100%!important;
-        overflow: hidden;
-        &.snap-native {
-            margin: 0;
-        }
-        //contenedor del nombre de sección
-        h2.sectionname {
-            height: 40vh;
-            width: 140%;
-            display: none;
-            align-items: center;
-            padding-left: 25%;
-            background-color: $amarillo;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
-            background-size: cover;
-            background-position: center;
-            text-transform: uppercase;
-            font-weight: 900;
-            font-size: 3em;
-            margin-left: -5em;
-            color: $blanco;
-            &::before {
-                content: "Módulo " counter(annotation-list);
-                color: $amarillo;
-                float: left;
-                position: relative;
-                top: -1.3em;
-                font-size: 2rem;
-                left: 4.25em;
-                white-space: nowrap;
-            }
-        }
-        //contenedor del parrafo de resumen de la sección
-        div.summary {
-            p,
-            h3 {
-                max-width: 43.5em;
-                margin: 0 auto 1rem;
-            }
-        }
-        //contenedor de todas las actividades del módulo
-        ul.section.img-text {
-            background: $blanco;
-            counter-reset: actividadNo;
-            li .asset-wrapper {
-                overflow: hidden;
-            }
-        }
-        //contenedor de los botones crear actividad de aprendizaje y arrastre archivos para anexarlos
-        div.row {
-            max-width: 43.5em;
-            margin: 0 auto;
-        }
-        //contenedor de los botones de navegación anterior y siguiente
-        .section_footer {
-            max-width: 100%;
-            margin: 1rem auto;
-            padding: 0 10%;
-        }
-        .label {
-            margin: 0;
-            padding: 0;
-            .asset-wrapper {
-                overflow: hidden;
-            }
-            .separador-amarillo {
-                min-height: 270px;
-                height: 27vh;
-                background-image: linear-gradient(rgba(250, 220, 93, 0.5), rgba(250, 220, 93, 0.5)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-separador.jpg);
-                background-size: cover;
-                background-position: center;
-            }
-        }
-    }
-    // estilos para blockquotes
-    blockquote.blockquote {
-        border: 0;
-        min-height: 650px;
-        height: 70vh;
-        background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-quote.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        padding: 0;
-        margin: 0;
-        p,
-        footer {
-            margin: 0!important;
-            max-width: 100% !important;
-            background: $verde;
-            color: white;
-            padding: 2rem 10%;
-        }
-        p {
-            font-style: italic;
-            text-align: right;
-        }
-        footer {
-            padding: 0 10% 2rem;
-            text-align: right;
-            font-size: 1.3rem;
-            color: $amarillo;
-            font-weight: 600;
-            margin-top: -1px!important;
-            .usertour {
+                background-color: transparent;
                 display: none;
             }
+            #toc-desktop-menu-heading {
+                display: none;
+            }
+            #toc-search {
+                display: none;
+            }
+            #chapters {
+                list-style: none;
+                counter-reset: modulo -1;
+                li {
+                    border: none;
+                    counter-increment: modulo;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    justify-content: flex-end;
+                    &:first-child {
+                        display: none;
+                    }
+                    .text {
+                        @include textos-ruta($amarillo, .7rem);
+                        &::before {
+                            content: 'Módulo ' counter(modulo);
+                        }
+                    }
+                }
+                .toc-footer {
+                    margin-top: 30px;
+                    margin-bottom: 15px;
+                }
+            }
         }
     }
-    //estilos y color intercalado lecciones
-    ul.section.img-text li.snap-activity {
-        border: 0;
-        margin: 0;
-        min-height: 370px;
-        height: auto;
-        padding: 2rem 0;
-        display: flex;
-        align-items: center;
-        overflow: hidden;
-        &.snap-can-edit {
-            overflow: visible;
-        }
-        .asset-wrapper {
-            display: flex;
-            width: 100%;
-            align-self: baseline;
-            margin: 0;
-            padding: 0;
-            height: auto;
-            .activityinstance {
-                background-color: transparent;
-                width: 100%;
-                position: relative;
-                height: auto;
-                min-height: 100%;
-                .snap-assettype {
-                    display: none;
-                }
-                .snap-asset-content {
-                    display: flex;
-                    height: auto;
-                    min-height: 100%;
-                    justify-content: center;
-                    flex-direction: column;
-                    width: 60%;
-                    text-align: right;
-                    padding-left: 6%;
-                    .contentafterlink {
-                        margin-left: 0px;
-                    }
-                    h3.snap-asset-link {
-                        /*box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
-                        animation: pulse 2s infinite;
-                        margin: -10px;
-                        padding: 10px;
-                        margin-bottom: 10px;*/
-                        white-space: nowrap;
-                    }
-                }
-                .snap-asset-content h3 img {
-                    display: none;
-                }
-                .snap-asset-completion-tracking {
-                    position: relative;
-                    top: 15%;
-                    left: 5%;
-                    line-height: 0;
-                    width: 10%;
-                }
+    
+    #page-course-view-topics .por-defecto {
+        #page-header {
+            box-shadow: inset 0 0 0 50vw #21252996;
+            background-position: center 35%;
+            min-height: 450px;
+            .breadcrumb-nav {
+                visibility: hidden;
             }
-        }
-        &:nth-child(odd) {
-            background-color: $gris-no2;
-            .activityinstance .snap-asset-content {
-                padding-left: 15%;
-                padding-right: 6%;
-                h3.snap-asset-link{
-                    display: flex;
-                    justify-content: flex-end;
-                    align-items: center;
-                    &::after {
+            #page-mast {
+                display: block;
+                margin: 0 auto;
+                margin-top: 3rem;
+                max-width: 43.5em;
+                padding: 0;
+                &>h1 {
+                    @include textos-ruta($blanco, 0.77rem);
+                    &::before {
                         content: '>';
-                        border: 1px solid $gris-no1;
-                        line-height: 1.7rem;
-                        min-width: 1.7rem;
-                        display: inline-block;
-                        text-align: center;
-                        margin-left: 5px;
-                        border-radius: 50%;
-                        font-size: 1em;
-                        color: $verde;
-                        box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
-                        animation: pulse 2s infinite;
-                    }
-                }
-            }
-            &::before {
-                counter-increment: actividadNo;
-                content: "0" counter(actividadNo);
-                color: $gris-no1;
-                position: absolute;
-                top: -60px;
-                font-size: 600px;
-                line-height: 19rem;
-                letter-spacing: -40px;
-                right: 12%;
-                font-family: 'Roboto Condensed';
-                font-weight: 900;
-                z-index: 0;
-            }
-        }
-        &:nth-child(even) {
-            background-color: $gris-no1;
-            .activityinstance .snap-asset-content {
-                margin-left: auto;
-                text-align: left;
-                padding-right: 15%;
-                padding-left: 6%;
-                h3.snap-asset-link{
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
-                    &::after {
-                        content:'>';
                         border: 1px solid $gris-no2;
-                        line-height: 1.7rem;
-                        min-width: 1.7rem;
+                        line-height: 0.77rem;
+                        min-width: 0.77rem;
                         display: inline-block;
                         text-align: center;
                         margin-right: 5px;
                         border-radius: 50%;
-                        font-size: 1em;
-                        color: $verde;
+                        font-size: 0.77rem;
+                        color: $gris-no2;
                         box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
                         animation: pulse 2s infinite;
                     }
                 }
-            }
-            &::before {
-                counter-increment: actividadNo;
-                content: "0" counter(actividadNo);
-                color: $gris-no2;
-                position: absolute;
-                bottom: -60px;
-                font-size: 600px;
-                letter-spacing: -40px;
-                line-height: 19rem;
-                left: 13%;
-                font-family: 'Roboto Condensed';
-                font-weight: 900;
-                z-index: 0;
-            }
-        }
-    }
-}
-
-.section .activity.modtype_label.label .asset-wrapper,
-.section .activity.modtype_label.label .activityinstance {
-    padding: 0!important;
-}
-
-//estilos descripcion modulo, objetivos
-.contenedor-objetivos {
-    width: 70%;
-    margin: 0 auto;
-    min-width: 980px;
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 1rem;
-    #objetivo-modulo {
-        width: 60%;
-        display: flex;
-        padding: 8.8rem 2.3rem 6rem 6rem;
-        flex-direction: column;
-        justify-content: center;
-        background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/avatarF_tablero.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        h4 {
-            font-weight: 600;
-            color: $verde;
-        }
-    }
-    #complemento-objetivos {
-        background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/caja_objetivos.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 1.5rem 0rem 0rem 0rem;
-        .bloque {
-            width: 45%;
-            h5 {
-                font-weight: 600;
-                font-size: 1rem;
-                line-height: 1.7;
-                margin: 0;
-            }
-        }
-    }
-}
-
-h3#final-descripcion {
-    text-align: center;
-    font-weight: 700;
-    font-style: italic;
-    width: 40%;
-    margin: 2rem auto;
-    padding-bottom: 1rem;
-    border-bottom: 3px solid $amarillo;
-}
-
-//estilos para actividad: pagina
-ul.section.img-text .page .asset-wrapper {
-    display: flex;
-    justify-content: center;
-    padding: 5rem 4rem;
-    text-align: center;
-    .contentafterlink.conditionalhidden {
-        max-width: 48.5em;
-    }
-    span.instancename {
-        color: black;
-        font-weight: 900;
-    }
-    .summary-text p {
-        max-width: 43.5em;
-        margin: 0 auto 1rem;
-    }
-    a.btn.btn-secondary.pagemod-readmore {
-        background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_resumen.svg);
-        overflow: visible;
-        background-size: contain;
-        background-position: center;
-        padding: 3rem;
-        background-repeat: no-repeat;
-        border: 0;
-        &:hover:not(:disabled) {
-            background-color: transparent!important;
-            border-color: transparent!important;
-            color: $verde;
-            outline: 0px auto gray;
-        }
-    }
-    .contentafterlink {
-        .table {
-            font-family: "Roboto Condensed"!important;
-            td {
-                vertical-align: middle;
-            }
-            p {
-                margin: 0;
-            }
-            thead td {
-                background: $verde;
-                font-size: 1.8rem;
-                color: $blanco;
-            }
-            tbody tr td:first-child {
-                font-size: 1.4rem;
-                text-decoration: dotted;
-            }
-        }
-        .d-block {
-            padding-left: 0!important;
-        }
-    }
-}
-
-#page-mod-page-view {
-    div[role="main"] {
-        text-align: center;
-        .table {
-            font-family: "Roboto Condensed"!important;
-            td {
-                vertical-align: middle;
-            }
-            p {
-                margin: 0;
-            }
-            thead td {
-                background: $verde;
-                font-size: 1.8rem;
-                color: $blanco;
-            }
-            tbody tr td:first-child {
-                font-size: 1.4rem;
-                text-decoration: dotted;
-            }
-        }
-    }
-}
-
-//separador verde con opciones entre glosario bibliografia y cartilla
-.separador-opciones {
-    min-height: 30vh;
-    display: flex;
-    align-items: center;
-    background-color: $verde;
-    color: $blanco;
-    padding: 4rem 11%;
-    font-size: 80%;
-    .opcion {
-        width: 33%;
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
-        padding-left: 100px;
-        height: 150px;
-        h3 {
-            text-align: left!important;
-            margin: 0!important;
-            a {
-                text-align: left;
-                color: white!important;
-                text-transform: uppercase;
-                white-space: nowrap;
-                &:visited {
-                    color: white;
-                    text-decoration: none;
+                .texto-bienvenida {
+                    display: none;
+                }
+                .snap-coverimagecontrol {
+                    display: none;
+                }
+                #course-toc {
+                    display: block;
+                    padding: 0;
+                    padding-bottom: 1rem;
+                    #chapters {
+                        column-count: 1;
+                        li {
+                            visibility: hidden;
+                            height: 0px;
+                            margin-left: 0;
+                            &.snap-visible-section {
+                                visibility: visible;
+                            }
+                            .chapter-title {
+                                @include textos-ruta($blanco, 1.77rem, $peso: bold);
+                                line-height: 1.3;
+                            }
+                            .text {
+                                @include textos-ruta($amarillo, 1.44rem);
+                                line-height: 1.4rem;
+                                padding-top: 0.5rem;
+                                small {
+                                    display: block;
+                                }
+                            }
+                        }
+                        .toc-footer {
+                            margin-top: 30px;
+                            margin-bottom: 15px;
+                        }
+                    }
                 }
             }
         }
-        p {
-            text-align: left;
-            margin-top: .5rem;
+        .section .activityinstance .contentafterlink ul {
+            list-style-type: none;
+            li {
+                padding: 0.5rem;
+            }
         }
-        &::before {
-            content: "";
-            display: inline-block;
-            height: 110px;
-            width: 90px;
-            background-size: cover;
-            background-repeat: no-repeat;
-            position: absolute;
-            margin-left: -90px;
-        }
-        &.glosario::before {
-            background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/icono_glosario.png);
-        }
-        &.cartilla::before {
-            background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/icono_cartilla.png);
-        }
-        &.bibliografia::before {
-            background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/icono_bibliografia.png);
-            margin-left: -110px;
-            width: 110px;
+        .activity.page {
+            .activityinstance {
+                .summary-figure {
+                    display: none;
+                }
+            }
         }
     }
-}
-
-@mixin modulos-md() {
-    .separador-opciones {
-        padding: 3rem 4%;
-        h3 {
-            font-size: 1.5rem;
-        }
-    }
-}
-
-@mixin modulos-sm() {
-    .por-defecto #page-header #page-mast {
-        padding: 0 10%;
-    }
-    .por-defecto #page-header #page-mast #course-toc #chapters li .chapter-title {
-        line-height: 1;
-    }
-    .course-content ul.topics li.section div.summary p {
-        padding: 13px 10%;
-    }
-    .contenedor-objetivos {
-        flex-wrap: wrap;
-        justify-content: center;
+    
+    //contenedor videos
+    .video-container {
+        position: relative;
         width: 100%;
-        min-width: auto;
-        #objetivo-modulo {
-            padding: 28.5% 0.5% 19.5% 11.5%;
-            width: 70%;
+        padding-bottom: 65.25%;
+        height: 0;
+        iframe {
+            position: absolute!important;
+            top: 0!important;
+            left: 0!important;
+            margin: 5%!important;
+            margin-top: 3%!important;
+            max-width: 90%!important;
+            width: 100%!important;
+            height: 90%!important;
         }
-        #complemento-objetivos {
-            min-height: 412px;
-            .bloque {
-                width: 43%;
+    }
+    
+    //TODO: revisar span notifications hijo de region-main
+    .course-content ul.topics {
+        //Fix ancho secciones generales
+        li.label h3 {
+            max-width: 21.5em;
+            text-align: center;
+            margin: 0 auto;
+        }
+        li.section.main {
+            max-width: 43.5em;
+            margin: 0 auto!important;
+            &.state-visible:not(#section-1),
+            &.state-visible:not(#section-2),
+            &.state-visible:not(#section-3),
+            &.state-visible:not(#section-4),
+            &.state-visible:not(#section-5) {
+                margin-top: 2rem!important;
+                margin-bottom: 1rem!important;
             }
         }
-    }
-
-    .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content h3.snap-asset-link{
-        white-space: normal;
-    }
-    .course-content ul.topics blockquote.blockquote p,
-    .course-content ul.topics blockquote.blockquote footer {
-        padding: 1.5rem 10%;
-        font-size: 1rem;
-    }
-    .course-content ul.topics blockquote.blockquote p {
-        padding-bottom: 0;
-    }
-    .course-content ul.topics ul.section.img-text li.snap-activity {
-        min-height: 40vh;
-        .asset-wrapper .activityinstance .snap-asset-content {
-            width: 85%;
-        }
-    }
-    .separador-opciones {
-        flex-direction: column;
-        align-items: flex-end;
-        .opcion {
-            width: 80%;
-        }
-    }
-}
-
-@mixin modulos-xs() {
-    .contenedor-objetivos {
-        #objetivo-modulo {
-            width: 100%;
-            min-height: 400px;
-            font-size: 70%;
-            padding: 21% 16% 12% 28%;
-            h4{
-                margin:0;
+        //Secciones que contienen modulos de aprendizaje
+        li#section-1,
+        li#section-2,
+        li#section-3,
+        li#section-4,
+        li#section-5 {
+            max-width: 100%!important;
+            overflow: hidden;
+            &.snap-native {
+                margin: 0;
             }
-        }
-        #complemento-objetivos {
-            min-height: 420px;
-            font-size: 85%;
-            .bloque {
-                width: 66%;
+            //contenedor del nombre de sección
+            h2.sectionname {
+                height: 40vh;
+                width: 140%;
+                display: none;
+                align-items: center;
+                padding-left: 25%;
+                background-color: $amarillo;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
+                background-size: cover;
+                background-position: center;
+                text-transform: uppercase;
+                font-weight: 900;
+                font-size: 3em;
+                margin-left: -5em;
+                color: $blanco;
+                &::before {
+                    content: "Módulo " counter(annotation-list);
+                    color: $amarillo;
+                    float: left;
+                    position: relative;
+                    top: -1.3em;
+                    font-size: 2rem;
+                    left: 4.25em;
+                    white-space: nowrap;
+                }
+            }
+            //contenedor del parrafo de resumen de la sección
+            div.summary {
+                p,
+                h3 {
+                    max-width: 43.5em;
+                    margin: 0 auto 1rem;
+                }
+            }
+            //contenedor de todas las actividades del módulo
+            ul.section.img-text {
+                background: $blanco;
+                counter-reset: actividadNo;
+                li .asset-wrapper {
+                    overflow: hidden;
+                }
+            }
+            //contenedor de los botones crear actividad de aprendizaje y arrastre archivos para anexarlos
+            div.row {
+                max-width: 43.5em;
+                margin: 0 auto;
+            }
+            //contenedor de los botones de navegación anterior y siguiente
+            .section_footer {
+                max-width: 100%;
+                margin: 1rem auto;
                 padding: 0 10%;
             }
+            .label {
+                margin: 0;
+                padding: 0;
+                .asset-wrapper {
+                    overflow: hidden;
+                }
+                .separador-amarillo {
+                    min-height: 270px;
+                    height: 27vh;
+                    background-image: linear-gradient(rgba(250, 220, 93, 0.5), rgba(250, 220, 93, 0.5)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-separador.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+        }
+        // estilos para blockquotes
+        blockquote.blockquote {
+            border: 0;
+            min-height: 650px;
+            height: 70vh;
+            background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod1-quote.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 0;
+            margin: 0;
+            p,
+            footer {
+                margin: 0!important;
+                max-width: 100% !important;
+                background: $verde;
+                color: white;
+                padding: 2rem 10%;
+            }
+            p {
+                font-style: italic;
+                text-align: right;
+            }
+            footer {
+                padding: 0 10% 2rem;
+                text-align: right;
+                font-size: 1.3rem;
+                color: $amarillo;
+                font-weight: 600;
+                margin-top: -1px!important;
+                .usertour {
+                    display: none;
+                }
+            }
+        }
+        //estilos y color intercalado lecciones
+        ul.section.img-text li.snap-activity {
+            border: 0;
+            margin: 0;
+            min-height: 370px;
+            height: auto;
+            padding: 2rem 0;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            &.snap-can-edit {
+                overflow: visible;
+            }
+            .asset-wrapper {
+                display: flex;
+                width: 100%;
+                align-self: baseline;
+                margin: 0;
+                padding: 0;
+                height: auto;
+                .activityinstance {
+                    background-color: transparent;
+                    width: 100%;
+                    position: relative;
+                    height: auto;
+                    min-height: 100%;
+                    .snap-assettype {
+                        display: none;
+                    }
+                    .snap-asset-content {
+                        display: flex;
+                        height: auto;
+                        min-height: 100%;
+                        justify-content: center;
+                        flex-direction: column;
+                        width: 60%;
+                        text-align: right;
+                        padding-left: 6%;
+                        .contentafterlink {
+                            margin-left: 0px;
+                        }
+                        h3.snap-asset-link {
+                            /*box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+                        animation: pulse 2s infinite;
+                        margin: -10px;
+                        padding: 10px;
+                        margin-bottom: 10px;*/
+                            white-space: nowrap;
+                        }
+                    }
+                    .snap-asset-content h3 img {
+                        display: none;
+                    }
+                    .snap-asset-completion-tracking {
+                        position: relative;
+                        top: 15%;
+                        left: 5%;
+                        line-height: 0;
+                        width: 10%;
+                    }
+                }
+            }
+            &:nth-child(odd) {
+                background-color: $gris-no2;
+                .activityinstance .snap-asset-content {
+                    padding-left: 15%;
+                    padding-right: 6%;
+                    h3.snap-asset-link {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        &::after {
+                            content: '>';
+                            border: 1px solid $gris-no1;
+                            line-height: 1.7rem;
+                            min-width: 1.7rem;
+                            display: inline-block;
+                            text-align: center;
+                            margin-left: 5px;
+                            border-radius: 50%;
+                            font-size: 1em;
+                            color: $verde;
+                            box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+                            animation: pulse 2s infinite;
+                        }
+                    }
+                }
+                &::before {
+                    counter-increment: actividadNo;
+                    content: "0" counter(actividadNo);
+                    color: $gris-no1;
+                    position: absolute;
+                    top: -60px;
+                    font-size: 600px;
+                    line-height: 19rem;
+                    letter-spacing: -40px;
+                    right: 12%;
+                    font-family: 'Roboto Condensed';
+                    font-weight: 900;
+                    z-index: 0;
+                }
+            }
+            &:nth-child(even) {
+                background-color: $gris-no1;
+                .activityinstance .snap-asset-content {
+                    margin-left: auto;
+                    text-align: left;
+                    padding-right: 15%;
+                    padding-left: 6%;
+                    h3.snap-asset-link {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        &::after {
+                            content: '>';
+                            border: 1px solid $gris-no2;
+                            line-height: 1.7rem;
+                            min-width: 1.7rem;
+                            display: inline-block;
+                            text-align: center;
+                            margin-right: 5px;
+                            border-radius: 50%;
+                            font-size: 1em;
+                            color: $verde;
+                            box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+                            animation: pulse 2s infinite;
+                        }
+                    }
+                }
+                &::before {
+                    counter-increment: actividadNo;
+                    content: "0" counter(actividadNo);
+                    color: $gris-no2;
+                    position: absolute;
+                    bottom: -60px;
+                    font-size: 600px;
+                    letter-spacing: -40px;
+                    line-height: 19rem;
+                    left: 13%;
+                    font-family: 'Roboto Condensed';
+                    font-weight: 900;
+                    z-index: 0;
+                }
+            }
         }
     }
-    #page-course-view-topics .por-defecto #page-header{
-        padding:0 10%;
+    
+    .section .activity.modtype_label.label .asset-wrapper,
+    .section .activity.modtype_label.label .activityinstance {
+        padding: 0!important;
     }
-    .course-content ul.topics blockquote.blockquote {
-        height: auto;
-    }
-    .course-content ul.topics ul.section.img-text li.snap-activity {
-        height: auto;
-    }
-    .course-content ul.topics ul.section.img-text li.snap-activity:nth-child(odd)::before {
-        bottom: -60px;
-        top: auto;
-    }
-    .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content {
-        width: 90%;
+    
+    //estilos descripcion modulo, objetivos
+    .contenedor-objetivos {
+        width: 70%;
         margin: 0 auto;
-        padding: 5px;
+        min-width: 980px;
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 1rem;
+        #objetivo-modulo {
+            width: 60%;
+            display: flex;
+            padding: 8.8rem 2.3rem 6rem 6rem;
+            flex-direction: column;
+            justify-content: center;
+            background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/avatarF_tablero.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            h4 {
+                font-weight: 600;
+                color: $verde;
+            }
+        }
+        #complemento-objetivos {
+            background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/caja_objetivos.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5rem 0rem 0rem 0rem;
+            .bloque {
+                width: 45%;
+                h5 {
+                    font-weight: 600;
+                    font-size: 1rem;
+                    line-height: 1.7;
+                    margin: 0;
+                }
+            }
+        }
     }
-    .separador-opciones {
-        align-items: center;
-    }
-    .video-container {
-        padding-bottom: 72.25%;
-    }
+    
     h3#final-descripcion {
-        width: 65%;
+        text-align: center;
+        font-weight: 700;
+        font-style: italic;
+        width: 40%;
+        margin: 2rem auto;
+        padding-bottom: 1rem;
+        border-bottom: 3px solid $amarillo;
     }
-    .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content h3.snap-asset-link{
-        text-align: right;
+    
+    //estilos para actividad: pagina
+    ul.section.img-text .page .asset-wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 5rem 4rem;
+        text-align: center;
+        .contentafterlink.conditionalhidden {
+            max-width: 48.5em;
+        }
+        span.instancename {
+            color: black;
+            font-weight: 900;
+        }
+        .summary-text p {
+            max-width: 43.5em;
+            margin: 0 auto 1rem;
+        }
+        a.btn.btn-secondary.pagemod-readmore {
+            background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_resumen.svg);
+            overflow: visible;
+            background-size: contain;
+            background-position: center;
+            padding: 3rem;
+            background-repeat: no-repeat;
+            border: 0;
+            &:hover:not(:disabled) {
+                background-color: transparent!important;
+                border-color: transparent!important;
+                color: $verde;
+                outline: 0px auto gray;
+            }
+        }
+        .contentafterlink {
+            .table {
+                font-family: "Roboto Condensed"!important;
+                td {
+                    vertical-align: middle;
+                }
+                p {
+                    margin: 0;
+                }
+                thead td {
+                    background: $verde;
+                    font-size: 1.8rem;
+                    color: $blanco;
+                }
+                tbody tr td:first-child {
+                    font-size: 1.4rem;
+                    text-decoration: dotted;
+                }
+            }
+            .d-block {
+                padding-left: 0!important;
+            }
+        }
     }
-}
-
-@-webkit-keyframes pulse {
-    0% {
-        -webkit-box-shadow: 0 0 0 0 rgba(169,169,169, 0.4);
+    
+    #page-mod-page-view {
+        div[role="main"] {
+            text-align: center;
+            .table {
+                font-family: "Roboto Condensed"!important;
+                td {
+                    vertical-align: middle;
+                }
+                p {
+                    margin: 0;
+                }
+                thead td {
+                    background: $verde;
+                    font-size: 1.8rem;
+                    color: $blanco;
+                }
+                tbody tr td:first-child {
+                    font-size: 1.4rem;
+                    text-decoration: dotted;
+                }
+            }
+        }
     }
-    70% {
-        -webkit-box-shadow: 0 0 0 5px rgba(169,169,169, 0);
+    
+    //separador verde con opciones entre glosario bibliografia y cartilla
+    .separador-opciones {
+        min-height: 30vh;
+        display: flex;
+        align-items: center;
+        background-color: $verde;
+        color: $blanco;
+        padding: 4rem 11%;
+        font-size: 80%;
+        .opcion {
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            padding-left: 100px;
+            height: 150px;
+            h3 {
+                text-align: left!important;
+                margin: 0!important;
+                a {
+                    text-align: left;
+                    color: white!important;
+                    text-transform: uppercase;
+                    white-space: nowrap;
+                    &:visited {
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+            p {
+                text-align: left;
+                margin-top: .5rem;
+            }
+            &::before {
+                content: "";
+                display: inline-block;
+                height: 110px;
+                width: 90px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                margin-left: -90px;
+            }
+            &.glosario::before {
+                background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/icono_glosario.png);
+            }
+            &.cartilla::before {
+                background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/icono_cartilla.png);
+            }
+            &.bibliografia::before {
+                background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/icono_bibliografia.png);
+                margin-left: -110px;
+                width: 110px;
+            }
+        }
     }
-    100% {
-        -webkit-box-shadow: 0 0 0 0 rgba(169,169,169, 0);
+    
+    @mixin modulos-md() {
+        .separador-opciones {
+            padding: 3rem 4%;
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+        //ancho del resumen
+        .por-defecto .activity.page {
+            .activityinstance {
+                width: 85%;
+            }
+        }
     }
-}
-
-@keyframes pulse {
-    0% {
-        -moz-box-shadow: 0 0 0 0 rgba(169,169,169, 0.4);
-        box-shadow: 0 0 0 0 rgba(169,169,169, 0.4);
+    
+    @mixin modulos-sm() {
+        .por-defecto #page-header #page-mast {
+            padding: 0 10%;
+        }
+        .por-defecto #page-header #page-mast #course-toc #chapters li .chapter-title {
+            line-height: 1;
+        }
+        .course-content ul.topics li.section div.summary p {
+            padding: 13px 10%;
+        }
+        .contenedor-objetivos {
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            min-width: auto;
+            #objetivo-modulo {
+                padding: 28.5% 0.5% 19.5% 11.5%;
+                width: 70%;
+            }
+            #complemento-objetivos {
+                min-height: 412px;
+                .bloque {
+                    width: 43%;
+                }
+            }
+        }
+        .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content h3.snap-asset-link {
+            white-space: normal;
+        }
+        .course-content ul.topics blockquote.blockquote p,
+        .course-content ul.topics blockquote.blockquote footer {
+            padding: 1.5rem 10%;
+            font-size: 1rem;
+        }
+        .course-content ul.topics blockquote.blockquote p {
+            padding-bottom: 0;
+        }
+        .course-content ul.topics ul.section.img-text li.snap-activity {
+            min-height: 40vh;
+            .asset-wrapper .activityinstance .snap-asset-content {
+                width: 85%;
+            }
+        }
+        .separador-opciones {
+            flex-direction: column;
+            align-items: flex-end;
+            .opcion {
+                width: 80%;
+            }
+        }
     }
-    70% {
-        -moz-box-shadow: 0 0 0 5px rgba(169,169,169, 0);
-        box-shadow: 0 0 0 5px rgba(169,169,169, 0);
+    
+    @mixin modulos-xs() {
+        .contenedor-objetivos {
+            #objetivo-modulo {
+                width: 100%;
+                min-height: 400px;
+                font-size: 70%;
+                padding: 21% 16% 12% 28%;
+                h4 {
+                    margin: 0;
+                }
+            }
+            #complemento-objetivos {
+                min-height: 420px;
+                font-size: 85%;
+                .bloque {
+                    width: 66%;
+                    padding: 0 10%;
+                }
+            }
+        }
+        #page-course-view-topics .por-defecto #page-header {
+            padding: 0 10%;
+        }
+        .course-content ul.topics blockquote.blockquote {
+            height: auto;
+        }
+        .course-content ul.topics ul.section.img-text li.snap-activity {
+            height: auto;
+        }
+        .course-content ul.topics ul.section.img-text li.snap-activity:nth-child(odd)::before {
+            bottom: -60px;
+            top: auto;
+        }
+        .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content {
+            width: 90%;
+            margin: 0 auto;
+            padding: 5px;
+        }
+        .separador-opciones {
+            align-items: center;
+        }
+        .video-container {
+            padding-bottom: 72.25%;
+        }
+        h3#final-descripcion {
+            width: 65%;
+        }
+        .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content h3.snap-asset-link {
+            text-align: right;
+        }
     }
-    100% {
-        -moz-box-shadow: 0 0 0 0 rgba(169,169,169, 0);
-        box-shadow: 0 0 0 0 rgba(169,169,169, 0);
+    
+    @-webkit-keyframes pulse {
+        0% {
+            -webkit-box-shadow: 0 0 0 0 rgba(169, 169, 169, 0.4);
+        }
+        70% {
+            -webkit-box-shadow: 0 0 0 5px rgba(169, 169, 169, 0);
+        }
+        100% {
+            -webkit-box-shadow: 0 0 0 0 rgba(169, 169, 169, 0);
+        }
     }
-}
+    
+    @keyframes pulse {
+        0% {
+            -moz-box-shadow: 0 0 0 0 rgba(169, 169, 169, 0.4);
+            box-shadow: 0 0 0 0 rgba(169, 169, 169, 0.4);
+        }
+        70% {
+            -moz-box-shadow: 0 0 0 5px rgba(169, 169, 169, 0);
+            box-shadow: 0 0 0 5px rgba(169, 169, 169, 0);
+        }
+        100% {
+            -moz-box-shadow: 0 0 0 0 rgba(169, 169, 169, 0);
+            box-shadow: 0 0 0 0 rgba(169, 169, 169, 0);
+        }
+    }
