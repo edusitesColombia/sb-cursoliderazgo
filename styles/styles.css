@@ -468,7 +468,7 @@ body#page-course-view-topics section#region-main span.instancename {
 }
 
 #page-course-view-topics .por-defecto #page-header #page-mast > h1::before {
-  content: '>';
+  content: '<';
   border: 1px solid #f7f7f7;
   line-height: 0.77rem;
   min-width: 0.77rem;
@@ -482,6 +482,7 @@ body#page-course-view-topics section#region-main span.instancename {
           box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
   -webkit-animation: pulse 2s infinite;
           animation: pulse 2s infinite;
+  padding-bottom: 1px;
 }
 
 #page-course-view-topics .por-defecto #page-header #page-mast .texto-bienvenida {

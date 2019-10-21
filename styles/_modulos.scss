@@ -105,7 +105,7 @@ body#page-course-view-topics section#region-main {
             &>h1 {
                 @include textos-ruta($blanco, 0.77rem);
                 &::before{
-                    content:'>';
+                    content:'<';
                     border: 1px solid $gris-no2;
                     line-height: 0.77rem;
                     min-width: 0.77rem;
@@ -117,6 +117,7 @@ body#page-course-view-topics section#region-main {
                     color: $gris-no2;
                     box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
                     animation: pulse 2s infinite;
+                    padding-bottom:1px;
                 }
             }
             .texto-bienvenida {
