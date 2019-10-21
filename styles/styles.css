@@ -368,13 +368,16 @@ body#page-course-view-topics section#region-main span.instancename {
   font-weight: normal;
 }
 
+#page-header .breadcrumb-nav .breadcrumb {
+  display: inline-block;
+}
+
 #page-header .breadcrumb-nav::before {
   content: '<';
-  border: 1px solid #f7f7f7;
+  border: 1px solid #f7f7f76e;
   line-height: 0.77rem;
   min-width: 0.77rem;
   width: 0.77rem;
-  height: 0.77rem;
   display: inline-block;
   text-align: center;
   margin-right: 5px;

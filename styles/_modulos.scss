@@ -26,23 +26,25 @@
             &>h1 {
                 @include textos-ruta($blanco, 0.77rem);               
             }
+            .breadcrumb{
+                display: inline-block;
+            }
             &::before{
-                content:'<';
-                border: 1px solid $gris-no2;
+                content: '<';
+                border: 1px solid #f7f7f76e;
                 line-height: 0.77rem;
                 min-width: 0.77rem;
                 width: 0.77rem;
-                height: 0.77rem;
                 display: inline-block;
                 text-align: center;
                 margin-right: 5px;
                 border-radius: 50%;
                 font-size: 0.77rem;
                 padding-bottom: 1px;
-                color: $gris-no2;
+                color: #f7f7f7;
                 box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
                 animation: pulse 2s infinite;
-                padding-bottom:1px;
+                padding-bottom: 1px;
             }
         }
         #page-mast {
