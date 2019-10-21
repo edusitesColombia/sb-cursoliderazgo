@@ -25,8 +25,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 108, 56, 0.7)), to(rgba(1, 108, 56, 0.7))), url(http://jkvela.website/theme/snap/pix/segurosbolivar/bg1.jpg);
-  background: linear-gradient(rgba(1, 108, 56, 0.7), rgba(1, 108, 56, 0.7)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/bg1.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 108, 56, 0.7)), to(rgba(1, 108, 56, 0.7))), url(http://jkvela.website/theme/snap/pix/segurosbolivar/bg_login.jpg);
+  background: linear-gradient(rgba(1, 108, 56, 0.7), rgba(1, 108, 56, 0.7)), url(http://jkvela.website/theme/snap/pix/segurosbolivar/bg_login.jpg);
   background-size: cover;
   background-position: 200px;
 }
@@ -355,9 +355,20 @@ body#page-course-view-topics section#region-main span.instancename {
 
 #page-header .breadcrumb-nav {
   display: block;
+  margin: 0 auto;
+  margin-top: 3rem;
+  max-width: 43.5em;
+  padding: 0;
 }
 
-#page-header .breadcrumb-nav .breadcrumb::before {
+#page-header .breadcrumb-nav > h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.77rem;
+  font-weight: normal;
+}
+
+#page-header .breadcrumb-nav > h1::before {
   content: '<';
   border: 1px solid #f7f7f7;
   line-height: 0.77rem;
@@ -468,7 +479,7 @@ body#page-course-view-topics section#region-main span.instancename {
 }
 
 #page-course-view-topics .por-defecto #page-header #page-mast > h1::before {
-  content: '<';
+  content: '>';
   border: 1px solid #f7f7f7;
   line-height: 0.77rem;
   min-width: 0.77rem;
@@ -482,7 +493,6 @@ body#page-course-view-topics section#region-main span.instancename {
           box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
   -webkit-animation: pulse 2s infinite;
           animation: pulse 2s infinite;
-  padding-bottom: 1px;
 }
 
 #page-course-view-topics .por-defecto #page-header #page-mast .texto-bienvenida {
