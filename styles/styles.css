@@ -2274,6 +2274,7 @@ section#region-main div.m-t-2.m-b-1 {
   }
   #page-header .breadcrumb-nav::before {
     content: '';
+    display: none;
   }
   .contenedor-objetivos #objetivo-modulo {
     width: 100%;

@@ -762,6 +762,7 @@
     @mixin modulos-xs() {
         #page-header .breadcrumb-nav::before{
             content:'';
+            display: none;
         }
         .contenedor-objetivos {
             #objetivo-modulo {
