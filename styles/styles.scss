@@ -199,48 +199,6 @@ main:not(.home-ruta, .por-defecto) div[role="main"]>h2,main:not(.home-ruta, .por
     outline: none;
 }
 
-.theme-snap a:focus,
-.theme-snap .dropdown-toggle:focus {
-    outline: none;
-}
-
-//Elimina la navegacion de las paginas internas
-section#region-main div.m-t-2.m-b-1 {
-    display: block;
-}
-
-@import "./media-queries";
-@media screen and (min-width: 1600px) {
-    div#page {
-        max-width: 80%;
-        margin: 0 auto;
-    }
-    .course-content ul.topics li#section-1 .section_footer,
-    .course-content ul.topics li#section-2 .section_footer,
-    .course-content ul.topics li#section-3 .section_footer,
-    .course-content ul.topics li#section-4 .section_footer,
-    .course-content ul.topics li#section-5 .section_footer {
-        max-width: 90%;
-    }
-}
-
-@media (max-width: 1001px) {
-     :not(.home-ruta) #page-header,
-     :not(.por-defecto) #page-header {
-        padding-top: 4em!important;
-    }
-}
-
-@media (max-width: 991.98px) {
-    #page-header #course-toc {
-        position: relative!important;
-    }
-    #page-course-view-topics #page-header #course-toc .chapters {
-        display: block;
-        color: inherit;
-    }
-}
-
 .page-grade-grading-manage .actions .theme-snap .action.btn-primary:active,
 .theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary:active,
 #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary:active,
@@ -257,7 +215,18 @@ section#region-main div.m-t-2.m-b-1 {
     outline: none;
 }
 
+.theme-snap a:focus,
+.theme-snap .dropdown-toggle:focus {
+    outline: none;
+}
+
+//Elimina la navegacion de las paginas internas
+section#region-main div.m-t-2.m-b-1 {
+    display: block;
+}
+
 @import "./media-queries";
+
 @media screen and (min-width: 1600px) {
     div#page {
         max-width: 80%;
