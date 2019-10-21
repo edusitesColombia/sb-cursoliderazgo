@@ -558,6 +558,7 @@ body#page-course-view-topics section#region-main span.instancename {
 }
 
 #page-course-view-topics .por-defecto .section .activityinstance .contentafterlink ul li {
+  text-align: left;
   padding: 0.5rem;
 }
 
@@ -1156,6 +1157,16 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
   font-size: 1.4rem;
   -webkit-text-decoration: dotted;
           text-decoration: dotted;
+}
+
+#page-mod-page-view div[role="main"] ul {
+  list-style-type: none;
+  padding: 0 5%;
+}
+
+#page-mod-page-view div[role="main"] ul li {
+  text-align: left;
+  padding: 1rem;
 }
 
 .separador-opciones {
