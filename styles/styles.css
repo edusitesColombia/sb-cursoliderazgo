@@ -1201,6 +1201,7 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
 .separador-opciones .opcion h3 {
   text-align: left !important;
   margin: 0 !important;
+  padding: 0 !important;
 }
 
 .separador-opciones .opcion h3 a {
