@@ -368,7 +368,7 @@ body#page-course-view-topics section#region-main span.instancename {
   font-weight: normal;
 }
 
-#page-header .breadcrumb-nav > h1::before {
+#page-header .breadcrumb-nav::before {
   content: '<';
   border: 1px solid #f7f7f7;
   line-height: 0.77rem;
