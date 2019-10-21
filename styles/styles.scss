@@ -226,9 +226,12 @@ main:not(.home-ruta, .por-defecto) div[role="main"]>h2,main:not(.home-ruta, .por
     outline: none;
 }
 
-//Elimina la navegacion de las paginas internas
+//Mostrar la navegacion de las paginas internas
 section#region-main div.m-t-2.m-b-1 {
     display: block;
+    .col-md-4 a{
+        font-family: 'Roboto Condensed';
+    }
 }
 
 @import "./media-queries";

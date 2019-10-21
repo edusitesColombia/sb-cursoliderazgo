@@ -2032,6 +2032,10 @@ section#region-main div.m-t-2.m-b-1 {
   display: block;
 }
 
+section#region-main div.m-t-2.m-b-1 .col-md-4 a {
+  font-family: 'Roboto Condensed';
+}
+
 @media (max-width: 1249px) {
   #page-login-index main#moodle-page section#region-main {
     width: 75%;
