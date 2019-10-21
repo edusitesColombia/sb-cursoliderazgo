@@ -2214,7 +2214,7 @@ section#region-main div.m-t-2.m-b-1 {
     min-width: 47%;
     height: 300px;
   }
-  .activity-navigation .row .col-md-4:nth-child(1), .activity-navigation .row .col-md-4:nth-child(3) {
+  .activity-navigation .row .col-md-4:nth-child(1), .activity-navigation .row .col-md-4:nth-child(2) {
     display: none;
   }
   section#region-main div.m-t-2.m-b-1 .col-md-4 {
