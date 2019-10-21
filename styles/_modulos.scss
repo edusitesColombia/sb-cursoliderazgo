@@ -110,7 +110,7 @@
                 &>h1 {
                     @include textos-ruta($blanco, 0.77rem);
                     &::before {
-                        content: '>';
+                        content: '<';
                         border: 1px solid $gris-no2;
                         line-height: 0.77rem;
                         min-width: 0.77rem;
