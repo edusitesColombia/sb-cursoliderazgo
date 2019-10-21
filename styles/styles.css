@@ -1262,8 +1262,7 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
 
 @media (max-width: 500px) {
   .contenedor-objetivos #objetivo-modulo {
-    padding: 23% 6% 12% 23%;
-    font-size: 75%;
+    padding: 23% 6% 12% 23% !important;
   }
 }
 
