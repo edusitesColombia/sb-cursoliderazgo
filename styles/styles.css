@@ -2354,7 +2354,7 @@ section#region-main div.m-t-2.m-b-1 {
   }
   #snap-pm-header .pull-right {
     right: 20px;
-    position: fixed;
+    position: absolute;
     top: 20px;
   }
   div#snap-pm-header-quicklinks {
