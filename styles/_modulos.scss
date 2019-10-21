@@ -113,7 +113,7 @@
                     @include textos-ruta($blanco, 0.77rem);
                     &::before {
                         content: '<';
-                        border: 1px solid $gris-no2;
+                        border: 1px solid #f7f7f77d;
                         line-height: 0.77rem;
                         min-width: 0.77rem;
                         display: inline-block;
