@@ -2030,6 +2030,9 @@ section#region-main div.m-t-2.m-b-1 {
   .separador-opciones h3 {
     font-size: 1.5rem;
   }
+  .por-defecto .activity.page .activityinstance {
+    width: 85%;
+  }
 }
 
 @media (max-width: 900px) {
@@ -2428,6 +2431,9 @@ section#region-main div.m-t-2.m-b-1 {
   }
   .separador-opciones h3 {
     font-size: 1.5rem;
+  }
+  .por-defecto .activity.page .activityinstance {
+    width: 85%;
   }
 }
 
