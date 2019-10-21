@@ -1933,20 +1933,6 @@ main:not(.home-ruta):not(.por-defecto) div[role="main"] > h2, main:not(.home-rut
   margin-top: 2rem !important;
 }
 
-/*
-main:not(.por-defecto) #page-header{
-    min-height: 10vh;
-    box-shadow: inset 0 0 0 50vw #21252996;
-    background-position: center;
-    #page-mast  {
-        display:none;
-    }
-    &.mast-image{
-        .breadcrumb-nav, .breadcrumb{
-            margin: 0;
-        }
-    }
-}*/
 /*Glosario*/
 .glossarypost tr td > div {
   padding-left: 55px;
@@ -2022,7 +2008,7 @@ main:not(.por-defecto) #page-header{
 }
 
 section#region-main div.m-t-2.m-b-1 {
-  display: none;
+  display: block;
 }
 
 @media (max-width: 1249px) {
