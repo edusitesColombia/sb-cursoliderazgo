@@ -1762,6 +1762,22 @@ html #mr-nav {
   text-decoration: none;
 }
 
+.home-ruta #page-header #page-mast #course-toc #chapters .chapter-title::after {
+  content: '>';
+  padding: 2px;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  border: 1px solid #eaeaea;
+  color: #eaeaea;
+  border-radius: 50%;
+  min-width: 1rem;
+  display: inline-block;
+  text-align: center;
+  margin-left: 4px;
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
+}
+
 .home-ruta .course-content ul.topics {
   display: none;
 }

@@ -157,6 +157,20 @@ html #mr-nav {
                         unset);
                         line-height: 1.2;
                         text-decoration: none;
+                        &::after {
+                            content: '>';
+                            padding: 2px;
+                            font-size: 0.8rem;
+                            line-height: 0.8rem;
+                            border: 1px solid $gris-no1;
+                            color: $gris-no1;
+                            border-radius: 50%;
+                            min-width: 1rem;
+                            display: inline-block;
+                            text-align: center;
+                            margin-left: 4px;
+                            animation: pulse 2s infinite;
+                        }
                     }
                 }
             }
