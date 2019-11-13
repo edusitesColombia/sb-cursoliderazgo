@@ -22,6 +22,16 @@ function rutaInsertaClasePorDefecto() {
     }
 }
 
+function insertaAvance() {
+    let modulosCompletados = document.getElementsByClassName('modulo-completado');
+    let numero = modulosCompletados.length + 1;
+    let elemento = document.getElementById('page-header');
+    if (numero != 0 || numero != null) {
+        elemento.classList.add('avance-`${numero}`');
+    }
+
+}
+
 // Busca el padre con etiqueta <li> de un elemento y lo retorna.
 function recorrerPadres(elementoComparar) {
     var padre = elementoComparar;
@@ -54,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
             let titulo = document.getElementById('page-mast').firstElementChild;
             textoBienvenida.innerText = 'Esperamos que este espacio virtual, permita a todos los docentes acercarse a reflexiones y ejercicios que promuevan su capacidad de liderazgo en sus contextos escolares';
             titulo.insertAdjacentElement('afterend', textoBienvenida);
+            insertaAvance();
             //Inserta a los modulos de la ruta la clase por defecto
             rutaInsertaClasePorDefecto();
 
@@ -71,8 +82,8 @@ function locationHashChanged() {
     if (claseControl == true) {
 
         if (identPrincipal.classList.contains('por-defecto') == true && (location.hash == '' || location.hash == '#section-0')) {
-
             insertaClaseRuta();
+            insertaAvance();
             rutaInsertaClasePorDefecto();
         } else if (identPrincipal.classList.contains('home-ruta') == true && (location.hash != '' && location.hash != '#section-0')) {
             insertaClasePorDefecto();

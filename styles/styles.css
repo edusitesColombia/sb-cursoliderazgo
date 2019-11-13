@@ -1800,6 +1800,38 @@ html #mr-nav {
           animation: pulse 2s infinite;
 }
 
+.home-ruta #page-header.avance.avance-1 {
+  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/fondo_avance1.svg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-ruta #page-header.avance.avance-2 {
+  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/fondo_avance2.svg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-ruta #page-header.avance.avance-3 {
+  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/fondo_avance3.svg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-ruta #page-header.avance.avance-4 {
+  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/fondo_avance4.svg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .home-ruta .course-content ul.topics {
   display: none;
 }
