@@ -177,7 +177,7 @@ html #mr-nav {
         }
     }
     @for $i from 1 through 4 {
-        #page-header.avance.avance-#{$i} {
+        #page-header.avance-#{$i} {
             @include imagen-background('fondo_avance#{$i}',
             'svg',
             'center',
