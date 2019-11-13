@@ -27,9 +27,8 @@ function insertaAvance() {
     let numero = modulosCompletados.length + 1;
     let elemento = document.getElementById('page-header');
     if (numero != 0 || numero != null) {
-        elemento.classList.add(`'avance-${numero}'`);
+        elemento.classList.add(`avance-${numero}`);
     }
-
 }
 
 // Busca el padre con etiqueta <li> de un elemento y lo retorna.
