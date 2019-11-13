@@ -63,13 +63,11 @@ document.addEventListener('DOMContentLoaded', function() {
             let titulo = document.getElementById('page-mast').firstElementChild;
             textoBienvenida.innerText = 'Esperamos que este espacio virtual, permita a todos los docentes acercarse a reflexiones y ejercicios que promuevan su capacidad de liderazgo en sus contextos escolares';
             titulo.insertAdjacentElement('afterend', textoBienvenida);
+            //identifica si el modulo fue completado y agrega la clase
+            marcarPadreClase(document.getElementsByClassName('snap-section-complete'), 'modulo-completado');
             insertaAvance();
             //Inserta a los modulos de la ruta la clase por defecto
             rutaInsertaClasePorDefecto();
-
-            //identifica si el modulo fue completado y agrega la clase
-            marcarPadreClase(document.getElementsByClassName('snap-section-complete'), 'modulo-completado');
-
         } else if (location.hash != '' && location.hash != '#section-0' && location.hash != '#coursetools') {
             insertaClasePorDefecto();
         }
