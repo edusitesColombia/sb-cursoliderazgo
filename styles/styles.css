@@ -1436,7 +1436,7 @@ section#region-main {
   height: 100%;
 }
 
-#page-mod-lesson-view div[role="main"] h2.capsula {
+#page-mod-lesson-view div[role="main"] h3.capsula {
   max-width: 67%;
   font-size: 32px;
   font-weight: 900;
@@ -1450,7 +1450,7 @@ section#region-main {
   background-position: center;
 }
 
-#page-mod-lesson-view div[role="main"] h2.capsula span {
+#page-mod-lesson-view div[role="main"] h3.capsula span {
   color: #006d38;
 }
 
