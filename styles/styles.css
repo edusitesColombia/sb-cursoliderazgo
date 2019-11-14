@@ -1469,6 +1469,30 @@ section#region-main {
   background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod2/separador1.png);
 }
 
+#page-mod-lesson-view div[role="main"] .separador-leccion#m2l2s2 {
+  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod2/separador2.png);
+}
+
+#page-mod-lesson-view div[role="main"] .separador-leccion#m2l2s3 {
+  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod2/separador3.png);
+}
+
+#page-mod-lesson-view div[role="main"] .separador-leccion#m2l2s4 {
+  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod2/separador4.png);
+}
+
+#page-mod-lesson-view div[role="main"] .separador-leccion#m2l2s5 {
+  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod2/separador5.png);
+}
+
+#page-mod-lesson-view div[role="main"] .separador-leccion#m2l2s6 {
+  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod2/separador6.png);
+}
+
+#page-mod-lesson-view div[role="main"] .separador-leccion#m2l2s7 {
+  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod2/separador7.png);
+}
+
 #page-mod-lesson-view div[role="main"] .separador-leccion + img:nth-child(even) {
   margin-top: -5%;
   margin-left: -35%;
