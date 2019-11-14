@@ -75,6 +75,23 @@ section#region-main {
             height: 100%;
         }
     }
+
+    h2.capsula{
+        max-width: 67%;
+        font-size: 32px;
+        font-weight: 900;
+        text-align: center;
+        display: block;
+        margin: 2rem auto;
+        padding: 4rem 0;
+        background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/Capsula.png);
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position: center;
+        span{
+            color:$verde;
+        }
+    }
 }
 
 @mixin lesson-sm(){

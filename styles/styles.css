@@ -1436,6 +1436,24 @@ section#region-main {
   height: 100%;
 }
 
+#page-mod-lesson-view div[role="main"] h2.capsula {
+  max-width: 67%;
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+  display: block;
+  margin: 2rem auto;
+  padding: 4rem 0;
+  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/Capsula.png);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center;
+}
+
+#page-mod-lesson-view div[role="main"] h2.capsula span {
+  color: #006d38;
+}
+
 #page-mod-quiz-view section#region-main {
   padding: 0;
 }
