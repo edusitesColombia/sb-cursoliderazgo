@@ -354,6 +354,10 @@
             overflow: hidden;
             &.snap-can-edit {
                 overflow: visible;
+                &::before{
+                    display:none;
+                    content:'';
+                }
             }
             .asset-wrapper {
                 display: flex;

@@ -716,6 +716,15 @@ body#page-course-view-topics section#region-main span.instancename {
   padding: 0;
 }
 
+.course-content ul.topics li#section-1 .label p,
+.course-content ul.topics li#section-2 .label p,
+.course-content ul.topics li#section-3 .label p,
+.course-content ul.topics li#section-4 .label p,
+.course-content ul.topics li#section-5 .label p {
+  max-width: 43.5em;
+  margin: 0 auto;
+}
+
 .course-content ul.topics li#section-1 .label .asset-wrapper,
 .course-content ul.topics li#section-2 .label .asset-wrapper,
 .course-content ul.topics li#section-3 .label .asset-wrapper,
@@ -802,6 +811,11 @@ body#page-course-view-topics section#region-main span.instancename {
 
 .course-content ul.topics ul.section.img-text li.snap-activity.snap-can-edit {
   overflow: visible;
+}
+
+.course-content ul.topics ul.section.img-text li.snap-activity.snap-can-edit::before {
+  display: none;
+  content: '';
 }
 
 .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper {
