@@ -1469,6 +1469,11 @@ section#region-main {
   background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod2/separador1.png);
 }
 
+#page-mod-lesson-view div[role="main"] .separador-leccion + img {
+  margin-top: -5%;
+  margin-left: -35%;
+}
+
 #page-mod-lesson-view div[role="main"] .contenido-leccion {
   display: -webkit-box;
   display: -ms-flexbox;
