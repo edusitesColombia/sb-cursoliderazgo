@@ -76,7 +76,7 @@ section#region-main {
         }
     }
 
-    h3.capsula{
+    h4.capsula{
         max-width: 67%;
         font-size: 32px;
         font-weight: 900;
@@ -90,6 +90,20 @@ section#region-main {
         background-position: center;
         span{
             color:$verde;
+        }
+    }
+
+    .separador-leccion{
+        min-height: 150px;
+        min-width: 100%;
+        height: 40vh;
+        background:$amarillo;
+        background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod2/separador1.png);
+        background-size:cover;
+        background-position: center;
+        background-repeat:no-repeat;
+        &#m2l2s1{  
+            background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod2/separador1.png);
         }
     }
 }

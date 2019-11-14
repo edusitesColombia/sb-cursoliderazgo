@@ -1436,7 +1436,7 @@ section#region-main {
   height: 100%;
 }
 
-#page-mod-lesson-view div[role="main"] h3.capsula {
+#page-mod-lesson-view div[role="main"] h4.capsula {
   max-width: 67%;
   font-size: 32px;
   font-weight: 900;
@@ -1450,8 +1450,23 @@ section#region-main {
   background-position: center;
 }
 
-#page-mod-lesson-view div[role="main"] h3.capsula span {
+#page-mod-lesson-view div[role="main"] h4.capsula span {
   color: #006d38;
+}
+
+#page-mod-lesson-view div[role="main"] .separador-leccion {
+  min-height: 150px;
+  min-width: 100%;
+  height: 40vh;
+  background: #fadc5d;
+  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod2/separador1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#page-mod-lesson-view div[role="main"] .separador-leccion#m2l2s1 {
+  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod2/separador1.png);
 }
 
 #page-mod-quiz-view section#region-main {
