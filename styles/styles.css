@@ -1039,7 +1039,7 @@ body#page-course-view-topics section#region-main span.instancename {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 8.8rem 2.3rem 6rem 6rem;
+  padding: 8.8rem 4.3rem 6rem 4rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2262,7 +2262,7 @@ section#region-main div.m-t-2.m-b-1 .col-md-4 a {
     width: 70%;
   }
   .contenedor-objetivos #objetivo-modulo-2 {
-    padding: 28.5% 0.5% 19.5% 11.5%;
+    padding: 28.5% 11% 19.5% 11.5%;
     width: 70%;
   }
   .contenedor-objetivos #complemento-objetivos {
@@ -2375,7 +2375,7 @@ section#region-main div.m-t-2.m-b-1 .col-md-4 a {
     width: 100%;
     min-height: 400px;
     font-size: 70%;
-    padding: 21% 16% 12% 28%;
+    padding: 24% 25% 11% 21%;
   }
   .contenedor-objetivos #objetivo-modulo-2 h4 {
     margin: 0;
