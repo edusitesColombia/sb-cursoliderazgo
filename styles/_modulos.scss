@@ -521,6 +521,21 @@
                 color: $verde;
             }
         }
+        #objetivo-modulo-2{
+            width: 60%;
+            display: flex;
+            padding: 8.8rem 2.3rem 6rem 6rem;
+            flex-direction: column;
+            justify-content: center;
+            background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/avatarM_tablero.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            h4 {
+                font-weight: 600;
+                color: $verde;
+            }
+        }
         #complemento-objetivos {
             background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/caja_objetivos.svg);
             background-repeat: no-repeat;
@@ -735,6 +750,10 @@
                 padding: 28.5% 0.5% 19.5% 11.5%;
                 width: 70%;
             }
+            #objetivo-modulo-2 {
+                padding: 28.5% 0.5% 19.5% 11.5%;
+                width: 70%;
+            }
             #complemento-objetivos {
                 min-height: 412px;
                 .bloque {
@@ -775,6 +794,15 @@
         }
         .contenedor-objetivos {
             #objetivo-modulo {
+                width: 100%;
+                min-height: 400px;
+                font-size: 70%;
+                padding: 21% 16% 12% 28%;
+                h4 {
+                    margin: 0;
+                }
+            }
+            #objetivo-modulo-2{
                 width: 100%;
                 min-height: 400px;
                 font-size: 70%;
@@ -862,6 +890,9 @@
 
 @media (max-width: 500px){
     .contenedor-objetivos #objetivo-modulo {
+        padding: 23% 6% 12% 23%!important;
+    }
+    .contenedor-objetivos #objetivo-modulo-2 {
         padding: 23% 6% 12% 23%!important;
     }
 }

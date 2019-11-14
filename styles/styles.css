@@ -1034,6 +1034,30 @@ body#page-course-view-topics section#region-main span.instancename {
   color: #006d38;
 }
 
+.contenedor-objetivos #objetivo-modulo-2 {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8.8rem 2.3rem 6rem 6rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/avatarM_tablero.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.contenedor-objetivos #objetivo-modulo-2 h4 {
+  font-weight: 600;
+  color: #006d38;
+}
+
 .contenedor-objetivos #complemento-objetivos {
   background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/caja_objetivos.svg);
   background-repeat: no-repeat;
@@ -1289,6 +1313,9 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
 
 @media (max-width: 500px) {
   .contenedor-objetivos #objetivo-modulo {
+    padding: 23% 6% 12% 23% !important;
+  }
+  .contenedor-objetivos #objetivo-modulo-2 {
     padding: 23% 6% 12% 23% !important;
   }
 }
@@ -2234,6 +2261,10 @@ section#region-main div.m-t-2.m-b-1 .col-md-4 a {
     padding: 28.5% 0.5% 19.5% 11.5%;
     width: 70%;
   }
+  .contenedor-objetivos #objetivo-modulo-2 {
+    padding: 28.5% 0.5% 19.5% 11.5%;
+    width: 70%;
+  }
   .contenedor-objetivos #complemento-objetivos {
     min-height: 412px;
   }
@@ -2338,6 +2369,15 @@ section#region-main div.m-t-2.m-b-1 .col-md-4 a {
     padding: 21% 16% 12% 28%;
   }
   .contenedor-objetivos #objetivo-modulo h4 {
+    margin: 0;
+  }
+  .contenedor-objetivos #objetivo-modulo-2 {
+    width: 100%;
+    min-height: 400px;
+    font-size: 70%;
+    padding: 21% 16% 12% 28%;
+  }
+  .contenedor-objetivos #objetivo-modulo-2 h4 {
     margin: 0;
   }
   .contenedor-objetivos #complemento-objetivos {
