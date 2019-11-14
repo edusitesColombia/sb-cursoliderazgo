@@ -15,7 +15,7 @@ section#region-main {
         margin-bottom: 2rem;
         margin-top: 2rem;
     }
-    h3:first-child{
+    &>h3{
         display:none!important;
     }
     h3:not(#final-descripcion){

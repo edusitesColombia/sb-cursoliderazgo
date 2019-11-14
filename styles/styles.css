@@ -1346,7 +1346,7 @@ section#region-main {
   margin-top: 2rem;
 }
 
-#page-mod-lesson-view div[role="main"] h3:first-child {
+#page-mod-lesson-view div[role="main"] > h3 {
   display: none !important;
 }
 
