@@ -357,7 +357,6 @@ body#page-course-view-topics section#region-main span.instancename {
   display: block;
   margin: 0 auto;
   margin-top: 3rem;
-  max-width: 43.5em;
   padding: 0;
 }
 
@@ -1286,6 +1285,10 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
   background-image: url(http://jkvela.website/theme/snap/pix/segurosbolivar/icono_bibliografia.png);
   margin-left: -110px;
   width: 110px;
+}
+
+#page .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content h3.snap-asset-link {
+  white-space: pre-wrap;
 }
 
 @-webkit-keyframes pulse {

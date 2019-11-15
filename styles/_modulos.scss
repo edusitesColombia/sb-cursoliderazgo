@@ -21,7 +21,6 @@
             display: block;
             margin: 0 auto;
             margin-top: 3rem;
-            max-width: 43.5em;
             padding: 0;
             &>h1 {
                 @include textos-ruta($blanco, 0.77rem);               
@@ -719,6 +718,10 @@
         }
     }
     
+    #page .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content h3.snap-asset-link {
+        white-space: pre-wrap;
+    }
+
     @mixin modulos-md() {
         .separador-opciones {
             padding: 3rem 4%;
