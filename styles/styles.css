@@ -968,7 +968,7 @@ body#page-course-view-topics section#region-main span.instancename {
   min-width: 1.7rem;
   display: inline-block;
   text-align: center;
-  margin-right: 5px;
+  margin-left: 5px;
   border-radius: 50%;
   font-size: 1em;
   color: #006d38;
@@ -1515,6 +1515,12 @@ section#region-main {
       flex-wrap: nowrap;
   max-width: 43.5em;
   margin: 0 auto;
+  ackground: #eaeaea;
+  margin-top: -2rem;
+  margin-bottom: 3rem;
+  border-radius: 22px 50px;
+  padding: 15px;
+  padding-top: 2rem;
 }
 
 #page-mod-lesson-view div[role="main"] .contenido-leccion > div {
