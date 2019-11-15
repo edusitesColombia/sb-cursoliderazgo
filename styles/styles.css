@@ -794,6 +794,10 @@ body#page-course-view-topics section#region-main span.instancename {
   display: none;
 }
 
+.course-content ul.topics blockquote.blockquote#quote-mod2 {
+  background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod2/quote-mod2.jpg);
+}
+
 .course-content ul.topics ul.section.img-text li.snap-activity {
   border: 0;
   margin: 0;
