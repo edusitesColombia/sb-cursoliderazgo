@@ -233,8 +233,11 @@ main:not(.home-ruta, .por-defecto) div[role="main"]>h2,main:not(.home-ruta, .por
 //Mostrar la navegacion de las paginas internas
 section#region-main div.m-t-2.m-b-1 {
     display: block;
-    .col-md-4 a{
-        font-family: 'Roboto Condensed';
+    .col-md-4{
+        margin-left:auto;
+        a{
+            font-family: 'Roboto Condensed';
+        }
     }
 }
 
