@@ -801,6 +801,10 @@ body#page-course-view-topics section#region-main span.instancename {
   background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod3/quote-mod3.jpg);
 }
 
+.course-content ul.topics blockquote.blockquote#quote-mod4 {
+  background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/mod3/quote-mod4.jpg);
+}
+
 .course-content ul.topics ul.section.img-text li.snap-activity {
   border: 0;
   margin: 0;
