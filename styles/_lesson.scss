@@ -175,6 +175,12 @@ section#region-main {
             width:65%;
         }
     }
+
+    #page-mod-lesson-view div[role="main"] .contenido-leccion {
+        &>div{
+            width:90%;            
+        }
+    }
 }
 @mixin lesson-xs(){
     section#region-main{
