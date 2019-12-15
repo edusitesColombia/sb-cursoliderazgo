@@ -2459,6 +2459,10 @@ section#region-main div.m-t-2.m-b-1 .col-md-4 a {
   #page-mod-lesson-view div[role="main"] .bloque-verde-derecha p, #page-mod-lesson-view div[role="main"] .bloque-verde-izquierda p {
     width: 65%;
   }
+  #page-mod-lesson-view div[role="main"] .contenido-leccion {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   #page-mod-lesson-view div[role="main"] .contenido-leccion > div {
     width: 90%;
   }
