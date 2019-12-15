@@ -82,7 +82,7 @@ html #mr-nav {
                         }
                         &:nth-child(2) {
                             @include posicion-otros-elementos(absolute, 200px, $left: 0);
-                            background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_metodologia.svg);
+                            background: url(https://edusites.website/moodle/theme/snap/pix/segurosbolivar/boton_metodologia.svg);
                             background-repeat: no-repeat;
                             background-size: contain;
                             background-position: center;
@@ -96,7 +96,7 @@ html #mr-nav {
                                 display: block;
                                 width: 28px;
                                 height: 32px;
-                                background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/iconos/icono_metodologia_32px.png);
+                                background: url(https://edusites.website/moodle/theme/snap/pix/segurosbolivar/iconos/icono_metodologia_32px.png);
                                 background-repeat: no-repeat;
                                 background-size: 100%;
                                 position: absolute;
@@ -124,7 +124,7 @@ html #mr-nav {
                             @include posicion-otros-elementos(absolute,
                             1rem,
                             -2.5rem);
-                            background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/boton_caja_herramientas.svg);
+                            background: url(https://edusites.website/moodle/theme/snap/pix/segurosbolivar/boton_caja_herramientas.svg);
                             background-repeat: no-repeat;
                             background-size: contain;
                             background-position: center;
@@ -141,7 +141,7 @@ html #mr-nav {
                                     display: block;
                                     width: 28px;
                                     height: 32px;
-                                    background: url(http://jkvela.website/theme/snap/pix/segurosbolivar/iconos/icono_cajaherramientas_32px.svg);
+                                    background: url(https://edusites.website/moodle/theme/snap/pix/segurosbolivar/iconos/icono_cajaherramientas_32px.svg);
                                     background-repeat: no-repeat;
                                     background-size: 100%;
                                     position: absolute;
