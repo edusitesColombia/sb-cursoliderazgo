@@ -1576,6 +1576,10 @@ section#region-main {
   margin: 1rem auto;
 }
 
+#page-mod-lesson-view div[role="main"] .box.branchbuttoncontainer.vertical.py-3 > .singlebutton {
+  display: none !important;
+}
+
 .activity-navigation .row .col-md-4:nth-child(1), .activity-navigation .row .col-md-4:nth-child(2) {
   display: none;
 }
