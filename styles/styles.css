@@ -1584,12 +1584,16 @@ section#region-main {
   right: 0;
   left: 0;
   bottom: 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 #page-mod-lesson-view div[role="main"] #carouselMod3L2 .carousel-caption h5 {
   font-weight: 800;
   color: #fadc5d;
+}
+
+#page-mod-lesson-view div[role="main"] #carouselMod3L2 .carousel-caption p {
+  padding: 0;
 }
 
 .activity-navigation .row .col-md-4:nth-child(1), .activity-navigation .row .col-md-4:nth-child(2) {

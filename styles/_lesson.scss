@@ -175,10 +175,13 @@ section#region-main {
         right: 0;
         left: 0;
         bottom: 0;
-        font-size:1.5rem;
+        font-size:1rem;
         h5{
             font-weight: 800;
             color:$amarillo
+        }
+        p{
+            padding: 0;
         }
     }
 }
