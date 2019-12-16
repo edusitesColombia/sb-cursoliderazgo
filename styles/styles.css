@@ -1576,6 +1576,22 @@ section#region-main {
   margin: 1rem auto;
 }
 
+#page-mod-lesson-view div[role="main"] .carousel-caption.d-none.d-md-block {
+  width: 100%;
+  margin: 0;
+  padding: 3rem;
+  background: rgba(0, 109, 56, 0.7);
+  right: 0;
+  left: 0;
+  bottom: 0;
+  font-size: 1.5rem;
+}
+
+#page-mod-lesson-view div[role="main"] .carousel-caption.d-none.d-md-block h5 {
+  font-weight: 800;
+  color: #fadc5d;
+}
+
 .activity-navigation .row .col-md-4:nth-child(1), .activity-navigation .row .col-md-4:nth-child(2) {
   display: none;
 }
