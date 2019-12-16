@@ -10,10 +10,10 @@
         display: none;
     }
     //contenedor principal que lleva la imagen de fondo
-    #page{}
+    #page{
     background: linear-gradient(rgba(1, 108, 56, 0.7), rgba(1, 108, 56, 0.7)), url(https://edusites.website/moodle/theme/snap/pix/segurosbolivar/bg_login.jpg)!important;
         background-size: cover;
-        background-position: 200px;
+        background-position: 200px;}
     main#moodle-page {
         min-height: 90vh;
         display: flex;
