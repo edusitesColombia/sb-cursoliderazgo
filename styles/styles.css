@@ -2317,6 +2317,9 @@ section#region-main div.m-t-2.m-b-1 .col-md-4 a {
   .por-defecto .activity.page .activityinstance {
     width: 85%;
   }
+  .contenedor-objetivos #complemento-objetivos {
+    width: 70%;
+  }
 }
 
 @media (max-width: 900px) {
@@ -2404,6 +2407,7 @@ section#region-main div.m-t-2.m-b-1 .col-md-4 a {
             justify-content: center;
     width: 100%;
     min-width: auto;
+    min-height: 450px;
   }
   .contenedor-objetivos #objetivo-modulo {
     padding: 28.5% 11.5% 19.5% 6.5%;
@@ -2414,7 +2418,8 @@ section#region-main div.m-t-2.m-b-1 .col-md-4 a {
     width: 70%;
   }
   .contenedor-objetivos #complemento-objetivos {
-    min-height: 412px;
+    min-height: 450px;
+    width: 90%;
   }
   .contenedor-objetivos #complemento-objetivos .bloque {
     width: 43%;
@@ -2540,7 +2545,7 @@ section#region-main div.m-t-2.m-b-1 .col-md-4 a {
     font-size: 85%;
   }
   .contenedor-objetivos #complemento-objetivos .bloque {
-    width: 66%;
+    width: 80%;
     min-width: 237px;
     padding: 0 10%;
   }

@@ -742,6 +742,10 @@
                 width: 85%;
             }
         }
+        .contenedor-objetivos #complemento-objetivos {
+            width: 70%;        
+        }
+                
     }
     
     @mixin modulos-sm() {
@@ -759,6 +763,7 @@
             justify-content: center;
             width: 100%;
             min-width: auto;
+            min-height: 450px;
             #objetivo-modulo {
                 padding: 28.5% 11.5% 19.5% 6.5%;
                 width: 70%;
@@ -768,7 +773,8 @@
                 width: 70%;
             }
             #complemento-objetivos {
-                min-height: 412px;
+                min-height: 450px;
+                width: 90%;
                 .bloque {
                     width: 43%;
                 }
@@ -828,7 +834,7 @@
                 min-height: 420px;
                 font-size: 85%;
                 .bloque {
-                    width: 66%;
+                    width: 80%;
                     min-width: 237px;
                     padding: 0 10%;
                 }
