@@ -1596,6 +1596,66 @@ section#region-main {
   padding: 0;
 }
 
+#page-mod-lesson-view div[role="main"] blockquote.blockquote {
+  border: 0;
+  min-height: 650px;
+  height: 70vh;
+  background: url(https://edusites.website/moodle/theme/snap/pix/segurosbolivar/mod1-quote.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+#page-mod-lesson-view div[role="main"] blockquote.blockquote p,
+#page-mod-lesson-view div[role="main"] blockquote.blockquote footer {
+  margin: 0 !important;
+  max-width: 100% !important;
+  background: #006d38;
+  color: white;
+  padding: 2rem 10%;
+}
+
+#page-mod-lesson-view div[role="main"] blockquote.blockquote p {
+  font-style: italic;
+  text-align: right;
+}
+
+#page-mod-lesson-view div[role="main"] blockquote.blockquote footer {
+  padding: 0 10% 2rem;
+  text-align: right;
+  font-size: 1.3rem;
+  color: #fadc5d;
+  font-weight: 600;
+  margin-top: -1px !important;
+}
+
+#page-mod-lesson-view div[role="main"] blockquote.blockquote footer .usertour {
+  display: none;
+}
+
+#page-mod-lesson-view div[role="main"] blockquote.blockquote#quote-mod2 {
+  background-image: url(https://edusites.website/moodle/theme/snap/pix/segurosbolivar/mod2/quote-mod2.jpg);
+}
+
+#page-mod-lesson-view div[role="main"] blockquote.blockquote#quote-mod3 {
+  background-image: url(https://edusites.website/moodle/theme/snap/pix/segurosbolivar/mod3/quote-mod3.jpg);
+}
+
+#page-mod-lesson-view div[role="main"] blockquote.blockquote#quote-mod3-2 {
+  background-image: url(https://edusites.website/moodle/theme/snap/pix/segurosbolivar/mod3/quote-mod3-2.jpg);
+}
+
 .activity-navigation .row .col-md-4:nth-child(1), .activity-navigation .row .col-md-4:nth-child(2) {
   display: none;
 }
