@@ -1576,7 +1576,7 @@ section#region-main {
   margin: 1rem auto;
 }
 
-#page-mod-lesson-view div[role="main"] .carousel-caption.d-none.d-md-block {
+#page-mod-lesson-view div[role="main"] #carouselMod3L2 .carousel-caption {
   width: 100%;
   margin: 0;
   padding: 3rem;
@@ -1587,7 +1587,7 @@ section#region-main {
   font-size: 1.5rem;
 }
 
-#page-mod-lesson-view div[role="main"] .carousel-caption.d-none.d-md-block h5 {
+#page-mod-lesson-view div[role="main"] #carouselMod3L2 .carousel-caption h5 {
   font-weight: 800;
   color: #fadc5d;
 }
