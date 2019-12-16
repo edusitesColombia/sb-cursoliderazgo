@@ -341,16 +341,13 @@
                 }
             }
             &#quote-mod2{
-                background: url(https://edusites.website/moodle/theme/snap/pix/segurosbolivar/mod2/quote-mod2.jpg);
-                background-attachment: fixed;
+                background-image: url(https://edusites.website/moodle/theme/snap/pix/segurosbolivar/mod2/quote-mod2.jpg);                
             }
             &#quote-mod3{
-                background: url(https://edusites.website/moodle/theme/snap/pix/segurosbolivar/mod3/quote-mod3.jpg);
-                background-attachment: fixed;
+                background-image: url(https://edusites.website/moodle/theme/snap/pix/segurosbolivar/mod3/quote-mod3.jpg);                
             }
             &#quote-mod4{
-                background: url(https://edusites.website/moodle/theme/snap/pix/segurosbolivar/mod3/quote-mod4.jpg);
-                background-attachment: fixed;
+                background-image: url(https://edusites.website/moodle/theme/snap/pix/segurosbolivar/mod3/quote-mod4.jpg);                
             }
         }
         //estilos y color intercalado lecciones
@@ -536,7 +533,7 @@
         #objetivo-modulo-2{
             width: 60%;
             display: flex;
-            padding: 8.8rem 4.3rem 6rem 4rem;
+            padding: 8.8rem 12% 6rem 4rem;
             flex-direction: column;
             justify-content: center;
             background-image: url(https://edusites.website/moodle/theme/snap/pix/segurosbolivar/avatarM_tablero.png);
