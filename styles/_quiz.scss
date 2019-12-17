@@ -120,6 +120,10 @@
 }
 
 @mixin quiz-sm() {
+    #page-mod-quiz-view h2{
+        padding: 5% 10%;
+        text-align: center;
+    }
     #page-mod-quiz-attempt .que .ddarea {
         flex-wrap: wrap;
         .droparea {
