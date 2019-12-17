@@ -885,7 +885,7 @@ body#page-course-view-topics section#region-main span.instancename {
 }
 
 .course-content ul.topics ul.section.img-text li.snap-activity:hover:before {
-  font-size: 700px;
+  font-size: 700px !important;
 }
 
 .course-content ul.topics ul.section.img-text li.snap-activity:hover .snap-asset-content {

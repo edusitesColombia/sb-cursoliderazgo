@@ -406,7 +406,7 @@ body#page-course-view-topics section#region-main {
         }
         &:hover{ 
             &:before{
-                font-size:700px;
+                font-size:700px!important;
             }
             .snap-asset-content{
                 transform: scale(1.05);
