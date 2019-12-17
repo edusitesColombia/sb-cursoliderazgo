@@ -803,26 +803,6 @@ ul.section.img-text .page .asset-wrapper {
                 width: 43%;
             }
         }
-        .course-content ul.topics .contenedor-felicitacion {
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            img{
-                width:100%;
-                height:auto;
-                display: block;
-                &:first-child{
-                    margin-right: auto;
-                    margin-bottom:-2rem;
-                    z-index: 1;
-                }
-                &:last-child{
-                    margin-left:auto;
-                    margin-top:-2rem;
-                }
-            }    
-        }
     }
     .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content h3.snap-asset-link {
         white-space: normal;
@@ -841,6 +821,28 @@ ul.section.img-text .page .asset-wrapper {
             width: 85%;
         }
     }
+
+    .course-content ul.topics .contenedor-felicitacion {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        img{
+            width:100%;
+            height:auto;
+            display: block;
+            &:first-child{
+                margin-right: auto;
+                margin-bottom:-2rem;
+                z-index: 1;
+            }
+            &:last-child{
+                margin-left:auto;
+                margin-top:-2rem;
+            }
+        }    
+    }
+    
     .separador-opciones {
         flex-direction: column;
         align-items: flex-end;
