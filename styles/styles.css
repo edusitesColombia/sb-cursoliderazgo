@@ -572,6 +572,10 @@ body#page-course-view-topics section#region-main span.instancename {
   display: none;
 }
 
+#page-course-view-topics .por-defecto .no-overflow > p {
+  padding: 0 10%;
+}
+
 .video-container {
   position: relative;
   width: 100%;
