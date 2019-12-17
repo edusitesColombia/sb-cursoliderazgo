@@ -405,6 +405,9 @@ body#page-course-view-topics section#region-main {
         }
         &:hover .snap-asset-content{
             transform: scale(1.05);
+            h3{
+                font-weight: 900;
+            }
         }
         .asset-wrapper {
             display: flex;
