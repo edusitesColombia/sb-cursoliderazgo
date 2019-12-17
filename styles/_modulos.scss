@@ -271,7 +271,7 @@ body#page-course-view-topics section#region-main {
             background: $blanco;
             counter-reset: actividadNo;
             li .asset-wrapper {
-                overflow: hidden;
+                overflow: visible;
             }
         }
         //contenedor de los botones crear actividad de aprendizaje y arrastre archivos para anexarlos

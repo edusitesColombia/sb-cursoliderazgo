@@ -691,7 +691,7 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-3 ul.section.img-text li .asset-wrapper,
 .course-content ul.topics li#section-4 ul.section.img-text li .asset-wrapper,
 .course-content ul.topics li#section-5 ul.section.img-text li .asset-wrapper {
-  overflow: hidden;
+  overflow: visible;
 }
 
 .course-content ul.topics li#section-1 div.row,
