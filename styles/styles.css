@@ -1214,7 +1214,7 @@ ul.section.img-text .page .asset-wrapper .contenedor-felicitacion img {
   display: block;
 }
 
-ul.section.img-text .page .asset-wrapper .contenedor-felicitacion img::first-child {
+ul.section.img-text .page .asset-wrapper .contenedor-felicitacion img:first-child {
   margin-right: -2rem;
 }
 
