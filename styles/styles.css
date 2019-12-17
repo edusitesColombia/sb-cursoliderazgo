@@ -2212,6 +2212,14 @@ body, body *, .form_autocomplete_selection, .form_autocomplete_suggestions, .sna
   background-image: url(https://edusites.website/moodle/pluginfile.php/26/theme_snap/coverimage/1571155376/course-image.jpg) !important;
 }
 
+.icon-arrow-right:before {
+  background-image: url(/segurosbolivar/theme/image.php/snap/theme/1576423950/right-arrow) !important;
+}
+
+.icon-arrow-left:before {
+  background-image: url(/segurosbolivar/theme/image.php/snap/theme/1576423950/left-arrow) !important;
+}
+
 ::-moz-selection {
   background: #fadc5d;
   color: #fff;
