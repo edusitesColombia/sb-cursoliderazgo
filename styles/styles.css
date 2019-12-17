@@ -1230,6 +1230,10 @@ ul.section.img-text .page .asset-wrapper ul.section.img-text .page .asset-wrappe
   display: none;
 }
 
+#page-mod-page-view #region-main .activity-navigation .row .col-md-4:nth-child(3) {
+  display: none;
+}
+
 #page-mod-page-view div[role="main"] {
   text-align: center;
 }
@@ -1266,6 +1270,10 @@ ul.section.img-text .page .asset-wrapper ul.section.img-text .page .asset-wrappe
 #page-mod-page-view div[role="main"] ul li {
   text-align: left;
   padding: 1rem;
+}
+
+#page-mod-page-view div[role="main"] .modified {
+  display: none;
 }
 
 .separador-opciones {

@@ -666,6 +666,11 @@ ul.section.img-text .page .asset-wrapper {
 }
 
 #page-mod-page-view {
+    #region-main{
+        .activity-navigation .row .col-md-4:nth-child(3){
+            display:none;
+        }
+    }
     div[role="main"] {
         text-align: center;
         .table {
@@ -693,6 +698,9 @@ ul.section.img-text .page .asset-wrapper {
                 text-align: left;
                 padding: 1rem;
             }
+        }
+        .modified{
+            display:none;
         }
     }
 }
