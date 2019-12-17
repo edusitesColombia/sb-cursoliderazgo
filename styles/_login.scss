@@ -11,14 +11,14 @@
     }
     //contenedor principal que lleva la imagen de fondo
     #page{
-    background: linear-gradient(rgba(1, 108, 56, 0.7), rgba(1, 108, 56, 0.7)), url(https://edusites.website/moodle/theme/snap/pix/segurosbolivar/bg-login.jpg)!important;
+    background: linear-gradient(rgba(1, 108, 56, 0.7), rgba(1, 108, 56, 0.7)), url(http://proyectoeducativo.com.co/sb-liderazgo/theme/snap/pix/segurosbolivar/bg-login.jpg)!important;
         background-size: cover;
         background-position: 200px;
     }
     main#moodle-page {
         min-height: 90vh;
         display: flex;
-        background: linear-gradient(rgba(1, 108, 56, 0.7), rgba(1, 108, 56, 0.7)), url(https://edusites.website/moodle/theme/snap/pix/segurosbolivar/bg-login.jpg);
+        background: linear-gradient(rgba(1, 108, 56, 0.7), rgba(1, 108, 56, 0.7)), url(http://proyectoeducativo.com.co/sb-liderazgo/theme/snap/pix/segurosbolivar/bg-login.jpg);
         background-size: cover;
         background-position: 200px;
         //div vacio que lleva un header por defecto de moodle, se utiliza para dejar medio contenedor principal vacio para que se vea el background

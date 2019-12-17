@@ -18,7 +18,7 @@ $caja-amarilla: "%3Csvg width='100%' viewBox='0 0 275 145' xmlns='http://www.w3.
 
 @mixin imagen-background ($file, $format, $position, $size) {
     background: {
-        image: url(https://edusites.website/moodle/theme/snap/pix/segurosbolivar/#{$file}.#{$format});
+        image: url(http://proyectoeducativo.com.co/sb-liderazgo/theme/snap/pix/segurosbolivar/#{$file}.#{$format});
         size: 100% 100%;
         position: center;
         size: cover;
