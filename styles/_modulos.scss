@@ -910,6 +910,8 @@ ul.section.img-text .page .asset-wrapper {
     .course-content ul.topics blockquote.blockquote {
         height: auto;
         background: none;
+        background-position: center;
+        background-size: cover;
     }
     .course-content ul.topics ul.section.img-text li.snap-activity {
         height: auto;

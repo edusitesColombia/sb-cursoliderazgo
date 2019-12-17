@@ -2719,6 +2719,8 @@ section#region-main div.m-t-2.m-b-1 .col-md-4 a {
   .course-content ul.topics blockquote.blockquote {
     height: auto;
     background: none;
+    background-position: center;
+    background-size: cover;
   }
   .course-content ul.topics ul.section.img-text li.snap-activity {
     height: auto;
