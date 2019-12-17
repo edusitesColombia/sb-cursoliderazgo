@@ -403,6 +403,9 @@ body#page-course-view-topics section#region-main {
                 content:'';
             }
         }
+        &:hover .snap-asset-content{
+            transform: scale(1.05);
+        }
         .asset-wrapper {
             display: flex;
             width: 100%;
@@ -428,6 +431,7 @@ body#page-course-view-topics section#region-main {
                     width: 60%;
                     text-align: right;
                     padding-left: 6%;
+                    transition:all 0.3s ease;
                     .contentafterlink {
                         margin-left: 0px;
                     }
