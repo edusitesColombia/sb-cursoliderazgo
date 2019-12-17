@@ -873,6 +873,8 @@ body#page-course-view-topics section#region-main span.instancename {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .course-content ul.topics ul.section.img-text li.snap-activity.snap-can-edit {
@@ -882,6 +884,11 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics ul.section.img-text li.snap-activity.snap-can-edit::before {
   display: none;
   content: '';
+}
+
+.course-content ul.topics ul.section.img-text li.snap-activity:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .course-content ul.topics ul.section.img-text li.snap-activity:hover:before {
