@@ -95,6 +95,10 @@
     .formulation select {
         width: 100%;
     }
+    //quitar navegación dentro del quiz
+    .activity-navigation .row .col-md-4:nth-child(3){
+        display:none;
+    }
 }
 
 #page-mod-quiz-review {
