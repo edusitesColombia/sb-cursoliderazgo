@@ -397,6 +397,7 @@ body#page-course-view-topics section#region-main {
         display: flex;
         align-items: center;
         overflow: hidden;
+        transition:all 0.2s ease;
         &.snap-can-edit {
             overflow: visible;
             &::before{
@@ -404,7 +405,8 @@ body#page-course-view-topics section#region-main {
                 content:'';
             }
         }
-        &:hover{ 
+        &:hover{
+            transform: scale(1.01);
             &:before{
                 font-size:700px!important;
             }
