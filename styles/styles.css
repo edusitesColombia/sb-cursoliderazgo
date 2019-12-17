@@ -574,6 +574,7 @@ body#page-course-view-topics section#region-main span.instancename {
 
 #page-course-view-topics .por-defecto .contenedor-objetivos + p {
   padding: 0 10%;
+  padding-top: 2rem;
 }
 
 .video-container {
