@@ -887,8 +887,8 @@ body#page-course-view-topics section#region-main span.instancename {
 }
 
 .course-content ul.topics ul.section.img-text li.snap-activity:hover {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .course-content ul.topics ul.section.img-text li.snap-activity:hover:before {
