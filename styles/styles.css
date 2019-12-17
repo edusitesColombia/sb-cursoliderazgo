@@ -843,14 +843,20 @@ body#page-course-view-topics section#region-main span.instancename {
 
 .course-content ul.topics blockquote.blockquote#quote-mod2 {
   background-image: url(https://edusites.website/moodle/theme/snap/pix/segurosbolivar/mod2/quote-mod2.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .course-content ul.topics blockquote.blockquote#quote-mod3 {
   background-image: url(https://edusites.website/moodle/theme/snap/pix/segurosbolivar/mod3/quote-mod3.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .course-content ul.topics blockquote.blockquote#quote-mod3-2 {
   background-image: url(https://edusites.website/moodle/theme/snap/pix/segurosbolivar/mod3/quote-mod3-2.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .course-content ul.topics ul.section.img-text li.snap-activity {
