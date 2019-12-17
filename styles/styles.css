@@ -1728,6 +1728,7 @@ section#region-main {
 #page-mod-quiz-view h3,
 #page-mod-quiz-view div.box {
   padding: 0 10%;
+  display: block;
 }
 
 #page-mod-quiz-attempt section#region-main {
