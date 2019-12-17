@@ -833,7 +833,7 @@ ul.section.img-text .page .asset-wrapper {
             display: block;
             &:first-child{
                 margin-right: auto;
-                margin-bottom:-2rem;
+                margin-bottom:-40%;
                 z-index: 1;
             }
             &:last-child{
@@ -842,7 +842,7 @@ ul.section.img-text .page .asset-wrapper {
             }
         }    
     }
-    
+
     .separador-opciones {
         flex-direction: column;
         align-items: flex-end;
