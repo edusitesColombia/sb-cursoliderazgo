@@ -752,11 +752,7 @@ body#page-course-view-topics section#region-main span.instancename {
   background-position: center;
 }
 
-.course-content ul.topics li#section-1 .contenedor-felicitacion,
-.course-content ul.topics li#section-2 .contenedor-felicitacion,
-.course-content ul.topics li#section-3 .contenedor-felicitacion,
-.course-content ul.topics li#section-4 .contenedor-felicitacion,
-.course-content ul.topics li#section-5 .contenedor-felicitacion {
+.course-content ul.topics .contenedor-felicitacion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -771,29 +767,18 @@ body#page-course-view-topics section#region-main span.instancename {
   width: 100%;
 }
 
-.course-content ul.topics li#section-1 .contenedor-felicitacion img,
-.course-content ul.topics li#section-2 .contenedor-felicitacion img,
-.course-content ul.topics li#section-3 .contenedor-felicitacion img,
-.course-content ul.topics li#section-4 .contenedor-felicitacion img,
-.course-content ul.topics li#section-5 .contenedor-felicitacion img {
+.course-content ul.topics .contenedor-felicitacion img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.course-content ul.topics li#section-1 .contenedor-felicitacion img:first-child,
-.course-content ul.topics li#section-2 .contenedor-felicitacion img:first-child,
-.course-content ul.topics li#section-3 .contenedor-felicitacion img:first-child,
-.course-content ul.topics li#section-4 .contenedor-felicitacion img:first-child,
-.course-content ul.topics li#section-5 .contenedor-felicitacion img:first-child {
-  margin-right: -2rem;
+.course-content ul.topics .contenedor-felicitacion img:first-child {
+  margin-right: -10rem;
+  z-index: 1;
 }
 
-.course-content ul.topics li#section-1 .contenedor-felicitacion img:last-child,
-.course-content ul.topics li#section-2 .contenedor-felicitacion img:last-child,
-.course-content ul.topics li#section-3 .contenedor-felicitacion img:last-child,
-.course-content ul.topics li#section-4 .contenedor-felicitacion img:last-child,
-.course-content ul.topics li#section-5 .contenedor-felicitacion img:last-child {
+.course-content ul.topics .contenedor-felicitacion img:last-child {
   margin-left: -2rem;
 }
 

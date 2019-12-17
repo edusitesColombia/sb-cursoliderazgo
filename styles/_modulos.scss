@@ -302,27 +302,27 @@ body#page-course-view-topics section#region-main {
                 background-size: cover;
                 background-position: center;
             }
-        }
-            //imagen felicitación responsive
-        .contenedor-felicitacion {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            img{
-                width:100%;
-                height:auto;
-                display: block;
-                &:first-child{
-                    margin-right:-2rem;
-                }
-                &:last-child{
-                    margin-left:-2rem;
-                }
+        }         
+    }
+    //imagen felicitación responsive
+    .contenedor-felicitacion {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        img{
+            width:100%;
+            height:auto;
+            display: block;
+            &:first-child{
+                margin-right: -10rem;
+                z-index: 1;
             }
-            
-        }
+            &:last-child{
+                margin-left:-2rem;
+            }
+        }    
     }
     // estilos para blockquotes
     blockquote.blockquote {
