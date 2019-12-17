@@ -7,11 +7,17 @@
 @import "./lesson";
 @import "./quiz";
 @import "./ruta";
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url(http://proyectoeducativo.com.co/sb-liderazgo/theme/snap/core/fontawesome-webfont.woff) format('woff');
+}
+
 :root {
     font: {
         family: 'Roboto Condensed', 'Roboto', 'Helvetica', sans-serif!important;
         size: 20px;
-    }
+    }    
 }
 
 body, body *, .form_autocomplete_selection, .form_autocomplete_suggestions, .snap-system-text, .snap-action-icon, #page-mod-quiz-review .arrow_link, #course-category-listings .listing-pagination .yui3-button, .paging.paging-morelink a, input.form-submit, input#id_submitbutton, input#id_submitbutton2, .path-admin .buttons input[type="submit"], td.submit input, #notice .singlebutton + .singlebutton input, button.atto_equation_submit, .yui-skin-sam .yui-button, .yui3-button, .yui-button button, .felement.ftext input + button, .button-group>button, input[type="button"], .moodle-dialogue-content button, button#restrictbygroup, button#livelogs-pause-button, #page-admin-tool-monitor-managerules a>button, input[type="submit"], button[type="submit"], input[type="reset"], .gradingform_checklist.editor .addgroup input, .gradingform_checklist.editor .additem input, .gradingform_rubric.editor .addlevel input, .gradingform_rubric.editor .addcriterion input, #page-site-index .section-modchooser-link .section-modchooser-text, h1, .h1, .messaging-area-container .messaging-area .contacts-area .searcharea .heading, h2, .h2, .path-calendar .maincalendar .calendar-controls .current, h3, .h3, h4, .h4, h5, #page-user-profile .userprofile .profile_tree .node_category h3, .path-course.path-user .userprofile .profile_tree .node_category h3, .h5, h6, #page-course-edit #maincontent + h2, #page-course-editsection #maincontent + h2, .pagelayout-admin.path-mod #maincontent + h2, .h6, legend, .mform legend a, .mform legend a:hover, .coursebox .info .coursename, .collapsibleregioncaption, .snap-featured-course-title, #coursetools-list a, label, .label, .form-label, .form-defaultinfo, .form-description, .form-filemanager, .ffilepicker, .ffilemanager, .fdescription, .fstatic, .collapsible-actions, input, button, select, .pagination, .initialbar, .paging, .alert, #page-admin-index .releasenoteslink, #page-admin-index .adminwarning, #page-admin-index .adminerror, .que .formulation, .que .outcome, .que .comment, .assignfeedback_editpdf_widget .label, .nav-pills, .nav-tabs, .course-report-dashboard, .yui3-tabview-list, .yuimenu, #course-category-listings, .progress .bar, .dndupload-progress-outer .bar, .progress-bar, .dndupload-progress-inner, .yui-dt-paginator {

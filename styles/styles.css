@@ -2186,6 +2186,11 @@ html #mr-nav {
   display: none;
 }
 
+@font-face {
+  font-family: "FontAwesome";
+  src: url(http://proyectoeducativo.com.co/sb-liderazgo/theme/snap/core/fontawesome-webfont.woff) format("woff");
+}
+
 :root {
   font-family: "Roboto Condensed", "Roboto", "Helvetica", sans-serif !important;
   font-size: 20px;
