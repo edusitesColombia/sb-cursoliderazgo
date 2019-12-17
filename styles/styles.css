@@ -1193,6 +1193,35 @@ ul.section.img-text .page .asset-wrapper ul.section.img-text .page .asset-wrappe
   display: none;
 }
 
+ul.section.img-text .page .asset-wrapper .contenedor-felicitacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+ul.section.img-text .page .asset-wrapper .contenedor-felicitacion img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul.section.img-text .page .asset-wrapper .contenedor-felicitacion img::first-child {
+  margin-right: -2rem;
+}
+
+ul.section.img-text .page .asset-wrapper .contenedor-felicitacion img:last-child {
+  margin-left: -2rem;
+}
+
 #page-mod-page-view div[role="main"] {
   text-align: center;
 }

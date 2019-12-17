@@ -636,6 +636,26 @@ ul.section.img-text .page .asset-wrapper {
     ul.section.img-text .page .asset-wrapper a.volver-modulo-cierre {
         display: none;
     }
+    //imagen felicitación responsive
+    .contenedor-felicitacion {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        img{
+            width:100%;
+            height:auto;
+            display: block;
+            &::first-child{
+                margin-right:-2rem;
+            }
+            &:last-child{
+                margin-left:-2rem;
+            }
+        }
+        
+    }
 }
 
 #page-mod-page-view {
