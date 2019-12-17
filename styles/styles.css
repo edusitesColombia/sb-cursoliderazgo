@@ -752,6 +752,51 @@ body#page-course-view-topics section#region-main span.instancename {
   background-position: center;
 }
 
+.course-content ul.topics li#section-1 .contenedor-felicitacion,
+.course-content ul.topics li#section-2 .contenedor-felicitacion,
+.course-content ul.topics li#section-3 .contenedor-felicitacion,
+.course-content ul.topics li#section-4 .contenedor-felicitacion,
+.course-content ul.topics li#section-5 .contenedor-felicitacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.course-content ul.topics li#section-1 .contenedor-felicitacion img,
+.course-content ul.topics li#section-2 .contenedor-felicitacion img,
+.course-content ul.topics li#section-3 .contenedor-felicitacion img,
+.course-content ul.topics li#section-4 .contenedor-felicitacion img,
+.course-content ul.topics li#section-5 .contenedor-felicitacion img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.course-content ul.topics li#section-1 .contenedor-felicitacion img:first-child,
+.course-content ul.topics li#section-2 .contenedor-felicitacion img:first-child,
+.course-content ul.topics li#section-3 .contenedor-felicitacion img:first-child,
+.course-content ul.topics li#section-4 .contenedor-felicitacion img:first-child,
+.course-content ul.topics li#section-5 .contenedor-felicitacion img:first-child {
+  margin-right: -2rem;
+}
+
+.course-content ul.topics li#section-1 .contenedor-felicitacion img:last-child,
+.course-content ul.topics li#section-2 .contenedor-felicitacion img:last-child,
+.course-content ul.topics li#section-3 .contenedor-felicitacion img:last-child,
+.course-content ul.topics li#section-4 .contenedor-felicitacion img:last-child,
+.course-content ul.topics li#section-5 .contenedor-felicitacion img:last-child {
+  margin-left: -2rem;
+}
+
 .course-content ul.topics blockquote.blockquote {
   border: 0;
   min-height: 650px;
@@ -1191,35 +1236,6 @@ ul.section.img-text .page .asset-wrapper .contentafterlink .d-block {
 
 ul.section.img-text .page .asset-wrapper ul.section.img-text .page .asset-wrapper a.volver-modulo-cierre {
   display: none;
-}
-
-ul.section.img-text .page .asset-wrapper .contenedor-felicitacion {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-}
-
-ul.section.img-text .page .asset-wrapper .contenedor-felicitacion img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-ul.section.img-text .page .asset-wrapper .contenedor-felicitacion img:first-child {
-  margin-right: -2rem;
-}
-
-ul.section.img-text .page .asset-wrapper .contenedor-felicitacion img:last-child {
-  margin-left: -2rem;
 }
 
 #page-mod-page-view div[role="main"] {
