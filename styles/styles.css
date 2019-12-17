@@ -884,6 +884,10 @@ body#page-course-view-topics section#region-main span.instancename {
   content: '';
 }
 
+.course-content ul.topics ul.section.img-text li.snap-activity:hover:before {
+  font-size: 700px;
+}
+
 .course-content ul.topics ul.section.img-text li.snap-activity:hover .snap-asset-content {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -1010,6 +1014,8 @@ body#page-course-view-topics section#region-main span.instancename {
   font-family: 'Roboto Condensed';
   font-weight: 900;
   z-index: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .course-content ul.topics ul.section.img-text li.snap-activity:nth-child(even) {
