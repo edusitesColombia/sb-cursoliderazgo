@@ -1071,6 +1071,8 @@ body#page-course-view-topics section#region-main span.instancename {
   font-family: 'Roboto Condensed';
   font-weight: 900;
   z-index: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .section .activity.modtype_label.label .asset-wrapper,
