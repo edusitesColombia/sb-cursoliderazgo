@@ -2195,6 +2195,10 @@ html #mr-nav {
       grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  background: url(https://edusites.website/moodle/theme/snap/pix/segurosbolivar/bg_caja.png”);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #nav-cajaH .muneca {
