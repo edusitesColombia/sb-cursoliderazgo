@@ -2448,6 +2448,10 @@ section#region-main div.m-t-2.m-b-1 .col-md-4 a {
   color: #006d38 !important;
 }
 
+b.color {
+  color: #006d38 !important;
+}
+
 @media (max-width: 1249px) {
   #page-login-index main#moodle-page section#region-main {
     width: 75%;
