@@ -607,7 +607,7 @@ body#page-course-view-topics section#region-main span.instancename {
   margin: 0 auto !important;
 }
 
-.course-content ul.topics li.section.main.state-visible:not(#section-1), .course-content ul.topics li.section.main.state-visible:not(#section-2), .course-content ul.topics li.section.main.state-visible:not(#section-3), .course-content ul.topics li.section.main.state-visible:not(#section-4), .course-content ul.topics li.section.main.state-visible:not(#section-5) {
+.course-content ul.topics li.section.main.state-visible:not(#section-1), .course-content ul.topics li.section.main.state-visible:not(#section-2), .course-content ul.topics li.section.main.state-visible:not(#section-3), .course-content ul.topics li.section.main.state-visible:not(#section-4), .course-content ul.topics li.section.main.state-visible:not(#section-5), .course-content ul.topics li.section.main.state-visible:not(#section-6) {
   margin-top: 2rem !important;
   margin-bottom: 1rem !important;
 }

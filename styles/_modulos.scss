@@ -219,7 +219,8 @@ body#page-course-view-topics section#region-main {
         &.state-visible:not(#section-2),
         &.state-visible:not(#section-3),
         &.state-visible:not(#section-4),
-        &.state-visible:not(#section-5) {
+        &.state-visible:not(#section-5),
+        &.state-visible:not(#section-6) {
             margin-top: 2rem!important;
             margin-bottom: 1rem!important;
         }
