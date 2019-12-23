@@ -262,8 +262,19 @@ section#region-main div.m-t-2.m-b-1 {
     color:$verde!important;
 }
 
+//resumen
 b.color{
     color:$verde!important;
+}
+
+ul#lista-resumen{
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    li{
+        display: flex;
+        align-items: center;
+    }
 }
 
 @import "./media-queries";
