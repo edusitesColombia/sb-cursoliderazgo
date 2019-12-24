@@ -2223,6 +2223,7 @@ html #mr-nav {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-area: 1 / 1 / 3 / 2;
+  text-align: right;
 }
 
 #nav-cajaH .mod1 {
