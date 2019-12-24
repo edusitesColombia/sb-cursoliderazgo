@@ -2258,8 +2258,8 @@ html #mr-nav {
 .contenidos-cajaH {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (minmax(50%, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(50%, 1fr));
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   grid-column-gap: 0px;
