@@ -2267,6 +2267,10 @@ html #mr-nav {
   display: none;
 }
 
+.home-ruta #page-header #page-mast #course-toc #chapters li:last-child .text {
+  display: none;
+}
+
 @font-face {
   font-family: "FontAwesome";
   src: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/core/fontawesome-webfont.woff) format("woff");

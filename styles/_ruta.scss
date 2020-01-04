@@ -189,6 +189,9 @@ html #mr-nav {
             display: none;
         }
     }
+    #page-header #page-mast #course-toc #chapters li:last-child .text{
+        display:none;
+    }
 }
 
 @mixin ruta-md() {
