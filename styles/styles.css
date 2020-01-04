@@ -616,7 +616,8 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-2,
 .course-content ul.topics li#section-3,
 .course-content ul.topics li#section-4,
-.course-content ul.topics li#section-5 {
+.course-content ul.topics li#section-5,
+.course-content ul.topics li#section-6 {
   max-width: 100% !important;
   overflow: hidden;
 }
@@ -625,7 +626,8 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-2.snap-native,
 .course-content ul.topics li#section-3.snap-native,
 .course-content ul.topics li#section-4.snap-native,
-.course-content ul.topics li#section-5.snap-native {
+.course-content ul.topics li#section-5.snap-native,
+.course-content ul.topics li#section-6.snap-native {
   margin: 0;
 }
 
@@ -633,7 +635,8 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-2 h2.sectionname,
 .course-content ul.topics li#section-3 h2.sectionname,
 .course-content ul.topics li#section-4 h2.sectionname,
-.course-content ul.topics li#section-5 h2.sectionname {
+.course-content ul.topics li#section-5 h2.sectionname,
+.course-content ul.topics li#section-6 h2.sectionname {
   height: 40vh;
   width: 140%;
   display: none;
@@ -657,7 +660,8 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-2 h2.sectionname::before,
 .course-content ul.topics li#section-3 h2.sectionname::before,
 .course-content ul.topics li#section-4 h2.sectionname::before,
-.course-content ul.topics li#section-5 h2.sectionname::before {
+.course-content ul.topics li#section-5 h2.sectionname::before,
+.course-content ul.topics li#section-6 h2.sectionname::before {
   content: "Módulo " counter(annotation-list);
   color: #fadc5d;
   float: left;
@@ -677,7 +681,9 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-4 div.summary p,
 .course-content ul.topics li#section-4 div.summary h3,
 .course-content ul.topics li#section-5 div.summary p,
-.course-content ul.topics li#section-5 div.summary h3 {
+.course-content ul.topics li#section-5 div.summary h3,
+.course-content ul.topics li#section-6 div.summary p,
+.course-content ul.topics li#section-6 div.summary h3 {
   max-width: 43.5em;
   margin: 0 auto 1rem;
 }
@@ -686,7 +692,8 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-2 ul.section.img-text,
 .course-content ul.topics li#section-3 ul.section.img-text,
 .course-content ul.topics li#section-4 ul.section.img-text,
-.course-content ul.topics li#section-5 ul.section.img-text {
+.course-content ul.topics li#section-5 ul.section.img-text,
+.course-content ul.topics li#section-6 ul.section.img-text {
   background: white;
   counter-reset: actividadNo;
 }
@@ -695,7 +702,8 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-2 ul.section.img-text li .asset-wrapper,
 .course-content ul.topics li#section-3 ul.section.img-text li .asset-wrapper,
 .course-content ul.topics li#section-4 ul.section.img-text li .asset-wrapper,
-.course-content ul.topics li#section-5 ul.section.img-text li .asset-wrapper {
+.course-content ul.topics li#section-5 ul.section.img-text li .asset-wrapper,
+.course-content ul.topics li#section-6 ul.section.img-text li .asset-wrapper {
   overflow: visible;
 }
 
@@ -703,7 +711,8 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-2 div.row,
 .course-content ul.topics li#section-3 div.row,
 .course-content ul.topics li#section-4 div.row,
-.course-content ul.topics li#section-5 div.row {
+.course-content ul.topics li#section-5 div.row,
+.course-content ul.topics li#section-6 div.row {
   max-width: 43.5em;
   margin: 0 auto;
 }
@@ -712,7 +721,8 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-2 .section_footer,
 .course-content ul.topics li#section-3 .section_footer,
 .course-content ul.topics li#section-4 .section_footer,
-.course-content ul.topics li#section-5 .section_footer {
+.course-content ul.topics li#section-5 .section_footer,
+.course-content ul.topics li#section-6 .section_footer {
   max-width: 100%;
   margin: 1rem auto;
   padding: 0 10%;
@@ -722,7 +732,8 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-2 .label,
 .course-content ul.topics li#section-3 .label,
 .course-content ul.topics li#section-4 .label,
-.course-content ul.topics li#section-5 .label {
+.course-content ul.topics li#section-5 .label,
+.course-content ul.topics li#section-6 .label {
   margin: 0;
   padding: 0;
 }
@@ -731,7 +742,8 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-2 .label p,
 .course-content ul.topics li#section-3 .label p,
 .course-content ul.topics li#section-4 .label p,
-.course-content ul.topics li#section-5 .label p {
+.course-content ul.topics li#section-5 .label p,
+.course-content ul.topics li#section-6 .label p {
   max-width: 43.5em;
   margin: 0 auto;
 }
@@ -740,7 +752,8 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-2 .label .asset-wrapper,
 .course-content ul.topics li#section-3 .label .asset-wrapper,
 .course-content ul.topics li#section-4 .label .asset-wrapper,
-.course-content ul.topics li#section-5 .label .asset-wrapper {
+.course-content ul.topics li#section-5 .label .asset-wrapper,
+.course-content ul.topics li#section-6 .label .asset-wrapper {
   overflow: hidden;
 }
 
@@ -748,7 +761,8 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-2 .label .separador-amarillo,
 .course-content ul.topics li#section-3 .label .separador-amarillo,
 .course-content ul.topics li#section-4 .label .separador-amarillo,
-.course-content ul.topics li#section-5 .label .separador-amarillo {
+.course-content ul.topics li#section-5 .label .separador-amarillo,
+.course-content ul.topics li#section-6 .label .separador-amarillo {
   min-height: 270px;
   height: 27vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(250, 220, 93, 0.5)), to(rgba(250, 220, 93, 0.5))), url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod1-separador.jpg);
