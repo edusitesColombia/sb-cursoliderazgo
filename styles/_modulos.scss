@@ -416,6 +416,13 @@ body#page-course-view-topics section#region-main {
                     font-weight: 900;
                 }
             }
+            .snap-asset-actions {
+                position: absolute;
+                bottom: 150px;
+                left: 10px;
+                width: 150px;
+                display: flex;
+            }
         }
         .asset-wrapper {
             display: flex;
