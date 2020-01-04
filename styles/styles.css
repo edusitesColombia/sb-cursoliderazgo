@@ -1781,6 +1781,9 @@ section#region-main {
 
 #page-mod-quiz-attempt .que {
   padding: 0.5rem 2%;
+  /*&.ddmarker div.dragitems span.markertext {
+            max-width: 200px;
+        }*/
 }
 
 #page-mod-quiz-attempt .que .ablock {
@@ -1804,10 +1807,6 @@ section#region-main {
   margin: .5em 0;
   text-align: right;
   margin-right: 20px;
-}
-
-#page-mod-quiz-attempt .que.ddmarker div.dragitems span.markertext {
-  max-width: 200px;
 }
 
 #page-mod-quiz-attempt .que.description {
