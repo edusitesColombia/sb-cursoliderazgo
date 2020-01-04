@@ -549,6 +549,10 @@ body#page-course-view-topics section#region-main {
             }
         }
     }
+    //link volver al modulo dentro de resumen 
+    a.volver-modulo-cierre{
+        display:none;
+    }
 }
 
 .section .activity.modtype_label.label .asset-wrapper,

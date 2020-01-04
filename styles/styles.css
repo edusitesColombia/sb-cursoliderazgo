@@ -1082,6 +1082,10 @@ body#page-course-view-topics section#region-main span.instancename {
   transition: all 0.3s ease;
 }
 
+.course-content ul.topics a.volver-modulo-cierre {
+  display: none;
+}
+
 .section .activity.modtype_label.label .asset-wrapper,
 .section .activity.modtype_label.label .activityinstance {
   padding: 0 !important;
