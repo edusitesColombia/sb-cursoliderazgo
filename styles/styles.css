@@ -1869,7 +1869,7 @@ section#region-main {
 }
 
 #page-mod-quiz-attempt .que .formulation select {
-  width: auto;
+  width: auto !important;
 }
 
 #page-mod-quiz-attempt .que.ddmarker .dropbackground,
