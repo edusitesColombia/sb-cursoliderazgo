@@ -353,7 +353,7 @@ body#page-course-view-topics section#region-main {
         footer {
             margin: 0!important;
             max-width: 100% !important;
-            background: $verde;
+            background: $verde-t80;
             color: white;
             padding: 2rem 10%;
         }
@@ -785,8 +785,10 @@ ul.section.img-text .page .asset-wrapper {
         }
         &.bibliografia::before {
             background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/icono_bibliografia.png);
-            margin-left: -110px;
-            width: 110px;
+            margin-left: -89px;
+            width: 104px;
+            background-size: 100%;
+            margin-top: 10px;
         }
     }
 }

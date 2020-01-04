@@ -819,7 +819,7 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics blockquote.blockquote footer {
   margin: 0 !important;
   max-width: 100% !important;
-  background: #006d38;
+  background: #006d38bb;
   color: white;
   padding: 2rem 10%;
 }
@@ -1386,8 +1386,10 @@ ul.section.img-text .page .asset-wrapper ul.section.img-text .page .asset-wrappe
 
 .separador-opciones .opcion.bibliografia::before {
   background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/icono_bibliografia.png);
-  margin-left: -110px;
-  width: 110px;
+  margin-left: -89px;
+  width: 104px;
+  background-size: 100%;
+  margin-top: 10px;
 }
 
 #page .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content h3.snap-asset-link {
