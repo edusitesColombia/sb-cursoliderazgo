@@ -616,8 +616,7 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-2,
 .course-content ul.topics li#section-3,
 .course-content ul.topics li#section-4,
-.course-content ul.topics li#section-5,
-.course-content ul.topics li#section-6 {
+.course-content ul.topics li#section-5 {
   max-width: 100% !important;
   overflow: hidden;
 }
@@ -626,8 +625,7 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-2.snap-native,
 .course-content ul.topics li#section-3.snap-native,
 .course-content ul.topics li#section-4.snap-native,
-.course-content ul.topics li#section-5.snap-native,
-.course-content ul.topics li#section-6.snap-native {
+.course-content ul.topics li#section-5.snap-native {
   margin: 0;
 }
 
@@ -635,8 +633,7 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-2 h2.sectionname,
 .course-content ul.topics li#section-3 h2.sectionname,
 .course-content ul.topics li#section-4 h2.sectionname,
-.course-content ul.topics li#section-5 h2.sectionname,
-.course-content ul.topics li#section-6 h2.sectionname {
+.course-content ul.topics li#section-5 h2.sectionname {
   height: 40vh;
   width: 140%;
   display: none;
@@ -660,8 +657,7 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-2 h2.sectionname::before,
 .course-content ul.topics li#section-3 h2.sectionname::before,
 .course-content ul.topics li#section-4 h2.sectionname::before,
-.course-content ul.topics li#section-5 h2.sectionname::before,
-.course-content ul.topics li#section-6 h2.sectionname::before {
+.course-content ul.topics li#section-5 h2.sectionname::before {
   content: "Módulo " counter(annotation-list);
   color: #fadc5d;
   float: left;
@@ -681,9 +677,7 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-4 div.summary p,
 .course-content ul.topics li#section-4 div.summary h3,
 .course-content ul.topics li#section-5 div.summary p,
-.course-content ul.topics li#section-5 div.summary h3,
-.course-content ul.topics li#section-6 div.summary p,
-.course-content ul.topics li#section-6 div.summary h3 {
+.course-content ul.topics li#section-5 div.summary h3 {
   max-width: 43.5em;
   margin: 0 auto 1rem;
 }
@@ -692,8 +686,7 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-2 ul.section.img-text,
 .course-content ul.topics li#section-3 ul.section.img-text,
 .course-content ul.topics li#section-4 ul.section.img-text,
-.course-content ul.topics li#section-5 ul.section.img-text,
-.course-content ul.topics li#section-6 ul.section.img-text {
+.course-content ul.topics li#section-5 ul.section.img-text {
   background: white;
   counter-reset: actividadNo;
 }
@@ -702,8 +695,7 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-2 ul.section.img-text li .asset-wrapper,
 .course-content ul.topics li#section-3 ul.section.img-text li .asset-wrapper,
 .course-content ul.topics li#section-4 ul.section.img-text li .asset-wrapper,
-.course-content ul.topics li#section-5 ul.section.img-text li .asset-wrapper,
-.course-content ul.topics li#section-6 ul.section.img-text li .asset-wrapper {
+.course-content ul.topics li#section-5 ul.section.img-text li .asset-wrapper {
   overflow: visible;
 }
 
@@ -711,8 +703,7 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-2 div.row,
 .course-content ul.topics li#section-3 div.row,
 .course-content ul.topics li#section-4 div.row,
-.course-content ul.topics li#section-5 div.row,
-.course-content ul.topics li#section-6 div.row {
+.course-content ul.topics li#section-5 div.row {
   max-width: 43.5em;
   margin: 0 auto;
 }
@@ -721,8 +712,7 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-2 .section_footer,
 .course-content ul.topics li#section-3 .section_footer,
 .course-content ul.topics li#section-4 .section_footer,
-.course-content ul.topics li#section-5 .section_footer,
-.course-content ul.topics li#section-6 .section_footer {
+.course-content ul.topics li#section-5 .section_footer {
   max-width: 100%;
   margin: 1rem auto;
   padding: 0 10%;
@@ -732,8 +722,7 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-2 .label,
 .course-content ul.topics li#section-3 .label,
 .course-content ul.topics li#section-4 .label,
-.course-content ul.topics li#section-5 .label,
-.course-content ul.topics li#section-6 .label {
+.course-content ul.topics li#section-5 .label {
   margin: 0;
   padding: 0;
 }
@@ -742,8 +731,7 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-2 .label p,
 .course-content ul.topics li#section-3 .label p,
 .course-content ul.topics li#section-4 .label p,
-.course-content ul.topics li#section-5 .label p,
-.course-content ul.topics li#section-6 .label p {
+.course-content ul.topics li#section-5 .label p {
   max-width: 43.5em;
   margin: 0 auto;
 }
@@ -752,8 +740,7 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-2 .label .asset-wrapper,
 .course-content ul.topics li#section-3 .label .asset-wrapper,
 .course-content ul.topics li#section-4 .label .asset-wrapper,
-.course-content ul.topics li#section-5 .label .asset-wrapper,
-.course-content ul.topics li#section-6 .label .asset-wrapper {
+.course-content ul.topics li#section-5 .label .asset-wrapper {
   overflow: hidden;
 }
 
@@ -761,8 +748,7 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-2 .label .separador-amarillo,
 .course-content ul.topics li#section-3 .label .separador-amarillo,
 .course-content ul.topics li#section-4 .label .separador-amarillo,
-.course-content ul.topics li#section-5 .label .separador-amarillo,
-.course-content ul.topics li#section-6 .label .separador-amarillo {
+.course-content ul.topics li#section-5 .label .separador-amarillo {
   min-height: 270px;
   height: 27vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(250, 220, 93, 0.5)), to(rgba(250, 220, 93, 0.5))), url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod1-separador.jpg);
@@ -1905,6 +1891,88 @@ section#region-main {
   padding-top: 10px;
 }
 
+#nav-cajaH {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background: url(https://edusites.website/moodle/theme/snap/pix/segurosbolivar/bg_caja.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 7rem 0rem;
+  margin: 0.5rem;
+}
+
+#nav-cajaH .muneca {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 3 / 2;
+  text-align: right;
+}
+
+#nav-cajaH .mod1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+#nav-cajaH .mod3 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+#nav-cajaH .mod2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+#nav-cajaH .mod4 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.contenidos-cajaH {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(50%, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(50%, 1fr));
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.contenidos-cajaH .caja-linkH {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
 .home-ruta #page-header #page-mast #course-toc #chapters li:nth-child(n+3):not(:last-child):hover, .home-ruta #page-header #page-mast #course-toc #chapters li.modulo-completado:nth-child(n+3):not(:last-child) {
   background-image: url("data:image/svg+xml, %3Csvg width='100%' viewBox='0 0 275 145' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='rgb(250, 220, 93)' d='M231.9743097756687,144.4894306236695 L34.23931043837641,144.6099759266518 C21.08000638301136,145.22777060443585 9.808613846952934,137.09096265313266 9.135694889576314,126.46790782782017 L0.032596771731464205,20.127397996914983 C-0.7524753452079281,7.876981581341759 12.761980382105904,-1.796778982985419 27.753119376996203,0.28262749345875804 L254.3301729151808,14.310176296329782 C267.3960160042436,16.118355841063835 276.1065780636188,26.198956802956186 273.6579007464983,36.71653448815924 L253.9376368567112,128.9089502132111 C251.9375721778418,137.54300753931622 242.87185844651788,143.9771130859949 231.9743097756687,144.4894306236695Z'%3E%3C/path%3E%3C/svg%3E") !important;
 }
@@ -2198,88 +2266,6 @@ html #mr-nav {
 
 .home-ruta .course-content ul.topics {
   display: none;
-}
-
-#nav-cajaH {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  background: url(https://edusites.website/moodle/theme/snap/pix/segurosbolivar/bg_caja.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 7rem 0rem;
-  margin: 0.5rem;
-}
-
-#nav-cajaH .muneca {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 1 / 3 / 2;
-  text-align: right;
-}
-
-#nav-cajaH .mod1 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 2 / 2 / 3;
-}
-
-#nav-cajaH .mod3 {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 2 / 2 / 3 / 3;
-}
-
-#nav-cajaH .mod2 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 3 / 2 / 4;
-}
-
-#nav-cajaH .mod4 {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-area: 2 / 3 / 3 / 4;
-}
-
-.contenidos-cajaH {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(50%, 1fr))[2];
-      grid-template-columns: repeat(2, minmax(50%, 1fr));
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-
-.contenidos-cajaH .caja-linkH {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
 }
 
 @font-face {
