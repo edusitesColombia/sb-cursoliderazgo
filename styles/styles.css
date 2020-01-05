@@ -1895,6 +1895,10 @@ section#region-main .carousel-control-prev-icon {
   display: block;
 }
 
+#page-mod-quiz-view .generalbox#feedback h3 {
+  text-align: center !important;
+}
+
 #page-mod-quiz-attempt section#region-main {
   padding: 0 10%;
 }
