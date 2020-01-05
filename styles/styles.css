@@ -1696,6 +1696,12 @@ section#region-main .carousel-control-prev-icon {
   display: none;
 }
 
+#page-mod-lesson-view div[role="main"] blockquote.blockquote#quote-mod4 {
+  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod4/quote-mod4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
 #page-mod-lesson-view div[role="main"] .contenedor-m3l3 .col-md-5.contenedor-podcasts {
   display: -webkit-box;
   display: -ms-flexbox;
