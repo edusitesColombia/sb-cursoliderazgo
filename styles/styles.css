@@ -2059,6 +2059,13 @@ section#region-main .carousel-control-prev-icon {
   background-position: center;
   padding: 7rem 0rem;
   margin: 0.5rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#nav-cajaH:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 #nav-cajaH .muneca {
