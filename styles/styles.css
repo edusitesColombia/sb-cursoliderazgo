@@ -873,6 +873,12 @@ body#page-course-view-topics section#region-main span.instancename {
   background-size: cover;
 }
 
+.course-content ul.topics blockquote.blockquote#quote-mod4 {
+  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod4/quote-mod4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
 .course-content ul.topics ul.section.img-text li.snap-activity {
   border: 0;
   margin: 0;
