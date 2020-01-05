@@ -2886,6 +2886,8 @@ b.color {
   }
   .course-content ul.topics ul.section.img-text li.snap-activity .asset-wrapper .activityinstance .snap-asset-content {
     width: 85%;
+    line-height: 1.2rem;
+    font-size: 17px;
   }
   .course-content ul.topics .contenedor-felicitacion {
     -ms-flex-wrap: wrap;
@@ -2923,6 +2925,10 @@ b.color {
   }
   .separador-opciones .opcion {
     width: 80%;
+  }
+  body#page-course-view-topics section#region-main span.instancename {
+    font-size: 1.3rem;
+    line-height: 1.2rem;
   }
   section#snap-pm-courses .coursecard {
     min-height: 45vh;
