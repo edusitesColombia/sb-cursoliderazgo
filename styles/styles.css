@@ -1689,6 +1689,53 @@ section#region-main .carousel-control-prev-icon {
   padding: 0;
 }
 
+#page-mod-lesson-view div[role="main"] blockquote.blockquote {
+  border: 0;
+  min-height: 650px;
+  height: 70vh;
+  background: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod1-quote.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+#page-mod-lesson-view div[role="main"] blockquote.blockquote p,
+#page-mod-lesson-view div[role="main"] blockquote.blockquote footer {
+  margin: 0 !important;
+  max-width: 100% !important;
+  background: #006d38bb;
+  color: white;
+  padding: 2rem 10%;
+}
+
+#page-mod-lesson-view div[role="main"] blockquote.blockquote p {
+  font-style: italic;
+  text-align: right;
+}
+
+#page-mod-lesson-view div[role="main"] blockquote.blockquote footer {
+  padding: 0 10% 2rem;
+  text-align: right;
+  font-size: 1.3rem;
+  color: #fadc5d;
+  font-weight: 600;
+}
+
+#page-mod-lesson-view div[role="main"] blockquote.blockquote footer .usertour {
+  display: none;
+}
+
 #page-mod-lesson-view div[role="main"] .contenedor-m3l3 .col-md-5.contenedor-podcasts {
   display: -webkit-box;
   display: -ms-flexbox;
