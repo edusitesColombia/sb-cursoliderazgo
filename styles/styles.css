@@ -1760,7 +1760,7 @@ section#region-main .carousel-control-prev-icon {
 
 @media (max-width: 768px) {
   #page-mod-lesson-view div[role="main"] #carouselMod3L2 .carousel-item {
-    height: 45vh;
+    height: 65vh;
     min-height: 325px;
     background: #006d38bb;
   }
@@ -3123,6 +3123,9 @@ b.color {
   }
   ul.section.img-text .page .asset-wrapper {
     padding: 1rem 10%;
+  }
+  #page-mod-lesson-view div[role="main"] h2 {
+    padding: 0 15px;
   }
   section#region-main {
     padding: 0;
