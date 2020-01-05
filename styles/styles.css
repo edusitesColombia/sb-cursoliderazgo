@@ -1730,7 +1730,7 @@ section#region-main {
 #page-mod-lesson-view div[role="main"] blockquote.blockquote footer {
   margin: 0 !important;
   max-width: 100% !important;
-  background: #006d38;
+  background: #006d38bb;
   color: white;
   padding: 2rem 10%;
 }
