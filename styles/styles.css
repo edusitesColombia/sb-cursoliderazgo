@@ -3005,6 +3005,16 @@ b.color {
     -ms-grid-column-span: 1;
     grid-area: 4 / 1 / 5 / 2;
   }
+  .contenidos-cajaH {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
 }
 
 @media (max-width: 630px) {
