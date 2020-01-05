@@ -309,7 +309,8 @@ section#region-main {
 @media (max-width: 768px) {
     #page-mod-lesson-view div[role="main"] #carouselMod3L2 {
         .carousel-item{
-            min-height: 42vh;
+            height: 45vh;
+            min-height: 325px;            
             .carousel-caption.d-none{
                 display:block!important;
                 line-height: 1rem;
