@@ -311,6 +311,7 @@ section#region-main {
         .carousel-item{
             height: 45vh;
             min-height: 325px;
+            background:$verde-t80;
             &.active{           
             .carousel-caption.d-none{
                     display:block!important;

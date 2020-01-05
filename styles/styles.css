@@ -1796,6 +1796,7 @@ section#region-main .carousel-control-prev-icon {
   #page-mod-lesson-view div[role="main"] #carouselMod3L2 .carousel-item {
     height: 45vh;
     min-height: 325px;
+    background: #006d38bb;
   }
   #page-mod-lesson-view div[role="main"] #carouselMod3L2 .carousel-item.active .carousel-caption.d-none {
     display: block !important;
