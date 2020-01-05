@@ -310,12 +310,14 @@ section#region-main {
     #page-mod-lesson-view div[role="main"] #carouselMod3L2 {
         .carousel-item{
             height: 45vh;
-            min-height: 325px;            
+            min-height: 325px;
+            &.active{           
             .carousel-caption.d-none{
-                display:block!important;
-                line-height: 1rem;
-                font-size: 0.85rem;
-                padding-bottom: 2.5rem;
+                    display:block!important;
+                    line-height: 1rem;
+                    font-size: 0.85rem;
+                    padding-bottom: 2.5rem;
+                }
             }
         }
     }
