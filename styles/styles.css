@@ -2828,8 +2828,12 @@ b.color {
   #page-course-view-topics .por-defecto #page-header #page-mast {
     margin-top: 0;
   }
+  #page-course-view-topics .por-defecto #page-header #page-mast #course-toc {
+    margin: 0;
+  }
   #page-course-view-topics .por-defecto #page-header #page-mast #course-toc #chapters li .chapter-title {
     line-height: 1;
+    font-size: 1.5rem;
   }
   .course-content ul.topics li.section div.summary p {
     padding: 13px 10%;
