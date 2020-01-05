@@ -2822,6 +2822,12 @@ b.color {
   .por-defecto #page-header #page-mast {
     padding: 0 10%;
   }
+  #page-course-view-topics .por-defecto #page-header {
+    min-height: 400px;
+  }
+  #page-course-view-topics .por-defecto #page-header #page-mast {
+    margin-top: 0;
+  }
   #page-course-view-topics .por-defecto #page-header #page-mast #course-toc #chapters li .chapter-title {
     line-height: 1;
   }
