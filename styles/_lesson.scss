@@ -305,3 +305,9 @@ section#region-main {
     }
     
 }
+
+@media (max-width: 768px) {
+    #page-mod-lesson-view div[role="main"] #carouselMod3L2 .carousel-caption.d-none{
+        display:block!important;
+    }
+}

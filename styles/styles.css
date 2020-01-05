@@ -1792,6 +1792,12 @@ section#region-main .carousel-control-prev-icon {
   display: none;
 }
 
+@media (max-width: 768px) {
+  #page-mod-lesson-view div[role="main"] #carouselMod3L2 .carousel-caption.d-none {
+    display: block !important;
+  }
+}
+
 #page-mod-quiz-view section#region-main {
   padding: 0;
 }
