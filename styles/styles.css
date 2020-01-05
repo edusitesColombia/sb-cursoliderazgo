@@ -1776,6 +1776,27 @@ section#region-main .carousel-control-prev-icon {
   display: none;
 }
 
+#page-mod-page-view ul#lista-resumen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+#page-mod-page-view ul#lista-resumen li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #page-mod-page-view div[role="main"] {
   text-align: center;
 }
@@ -2668,26 +2689,6 @@ section#region-main div.m-t-2.m-b-1 .col-md-4 a {
 
 b.color {
   color: #006d38 !important;
-}
-
-ul#lista-resumen {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0;
-}
-
-ul#lista-resumen li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 @media (max-width: 1249px) {

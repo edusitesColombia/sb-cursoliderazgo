@@ -270,16 +270,6 @@ b.color{
     color:$verde!important;
 }
 
-ul#lista-resumen{
-    display: flex;
-    flex-direction: column;
-    margin:0;
-    li{
-        display: flex;
-        align-items: center;
-    }
-}
-
 @import "./media-queries";
 
 @media screen and (min-width: 1600px) {
