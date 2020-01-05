@@ -1,4 +1,41 @@
 #page-mod-page-view{
+    #region-main{
+        .activity-navigation .row .col-md-4:nth-child(3){
+            display:none;
+        }
+    }
+    div[role="main"] {
+        text-align: center;
+        .table {
+            font-family: "Roboto Condensed"!important;
+            td {
+                vertical-align: middle;
+            }
+            p {
+                margin: 0;
+            }
+            thead td {
+                background: $verde;
+                font-size: 1.8rem;
+                color: $blanco;
+            }
+            tbody tr td:first-child {
+                font-size: 1.4rem;
+                text-decoration: dotted;
+            }
+        }
+        ul{
+            list-style-type: none;
+            padding:0 5%;
+            li{
+                text-align: left;
+                padding: 1rem;
+            }
+        }
+        .modified{
+            display:none;
+        }
+    }
     blockquote.blockquote {
         border: 0;
         min-height: 650px;
