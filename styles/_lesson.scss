@@ -307,7 +307,15 @@ section#region-main {
 }
 
 @media (max-width: 768px) {
-    #page-mod-lesson-view div[role="main"] #carouselMod3L2 .carousel-caption.d-none{
-        display:block!important;
+    #page-mod-lesson-view div[role="main"] #carouselMod3L2 {
+        .carousel-item{
+            min-height: 42vh;
+            .carousel-caption.d-none{
+                display:block!important;
+                line-height: 1rem;
+                font-size: 0.85rem;
+                padding-bottom: 2.5rem;
+            }
+        }
     }
 }

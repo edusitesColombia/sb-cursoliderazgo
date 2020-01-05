@@ -1793,8 +1793,14 @@ section#region-main .carousel-control-prev-icon {
 }
 
 @media (max-width: 768px) {
-  #page-mod-lesson-view div[role="main"] #carouselMod3L2 .carousel-caption.d-none {
+  #page-mod-lesson-view div[role="main"] #carouselMod3L2 .carousel-item {
+    min-height: 42vh;
+  }
+  #page-mod-lesson-view div[role="main"] #carouselMod3L2 .carousel-item .carousel-caption.d-none {
     display: block !important;
+    line-height: 1rem;
+    font-size: 0.85rem;
+    padding-bottom: 2.5rem;
   }
 }
 
