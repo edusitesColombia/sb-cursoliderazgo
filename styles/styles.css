@@ -3087,6 +3087,7 @@ b.color {
   }
   .course-content ul.topics blockquote.blockquote {
     height: auto;
+    min-height: 100px;
     background-position: center;
     background-size: cover;
   }
