@@ -1,0 +1,22 @@
+// medium screen size (md)
+@media (max-width: 1249px) {
+    @include ruta-md();
+    @include modulos-md();
+}
+
+// small screen size (sm)
+@media (max-width: 900px) {
+    @include ruta-sm();
+    @include modulos-sm();
+    @include lesson-sm();
+    @include quiz-sm();
+    @include caja-sm();
+}
+
+// xtra mobile view (xs)
+@media (max-width: 630px) {
+    @include ruta-xs();
+    @include modulos-xs();
+    @include lesson-xs();
+    @include quiz-xs();
+}

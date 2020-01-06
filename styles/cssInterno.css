@@ -1,0 +1,563 @@
+#page-login-index header#mr-nav {
+  display: none;
+}
+
+#page-login-index #maincontent {
+  height: 0;
+  display: none;
+}
+
+#page-login-index #page {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 108, 56, 0.7)), to(rgba(1, 108, 56, 0.7))), url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/bg-login.jpg) !important;
+  background: linear-gradient(rgba(1, 108, 56, 0.7), rgba(1, 108, 56, 0.7)), url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/bg-login.jpg) !important;
+  background-size: cover;
+  background-position: 200px;
+}
+
+#page-login-index main#moodle-page {
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 108, 56, 0.7)), to(rgba(1, 108, 56, 0.7))), url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/bg-login.jpg);
+  background: linear-gradient(rgba(1, 108, 56, 0.7), rgba(1, 108, 56, 0.7)), url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/bg-login.jpg);
+  background-size: cover;
+  background-position: 200px;
+}
+
+#page-login-index main#moodle-page div#page-header {
+  display: none;
+}
+
+#page-login-index main#moodle-page section#region-main {
+  background-color: white;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 !important;
+  overflow: hidden;
+  padding: 0;
+  min-height: 100vh;
+}
+
+#page-login-index main#moodle-page section#region-main div[role="main"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#page-login-index main#moodle-page section#region-main div[role="main"] .alert.alertdanger {
+  color: #2b2b2b !important;
+  background-color: #eaeaea !important;
+  border-color: #fadc5d !important;
+}
+
+#page-login-index main#moodle-page section#region-main div[role="main"] .snap-login {
+  padding: 0 9%;
+}
+
+#page-login-index main#moodle-page section#region-main div[role="main"] .snap-login .img-fluid,
+#page-login-index main#moodle-page section#region-main div[role="main"] .snap-login .img-responsive {
+  max-width: 70%;
+  margin: auto;
+  display: block;
+  min-width: 300px;
+}
+
+#page-login-index main#moodle-page section#region-main .login-guest {
+  display: none;
+}
+
+#page-login-index .snap-login,
+#page-login-signup .snap-login {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+#page-login-index section#region-main div[role="main"] .snap-login {
+  padding: 2em 9%;
+  margin-top: unset;
+  margin-bottom: 2rem;
+}
+
+#page-login-index section#region-main div[role="main"] .snap-login h4 {
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 200;
+  color: #828282;
+}
+
+#page-login-index section#region-main div[role="main"] .snap-login h2 {
+  font-weight: 900;
+  font-size: 2.2rem;
+  color: #006d38;
+  line-height: 2.2rem;
+}
+
+#page-login-index section#region-main div[role="main"] .snap-login p {
+  padding: 0.7rem 0 1.3rem 0;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+  color: #6b6b6b;
+}
+
+#page-login-index section#region-main div[role="main"] .snap-login button#loginbtn {
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 24px;
+}
+
+header#mr-nav a#snap-home {
+  display: none;
+}
+
+header#mr-nav::before {
+  content: "";
+  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/logo_segurosbolivar_blanco.png);
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-width: 216px;
+  min-height: 45px;
+}
+
+#moodle-footer {
+  margin: 0;
+  padding: 0;
+}
+
+#moodle-footer > div:not(#snap-site-footer) {
+  display: none !important;
+}
+
+#moodle-footer ul {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#moodle-footer #snap-footer-content {
+  padding: 1em;
+}
+
+#moodle-footer #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container {
+  display: -ms-grid;
+  display: grid;
+  grid: 1fr 1fr / 30% 1fr;
+  width: 70%;
+  max-width: 630px;
+  margin: 0 auto;
+  font-size: 12px;
+  grid-column-gap: 20px;
+}
+
+#moodle-footer #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container .redes {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: inherit;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+}
+
+#moodle-footer #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container .terminosycondiciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#moodle-footer #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container .terminosycondiciones li {
+  margin-right: 12px;
+  font-size: inherit;
+}
+
+#moodle-footer #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container .footer-linksalternos.copyright {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+
+.activity-navigation .pull-right {
+  float: right;
+  margin-left: .3em;
+  border-left: 1px solid #dee2e6;
+}
+
+.activity-navigation .pull-left {
+  float: left;
+  margin-right: .3em;
+  border-right: 1px solid #dee2e6;
+}
+
+.activity-navigation .activity-navigation .col-md-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav#snap-pm {
+  background-color: white;
+}
+
+#snap-pm-header {
+  padding: 1rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#snap-pm-header a {
+  color: #fadc5d !important;
+  padding: 0;
+}
+
+#snap-pm-header a.h1 {
+  color: white !important;
+  font-size: 1.4rem;
+  display: block;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+#snap-pm-header .snap-pm-user {
+  width: 100%;
+}
+
+#snap-pm-header .snap-pm-user .userpicture {
+  width: 3.7rem;
+}
+
+#snap-pm-header #snap-pm-header-quicklinks a {
+  color: inherit;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+#snap-pm-header #snap-pm-header-quicklinks a::after {
+  content: "";
+}
+
+#snap-pm-header #snap-pm-header-quicklinks :nth-child(2) {
+  display: none;
+}
+
+section#snap-pm-courses {
+  padding: 0 3rem;
+}
+
+section#snap-pm-courses .coursecard {
+  min-width: 30%;
+  background-position: right -50px;
+}
+
+section#snap-pm-courses .coursecard .coursecard-body {
+  padding: 1em .5em 1em .5em;
+}
+
+section#snap-pm-courses .coursecard .coursecard-body h3 {
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+section#snap-pm-courses .coursecard .coursecard-body h3 a.coursecard-coursename {
+  color: #2b2b2b;
+}
+
+section#snap-pm-courses .coursecard .coursecard-body .coursecard-dynamicinfo {
+  padding-top: 0.5rem;
+}
+
+section#snap-pm-courses .coursecard .coursecard-body .completionstatus {
+  padding-bottom: 0.5em;
+}
+
+section#snap-pm-courses .coursecard .coursecard-body .completion-line {
+  background-color: #fadc5d;
+}
+
+section#snap-pm-courses .snap-personal-menu-more {
+  display: none;
+}
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/core/fontawesome-webfont.woff) format("woff");
+}
+
+:root {
+  font-family: "Roboto Condensed", "Roboto", "Helvetica", sans-serif !important;
+  font-size: 20px;
+}
+
+body, body *, .form_autocomplete_selection, .form_autocomplete_suggestions, .snap-system-text, .snap-action-icon, #page-mod-quiz-review .arrow_link, #course-category-listings .listing-pagination .yui3-button, .paging.paging-morelink a, input.form-submit, input#id_submitbutton, input#id_submitbutton2, .path-admin .buttons input[type="submit"], td.submit input, #notice .singlebutton + .singlebutton input, button.atto_equation_submit, .yui-skin-sam .yui-button, .yui3-button, .yui-button button, .felement.ftext input + button, .button-group > button, input[type="button"], .moodle-dialogue-content button, button#restrictbygroup, button#livelogs-pause-button, #page-admin-tool-monitor-managerules a > button, input[type="submit"], button[type="submit"], input[type="reset"], .gradingform_checklist.editor .addgroup input, .gradingform_checklist.editor .additem input, .gradingform_rubric.editor .addlevel input, .gradingform_rubric.editor .addcriterion input, #page-site-index .section-modchooser-link .section-modchooser-text, h1, .h1, .messaging-area-container .messaging-area .contacts-area .searcharea .heading, h2, .h2, .path-calendar .maincalendar .calendar-controls .current, h3, .h3, h4, .h4, h5, #page-user-profile .userprofile .profile_tree .node_category h3, .path-course.path-user .userprofile .profile_tree .node_category h3, .h5, h6, #page-course-edit #maincontent + h2, #page-course-editsection #maincontent + h2, .pagelayout-admin.path-mod #maincontent + h2, .h6, legend, .mform legend a, .mform legend a:hover, .coursebox .info .coursename, .collapsibleregioncaption, .snap-featured-course-title, #coursetools-list a, label, .label, .form-label, .form-defaultinfo, .form-description, .form-filemanager, .ffilepicker, .ffilemanager, .fdescription, .fstatic, .collapsible-actions, input, button, select, .pagination, .initialbar, .paging, .alert, #page-admin-index .releasenoteslink, #page-admin-index .adminwarning, #page-admin-index .adminerror, .que .formulation, .que .outcome, .que .comment, .assignfeedback_editpdf_widget .label, .nav-pills, .nav-tabs, .course-report-dashboard, .yui3-tabview-list, .yuimenu, #course-category-listings, .progress .bar, .dndupload-progress-outer .bar, .progress-bar, .dndupload-progress-inner, .yui-dt-paginator {
+  font-family: "Roboto Condensed","Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+}
+
+#mr-nav,
+#page-header,
+#region-main,
+#moodle-footer,
+#moodle-blocks {
+  font-size: 1rem;
+}
+
+.alert.alert-danger,
+#page-admin-index .releasenoteslink.alert-danger,
+#page-admin-index #page-admin-index .adminerror.releasenoteslink,
+#page-admin-index .adminwarning.alert-danger,
+#page-admin-index #page-admin-index .adminerror.adminwarning,
+#page-admin-index .adminerror.alert-danger,
+#page-admin-index #page-admin-index .adminerror,
+.que .formulation.alert-danger,
+.que #page-admin-index .adminerror.formulation,
+#page-admin-index .que .adminerror.formulation,
+.que .outcome.alert-danger,
+.que #page-admin-index .adminerror.outcome,
+#page-admin-index .que .adminerror.outcome,
+.que .comment.alert-danger,
+.que #page-admin-index .adminerror.comment,
+#page-admin-index .que .adminerror.comment,
+.assignfeedback_editpdf_widget .label.alert-danger,
+.assignfeedback_editpdf_widget #page-admin-index .adminerror.label,
+#page-admin-index .assignfeedback_editpdf_widget .adminerror.label,
+#page-admin-index .adminerror.alert,
+#page-admin-index #page-admin-index .releasenoteslink.adminerror,
+#page-admin-index #page-admin-index .adminwarning.adminerror,
+#page-admin-index .que .formulation.adminerror,
+.que #page-admin-index .formulation.adminerror,
+#page-admin-index .que .outcome.adminerror,
+.que #page-admin-index .outcome.adminerror,
+#page-admin-index .que .comment.adminerror,
+.que #page-admin-index .comment.adminerror,
+#page-admin-index .assignfeedback_editpdf_widget .label.adminerror,
+.assignfeedback_editpdf_widget #page-admin-index .label.adminerror {
+  color: #2b2b2b;
+  background-color: #faf3f5;
+  border-color: #fadc5d;
+}
+
+div#page {
+  min-height: 95vh;
+}
+
+.theme-snap .button-group > button.default:hover,
+.theme-snap .btn.btn-primary:hover,
+.theme-snap #page-grade-grading-manage .actions .action.btn-primary:hover,
+#page-grade-grading-manage .actions .theme-snap .action.btn-primary:hover,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary:hover,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary:hover,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary:hover,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-primary:hover,
+.theme-snap .button-group > button.default:focus,
+.theme-snap .btn.btn-primary:focus,
+.theme-snap #page-grade-grading-manage .actions .action.btn-primary:focus,
+#page-grade-grading-manage .actions .theme-snap .action.btn-primary:focus,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary:focus,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary:focus,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary:focus,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-primary:focus,
+.theme-snap .button-group > button.default:active,
+.theme-snap .btn.btn-primary:active,
+.theme-snap #page-grade-grading-manage .actions .action.btn-primary:active,
+#page-grade-grading-manage .actions .theme-snap .action.btn-primary:active,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary:active,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary:active,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary:active,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-primary:active,
+.theme-snap .button-group > button.default.active,
+.theme-snap .btn.btn-primary.active,
+.theme-snap #page-grade-grading-manage .actions .action.btn-primary.active,
+#page-grade-grading-manage .actions .theme-snap .action.btn-primary.active,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary.active,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary.active,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary.active,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-primary.active {
+  outline: none;
+}
+
+.theme-snap #snap-coverimagecontrol > .btn-secondary:focus,
+.theme-snap #snap-coverimagecontrol > .btn-default:focus,
+.theme-snap #page-mod-quiz-review #snap-coverimagecontrol > .arrow_link:focus,
+#page-mod-quiz-review .theme-snap #snap-coverimagecontrol > .arrow_link:focus,
+.theme-snap .gradingform_checklist.editor .addgroup #snap-coverimagecontrol > input:focus,
+.gradingform_checklist.editor .addgroup .theme-snap #snap-coverimagecontrol > input:focus,
+.theme-snap .gradingform_checklist.editor .additem #snap-coverimagecontrol > input:focus,
+.gradingform_checklist.editor .additem .theme-snap #snap-coverimagecontrol > input:focus,
+.theme-snap .gradingform_rubric.editor .addlevel #snap-coverimagecontrol > input:focus,
+.gradingform_rubric.editor .addlevel .theme-snap #snap-coverimagecontrol > input:focus,
+.theme-snap .gradingform_rubric.editor .addcriterion #snap-coverimagecontrol > input:focus,
+.gradingform_rubric.editor .addcriterion .theme-snap #snap-coverimagecontrol > input:focus,
+.theme-snap div[tabindex]:focus,
+.theme-snap .btn.btn-link:focus,
+.theme-snap #page-grade-grading-manage .actions .action.btn-link:focus,
+#page-grade-grading-manage .actions .theme-snap .action.btn-link:focus,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link:focus,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-link:focus,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-link:focus,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-link:focus,
+.theme-snap .custom-select:focus,
+.theme-snap .form-control:focus,
+.theme-snap .categoryname:focus,
+.theme-snap .summary > p:focus,
+.theme-snap .atto_group > button:focus,
+.theme-snap .snap-dropzone > .snap-dropzone-label:focus {
+  outline: none;
+}
+
+.page-grade-grading-manage .actions .theme-snap .action.btn-primary:active,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary:active,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary:active,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary:active,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-primary:active,
+.theme-snap .button-group > button.default.active,
+.theme-snap .btn.btn-primary.active,
+.theme-snap #page-grade-grading-manage .actions .action.btn-primary.active,
+#page-grade-grading-manage .actions .theme-snap .action.btn-primary.active,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary.active,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary.active,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary.active,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-primary.active {
+  outline: none;
+}
+
+.theme-snap a:focus,
+.theme-snap .dropdown-toggle:focus {
+  outline: none;
+}
+
+@media (max-width: 1249px) {
+  #page-login-index main#moodle-page section#region-main {
+    width: 75%;
+  }
+}
+
+@media (max-width: 900px) {
+  #page-login-index main#moodle-page section#region-main {
+    width: 90%;
+    margin: 0 auto !important;
+  }
+  #moodle-footer #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #moodle-footer #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container .redes {
+    width: 60%;
+    margin-bottom: 5px;
+  }
+  #moodle-footer #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container .terminosycondiciones {
+    margin-bottom: 5px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #moodle-footer #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container .terminosycondiciones li {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    text-align: center;
+  }
+  #moodle-footer #snap-site-footer #snap-footer-content .footer-linksalternos.footer-redes.grid-container .copyright {
+    text-align: center;
+  }
+  section#snap-pm-courses .coursecard {
+    min-height: 45vh;
+    min-width: 47%;
+    height: 300px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 630px) {
+  .theme-snap #snap-pm-header {
+    padding: 0.5rem 10%;
+  }
+  #snap-pm-header .pull-right {
+    right: 20px;
+    position: absolute;
+    top: 20px;
+  }
+  div#snap-pm-header-quicklinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  #snap-pm-header .snap-pm-user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 80%;
+  }
+  #snap-pm-header .snap-pm-user a.h1 {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+  #snap-pm-header .snap-pm-user .userpicture {
+    margin-bottom: 5px;
+    width: 55px;
+  }
+  header#mr-nav::before {
+    display: none;
+  }
+}
+/*# sourceMappingURL=cssInterno.css.map */

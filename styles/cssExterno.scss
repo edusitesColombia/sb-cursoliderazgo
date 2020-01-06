@@ -1,0 +1,293 @@
+@import "./variables";
+@import "./modulos";
+@import "./lesson";
+@import "./page";
+@import "./quiz";
+@import "./caja";
+@import "./ruta";
+
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/core/fontawesome-webfont.woff) format('woff');
+}
+
+:root {
+    font: {
+        family: 'Roboto Condensed', 'Roboto', 'Helvetica', sans-serif!important;
+        size: 20px;
+    }    
+}
+
+body, body *, .form_autocomplete_selection, .form_autocomplete_suggestions, .snap-system-text, .snap-action-icon, #page-mod-quiz-review .arrow_link, #course-category-listings .listing-pagination .yui3-button, .paging.paging-morelink a, input.form-submit, input#id_submitbutton, input#id_submitbutton2, .path-admin .buttons input[type="submit"], td.submit input, #notice .singlebutton + .singlebutton input, button.atto_equation_submit, .yui-skin-sam .yui-button, .yui3-button, .yui-button button, .felement.ftext input + button, .button-group>button, input[type="button"], .moodle-dialogue-content button, button#restrictbygroup, button#livelogs-pause-button, #page-admin-tool-monitor-managerules a>button, input[type="submit"], button[type="submit"], input[type="reset"], .gradingform_checklist.editor .addgroup input, .gradingform_checklist.editor .additem input, .gradingform_rubric.editor .addlevel input, .gradingform_rubric.editor .addcriterion input, #page-site-index .section-modchooser-link .section-modchooser-text, h1, .h1, .messaging-area-container .messaging-area .contacts-area .searcharea .heading, h2, .h2, .path-calendar .maincalendar .calendar-controls .current, h3, .h3, h4, .h4, h5, #page-user-profile .userprofile .profile_tree .node_category h3, .path-course.path-user .userprofile .profile_tree .node_category h3, .h5, h6, #page-course-edit #maincontent + h2, #page-course-editsection #maincontent + h2, .pagelayout-admin.path-mod #maincontent + h2, .h6, legend, .mform legend a, .mform legend a:hover, .coursebox .info .coursename, .collapsibleregioncaption, .snap-featured-course-title, #coursetools-list a, label, .label, .form-label, .form-defaultinfo, .form-description, .form-filemanager, .ffilepicker, .ffilemanager, .fdescription, .fstatic, .collapsible-actions, input, button, select, .pagination, .initialbar, .paging, .alert, #page-admin-index .releasenoteslink, #page-admin-index .adminwarning, #page-admin-index .adminerror, .que .formulation, .que .outcome, .que .comment, .assignfeedback_editpdf_widget .label, .nav-pills, .nav-tabs, .course-report-dashboard, .yui3-tabview-list, .yuimenu, #course-category-listings, .progress .bar, .dndupload-progress-outer .bar, .progress-bar, .dndupload-progress-inner, .yui-dt-paginator {
+    font-family: "Roboto Condensed","Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+}
+
+#mr-nav,
+#page-header,
+#region-main,
+#moodle-footer,
+#moodle-blocks {
+    font-size: 1rem;
+}
+
+main:not(.home-ruta) #page-header{
+    background-image:url(https://edusites.website/moodle/pluginfile.php/26/theme_snap/coverimage/1571155376/course-image.jpg)!important;
+}
+
+.icon-arrow-right:before{
+    background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/image.php/snap/theme/1576423950/right-arrow)!important;
+}
+.icon-arrow-left:before{
+    background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/image.php/snap/theme/1576423950/left-arrow)!important;
+}
+
+::selection {
+    background: $amarillo;
+    color: #fff;
+}
+
+
+
+.alert.alert-danger,
+#page-admin-index .releasenoteslink.alert-danger,
+#page-admin-index #page-admin-index .adminerror.releasenoteslink,
+#page-admin-index .adminwarning.alert-danger,
+#page-admin-index #page-admin-index .adminerror.adminwarning,
+#page-admin-index .adminerror.alert-danger,
+#page-admin-index #page-admin-index .adminerror,
+.que .formulation.alert-danger,
+.que #page-admin-index .adminerror.formulation,
+#page-admin-index .que .adminerror.formulation,
+.que .outcome.alert-danger,
+.que #page-admin-index .adminerror.outcome,
+#page-admin-index .que .adminerror.outcome,
+.que .comment.alert-danger,
+.que #page-admin-index .adminerror.comment,
+#page-admin-index .que .adminerror.comment,
+.assignfeedback_editpdf_widget .label.alert-danger,
+.assignfeedback_editpdf_widget #page-admin-index .adminerror.label,
+#page-admin-index .assignfeedback_editpdf_widget .adminerror.label,
+#page-admin-index .adminerror.alert,
+#page-admin-index #page-admin-index .releasenoteslink.adminerror,
+#page-admin-index #page-admin-index .adminwarning.adminerror,
+#page-admin-index .que .formulation.adminerror,
+.que #page-admin-index .formulation.adminerror,
+#page-admin-index .que .outcome.adminerror,
+.que #page-admin-index .outcome.adminerror,
+#page-admin-index .que .comment.adminerror,
+.que #page-admin-index .comment.adminerror,
+#page-admin-index .assignfeedback_editpdf_widget .label.adminerror,
+.assignfeedback_editpdf_widget #page-admin-index .label.adminerror {
+    color: $negro;
+    background-color: #faf3f5;
+    border-color: $amarillo;
+}
+
+div#page {
+    min-height: 95vh;
+}
+
+.breadcrumb-nav ol.breadcrumb li a{
+    color:$blanco;
+}
+
+section#coursetools {
+    padding: 0 15%;
+    h2 {
+        margin-top: 2rem;
+    }
+    div#coursetools-list {
+        display: flex;
+        flex-wrap: wrap;
+        &>a {
+            height: auto;
+            line-height: 1.1rem;
+        }
+    }
+}
+
+.pagelayout-admin #page-content #region-main,
+.layout-report #page-content #region-main,
+.admin #page-content #region-main,
+.path-badges #page-content #region-main,
+.path-user #page-content #region-main{
+    padding: 0 10%;
+}
+
+.path-user .home-ruta {
+    div[role="main"]>h2 {
+        margin-top: 5rem!important;
+    }
+    #page-header {
+        display: none;
+    }
+}
+
+//quitar la x para no poder regresar a la pagina principal cuando estan recien logueados
+#page-site-index #snap-pm-header #snap-pm-close {
+    display: none;
+}
+
+//quitar el menu para dashboard que sale en mobile
+.theme-snap #toc-mobile-menu-toggle {
+    display: none;
+}
+
+main:not(.home-ruta, .por-defecto) #page-header {
+    min-height: 10vh;
+    box-shadow: inset 0 0 0 50vw #21252996;
+    background-position: center;
+    position: sticky;
+    top: -75px;
+    z-index: 3;
+    #page-mast {
+        display: none;
+    }
+    &.mast-image {
+        .breadcrumb-nav,
+        .breadcrumb {
+            margin: 0;
+        }        
+    }    
+}
+
+main:not(.home-ruta, .por-defecto) div[role="main"]>h2,main:not(.home-ruta, .por-defecto) #region-main>div.singlebutton  {
+    margin-top: 2rem!important;
+}
+
+/*Glosario*/
+.glossarypost tr td>div {
+    padding-left: 55px;
+}
+//Elimina el borde que se genera alrededor de los elementos clickeables
+.theme-snap .button-group>button.default:hover,
+.theme-snap .btn.btn-primary:hover,
+.theme-snap #page-grade-grading-manage .actions .action.btn-primary:hover,
+#page-grade-grading-manage .actions .theme-snap .action.btn-primary:hover,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary:hover,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary:hover,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary:hover,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-primary:hover,
+.theme-snap .button-group>button.default:focus,
+.theme-snap .btn.btn-primary:focus,
+.theme-snap #page-grade-grading-manage .actions .action.btn-primary:focus,
+#page-grade-grading-manage .actions .theme-snap .action.btn-primary:focus,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary:focus,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary:focus,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary:focus,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-primary:focus,
+.theme-snap .button-group>button.default:active,
+.theme-snap .btn.btn-primary:active,
+.theme-snap #page-grade-grading-manage .actions .action.btn-primary:active,
+#page-grade-grading-manage .actions .theme-snap .action.btn-primary:active,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary:active,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary:active,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary:active,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-primary:active,
+.theme-snap .button-group>button.default.active,
+.theme-snap .btn.btn-primary.active,
+.theme-snap #page-grade-grading-manage .actions .action.btn-primary.active,
+#page-grade-grading-manage .actions .theme-snap .action.btn-primary.active,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary.active,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary.active,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary.active,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-primary.active {
+    outline: none;
+}
+
+.theme-snap #snap-coverimagecontrol>.btn-secondary:focus,
+.theme-snap #snap-coverimagecontrol>.btn-default:focus,
+.theme-snap #page-mod-quiz-review #snap-coverimagecontrol>.arrow_link:focus,
+#page-mod-quiz-review .theme-snap #snap-coverimagecontrol>.arrow_link:focus,
+.theme-snap .gradingform_checklist.editor .addgroup #snap-coverimagecontrol>input:focus,
+.gradingform_checklist.editor .addgroup .theme-snap #snap-coverimagecontrol>input:focus,
+.theme-snap .gradingform_checklist.editor .additem #snap-coverimagecontrol>input:focus,
+.gradingform_checklist.editor .additem .theme-snap #snap-coverimagecontrol>input:focus,
+.theme-snap .gradingform_rubric.editor .addlevel #snap-coverimagecontrol>input:focus,
+.gradingform_rubric.editor .addlevel .theme-snap #snap-coverimagecontrol>input:focus,
+.theme-snap .gradingform_rubric.editor .addcriterion #snap-coverimagecontrol>input:focus,
+.gradingform_rubric.editor .addcriterion .theme-snap #snap-coverimagecontrol>input:focus,
+.theme-snap div[tabindex]:focus,
+.theme-snap .btn.btn-link:focus,
+.theme-snap #page-grade-grading-manage .actions .action.btn-link:focus,
+#page-grade-grading-manage .actions .theme-snap .action.btn-link:focus,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link:focus,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-link:focus,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-link:focus,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-link:focus,
+.theme-snap .custom-select:focus,
+.theme-snap .form-control:focus,
+.theme-snap .categoryname:focus,
+.theme-snap .summary>p:focus,
+.theme-snap .atto_group>button:focus,
+.theme-snap .snap-dropzone>.snap-dropzone-label:focus {
+    outline: none;
+}
+
+.page-grade-grading-manage .actions .theme-snap .action.btn-primary:active,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary:active,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary:active,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary:active,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-primary:active,
+.theme-snap .button-group>button.default.active,
+.theme-snap .btn.btn-primary.active,
+.theme-snap #page-grade-grading-manage .actions .action.btn-primary.active,
+#page-grade-grading-manage .actions .theme-snap .action.btn-primary.active,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary.active,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary.active,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary.active,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-primary.active {
+    outline: none;
+}
+
+.theme-snap a:focus,
+.theme-snap .dropdown-toggle:focus {
+    outline: none;
+}
+
+//Mostrar la navegacion de las paginas internas
+section#region-main div.m-t-2.m-b-1 {
+    display: block;
+    .col-md-4{
+        margin-left:auto;
+        a{
+            font-family: 'Roboto Condensed';
+        }
+    }
+}
+
+#nav-notification-popover-container.popover-region-notifications .popover-region-container a{
+    color:$verde!important;
+}
+
+//resumen sadas
+b.color{
+    color:$verde!important;
+}
+
+@import "./media-queries-ext";
+
+@media screen and (min-width: 1600px) {
+    div#page {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1001px) {
+     :not(.home-ruta) #page-header,
+     :not(.por-defecto) #page-header {
+        padding-top: 4em!important;
+    }
+}
+
+@media (max-width: 991.98px) {
+    #page-header #course-toc {
+        position: relative!important;
+    }
+    #page-course-view-topics #page-header #course-toc .chapters {
+        display: block;
+        color: inherit;
+    }
+}

@@ -1,0 +1,156 @@
+@import "./variables";
+@import "./login";
+@import "./header";
+@import "./footer";
+@import "./misCursos";
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/core/fontawesome-webfont.woff) format('woff');
+}
+
+:root {
+    font: {
+        family: 'Roboto Condensed', 'Roboto', 'Helvetica', sans-serif!important;
+        size: 20px;
+    }    
+}
+
+body, body *, .form_autocomplete_selection, .form_autocomplete_suggestions, .snap-system-text, .snap-action-icon, #page-mod-quiz-review .arrow_link, #course-category-listings .listing-pagination .yui3-button, .paging.paging-morelink a, input.form-submit, input#id_submitbutton, input#id_submitbutton2, .path-admin .buttons input[type="submit"], td.submit input, #notice .singlebutton + .singlebutton input, button.atto_equation_submit, .yui-skin-sam .yui-button, .yui3-button, .yui-button button, .felement.ftext input + button, .button-group>button, input[type="button"], .moodle-dialogue-content button, button#restrictbygroup, button#livelogs-pause-button, #page-admin-tool-monitor-managerules a>button, input[type="submit"], button[type="submit"], input[type="reset"], .gradingform_checklist.editor .addgroup input, .gradingform_checklist.editor .additem input, .gradingform_rubric.editor .addlevel input, .gradingform_rubric.editor .addcriterion input, #page-site-index .section-modchooser-link .section-modchooser-text, h1, .h1, .messaging-area-container .messaging-area .contacts-area .searcharea .heading, h2, .h2, .path-calendar .maincalendar .calendar-controls .current, h3, .h3, h4, .h4, h5, #page-user-profile .userprofile .profile_tree .node_category h3, .path-course.path-user .userprofile .profile_tree .node_category h3, .h5, h6, #page-course-edit #maincontent + h2, #page-course-editsection #maincontent + h2, .pagelayout-admin.path-mod #maincontent + h2, .h6, legend, .mform legend a, .mform legend a:hover, .coursebox .info .coursename, .collapsibleregioncaption, .snap-featured-course-title, #coursetools-list a, label, .label, .form-label, .form-defaultinfo, .form-description, .form-filemanager, .ffilepicker, .ffilemanager, .fdescription, .fstatic, .collapsible-actions, input, button, select, .pagination, .initialbar, .paging, .alert, #page-admin-index .releasenoteslink, #page-admin-index .adminwarning, #page-admin-index .adminerror, .que .formulation, .que .outcome, .que .comment, .assignfeedback_editpdf_widget .label, .nav-pills, .nav-tabs, .course-report-dashboard, .yui3-tabview-list, .yuimenu, #course-category-listings, .progress .bar, .dndupload-progress-outer .bar, .progress-bar, .dndupload-progress-inner, .yui-dt-paginator {
+    font-family: "Roboto Condensed","Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+}
+
+#mr-nav,
+#page-header,
+#region-main,
+#moodle-footer,
+#moodle-blocks {
+    font-size: 1rem;
+}
+
+.alert.alert-danger,
+#page-admin-index .releasenoteslink.alert-danger,
+#page-admin-index #page-admin-index .adminerror.releasenoteslink,
+#page-admin-index .adminwarning.alert-danger,
+#page-admin-index #page-admin-index .adminerror.adminwarning,
+#page-admin-index .adminerror.alert-danger,
+#page-admin-index #page-admin-index .adminerror,
+.que .formulation.alert-danger,
+.que #page-admin-index .adminerror.formulation,
+#page-admin-index .que .adminerror.formulation,
+.que .outcome.alert-danger,
+.que #page-admin-index .adminerror.outcome,
+#page-admin-index .que .adminerror.outcome,
+.que .comment.alert-danger,
+.que #page-admin-index .adminerror.comment,
+#page-admin-index .que .adminerror.comment,
+.assignfeedback_editpdf_widget .label.alert-danger,
+.assignfeedback_editpdf_widget #page-admin-index .adminerror.label,
+#page-admin-index .assignfeedback_editpdf_widget .adminerror.label,
+#page-admin-index .adminerror.alert,
+#page-admin-index #page-admin-index .releasenoteslink.adminerror,
+#page-admin-index #page-admin-index .adminwarning.adminerror,
+#page-admin-index .que .formulation.adminerror,
+.que #page-admin-index .formulation.adminerror,
+#page-admin-index .que .outcome.adminerror,
+.que #page-admin-index .outcome.adminerror,
+#page-admin-index .que .comment.adminerror,
+.que #page-admin-index .comment.adminerror,
+#page-admin-index .assignfeedback_editpdf_widget .label.adminerror,
+.assignfeedback_editpdf_widget #page-admin-index .label.adminerror {
+    color: $negro;
+    background-color: #faf3f5;
+    border-color: $amarillo;
+}
+
+div#page {
+    min-height: 95vh;
+}
+
+//Elimina el borde que se genera alrededor de los elementos clickeables
+.theme-snap .button-group>button.default:hover,
+.theme-snap .btn.btn-primary:hover,
+.theme-snap #page-grade-grading-manage .actions .action.btn-primary:hover,
+#page-grade-grading-manage .actions .theme-snap .action.btn-primary:hover,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary:hover,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary:hover,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary:hover,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-primary:hover,
+.theme-snap .button-group>button.default:focus,
+.theme-snap .btn.btn-primary:focus,
+.theme-snap #page-grade-grading-manage .actions .action.btn-primary:focus,
+#page-grade-grading-manage .actions .theme-snap .action.btn-primary:focus,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary:focus,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary:focus,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary:focus,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-primary:focus,
+.theme-snap .button-group>button.default:active,
+.theme-snap .btn.btn-primary:active,
+.theme-snap #page-grade-grading-manage .actions .action.btn-primary:active,
+#page-grade-grading-manage .actions .theme-snap .action.btn-primary:active,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary:active,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary:active,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary:active,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-primary:active,
+.theme-snap .button-group>button.default.active,
+.theme-snap .btn.btn-primary.active,
+.theme-snap #page-grade-grading-manage .actions .action.btn-primary.active,
+#page-grade-grading-manage .actions .theme-snap .action.btn-primary.active,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary.active,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary.active,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary.active,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-primary.active {
+    outline: none;
+}
+
+.theme-snap #snap-coverimagecontrol>.btn-secondary:focus,
+.theme-snap #snap-coverimagecontrol>.btn-default:focus,
+.theme-snap #page-mod-quiz-review #snap-coverimagecontrol>.arrow_link:focus,
+#page-mod-quiz-review .theme-snap #snap-coverimagecontrol>.arrow_link:focus,
+.theme-snap .gradingform_checklist.editor .addgroup #snap-coverimagecontrol>input:focus,
+.gradingform_checklist.editor .addgroup .theme-snap #snap-coverimagecontrol>input:focus,
+.theme-snap .gradingform_checklist.editor .additem #snap-coverimagecontrol>input:focus,
+.gradingform_checklist.editor .additem .theme-snap #snap-coverimagecontrol>input:focus,
+.theme-snap .gradingform_rubric.editor .addlevel #snap-coverimagecontrol>input:focus,
+.gradingform_rubric.editor .addlevel .theme-snap #snap-coverimagecontrol>input:focus,
+.theme-snap .gradingform_rubric.editor .addcriterion #snap-coverimagecontrol>input:focus,
+.gradingform_rubric.editor .addcriterion .theme-snap #snap-coverimagecontrol>input:focus,
+.theme-snap div[tabindex]:focus,
+.theme-snap .btn.btn-link:focus,
+.theme-snap #page-grade-grading-manage .actions .action.btn-link:focus,
+#page-grade-grading-manage .actions .theme-snap .action.btn-link:focus,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link:focus,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-link:focus,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-link:focus,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-link:focus,
+.theme-snap .custom-select:focus,
+.theme-snap .form-control:focus,
+.theme-snap .categoryname:focus,
+.theme-snap .summary>p:focus,
+.theme-snap .atto_group>button:focus,
+.theme-snap .snap-dropzone>.snap-dropzone-label:focus {
+    outline: none;
+}
+
+.page-grade-grading-manage .actions .theme-snap .action.btn-primary:active,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary:active,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary:active,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary:active,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-primary:active,
+.theme-snap .button-group>button.default.active,
+.theme-snap .btn.btn-primary.active,
+.theme-snap #page-grade-grading-manage .actions .action.btn-primary.active,
+#page-grade-grading-manage .actions .theme-snap .action.btn-primary.active,
+.theme-snap #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-primary.active,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .theme-snap input.btn-primary.active,
+.theme-snap #rubric-rubric.gradingform_rubric .addcriterion.btn-primary.active,
+#rubric-rubric.gradingform_rubric .theme-snap .addcriterion.btn-primary.active {
+    outline: none;
+}
+
+.theme-snap a:focus,
+.theme-snap .dropdown-toggle:focus {
+    outline: none;
+}
+
+@import "./media-queries-interno";

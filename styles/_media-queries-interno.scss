@@ -1,0 +1,14 @@
+@media (max-width: 1249px) {
+    @include login-md();
+}
+
+@media (max-width: 900px) {
+    @include login-sm();
+    @include footer-sm();
+    @include miscursos-sm();
+}
+
+@media (max-width: 630px) {
+    @include miscursos-xs();
+    @include header-xs();
+}
