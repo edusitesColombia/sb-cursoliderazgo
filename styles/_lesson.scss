@@ -201,8 +201,29 @@ section#region-main {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            img {
+            .podcast{
                 margin: 1rem auto;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                background:$verde;
+                border-radius:15px 5px 15px 10px;
+                img{
+                    width:30%;
+                }
+                .contenido{
+                    width:69%;
+                    display:flex;
+                    flex-direction:column;
+                    align-items: flex-start;
+                    h5{
+                        color:white;
+                        font-weight: 800;
+                    }
+                    span{
+                        color:$amarillo;
+                    }
+                }
             }
         }
     }  
