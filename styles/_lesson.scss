@@ -23,6 +23,23 @@ section#region-main {
         background-position: center;
         background-repeat: no-repeat;
     }
+    #carouselMod3L2 .carousel-caption{
+        width: 100%;
+        margin: 0;
+        padding: 3rem;
+        background: $verde-transparencia;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        font-size:1rem;
+        h5{
+            font-weight: 800;
+            color:$amarillo;
+        }
+        p{
+            padding: 0;
+        }
+    }
 }
 
 #page-mod-lesson-view div[role="main"]{
@@ -188,25 +205,7 @@ section#region-main {
                 margin: 1rem auto;
             }
         }
-    }
-    #carouselMod3L2 .carousel-caption{
-        width: 100%;
-        margin: 0;
-        padding: 3rem;
-        background: $verde-transparencia;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        font-size:1rem;
-        h5{
-            font-weight: 800;
-            color:$amarillo;
-        }
-        p{
-            padding: 0;
-        }
-    }
-
+    }  
 
     blockquote.blockquote {
         border: 0;
@@ -312,7 +311,7 @@ section#region-main {
 }
 
 @media (max-width: 768px) {
-    #page-mod-lesson-view div[role="main"] #carouselMod3L2 {
+    #carouselMod3L2 {
         .carousel-item{
             height: 65vh;
             min-height: 325px;

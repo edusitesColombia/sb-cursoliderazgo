@@ -1441,6 +1441,26 @@ section#region-main .carousel-control-prev-icon {
   background-repeat: no-repeat;
 }
 
+section#region-main #carouselMod3L2 .carousel-caption {
+  width: 100%;
+  margin: 0;
+  padding: 3rem;
+  background: rgba(0, 109, 56, 0.7);
+  right: 0;
+  left: 0;
+  bottom: 0;
+  font-size: 1rem;
+}
+
+section#region-main #carouselMod3L2 .carousel-caption h5 {
+  font-weight: 800;
+  color: #fadc5d;
+}
+
+section#region-main #carouselMod3L2 .carousel-caption p {
+  padding: 0;
+}
+
 #page-mod-lesson-view div[role="main"] {
   text-align: center;
   font-family: "Roboto Condensed" !important;
@@ -1669,26 +1689,6 @@ section#region-main .carousel-control-prev-icon {
   margin: 1rem auto;
 }
 
-#page-mod-lesson-view div[role="main"] #carouselMod3L2 .carousel-caption {
-  width: 100%;
-  margin: 0;
-  padding: 3rem;
-  background: rgba(0, 109, 56, 0.7);
-  right: 0;
-  left: 0;
-  bottom: 0;
-  font-size: 1rem;
-}
-
-#page-mod-lesson-view div[role="main"] #carouselMod3L2 .carousel-caption h5 {
-  font-weight: 800;
-  color: #fadc5d;
-}
-
-#page-mod-lesson-view div[role="main"] #carouselMod3L2 .carousel-caption p {
-  padding: 0;
-}
-
 #page-mod-lesson-view div[role="main"] blockquote.blockquote {
   border: 0;
   min-height: 500px;
@@ -1759,12 +1759,12 @@ section#region-main .carousel-control-prev-icon {
 }
 
 @media (max-width: 768px) {
-  #page-mod-lesson-view div[role="main"] #carouselMod3L2 .carousel-item {
+  #carouselMod3L2 .carousel-item {
     height: 65vh;
     min-height: 325px;
     background: #006d38bb;
   }
-  #page-mod-lesson-view div[role="main"] #carouselMod3L2 .carousel-item.active .carousel-caption.d-none {
+  #carouselMod3L2 .carousel-item.active .carousel-caption.d-none {
     display: block !important;
     line-height: 1rem;
     font-size: 0.85rem;
