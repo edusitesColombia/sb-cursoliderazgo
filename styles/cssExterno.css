@@ -603,8 +603,7 @@ body#page-course-view-topics section#region-main span.instancename {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -ms-flex-item-align: baseline;
-      align-self: baseline;
+  /*align-self: baseline;*/
   margin: 0;
   padding: 0;
   height: auto;
@@ -2681,6 +2680,7 @@ b.color {
   }
   .contenidos-cajaH .caja-linkH {
     max-width: 100vw;
+    margin-bottom: 1rem;
   }
 }
 
