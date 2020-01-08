@@ -21,8 +21,8 @@
 }
 
 #page-login-index #page {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 108, 56, 0.7)), to(rgba(1, 108, 56, 0.7))), url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/bg-login.jpg) !important;
-  background: linear-gradient(rgba(1, 108, 56, 0.7), rgba(1, 108, 56, 0.7)), url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/bg-login.jpg) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 108, 56, 0.7)), to(rgba(1, 108, 56, 0.7))), url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/bg-login.jpg) !important;
+  background: linear-gradient(rgba(1, 108, 56, 0.7), rgba(1, 108, 56, 0.7)), url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/bg-login.jpg) !important;
   background-size: cover;
   background-position: 200px;
 }
@@ -32,8 +32,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 108, 56, 0.7)), to(rgba(1, 108, 56, 0.7))), url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/bg-login.jpg);
-  background: linear-gradient(rgba(1, 108, 56, 0.7), rgba(1, 108, 56, 0.7)), url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/bg-login.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 108, 56, 0.7)), to(rgba(1, 108, 56, 0.7))), url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/bg-login.jpg);
+  background: linear-gradient(rgba(1, 108, 56, 0.7), rgba(1, 108, 56, 0.7)), url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/bg-login.jpg);
   background-size: cover;
   background-position: 200px;
 }
@@ -141,7 +141,7 @@ header#mr-nav a#snap-home {
 
 header#mr-nav::before {
   content: "";
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/logo_segurosbolivar_blanco.png);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/logo_segurosbolivar_blanco.png);
   display: inline-block;
   background-size: contain;
   background-repeat: no-repeat;
@@ -645,8 +645,8 @@ body#page-course-view-topics section#region-main span.instancename {
           align-items: center;
   padding-left: 25%;
   background-color: #fadc5d;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod1-cabecera.jpg);
   background-size: cover;
   background-position: center;
   text-transform: uppercase;
@@ -765,8 +765,8 @@ body#page-course-view-topics section#region-main span.instancename {
 .course-content ul.topics li#section-6 .label .separador-amarillo {
   min-height: 270px;
   height: 27vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(250, 220, 93, 0.5)), to(rgba(250, 220, 93, 0.5))), url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod1-separador.jpg);
-  background-image: linear-gradient(rgba(250, 220, 93, 0.5), rgba(250, 220, 93, 0.5)), url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod1-separador.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(250, 220, 93, 0.5)), to(rgba(250, 220, 93, 0.5))), url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod1-separador.jpg);
+  background-image: linear-gradient(rgba(250, 220, 93, 0.5), rgba(250, 220, 93, 0.5)), url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod1-separador.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -812,7 +812,7 @@ body#page-course-view-topics section#region-main span.instancename {
   border: 0;
   min-height: 650px;
   height: 70vh;
-  background: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod1-quote.jpg);
+  background: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod1-quote.jpg);
   background-size: cover;
   background-attachment: fixed;
   display: -webkit-box;
@@ -856,25 +856,25 @@ body#page-course-view-topics section#region-main span.instancename {
 }
 
 .course-content ul.topics blockquote.blockquote#quote-mod2 {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod2/quote-mod2.jpg);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod2/quote-mod2.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .course-content ul.topics blockquote.blockquote#quote-mod3 {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod3/quote-mod3.jpg);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod3/quote-mod3.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .course-content ul.topics blockquote.blockquote#quote-mod3-2 {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod3/quote-mod3-2.jpg);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod3/quote-mod3-2.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .course-content ul.topics blockquote.blockquote#quote-mod4 {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod4/quote-mod4.jpg);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod4/quote-mod4.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -1145,7 +1145,7 @@ body#page-course-view-topics section#region-main span.instancename {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/avatarF_tablero.png);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/avatarF_tablero.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -1169,7 +1169,7 @@ body#page-course-view-topics section#region-main span.instancename {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/avatarM_tablero.png);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/avatarM_tablero.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -1181,7 +1181,7 @@ body#page-course-view-topics section#region-main span.instancename {
 }
 
 .contenedor-objetivos #complemento-objetivos {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/caja_objetivos.svg);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/caja_objetivos.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1248,7 +1248,7 @@ ul.section.img-text .page .asset-wrapper .summary-text p {
 }
 
 ul.section.img-text .page .asset-wrapper a.btn.btn-secondary.pagemod-readmore {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/boton_resumen.svg);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/boton_resumen.svg);
   overflow: visible;
   background-size: contain;
   background-position: center;
@@ -1359,15 +1359,15 @@ ul.section.img-text .page .asset-wrapper ul.section.img-text .page .asset-wrappe
 }
 
 .separador-opciones .opcion.glosario::before {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/icono_glosario.png);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/icono_glosario.png);
 }
 
 .separador-opciones .opcion.cartilla::before {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/icono_cartilla.png);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/icono_cartilla.png);
 }
 
 .separador-opciones .opcion.bibliografia::before {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/icono_bibliografia.png);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/icono_bibliografia.png);
   margin-left: -89px;
   width: 104px;
   background-size: 100%;
@@ -1524,7 +1524,7 @@ section#region-main #carouselMod3L2 .carousel-caption p {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/bg-lesson2_1.jpg);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/bg-lesson2_1.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -1552,7 +1552,7 @@ section#region-main #carouselMod3L2 .carousel-caption p {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/bg-lesson2_2.jpg);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/bg-lesson2_2.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -1579,7 +1579,7 @@ section#region-main #carouselMod3L2 .carousel-caption p {
   display: block;
   margin: 2rem auto;
   padding: 4rem 0;
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/Capsula.png);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/Capsula.png);
   background-repeat: no-repeat;
   background-size: 40%;
   background-position: center;
@@ -1594,38 +1594,38 @@ section#region-main #carouselMod3L2 .carousel-caption p {
   min-width: 100%;
   height: 40vh;
   background: #fadc5d;
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod2/separador1.jpg);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod2/separador1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #page-mod-lesson-view div[role="main"] .separador-leccion#m2l2s1 {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod2/separador1.jpg);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod2/separador1.jpg);
 }
 
 #page-mod-lesson-view div[role="main"] .separador-leccion#m2l2s2 {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod2/separador2.jpg);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod2/separador2.jpg);
 }
 
 #page-mod-lesson-view div[role="main"] .separador-leccion#m2l2s3 {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod2/separador3.jpg);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod2/separador3.jpg);
 }
 
 #page-mod-lesson-view div[role="main"] .separador-leccion#m2l2s4 {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod2/separador4.jpg);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod2/separador4.jpg);
 }
 
 #page-mod-lesson-view div[role="main"] .separador-leccion#m2l2s5 {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod2/separador5.jpg);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod2/separador5.jpg);
 }
 
 #page-mod-lesson-view div[role="main"] .separador-leccion#m2l2s6 {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod2/separador6.jpg);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod2/separador6.jpg);
 }
 
 #page-mod-lesson-view div[role="main"] .separador-leccion#m2l2s7 {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod2/separador7.jpg);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod2/separador7.jpg);
 }
 
 #page-mod-lesson-view div[role="main"] .separador-leccion + img:nth-child(even) {
@@ -1732,7 +1732,7 @@ section#region-main #carouselMod3L2 .carousel-caption p {
   border: 0;
   min-height: 500px;
   height: 70vh;
-  background: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod1-quote.jpg);
+  background: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod1-quote.jpg);
   background-size: cover;
   background-attachment: fixed;
   display: -webkit-box;
@@ -1776,19 +1776,19 @@ section#region-main #carouselMod3L2 .carousel-caption p {
 }
 
 #page-mod-lesson-view div[role="main"] blockquote.blockquote#quote-mod2 {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod2/quote-mod2.jpg);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod2/quote-mod2.jpg);
 }
 
 #page-mod-lesson-view div[role="main"] blockquote.blockquote#quote-mod3 {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod3/quote-mod3.jpg);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod3/quote-mod3.jpg);
 }
 
 #page-mod-lesson-view div[role="main"] blockquote.blockquote#quote-mod3-2 {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod3/quote-mod3-2.jpg);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod3/quote-mod3-2.jpg);
 }
 
 #page-mod-lesson-view div[role="main"] blockquote.blockquote#quote-mod4 {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod4/quote-mod4.jpg);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod4/quote-mod4.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -1882,7 +1882,7 @@ section#region-main #carouselMod3L2 .carousel-caption p {
   border: 0;
   min-height: 382px;
   height: 50vh;
-  background: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod1-quote.jpg);
+  background: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/mod1-quote.jpg);
   background-size: cover;
   background-attachment: fixed;
   display: -webkit-box;
@@ -2192,7 +2192,7 @@ html #mr-nav {
   padding: 0;
   padding-top: 5rem;
   min-height: 105vh;
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/fondo_avance0.svg);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/fondo_avance0.svg);
   background-size: 100% 100%;
   background-position: center;
   background-size: cover;
@@ -2327,7 +2327,7 @@ html #mr-nav {
   top: 200px;
   right: unset;
   left: 0;
-  background: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/boton_metodologia.svg);
+  background: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/boton_metodologia.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -2348,7 +2348,7 @@ html #mr-nav {
   display: block;
   width: 28px;
   height: 32px;
-  background: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/iconos/icono_metodologia_32px.png);
+  background: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/iconos/icono_metodologia_32px.png);
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
@@ -2375,7 +2375,7 @@ html #mr-nav {
   top: 1rem;
   right: -2.5rem;
   left: unset;
-  background: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/boton_caja_herramientas.svg);
+  background: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/boton_caja_herramientas.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -2398,7 +2398,7 @@ html #mr-nav {
   display: block;
   width: 28px;
   height: 32px;
-  background: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/iconos/icono_cajaherramientas_32px.svg);
+  background: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/iconos/icono_cajaherramientas_32px.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
@@ -2432,7 +2432,7 @@ html #mr-nav {
 }
 
 .home-ruta #page-header.avance-1 {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/fondo_avance1.svg);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/fondo_avance1.svg);
   background-size: 100% 100%;
   background-position: center;
   background-size: cover;
@@ -2440,7 +2440,7 @@ html #mr-nav {
 }
 
 .home-ruta #page-header.avance-2 {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/fondo_avance2.svg);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/fondo_avance2.svg);
   background-size: 100% 100%;
   background-position: center;
   background-size: cover;
@@ -2448,7 +2448,7 @@ html #mr-nav {
 }
 
 .home-ruta #page-header.avance-3 {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/fondo_avance3.svg);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/fondo_avance3.svg);
   background-size: 100% 100%;
   background-position: center;
   background-size: cover;
@@ -2456,7 +2456,7 @@ html #mr-nav {
 }
 
 .home-ruta #page-header.avance-4 {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/fondo_avance4.svg);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/fondo_avance4.svg);
   background-size: 100% 100%;
   background-position: center;
   background-size: cover;
@@ -2473,7 +2473,7 @@ html #mr-nav {
 
 @font-face {
   font-family: "FontAwesome";
-  src: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/core/fontawesome-webfont.woff) format("woff");
+  src: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/core/fontawesome-webfont.woff) format("woff");
 }
 
 :root {
@@ -2498,11 +2498,11 @@ main:not(.home-ruta) #page-header {
 }
 
 .icon-arrow-right:before {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/image.php/snap/theme/1576423950/right-arrow) !important;
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/image.php/snap/theme/1576423950/right-arrow) !important;
 }
 
 .icon-arrow-left:before {
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/image.php/snap/theme/1576423950/left-arrow) !important;
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/image.php/snap/theme/1576423950/left-arrow) !important;
 }
 
 ::-moz-selection {

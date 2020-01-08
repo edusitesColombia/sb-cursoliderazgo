@@ -12,7 +12,7 @@ function agregarEstilos(){
     
     link.type = 'text/css'; 
     
-    link.href = 'http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/cssExterno.css';  
+    link.href = 'https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/cssExterno.css';  
 
     document.head.appendChild(link);
 }

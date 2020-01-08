@@ -8,8 +8,8 @@
 }
 
 #page-login-index #page {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 108, 56, 0.7)), to(rgba(1, 108, 56, 0.7))), url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/bg-login.jpg) !important;
-  background: linear-gradient(rgba(1, 108, 56, 0.7), rgba(1, 108, 56, 0.7)), url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/bg-login.jpg) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 108, 56, 0.7)), to(rgba(1, 108, 56, 0.7))), url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/bg-login.jpg) !important;
+  background: linear-gradient(rgba(1, 108, 56, 0.7), rgba(1, 108, 56, 0.7)), url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/bg-login.jpg) !important;
   background-size: cover;
   background-position: 200px;
 }
@@ -19,8 +19,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 108, 56, 0.7)), to(rgba(1, 108, 56, 0.7))), url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/bg-login.jpg);
-  background: linear-gradient(rgba(1, 108, 56, 0.7), rgba(1, 108, 56, 0.7)), url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/bg-login.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 108, 56, 0.7)), to(rgba(1, 108, 56, 0.7))), url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/bg-login.jpg);
+  background: linear-gradient(rgba(1, 108, 56, 0.7), rgba(1, 108, 56, 0.7)), url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/bg-login.jpg);
   background-size: cover;
   background-position: 200px;
 }
@@ -128,7 +128,7 @@ header#mr-nav a#snap-home {
 
 header#mr-nav::before {
   content: "";
-  background-image: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/logo_segurosbolivar_blanco.png);
+  background-image: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/pix/segurosbolivar/logo_segurosbolivar_blanco.png);
   display: inline-block;
   background-size: contain;
   background-repeat: no-repeat;
@@ -323,7 +323,7 @@ section#snap-pm-courses .snap-personal-menu-more {
 
 @font-face {
   font-family: "FontAwesome";
-  src: url(http://proyectoeducativo.com.co/segurosbolivar/theme/snap/core/fontawesome-webfont.woff) format("woff");
+  src: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/core/fontawesome-webfont.woff) format("woff");
 }
 
 :root {
