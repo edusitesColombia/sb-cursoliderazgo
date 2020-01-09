@@ -321,11 +321,6 @@ section#snap-pm-courses .snap-personal-menu-more {
   display: none;
 }
 
-@font-face {
-  font-family: "FontAwesome";
-  src: url(https://proyectoeducativo.com.co/segurosbolivar/theme/snap/core/fontawesome-webfont.woff) format("woff");
-}
-
 :root {
   font-family: "Roboto Condensed", "Roboto", "Helvetica", sans-serif !important;
   font-size: 20px;
